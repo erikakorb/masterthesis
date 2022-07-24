@@ -1,5 +1,5 @@
 # latex
-The `latex` folder contain the `thesis.tex` file and all the auxiliary files needed for the compilation of the **thesis**. Inside the `fonti` folder there are also all the pdfs used as bibliography
+The `latex` folder contain the `thesis.tex` file and all the auxiliary files needed for the compilation of the **thesis**. Inside the `biblio` folder there are also all the pdfs used as bibliography
 
 # script
 The `script` folder contains all the **python** and **jupyter-notebook scripts** used for the analysis of the **SEVN2** outputs
@@ -53,7 +53,8 @@ Once a detailed output like `./v_3.0.0-Spindevel_RLO/1mln_Z015_com_unified265/pp
 
 ### 6. Other scripts
 
-Short description of the additional anaylsis tools:
+Short description of the additional tools:
+  - `generate` folder contains the script to generate the initial conditions for the simulations, taken from the [IC4popsynth repository](https://github.com/GiacobboNicola/IC4popsyn) of Nicola Giacobbo
   - `SNhistogram.ipynb` allows plotting the **remnant mass distributions with different CCSN models**, eventually correlating them with properties like the initial mass, CO core masse or pre-SN mass. **It requires to have sets of single stellar evolution tracks** that were manually simulated and stored in paths like `./singlestar/Z015_com/sevn_output/output_0.csv`
   - `parsec.ipynb` allows to select a **single star in the PARSEC tables** and plot it. Each line in those tables correspond to a single star evolved with PARSEC and their properties are the datapoints used by SEVN2 to interpolate intermediate stellar tracks.
   - `convert.py` allows simple **conversions for binary properties and units of measure**, e.g. to rapidly obtain semimajor in solar radii given the masses in solar masses and the orbital period in hours.
