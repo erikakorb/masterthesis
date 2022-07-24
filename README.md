@@ -42,6 +42,7 @@ The first part of the pipeline is usually carried out in the server where the si
 The so-far reduced outputs only contain the Wolf-Rayet-Black hole timesteps, with the addition of their progenitor and remnant configuration. To, instead, have also **all the evolutionary timesteps** e.g. of the Cyg X-3 candidates it is necessary to **re-simulate those binaries with SEVN2** and plot all the timesteps. To do so use the `resimulate.py` script that:
   - calls the `seed_select.py` that reads the `evolved_0.dat` file and cuts it to create a `listBin.dat` file with initial conditions only of the binary of interest
   - copies the `listBin.dat` file into the SEVN2 repository, runs it and copies the output of the simulation in a new folder in the already existing folder that identifies the simulation. For instance in the path `./v_3.0.0-Spindevel_RLO/1mln_Z015_com_unified265/ppisn_without/BHBH_GW_WRBH_cyg_x-3--Ko17/run_scripts/sevn_output/output_0.csv` it will be possible to find the result of the re-simulation of Cyg X-3 candidates as with the Koljonen+2017 criteria the merge within a Hubble time with the fiducial model.
+
 **Warning: The** `run.sh` **file of SEVN2 needs to be *manually checked* to be sure that the binaries are re-simulated with the same parameters desired.**
  
 
@@ -55,7 +56,7 @@ Once a detailed output like `./v_3.0.0-Spindevel_RLO/1mln_Z015_com_unified265/pp
 
 Short description of the additional anaylsis tools:
   - `SNhistogram.ipynb` allows plotting the **remnant mass distributions with different CCSN models**, eventually correlating them with properties like the initial mass, CO core masse or pre-SN mass. **It requires to have sets of single stellar evolution tracks** that were manually simulated and stored in paths like `./singlestar/Z015_com/sevn_output/output_0.csv`
-  -`parsec.ipynb` allows to select a **single star in the parsec tables** and plot it. Each line in those tables correspond to a single star evolved with parsec and their properties are the datapoints used by SEVN2 to interpolate intermediate stellar tracks.
-  -`convert.py` allows simple **conversions for binary properties and units of measure**, e.g. to rapidly obtain semimajor in solar radii given the masses in solar masses and the orbital period in hours.
-  -`maxwell.py` uses the `scipy` library to **obtain the standard deviation of a Maxwellian given its median value**
+  - `parsec.ipynb` allows to select a **single star in the parsec tables** and plot it. Each line in those tables correspond to a single star evolved with parsec and their properties are the datapoints used by SEVN2 to interpolate intermediate stellar tracks.
+  - `convert.py` allows simple **conversions for binary properties and units of measure**, e.g. to rapidly obtain semimajor in solar radii given the masses in solar masses and the orbital period in hours.
+  - `maxwell.py` uses the `scipy` library to **obtain the standard deviation of a Maxwellian given its median value**
 
