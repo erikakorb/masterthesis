@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.2.10)  31 JUL 2022 20:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.2.10)  1 AUG 2022 21:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -946,211 +946,256 @@ Package pdftex.def Info: thesis-frn.pdf  used on input line 98.
 ]
 Chapter 1.
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--142
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 152--153
+Underfull \hbox (badness 10000) in paragraph at lines 139--140
 
  []
 
 [1
 
 ]
-<./images/GW150914.png, id=251, 839.38594pt x 678.28406pt>
+<./images/GW150914.png, id=253, 839.38594pt x 678.28406pt>
 File: ./images/GW150914.png Graphic file (type png)
 <use ./images/GW150914.png>
-Package pdftex.def Info: ./images/GW150914.png  used on input line 175.
+Package pdftex.def Info: ./images/GW150914.png  used on input line 179.
 (pdftex.def)             Requested size: 438.17229pt x 354.0759pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--181
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
 
  []
 
 [2 <./images/GW150914.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 206--207
+Underfull \hbox (badness 10000) in paragraph at lines 210--211
 
  []
 
 [3]
-<./images/sensitivity.png, id=298, 795.72281pt x 701.62125pt>
+<./images/sensitivity.png, id=301, 795.72281pt x 701.62125pt>
 File: ./images/sensitivity.png Graphic file (type png)
 <use ./images/sensitivity.png>
-Package pdftex.def Info: ./images/sensitivity.png  used on input line 241.
+Package pdftex.def Info: ./images/sensitivity.png  used on input line 245.
 (pdftex.def)             Requested size: 205.9415pt x 181.58215pt.
-<./images/O3BNSrange.png, id=299, 773.89125pt x 565.36218pt>
+<./images/O3BNSrange.png, id=302, 773.89125pt x 565.36218pt>
 File: ./images/O3BNSrange.png Graphic file (type png)
 <use ./images/O3BNSrange.png>
-Package pdftex.def Info: ./images/O3BNSrange.png  used on input line 246.
+Package pdftex.def Info: ./images/O3BNSrange.png  used on input line 250.
 (pdftex.def)             Requested size: 236.87637pt x 173.0434pt.
 
-Overfull \hbox (4.6456pt too wide) in paragraph at lines 246--247
+Overfull \hbox (4.6456pt too wide) in paragraph at lines 250--251
  [][] 
  []
 
 
-Overfull \hbox (2.22166pt too wide) in paragraph at lines 239--248
+Overfull \hbox (2.22166pt too wide) in paragraph at lines 243--252
 []$[]$  $[]$ 
  []
 
-<./images/ETsensitivity.png, id=302, 609.02531pt x 456.20438pt>
+<./images/ETsensitivity.png, id=305, 609.02531pt x 456.20438pt>
 File: ./images/ETsensitivity.png Graphic file (type png)
 <use ./images/ETsensitivity.png>
-Package pdftex.def Info: ./images/ETsensitivity.png  used on input line 255.
+Package pdftex.def Info: ./images/ETsensitivity.png  used on input line 260.
 (pdftex.def)             Requested size: 214.70682pt x 160.82945pt.
-<./images/EThorizon.png, id=303, 609.02531pt x 456.20438pt>
+<./images/EThorizon.png, id=306, 609.02531pt x 456.20438pt>
 File: ./images/EThorizon.png Graphic file (type png)
 <use ./images/EThorizon.png>
-Package pdftex.def Info: ./images/EThorizon.png  used on input line 260.
+Package pdftex.def Info: ./images/EThorizon.png  used on input line 266.
 (pdftex.def)             Requested size: 219.00186pt x 164.04549pt.
 
-Overfull \hbox (4.29504pt too wide) in paragraph at lines 260--261
-[][] 
+Overfull \hbox (4.29504pt too wide) in paragraph at lines 266--267
+ [][] 
  []
 
-[4 <./images/sensitivity.png (PNG copy)> <./images/O3BNSrange.png (PNG copy)> <
-./images/ETsensitivity.png (PNG copy)> <./images/EThorizon.png (PNG copy)>]
-[5] [6
+[4 <./images/sensitivity.png (PNG copy)> <./images/O3BNSrange.png (PNG copy)>]
+<./images/MassMergerRate.png, id=331, 748.29562pt x 411.03563pt>
+File: ./images/MassMergerRate.png Graphic file (type png)
+<use ./images/MassMergerRate.png>
+Package pdftex.def Info: ./images/MassMergerRate.png  used on input line 294.
+(pdftex.def)             Requested size: 262.90604pt x 144.41028pt.
+<./images/MassCumulative.png, id=332, 594.72188pt x 470.50781pt>
+File: ./images/MassCumulative.png Graphic file (type png)
+<use ./images/MassCumulative.png>
+Package pdftex.def Info: ./images/MassCumulative.png  used on input line 300.
+(pdftex.def)             Requested size: 170.88692pt x 135.19455pt.
 
-]
+[5 <./images/ETsensitivity.png (PNG copy)> <./images/EThorizon.png (PNG copy)>]
+<./images/spinmagnitude.png, id=354, 466.74374pt x 339.51843pt>
+File: ./images/spinmagnitude.png Graphic file (type png)
+<use ./images/spinmagnitude.png>
+Package pdftex.def Info: ./images/spinmagnitude.png  used on input line 337.
+(pdftex.def)             Requested size: 214.70682pt x 156.18036pt.
+<./images/spinmagnitudehighlow.png, id=355, 665.48625pt x 493.845pt>
+File: ./images/spinmagnitudehighlow.png Graphic file (type png)
+<use ./images/spinmagnitudehighlow.png>
+Package pdftex.def Info: ./images/spinmagnitudehighlow.png  used on input line 
+343.
+(pdftex.def)             Requested size: 209.34045pt x 155.34346pt.
+<./images/spineff.png, id=358, 670.00313pt x 490.08093pt>
+File: ./images/spineff.png Graphic file (type png)
+<use ./images/spineff.png>
+Package pdftex.def Info: ./images/spineff.png  used on input line 352.
+(pdftex.def)             Requested size: 214.70682pt x 157.04596pt.
+<./images/spinmassratio.png, id=359, 706.13812pt x 532.99126pt>
+File: ./images/spinmassratio.png Graphic file (type png)
+<use ./images/spinmassratio.png>
+Package pdftex.def Info: ./images/spinmassratio.png  used on input line 358.
+(pdftex.def)             Requested size: 206.11998pt x 155.5801pt.
+<./images/spinorientation.png, id=362, 463.7325pt x 331.2375pt>
+File: ./images/spinorientation.png Graphic file (type png)
+<use ./images/spinorientation.png>
+Package pdftex.def Info: ./images/spinorientation.png  used on input line 366.
+(pdftex.def)             Requested size: 214.70682pt x 153.36172pt.
+<./images/spinchirpmass.png, id=363, 560.0925pt x 432.11438pt>
+File: ./images/spinchirpmass.png Graphic file (type png)
+<use ./images/spinchirpmass.png>
+Package pdftex.def Info: ./images/spinchirpmass.png  used on input line 372.
+(pdftex.def)             Requested size: 203.97081pt x 157.36768pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6 <./images/MassMergerRate.png (PNG copy)> <./images/MassCumulative.png (PNG 
+copy)>]
+[7 <./images/spinmagnitude.png (PNG copy)> <./images/spinmagnitudehighlow.png (
+PNG copy)> <./images/spineff.png (PNG copy)> <./images/spinmassratio.png (PNG c
+opy)> <./images/spinorientation.png (PNG copy)> <./images/spinchirpmass.png (PN
+G copy)>] [8]
 Chapter 2.
 
-Underfull \hbox (badness 10000) in paragraph at lines 392--393
+Underfull \hbox (badness 10000) in paragraph at lines 493--494
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 402--403
+Underfull \hbox (badness 10000) in paragraph at lines 503--504
 
  []
 
 
-Overfull \hbox (62.64125pt too wide) in paragraph at lines 410--432
+Overfull \hbox (62.64125pt too wide) in paragraph at lines 511--533
 [] 
  []
 
-[7]
-Underfull \hbox (badness 10000) in paragraph at lines 444--445
+[9
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 545--546
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 446--447
+Underfull \hbox (badness 10000) in paragraph at lines 547--548
 
  []
 
 
-Overfull \hbox (12.63824pt too wide) in paragraph at lines 448--448
+Overfull \hbox (12.63824pt too wide) in paragraph at lines 549--549
 []\T1/cmr/m/n/10 To model its metal-lic-ity we use the metal-licty gra-di-ent o
 f the MW that was ob-tained by \T1/cmr/bx/n/10 Lemasle2018
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 455--456
+Underfull \hbox (badness 10000) in paragraph at lines 556--557
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 457--458
+Underfull \hbox (badness 10000) in paragraph at lines 558--559
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 459--460
+Underfull \hbox (badness 10000) in paragraph at lines 560--561
 
  []
 
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 464--465
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 466--468
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 565--566
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 466--468
+Underfull \hbox (badness 10000) in paragraph at lines 567--569
 
  []
 
-[9] [10
 
-]
-Chapter 3.
+Underfull \hbox (badness 10000) in paragraph at lines 567--569
+
+ []
+
 [11] [12
 
 ]
-Chapter 4.
-[13] [14]
-Chapter 5.
-[15
+Chapter 3.
+[13] [14
 
-] [16
+]
+Chapter 4.
+[15] [16]
+Chapter 5.
+[17
+
+] [18
 
 ]
 Chapter 6.
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 555.
+(hyperref)                than one, level fixed on input line 656.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 577--578
-
- []
-
-[17] [18]
-Underfull \hbox (badness 10000) in paragraph at lines 615--616
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 625--626
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 653--654
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 655--656
+Underfull \hbox (badness 10000) in paragraph at lines 678--679
 
  []
 
 [19] [20]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 6
-82.
+Underfull \hbox (badness 10000) in paragraph at lines 716--717
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 726--727
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 754--755
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 756--757
+
+ []
+
+[21] [22]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 7
+83.
  (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-) [21
+) [23
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 683.
-
-[22]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 683.
+[24]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 784.
+ [25]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 784.
  (./thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 683.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 683.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 784.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 784.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 43CE47C958C50C9E8757F6F57B7CD842;2503.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 683.
+(rerunfilecheck)             Checksum: CC1D7887630958B264D2CB7CC1441EAF;2513.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 784.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 20980 strings out of 483099
- 387769 string characters out of 5964234
- 1044123 words of memory out of 5000000
- 35533 multiletter control sequences out of 15000+600000
+ 21056 strings out of 483099
+ 389953 string characters out of 5964234
+ 1047564 words of memory out of 5000000
+ 35587 multiletter control sequences out of 15000+600000
  559019 words of font info for 90 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 41i,14n,65p,1211b,1912s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,14n,65p,1211b,2903s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf/
 fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
@@ -1166,23 +1211,24 @@ f-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/s
-ymbols/msam10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx0900.pfb></
-usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/font
-s/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-su
-per/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></u
-sr/share/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts
-/type1/public/cm-super/sfcc0900.pfb></usr/share/texmf/fonts/type1/public/cm-sup
-er/sfcc1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0600.pfb></us
-r/share/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/
-type1/public/cm-super/sfrm0900.pfb></usr/share/texmf/fonts/type1/public/cm-supe
-r/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti0900.pfb></usr
-/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/t
-ype1/public/cm-super/sftt1000.pfb>
-Output written on thesis.pdf (28 pages, 1323237 bytes).
+fonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/
+msam10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx0900.pfb></usr/sha
+re/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1
+/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfb
+x1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/shar
+e/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/
+public/cm-super/sfcc0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc
+1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share
+/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/p
+ublic/cm-super/sfrm0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1
+000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti0900.pfb></usr/share/
+texmf/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/pu
+blic/cm-super/sftt1000.pfb>
+Output written on thesis.pdf (31 pages, 2576285 bytes).
 PDF statistics:
- 637 PDF objects out of 1000 (max. 8388607)
- 552 compressed objects within 6 object streams
- 125 named destinations out of 1000 (max. 500000)
- 311 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 699 PDF objects out of 1000 (max. 8388607)
+ 598 compressed objects within 6 object streams
+ 139 named destinations out of 1000 (max. 500000)
+ 351 words of extra memory for PDF output out of 10000 (max. 10000000)
 
