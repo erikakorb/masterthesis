@@ -136,18 +136,27 @@ I study the formation of binary black hole systems by means of population-synthe
 \chapter{Demography of the black hole binaries}
 %2-3 pages of overview of GW sources and the problem to understand their formation and have observable candidates in the previous phases, like the X-ray binaries and in particular the WR-BH phase, where the WR maycome from mass transfer interactions. Here I cite the paper apple and oranges of Kalogera 2021 on the tension on the spins
 
-In September 2015, the detection of the first gravitational wave GW150914 not only confirmed the existence of binary systems made of two stellar black holes but also demonstrated that such systems are capable of merging via emission of gravitational waves within a Hubble time $H_0$. \cite{Abbott2016firstGW} In March 2020, the LIGO Scientific, Virgo and KAGRA Collaboration ended the third observing run and, by November 2021, produced the third Gravitational-Wave Transient Catalog GWTC-3, revealing a total of $\sim 80$ merging binary black holes discovered with the gravitational wave detectors. Overall, the GWTC-3 revealed $\sim 90$ mergers of compact objects binaries, including also double neutron star and neutron star-black hole systems that won't be considered in this thesis. \cite{GWTC-3} \\
+\paragraph{The new gravitational wave era} In September 2015, the detection of the first gravitational wave GW150914 not only confirmed the existence of binary systems made of two stellar black holes but also demonstrated that such systems are capable of merging via emission of gravitational waves within a Hubble time $H_0$. \cite{Abbott2016firstGW} In March 2020, the LIGO Scientific, Virgo and KAGRA Collaboration ended the third observing run and, by November 2021, produced the third Gravitational-Wave Transient Catalog GWTC-3, revealing a total of $\sim 80$ merging binary black holes discovered with the gravitational wave detectors. Overall, the GWTC-3 revealed $\sim 90$ mergers of compact objects binaries, including also double neutron star and neutron star-black hole systems that won't be considered in this thesis. \cite{GWTC-3} 
 
 
-The formation pathaways of the black hole binaries are an active field of research and can be divided into two main evolutionary scenarios: isolated binary or dynamically active environments. Different formation histories can be investigated mainly by the analysis of the features in the distribution of the masses, spins and related quantities: different formation channels lead to different predictions on the black hole masses, mass ratio $q=M_2/M_1$ ($M_1 \geq M_2$), spin alignment and magnitude. 
+\paragraph{Two main evolutionary channels}
+The formation pathaways of the black hole binaries are an active field of research and can be divided into two main evolutionary scenarios: isolated binary or dynamically active environments. They can be investigated analyzing of the features in the distribution of the masses, spins and related quantities: different formation channels lead to different predictions on the black hole masses, mass ratio $q=M_2/M_1$ ($M_1 \geq M_2$), spin alignment and magnitude.
  
-On the one hand, the isolated binary evolution assumes that tidal interactions and mass transfer episodes are so efficient to produce compact objects with similar masses, i.\ e. $q \sim 1$ \cite{giacobbomapelli2018_mobse_fryer} with spins aligned and parallel to the orbital angular momentum \cite{Kalogera2000_spinaligned}. On the other hand
+On the one hand, in the isolated binary evolution the tidal interactions and mass transfer episodes are thought to be so efficient to favour the production of compact objects with similar masses ($q \sim 1$) \cite{giacobbomapelli2018_mobse_fryer} with spins aligned and parallel to the orbital angular momentum \cite{Kalogera2000_spinaligned}. On the other hand, binaries that evolved in dynamically active environment likely underwent exchanges and hierarchical mergers, allowing for more asymmetric masses ($q << 1$) \cite{Rastello2021_dynamics} and favouring an isotropic spin orientation \cite{Rodriguez2016_BHspins}.
+
+Single stellar evolution prohibits the formation of black hoes in the pair-instability mass-gap $\sim 60 - 120 ~\msun$ \cite{spera2017_pisnSNe}: the existence of black holes in the gap, like the ones of GW190521 ($\sim 69~\msun$ and $\sim 95~\msun$ \cite{GWTC-1}), requires either an hierarchical merging history or a different modeling in the stellar evolution (for instance, lowering the rate of the triple-$\alpha$ reaction can push to higher masses the lower boundary of the mass gap \cite{MassGapStellarEvo_Costa2021}).
+
+The magnitude of the primary (first formed) and secondary (last formed) black hole can be related to the dominant mass transfer processes. On the one hand, X-ray binaries observations indicate that the secondary black-holes can be spin-up by accretion due to stellar winds or Roche Lobe Overflow episodes. On the other hand, primary black holes formed through a Common Envelope are thought to be almost zero-spinning black holes because their progenitors dissipated the angular momentum when they lost their envelope \cite{spinBH_Qin2018}.  Nevertheless, the observation of high-mass X-ray binaries with fast spinning black holes and Main Sequence companions suggests that the current modeling and understanding of the angular momentum transport in the single and stellar binary evolution is still rather poor and needs further investigation \cite{spinfastBH_Qin2019}. Moreover, spins are difficult to constrain with a good precision in the gravitational wave signals (they cause second-order effects in the gravitational waveform) and their connection to the progenitor evolution is further challenged by the core-collapse supernova: it likely acts as a random variable, modifying both the magnitude and the orientation of the spin of the new-born black hole. \cite{GWTC-3_interpretation}\\
+
+\paragraph{Chapter outline}
+In the following sections I will describe the state-of-the art knowledge on the black hole binaries, explaining how the gravitational wave observations are carried out and interpreted.  I will review and explain how the properties of the progenitors of the black hole binary observed with the gravitational waves are in tension with the observed X-ray binaries.
+
 
 \section{Gravitational waves observations}
 \subsection{Theory and methods for parameter estimation}
 \paragraph{A match-filtering method} The detection and characterization of the binaries observed with the gravitational waves relies on matched-filtering techniques and Bayesian analysis. 
 
-First, the signal is detected with the match-filtering technique. The detection pipeline filters the recorded signal with waveform templates generated by numerical relativity calculations. Different binary properties produce different waveforms, therefore a match in the signal not only reveals a detection but allows an approximate estimate of the main binary parameters (masses, orbital separation, etc.).
+First, the signal is detected with the match-filtering technique. The detection pipeline filters the recorded signal with waveform templates generated by numerical relativity calculations. Different binary properties produce different waveforms, therefore a match in the signal not only reveals a detection but allows an approximate estimate of the binary parameters.
 
 Once the signal is detected, general-relativity models that include, for instance, spin precession are used to refine the waveform template and the fit. Eventually, Bayesian anaylsis is carried out to each model to derive posterior distributions of the source parameters: the final best estimates are usually the median values of the posterior with uncertainty given by the 90\% credible interval extrema.
 
@@ -175,13 +184,9 @@ The two polar angles $\theta_i$ measure the inclination of each black hole spin 
 
 where $q=M_2/M_1$ is the binary mass ratio. \cite{GWTC-3_interpretation}
 
-\begin{figure}
-	\includegraphics[width=\textwidth]{./images/GW150914.png}
-	\caption{Signal detection of GW150914. \textit{Top:} amplitude time-series. \textit{Bottom:} frequency time-series. \cite{Abbott2016firstGW}}\label{fig:GW150914}
-\end{figure}
 
 
-\paragraph{A toy model for the main parameter estimation} Beside the Bayesian analysis, it is still possible to obtain order-of-magnitude estimates of the key quantities that shape the waveform, like the orbital separations and the masses, by simply using as toy model a circular binary that converts all the orbital energy lost into gravitational wave radiation. \\
+\paragraph{A toy model for the main parameter estimation} Beside the Bayesian analysis, it is still possible to obtain order-of-magnitude estimates of the key quantities that shape the waveform, like the masses, by simply using as toy model a circular binary that converts all the orbital energy lost into gravitational wave radiation. \\
 
 According to the theory of the general relativity, the amplitude of the gravitational wave is proportional to the second derivative with respect to time of the mass quadrupole moment of the compact source.  Explicit calculation of the quadrupole moment of a circular binary relates the amplitude $h$  of the gravitational wave emitted to the luminosity distance $d_L$, the gravitational wave frequency $\nu_{\rm GW}$ and the chirp mass $\mathcal{M}$ according to
 
@@ -236,10 +241,16 @@ The gravitational waves are stretched by the expansion of the universe, therefor
 	M_i^{source} = \frac{M_i^{det}}{(1+z)} \qquad \qquad i=1,2
 \end{equation}
 
+
+\begin{figure}[h]
+	\includegraphics[width=\textwidth]{./images/GW150914.png}
+	\caption{Signal detection of GW150914. \textit{Top:} amplitude time-series. \textit{Bottom:} frequency time-series. \cite{Abbott2016firstGW}}\label{fig:GW150914}
+\end{figure}
+
 \paragraph{GW150914-like binaries} It is possible to apply the above formulas to get an order-of-magnitude estimate of any binary detection. For instance, the Bayesian analysis of the signal of GW150914 reported in Fig.\ \ref{fig:GW150914} revealed two black holes of masses $M_1=35.6^{+4.7}_{-3.1} ~ \msun$ and $M_2=30.6^{+3.0}_{-4.4} ~ \msun$ at redshift $z=0.09^{+0.03}_{0.03}$ within 90\% confidence intervals. \cite{GWTC-1} Using Eq.\ \ref{eq:Massesredshift}, the masses revealed in the detector frame where about 10\% heavier, respectively $M_1 \sim 39 ~ \msun$ and $M_1 \sim 33 ~ \msun$. The corresponding chirp mass was $\mathcal{M} \sim 30 \msun$ and the total mass $M \sim 70 ~ \msun$, meaning that at the coalescence the binary had a radius of only $R_{\rm coalescence} \sim 200~\text{km}$ and produced a peak gravitational wave at $\nu_{\rm GW, peak} \sim 300 ~\text{Hz}$. The binary had a luminosity distance of $d_L=410~\text{Mpc}$ and the gravitational wave was detected with an amplitude of $h \sim 10^{-21}~ \text{Hz}^{-1/2}$.
 
 
-\begin{figure}
+\begin{figure}[h]
 	\begin{minipage}{.47\textwidth}
 		\centering
 		\includegraphics[width=\textwidth]{./images/sensitivity.png}
@@ -254,7 +265,7 @@ The gravitational waves are stretched by the expansion of the universe, therefor
 
 
 
-\begin{figure}
+\begin{figure}[h]
 	\begin{minipage}{.49\textwidth}
 		\centering
 		\includegraphics[width=\textwidth]{./images/ETsensitivity.png}
@@ -308,26 +319,15 @@ For each binary source, the primary mass is defined as the most massive one. Bot
 
 The differential merger rate of the primary mass observed at the end of O3 is a power-law with slope $\alpha = 3.5_{-0.56}^{+0.6}$ with a Gaussian peak centered in $M_{\rm 1,\mu} = 34_{-4.0}^{+2.6}~ \msun$. GWTC-3 hosts more low-mass system than GWTC-2, causing a steeper decline in the power law at higher masses and reducing the mass of the 99th percentile, now at $\sim 44~\msun$ and not at $\sim 60~\msun$ as it was in GWTC-2. There are strong overdensities at $\sim 10~\msun$ and $\sim 35~\msun$ that may reflect properties of the astrophysical environment but that are still under investigation.
 
-Even though the region $\gtrsim 70~\msun$ is still weakly explored, there is no strong evidence for or against a mass-gap, at least up to $\sim 75~\msun$. Still, a similar finding challenges the existence of the pair-instability mass gap from $\sim 60~\msun$ to $\sim 120~\msun$ \cite{spera2017_pisnSNe}: either the single stellar evolution models need to be corrected (for instance, by lowering the triple-$\alpha$ reaction rate it is possible to shift to higher masses the lower boundary \cite{MassGapStellarEvo_Costa2021}) or black holes in that mass range (like the $\sim 69~\msun$ and $\sim 95~\msun$ black holes of GW190521 \cite{GWTC-2}) are not formed in the isolated binary scenario but, for instance, as the result of hierarchical merging in a dynamically active environment.\cite{Rastello2021_dynamics} On the other hand, there is still evidence of a lower-mass gap between $\sim 3~\msun$ and $\sim 5~\msun$, potentially due to the physics of core-collapse supernovae and in agreement with the dearth of compact objects observed in the galactic X-ray binaries \cite{massgapreal_ozel2010}.
-
-
-
-
+Even though the region $\gtrsim 70~\msun$ is still weakly explored, there is no strong evidence for or against a mass-gap, at least up to $\sim 75~\msun$. Still, a similar finding challenges the existence of the pair-instability mass-gap $\sim 60 - 120~\msun$ \cite{spera2017_pisnSNe}: either the single stellar evolution models need to be corrected \cite{MassGapStellarEvo_Costa2021} or the formation in dynamically active environments is required \cite{Rastello2021_dynamics}. On the other hand, there is still evidence of a lower-mass gap between $\sim 3~\msun$ and $\sim 5~\msun$, potentially due to the physics of core-collapse supernovae and in agreement with the dearth of compact objects observed in the galactic X-ray binaries \cite{massgapreal_ozel2010}.
 
 
 
 
 \paragraph{Spin distribution}
-On the one hand, the spin magnitude of the black holes in binary systems is expected to be influenced by the efficiency of the angular momentum transport in the stellar progenitors and by the binary processes like tides and mass transfer. On the other hand, the spin orientations are considered as proxy for the evolutionary channels: binary black holes formed from isolated binaries are expected to have spins aligned with their orbital angular momentum whereas dynamically assembled binaries have more likely isotropically oriented spins. Unfortunately, up-to-date it is still difficult to use the spins to discriminate between the different evolutionary scenarios for various reasons: they are difficult to constrain (they cause second-order effects in the gravitational waveform), their physical models are still rather poor (for instance the details on the angular momentum transport) and the core-collapse supernova may act as a random variable, further changing both the amplitude and the orientation of the spin. \cite{GWTC-3_interpretation}
+At the end of the third observing run, the black hole population exhibits a preference for low-spinning black holes $\chi \lesssim 0.4$, with a peak distribution at $\chi \sim 0.2$ and a large tail at higher values. Separate analysis of the fastest ($\chi_A$) and slowest ($\chi_B$) spinning components of the binary revealed that the rapid-spinning components are still quite slow $\chi_A \sim 0.4$ while the slow-spinning ones are concentrated below $\chi_B \sim 0.2$, as expected. Posterior distributions for the spin magnitudes are shown in Fig.\ \ref{fig:spinmagnitude}.
 
-At the end of the third observing run, the black hole population exhibits a preference for low-spinning black holes $\chi \lesssim 0.4$, with a peak distribution at $\chi \sim 0.2$ and a large tail at higher values. Separate analysis of the fastest ($\chi_A$) and slowest ($\chi_B$) spinning components of the binary revealed that the rapid-spinning components are still quite slow $\chi_A \sim 0.4$ while the slow-spinning components are concentrated below $\chi_B \sim 0.2$, as expected. Posterior distributions for the spin magnitudes are shown in Fig.\ \ref{fig:spinmagnitude}.
-
-The effective spin parameter $\chi_{eff}$ distribution is a Gaussian centered in $\chi_{eff, \mu} = 0.06_{-0.05}^{0.04}$. The distribution peak is compatible with $\chi_{eff} = 0$, indicating spins misaligned with the orbital angular momentum. In particular, detailed analysis require the existence of negative effective spins $\chi_{eff} < 0$, related to polar angles $\theta \geq 90^\circ $ and thus to black holes anti-aligned with the orbital angular momentum that likely formed in dynamically active environments. Moreover, data from GWTC-3 exhibit a mild anti-correlation between the effective spin parameter $\chi_{eff}$ and the mass ratio $q=M_2/M_1$, with $M_1 \geq M_2$. If confirmed, the anti-correlation would challenge the usual evolutionary pathaways for the binary black hole progenitors. 
-
-
-
-
-
+The effective spin parameter $\chi_{eff}$ distribution is a Gaussian centered in $\chi_{eff, \mu} = 0.06_{-0.05}^{+0.04}$. The distribution peak is compatible with $\chi_{eff} = 0$, indicating spins misaligned with the orbital angular momentum. Detailed analysis required the existence of negative effective spins $\chi_{eff} < 0$, related to polar angles $\theta \geq 90^\circ $ and thus to black holes anti-aligned with the orbital angular momentum that likely formed in dynamically active environments. Moreover, data from GWTC-3 exhibit a mild anti-correlation between the effective spin parameter $\chi_{eff}$ and the mass ratio $q$, as shown in Fig.\ \ref{fig:spineffective}. If confirmed, the anti-correlation would challenge the usual evolutionary pathways for the binary black hole progenitors, indicating that field binaries formed with $q \sim 1$ don't have spins aligned with the orbital angular momentum ($\chi_{eff} \sim 1$),  because either the tides and mass transfer are not so efficient or there is some additional and yet un-considered effect, like a third-body perturbation \cite{misalignedbinary}. 
 
 
 
@@ -342,7 +342,7 @@ The effective spin parameter $\chi_{eff}$ distribution is a Gaussian centered in
 		\centering
 		\includegraphics[width=0.975\textwidth]{./images/spinmagnitudehighlow.png}	
 	\end{minipage}
-	\caption{\emph{Left:} Spin magnitudes posterior distribution of all the merging black holes at the end of the third observing run O3 (in gray) compared to the 90 \% credible intervals for the sample limited at the end of O2 (in blue). \emph{Right:} Separate posterior distributions within 90 \% credible bounds of the fastest ($\chi_A$, in blue) and slowest ($\chi_B$, in green) black holes in the binaries. The new observations indicate a preference for slow-spinning black holes $\chi \lesssim 0.4$, with a fast-spinning component still rather slow $\chi_A \sim 0.4$ \cite{GWTC-3_interpretation}} \label{fig:spinmagnitude}
+	\caption{\emph{Left:} Spin magnitudes $\chi$ posterior distribution of all the merging black holes at the end of the third observing run O3 (in gray) compared to the 90 \% credible intervals for the sample limited at the end of O2 (in blue). \emph{Right:} Separate posterior distributions within 90 \% credible bounds of the fastest ($\chi_A$, in blue) and slowest ($\chi_B$, in green) black holes in the binaries. The new observations indicate a preference for slow-spinning black holes $\chi \lesssim 0.4$, with a fast-spinning component still rather slow $\chi_A \sim 0.4$ \cite{GWTC-3_interpretation}} \label{fig:spinmagnitude}
 \end{figure}
 
 
@@ -357,8 +357,19 @@ The effective spin parameter $\chi_{eff}$ distribution is a Gaussian centered in
 		\centering
 		\includegraphics[width=0.96\textwidth]{./images/spinmassratio.png}	
 	\end{minipage}
-	\caption{Spin magnitude (\emph{left}) and misalignment with respect to the orbital angular momentum  (\emph{right}) of the merging black holes at the end of the third observing run O3 (in gray) compared to the 90 \% credible intervals for the sample limited at the end of O2 (in blue). The new observations indicate a preference for low-spin magnitudes $\chi \lesssim 0.4$ and isotropically oriented spins. \cite{GWTC-3_interpretation}} \label{fig:spinorientation}
+	\caption{\emph{Left:} Gaussian posteriors of the effective spin $\chi_{eff}$ of all the merging black holes at the end of the third observing run O3 (in gray) compared to the 90 \% credible intervals for the sample limited at the end of O2 (in blue). \emph{Right:} Effective spin $\chi_{eff}$ anti-correlating with the mass ratio $q$. Black points mark the median of the posterior distributions obtained using an informed prior where mean and standard deviation of the Gaussian posterior of $\chi_{eff}$ were allowed to evolve with $q$. Blue shaded areas indicate 90 \% credible intervals for each median point. \cite{GWTC-3_interpretation}} \label{fig:spineffective}
 \end{figure}
+
+
+
+The new detections included in the GWTC-3 catalogue strongly favour an isotropically oriented distribution of spins, as shown in the left panel of Fig.\ \ref{fig:spinorientation}. The scenario is consistent with the evolution in a dynamically active environment.
+
+So far the analysis carried out assumed the same spin distribution at all masses, even though the low-mass binaries dominate the sample and seven high-mass binaries made up $\sim 70 \%$ of the moderate spins. A more refined analysis compared the spin magnitude aligned with the orbital angular momentum $|s_z|$ with the chirp mass of each binary. The result is shown in the right panel of Fig.\ \ref{fig:spinorientation}. All the binaries are consistent with spins misaligned with the orbital angular momentum ($|s_z| = 0$) even tough there are over-densities in the chirp mass distribution: if confirmed by further detections it would challenge the correlations predicted by the hierarchical formtion scenario. The large spread of the high-mass binaries $\mathcal{M} \gtrsim 30~\msun$ with respect to the low-mass ones is consistent with having a large number of detection at low masses and fewer at high masses: at the moment it is not possible to refute or confirm an aligned spin magnitude dependence with the chirp mass.
+
+
+
+
+
 
 \begin{figure}
 	\begin{minipage}{.49\textwidth}
@@ -371,7 +382,7 @@ The effective spin parameter $\chi_{eff}$ distribution is a Gaussian centered in
 		\centering
 		\includegraphics[width=0.95\textwidth]{./images/spinchirpmass.png}	
 	\end{minipage}
-	\caption{Differential merger rate (\emph{left}) and cumulative density function (\emph{right}) of the primary mass of the black hole binaries detected with the gravitational waves. In blue the posterior distributions obtained after the third observing run O3, in grey the ones obtained after O2. Thick solid lines denote the median values and are surrounded by the 90 \% credible intervals.The vertical grey band on the differential merger rate indicates the 90 \% credible interval for the mean of the Gaussian peak. \cite{GWTC-3_interpretation}}\label{fig:spinmass}
+	\caption{\emph{Left:} Posterior distribution of the polar angle $\theta$ of all the merging black holes at the end of the third observing run O3 (in gray) compared to the 90 \% credible intervals for the sample limited at the end of O2 (in blue). \emph{Right:} Spin magnitude aligned with the orbital angular momentum $|s_z|$ as a function of the binary chirp mass. Light(dark) shaded areas indicate 90 \% (50 \%) credible intervals. \cite{GWTC-3_interpretation}}\label{fig:spinorientation}
 \end{figure}
 
 
@@ -379,12 +390,20 @@ The effective spin parameter $\chi_{eff}$ distribution is a Gaussian centered in
 
 
 
+\section{Tensions with the X-ray binaries properties}
+\subsection{X-ray binaries hosting a black hole}
+X-ray binaries that host a black hole are currently the best observational candidates as binary black hole progenitors: not only such systems are already in a binary configuration but the X-ray emission of the black hole accretion disk allows us to observe them. Observability is precisely the key property of the X-ray binaries: even though $\sim 70 \%$ of the massive stars are born in binary systems \cite{Sana2012}, many black holes are quiescent and can be observed only with accurate radial velocity measurements \cite{BHnoninteracting_Giesers2018}. Isolated black holes, that could dynamically exchange with a binary, are even more difficult to observe and currently the best detection technique is microlensig \cite{BHmicrolensing}.
 
 
+The mass of the non-degenerate donor star and the type of the accretion determine two sub-classes of X-ray binaries hosting a black hole: Low-Mass X-ray Binaries (LMXBs) and High-Mass X-ray Binaries (HMXBs). LMXBs typically have low-mass stars $\lesssim 2-3~\msun$ that fill their Roche Lobe. HMXBs donors, on the contrary, are more massive stars $\gtrsim 5~\msun$ that don't fill their Roche Lobe but become wind-fed systems. Up-to-date, about $\sim 30$ X-ray binaries are known to host a black hole \cite{HMXBH_spins2021}.
 
+\subsection{Measuring the properties of the X-ray binaries}
+\paragraph{Period}
+\paragraph{Mass}
+\paragraph{Spin}
 
-\section{Tensions in the binary black hole populations}
 
+\subsection{Tensions in the mass and spin distribution}
 
 
 
@@ -393,97 +412,15 @@ The effective spin parameter $\chi_{eff}$ distribution is a Gaussian centered in
 
 
 
-The sources added in the GWTC-3 catalogue shed new light on the mass and spin distribution of the merging binary black holes \cite{GWTC-3_interpretation}. 
 
 
 
 
-\cite{Abbot2021spectrumGW,HMXBH_spins2021} analyzed the remnant properties of the GWTC-2 catalogue (\cite{GWTC-2}) and concluded that such systems could both evolve from isolated binaries in the galactic field and from dynamically active environments, such as young star clusters. The observations revealed merging BBHs with very different combinations of masses and spins, providing a precious sample to test and perfectionate the aformentioned models. In fact, in the first scenario, we expect that the evolution is dominated by binary processes like the Common Envelope (CE) and the Roche Lobe Overflow (RLO), that favour the sharing of mass and angular momentum between the two components and the production of remnants with aligned spins (\cite{Kalogera2000_spinaligned}) and similar masses, up to $\sim 50~\msun$ (\cite{Giacobbo2018spectrum}). In the second scenario we expect that hierarchical mergers and binary exchanges allow the formation of BHs in the pair-instability gap ($\sim 60-120~\msun$), with mass ratios $q=M_2/M_1$ far from unity (\cite{Rastello2021_dynamics}) and misaligned spins (\cite{Rodriguez2016_BHspins}).
 
-From an observational point of view, BBHs progenitors can be searched in binary systems that already contain a stellar BH. Nevertheless, BHs in quiescent systems are very difficult to observe with radial velocity (\cite{BHradialvelocity}) and astrometric measurements (\cite{GaiaDR2microlensing}) and hopefully the new Gaia Data Releases will shade more light on them. On the contrary, BHs can be visible in the X-ray band if they are accreting mass from a companion star. These systems are called Black Hole X-Ray Binaries (BH-XRBs) and, according to \cite{HMXBH_spins2021}, their progenitors share the same mass distribution of the progenitors of the primary BHs in the GWTC-2 catalogue (although the GW-BBHs progenitors exhibit slower spins, which leaves the debate open).
 
 
 
-In this paper we will focus on the BH-XRBs systems made up by a Wolf-Rayet (WR) and a BH (hereafter, WR-BH systems) and we will try to constrain the conditions under which they could be progenitors of GW-BBHs systems in the isolated binary evolution scenario. We expect that these are very good candidates to form a GW-BBH, given that at solar metallicity $Z=\zsun=0.02$ the WRs are formed from stars with initial mass $\mzams \gtrsim 30~\msun$ (\cite{Limongi2010_preSNevo}), have strong line-driven winds and high mass loss rates $\mdot \sim 10^{-4}-10^{-5}~\msun$/yr (\cite{G&H_WRmassloss}). This means that WR stars are more likely to form a secondary BH in the neutrino-driven SuperNova (SN) scenario (threshold at $\mzams \gtrsim 25~\msun$ for BH formation, \cite{Sukhbold2016_stellarevo}), and to produce a bright accretion disk around the primary BH ($L_\textup{X} \gtrsim 10^{36}$~erg/s, \cite{Tutukov2013_WRBHreview}).
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-%\section{Gravitational waves theory and measurable parameters}
-%According to the theory of general relativity, an observer in the weak-field limit can detect the gravitational waves as a linear perturbation of the space-time metric. Einstein's theory predicts that the the amplitude of the gravitational wave $h$ is proportional to the second derivative with respect to time of the mass quadrupole moment of the source. Intuitively, a dipolar moment is not sufficient to produce a gravitational wave because the asymmetry in the mass distribution can be re-absorbed just by shifting the origin of the coordinate system. Moreover, requiring a non-zero second derivative with respect to time of the mass quadrupole moment implies that the energy emitted by the system in the form of gravitational waves is extracted from a change in the mass distribution. \cite{MaggioreGW}
-
-%\subsubsection{A toy model for circular binaries}\label{subsubsec:toymodel}
-%A binary system can produce gravitational waves because it has a non-zero quadrupole moment that increases as the binary evolves and shrinks. To get an order-of-magnitude estimate of the measurable quantities it is possible to use the toy model of a circular binary where all the orbital energy lost is converted into gravitational wave radiation.  According to the toy model, the binary produces a gravitational wave with amplitude $h$ given by
-
-%\begin{equation}\label{eq:h}
-%	h = \frac{1}{r} \frac{4G\mu\omega_s^2R^2}{c^4}
-%\end{equation}
-
-%where $G$ is the gravitational constant, $c$ the speed of light, $r$ the luminosity distance of the source, $R$ the orbital radius, $\mu=(M_1 + M_2)/(M_1 + M_2)$ the reduced mass and $\omega_s$ the angular frequency. The mass quadrupole moment of a circular binary is symmetric under a rotation of $180^\circ$, implying that every half orbit the phase of the gravitational wave is the same and that the observed frequency is twice the rotational frequency of the source $\nu_{\rm GW} = 2 \nu_s$. \cite{GWreview}
-
-%Recalling that the angular frequency $\omega_s=v_s R$ is proportional to the orbital velocity $v_s$ and separation $R$, Eq.\ \ref{eq:h} indicates that the closer the binary, the faster the rotation and the higher the amplitude of the gravitational wave: a close binary system that spirals-in and then merges produces a typical \emph{chirp} signal with amplitude and frequency increasing up to a maximum value, reached at the coalescence. By using Kepler's third law it is possible to describe the variation of the rotational frequency $\nu_s$ and relate it to the \emph{chirp mass} $\mathcal{M}$, defined as
-
-%\begin{equation}\label{eq:Mchirp}
-%	\mathcal{M} = \left(\mu^3 (M_1 + M_2)^2\right)^{1/5} = \frac{(M_1M_2)^{3/5}}{(M_1+M_2)^{1/5}}
-%\end{equation}
-
-%and derivable as
-
-%\begin{equation}\label{eq:Mchirp_obs}
-%	\mathcal{M} = \frac{c^3}{G} \left(\frac{5}{96}~ %\pi^{-8/3}~\nu_{\rm GW}^{-11/3}~ \dot{\nu_{\rm GW}}\right)^{3/5}
-%\end{equation}
-
-
-%Eq.\ \ref{eq:h} also indicates that the stronger signals are the one produced by the heavier binaries, thus favouring the detection of binaries made up by two compact objects, either black holes or neutron stars. The compactness allows the two massive objects to spiral-in in very tight orbits and reach coalescence only when their orbital separation is about the sum of the two Schwarzschild radii
-
-%\begin{equation}\label{eq:Rcoalescence}
-%	R_{\rm coalescence} = \frac{2G}{c^2} (M_1 + M_2)
-%\end{equation}
-
-%i.\ e.\, by using Kepler's third law and the relation $\nu_{\rm GW} = 2 \nu_s$, when the emitted gravitational wave has its maximum frequency
-
-%\begin{equation}\label{eq:omegapeak}
-%	\nu_{\rm GW, max} = \frac{1}{\pi \sqrt{8}}\frac{c^3}{G(M_1+M_2)}
-%\end{equation}
-
-
-
-%\subsection{Typical observable values for merging compact object binaries }
-%Binaries with different properties (component masses and spins, orbital separation,  $\dots$) generate different waveforms for the spiral-in, coalescence and ringdown phase. Thus, the detection pipeline of the gravitational wave interferometers of the LIGO Scientific, Virgo and KAGRA Collaboration identifies and characterizes the properties of the binaries by match-filtering the recorded signal with gravitational waveform templates generated with numerical relativity. Nevertheless, the toy model explained in Sec.\ \vref{subsubsec:toymodel} can still be used to get an order-of-magnitude estimate of the main binary properties.
-
-%The peak of the chirp signal of a merging binary provides all the necessary informations to estimate the masses, final orbital separation and luminosity distance of the source. According to Eq.\ \ref{eq:omegapeak}, the peak frequency of the gravitational wave is inversely proportional to the total mass of the system: since higher frequencies correspond to stronger wave amplitudes (Eq.\ \ref{eq:h}), in principle is easier to detect a neutron star binary rather than a black holes binary.
-
-%During the latest observing run O3, ended in March 2020, the gravitational wave interferometers of the LIGO Scientific, Virgo and KAGRA Collaboration had a peak sensitivity of $h \sim 10^{-23}~ \rm Hz^{-1/2} $ at $\nu_{\rm GW} \sim 100 \rm Hz$, as reported in Fig.\ \ref{fig:sensitivity}
-
-
-
-
-
-
-%The only sources of gravitational waves detected so far are the binaries of compact objects i.e. the binaries made up by two black holes, two neutron stars or a black hole and a neutron star. The gravitational waves have been observed either indirectly or directly: in the first case it was possible to measure the decay of the orbital period of the Hulse-Taylor pulsar over 30 years \cite{HTpulsar2005GWdecay}; in the second case the interferometers of the LIGO Scientific, Virgo and KAGRA Collaboration measured the perturbation of the metric on Earth as caused by $\sim 90$ merging compact object binaries \cite{GWTC-3}. 
-
-
-
-% that can be generated when a compact source has a quadrupole moment that changes with respect to time. In particular, the amplitude of the wave $h$ is proportional to the second derivative with respect to time of the quadrupole moment of the source, meaning that the stronger perturbations are produced by very compact, heavy and rapidly rotating objects. \\
-
-%A typical source of gravitational waves is a tight binary of compact objects (black holes or neutron stars): the masses are orbiting and are distributed with a quadrupolar moment with respect to the center of mass. Moreover, the symmetry of the system implies that a distant observer sees that same mass distribution with respect to the center of mass (i.e. the same quadrupole moment) every half orbit
-
-%the mass distribution with respect to the center of mass as seenfrom a distant observed, therefore the quadrupole moment changes with twice the rotational frequency. 
-
-% circular and tight binary system composed by two compact objects  emits a gravitational wave signal with amplitude $h$ given by: proportional to the second derivative with respect to time of the quadrupole moment of the source: the heavier the masses involved and the faster they rotate, the stronger will be the space-time perturbation. For a circular binary
 
 
 

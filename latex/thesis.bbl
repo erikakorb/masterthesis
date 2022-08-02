@@ -121,7 +121,6 @@
       \strng{authorbibnamehash}{ba1e52fd63a0dacf5cc6b2919fd646c6}
       \strng{authornamehash}{ba1e52fd63a0dacf5cc6b2919fd646c6}
       \strng{authorfullhash}{009e050f0549ebe66452633fb58c47ce}
-      \field{extraname}{1}
       \field{sortinit}{3}
       \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
       \field{labelnamesource}{author}
@@ -179,6 +178,175 @@
       \verb astro-ph/9911417
       \endverb
       \keyw{Stars: Binaries: Close,Gravitation,Relativity,Stars: Supernovae: General,Astrophysics,General Relativity and Quantum Cosmology}
+    \endentry
+    \entry{Rastello2021_dynamics}{article}{}
+      \name{author}{8}{}{%
+        {{hash=02b95add485ff7fcc5ea2a2b063cf549}{%
+           family={{Rastello}},
+           familyi={R\bibinitperiod},
+           given={Sara},
+           giveni={S\bibinitperiod}}}%
+        {{hash=a63bd1a4a95ee5ac182d54e3e4833309}{%
+           family={{Mapelli}},
+           familyi={M\bibinitperiod},
+           given={Michela},
+           giveni={M\bibinitperiod}}}%
+        {{hash=1b2a04f359a6ceb32ced2c02c085f9e8}{%
+           family={{Di Carlo}},
+           familyi={D\bibinitperiod},
+           given={Ugo\bibnamedelima N.},
+           giveni={U\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=308d9a229eea2880fed745253fcf31e0}{%
+           family={{Iorio}},
+           familyi={I\bibinitperiod},
+           given={Giuliano},
+           giveni={G\bibinitperiod}}}%
+        {{hash=c9a6f6aef508583b81992b5f56a07bff}{%
+           family={{Ballone}},
+           familyi={B\bibinitperiod},
+           given={Alessandro},
+           giveni={A\bibinitperiod}}}%
+        {{hash=414d16414d3d21680b178e1d53ff1330}{%
+           family={{Giacobbo}},
+           familyi={G\bibinitperiod},
+           given={Nicola},
+           giveni={N\bibinitperiod}}}%
+        {{hash=d8d30994d94413fbae2d38fc8a3f7895}{%
+           family={{Santoliquido}},
+           familyi={S\bibinitperiod},
+           given={Filippo},
+           giveni={F\bibinitperiod}}}%
+        {{hash=495b12702d1e78f18383d0ee37f9620b}{%
+           family={{Torniamenti}},
+           familyi={T\bibinitperiod},
+           given={Stefano},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{465950077a7b9dadd99e909c61447d62}
+      \strng{fullhash}{a213b641d673995d651f17c6ceee8649}
+      \strng{bibnamehash}{465950077a7b9dadd99e909c61447d62}
+      \strng{authorbibnamehash}{465950077a7b9dadd99e909c61447d62}
+      \strng{authornamehash}{465950077a7b9dadd99e909c61447d62}
+      \strng{authorfullhash}{a213b641d673995d651f17c6ceee8649}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{astro-ph.GA}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{\mnras}
+      \field{month}{11}
+      \field{number}{3}
+      \field{title}{{Dynamics of binary black holes in low-mass young star clusters}}
+      \field{volume}{507}
+      \field{year}{2021}
+      \field{pages}{3612\bibrangedash 3625}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1093/mnras/stab2355
+      \endverb
+      \verb{eprint}
+      \verb 2105.01669
+      \endverb
+      \keyw{black hole physics,gravitational waves,stars: kinematics and dynamics,Galaxy: open clusters and associations: general,Astrophysics - Astrophysics of Galaxies,Astrophysics - High Energy Astrophysical Phenomena,Astrophysics - Solar and Stellar Astrophysics}
+    \endentry
+    \entry{Rodriguez2016_BHspins}{article}{}
+      \name{author}{5}{}{%
+        {{hash=a1fbac823f836ac33b5cf62d5fd92df9}{%
+           family={{Rodriguez}},
+           familyi={R\bibinitperiod},
+           given={Carl\bibnamedelima L.},
+           giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=b0c9d52075121c69bb9ad53d53371baf}{%
+           family={{Zevin}},
+           familyi={Z\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=8a83d65b8932a16b0ea72356bcbd4d28}{%
+           family={{Pankow}},
+           familyi={P\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+        {{hash=9db655cdcd2fcf58f5f4d8d31154089d}{%
+           family={{Kalogera}},
+           familyi={K\bibinitperiod},
+           given={Vasilliki},
+           giveni={V\bibinitperiod}}}%
+        {{hash=7d47e100757865d86f409e96c5fc9637}{%
+           family={{Rasio}},
+           familyi={R\bibinitperiod},
+           given={Frederic\bibnamedelima A.},
+           giveni={F\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{996639f62d6acdc8497dc055776536fd}
+      \strng{fullhash}{1c15fee251a6a7aa92d3635e50c8590f}
+      \strng{bibnamehash}{996639f62d6acdc8497dc055776536fd}
+      \strng{authorbibnamehash}{996639f62d6acdc8497dc055776536fd}
+      \strng{authornamehash}{996639f62d6acdc8497dc055776536fd}
+      \strng{authorfullhash}{1c15fee251a6a7aa92d3635e50c8590f}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{L2}
+      \field{eprintclass}{astro-ph.HE}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{\apjl}
+      \field{month}{11}
+      \field{number}{1}
+      \field{title}{{Illuminating Black Hole Binary Formation Channels with Spins in Advanced LIGO}}
+      \field{volume}{832}
+      \field{year}{2016}
+      \field{pages}{L2}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3847/2041-8205/832/1/L2
+      \endverb
+      \verb{eprint}
+      \verb 1609.05916
+      \endverb
+      \keyw{binaries: general,gravitational waves,stars: black holes,supernovae: general,Astrophysics - High Energy Astrophysical Phenomena}
+    \endentry
+    \entry{spera2017_pisnSNe}{article}{}
+      \name{author}{2}{}{%
+        {{hash=4a2658eece869e63c003859b79de5377}{%
+           family={{Spera}},
+           familyi={S\bibinitperiod},
+           given={Mario},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a63bd1a4a95ee5ac182d54e3e4833309}{%
+           family={{Mapelli}},
+           familyi={M\bibinitperiod},
+           given={Michela},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{9d595ad8e88572712e0c300a45bac059}
+      \strng{fullhash}{1b8ca6c804b9910a58d3c3d97b313c1a}
+      \strng{bibnamehash}{9d595ad8e88572712e0c300a45bac059}
+      \strng{authorbibnamehash}{9d595ad8e88572712e0c300a45bac059}
+      \strng{authornamehash}{9d595ad8e88572712e0c300a45bac059}
+      \strng{authorfullhash}{1b8ca6c804b9910a58d3c3d97b313c1a}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{astro-ph.SR}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{\mnras}
+      \field{month}{10}
+      \field{number}{4}
+      \field{title}{{Very massive stars, pair-instability supernovae and intermediate-mass black holes with the sevn code}}
+      \field{volume}{470}
+      \field{year}{2017}
+      \field{pages}{4739\bibrangedash 4749}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1093/mnras/stx1576
+      \endverb
+      \verb{eprint}
+      \verb 1706.06109
+      \endverb
+      \keyw{black hole physics,gravitational waves,methods: numerical,stars: mass-loss,supernovae: general,Astrophysics - Solar and Stellar Astrophysics,Astrophysics - High Energy Astrophysical Phenomena}
     \endentry
     \entry{GWTC-1}{article}{}
       \true{moreauthor}
@@ -245,8 +413,8 @@
       \strng{authornamehash}{d9799319ee6631a4a5c0d1ce9c963e79}
       \strng{authorfullhash}{ab43c14c9ebb13303fabbbfbad5d3659}
       \field{extraname}{2}
-      \field{sortinit}{5}
-      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physical Review X}
@@ -255,6 +423,171 @@
       \field{volume}{9}
       \field{year}{2019}
       \field{pages}{031040}
+      \range{pages}{1}
+    \endentry
+    \entry{MassGapStellarEvo_Costa2021}{article}{}
+      \name{author}{6}{}{%
+        {{hash=80a2ff110872e777023c0e992e44aef0}{%
+           family={{Costa}},
+           familyi={C\bibinitperiod},
+           given={Guglielmo},
+           giveni={G\bibinitperiod}}}%
+        {{hash=4dc1942d0660112e3da17613edc5e1ac}{%
+           family={{Bressan}},
+           familyi={B\bibinitperiod},
+           given={Alessandro},
+           giveni={A\bibinitperiod}}}%
+        {{hash=a63bd1a4a95ee5ac182d54e3e4833309}{%
+           family={{Mapelli}},
+           familyi={M\bibinitperiod},
+           given={Michela},
+           giveni={M\bibinitperiod}}}%
+        {{hash=fd1773589a858495de685099a6f91961}{%
+           family={{Marigo}},
+           familyi={M\bibinitperiod},
+           given={Paola},
+           giveni={P\bibinitperiod}}}%
+        {{hash=308d9a229eea2880fed745253fcf31e0}{%
+           family={{Iorio}},
+           familyi={I\bibinitperiod},
+           given={Giuliano},
+           giveni={G\bibinitperiod}}}%
+        {{hash=4a2658eece869e63c003859b79de5377}{%
+           family={{Spera}},
+           familyi={S\bibinitperiod},
+           given={Mario},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{473a66cec65a585786392c3be79910c6}
+      \strng{fullhash}{efa13d4e39dfd6d4e19edfaee19c4d2a}
+      \strng{bibnamehash}{473a66cec65a585786392c3be79910c6}
+      \strng{authorbibnamehash}{473a66cec65a585786392c3be79910c6}
+      \strng{authornamehash}{473a66cec65a585786392c3be79910c6}
+      \strng{authorfullhash}{efa13d4e39dfd6d4e19edfaee19c4d2a}
+      \field{sortinit}{9}
+      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{astro-ph.SR}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{\mnras}
+      \field{month}{3}
+      \field{number}{3}
+      \field{title}{{Formation of GW190521 from stellar evolution: the impact of the hydrogen-rich envelope, dredge-up, and $^{12}$C({\ensuremath{\alpha}}, {\ensuremath{\gamma}})$^{16}$O rate on the pair-instability black hole mass gap}}
+      \field{volume}{501}
+      \field{year}{2021}
+      \field{pages}{4514\bibrangedash 4533}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1093/mnras/staa3916
+      \endverb
+      \verb{eprint}
+      \verb 2010.02242
+      \endverb
+      \keyw{convection,stars: black holes,stars: evolution,stars: interiors,stars: massive,stars: mass-loss,Astrophysics - Solar and Stellar Astrophysics}
+    \endentry
+    \entry{spinBH_Qin2018}{article}{}
+      \name{author}{6}{}{%
+        {{hash=17514ba0d6a24ee933e0f77e3a58937e}{%
+           family={Qin},
+           familyi={Q\bibinitperiod},
+           given={Y},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=6a911014624a29a97db02474dcb05578}{%
+           family={Fragos},
+           familyi={F\bibinitperiod},
+           given={T},
+           giveni={T\bibinitperiod}}}%
+        {{hash=2776dc87716ebd071e9561a699dc3e51}{%
+           family={Meynet},
+           familyi={M\bibinitperiod},
+           given={G},
+           giveni={G\bibinitperiod}}}%
+        {{hash=0cb8d17e23c366a7dd474e24e0c147b6}{%
+           family={Andrews},
+           familyi={A\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod}}}%
+        {{hash=98302b892edcc633adbd58a1958fc169}{%
+           family={S{ø}rensen},
+           familyi={S\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+        {{hash=55c062dea70559534ed5b0dc4bc76595}{%
+           family={Song},
+           familyi={S\bibinitperiod},
+           given={HF},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {EDP Sciences}%
+      }
+      \strng{namehash}{263a683db028f25a621c24a268252f94}
+      \strng{fullhash}{caefc10d86a455ca9b3c82b4f72bbb57}
+      \strng{bibnamehash}{263a683db028f25a621c24a268252f94}
+      \strng{authorbibnamehash}{263a683db028f25a621c24a268252f94}
+      \strng{authornamehash}{263a683db028f25a621c24a268252f94}
+      \strng{authorfullhash}{caefc10d86a455ca9b3c82b4f72bbb57}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Astronomy \& Astrophysics}
+      \field{title}{The spin of the second-born black hole in coalescing binary black holes}
+      \field{volume}{616}
+      \field{year}{2018}
+      \field{pages}{A28}
+      \range{pages}{-1}
+    \endentry
+    \entry{spinfastBH_Qin2019}{article}{}
+      \name{author}{5}{}{%
+        {{hash=c99e4ceccdfb23477fa5b0cfe55226ff}{%
+           family={Qin},
+           familyi={Q\bibinitperiod},
+           given={Ying},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=df306944f6319aba6370f47953721217}{%
+           family={Marchant},
+           familyi={M\bibinitperiod},
+           given={Pablo},
+           giveni={P\bibinitperiod}}}%
+        {{hash=30647348f21cc7189500f27067ee47a8}{%
+           family={Fragos},
+           familyi={F\bibinitperiod},
+           given={Tassos},
+           giveni={T\bibinitperiod}}}%
+        {{hash=b55ba58b245eb645ac68ef9230411c81}{%
+           family={Meynet},
+           familyi={M\bibinitperiod},
+           given={Georges},
+           giveni={G\bibinitperiod}}}%
+        {{hash=60f2706bc72ced3eaac8bf5eef91c543}{%
+           family={Kalogera},
+           familyi={K\bibinitperiod},
+           given={Vicky},
+           giveni={V\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{bb6f9e9a0cd9d483837c78896e0b056e}
+      \strng{fullhash}{eff1c78cfb3e7911cc81593c52484da2}
+      \strng{bibnamehash}{bb6f9e9a0cd9d483837c78896e0b056e}
+      \strng{authorbibnamehash}{bb6f9e9a0cd9d483837c78896e0b056e}
+      \strng{authornamehash}{bb6f9e9a0cd9d483837c78896e0b056e}
+      \strng{authorfullhash}{eff1c78cfb3e7911cc81593c52484da2}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Astrophysical Journal Letters}
+      \field{number}{2}
+      \field{title}{On the origin of black hole spin in high-mass x-ray binaries}
+      \field{volume}{870}
+      \field{year}{2019}
+      \field{pages}{L18}
       \range{pages}{1}
     \endentry
     \entry{GWTC-3_interpretation}{article}{}
@@ -283,8 +616,8 @@
       \strng{authorbibnamehash}{0197b2a306579d8daf8e82ae633c6b08}
       \strng{authornamehash}{0197b2a306579d8daf8e82ae633c6b08}
       \strng{authorfullhash}{9d13a19dc637be3302cf3cbd616dee97}
-      \field{sortinit}{6}
-      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint arXiv:2111.03634}
@@ -308,8 +641,8 @@
       \strng{authorbibnamehash}{61f4e212ae2ca61f6b61abfd3aa57a54}
       \strng{authornamehash}{61f4e212ae2ca61f6b61abfd3aa57a54}
       \strng{authorfullhash}{61f4e212ae2ca61f6b61abfd3aa57a54}
-      \field{sortinit}{9}
-      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Gravitational waves: Volume 1: Theory and experiments}
@@ -329,8 +662,8 @@
       \strng{authorbibnamehash}{d6940f98872c0ac2d22339a8fc53c6f0}
       \strng{authornamehash}{d6940f98872c0ac2d22339a8fc53c6f0}
       \strng{authorfullhash}{d6940f98872c0ac2d22339a8fc53c6f0}
-      \field{sortinit}{9}
-      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint arXiv:1906.03643}
@@ -508,8 +841,8 @@
       \strng{authorbibnamehash}{795ba93da26d5a38d59905019fbe3181}
       \strng{authornamehash}{795ba93da26d5a38d59905019fbe3181}
       \strng{authorfullhash}{4a14b55d287e3e83eed63a8a7b512bac}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eid}{248}
@@ -547,8 +880,8 @@
       \strng{authorbibnamehash}{21a364b3cbf77e815e932786087fe161}
       \strng{authornamehash}{21a364b3cbf77e815e932786087fe161}
       \strng{authorfullhash}{ef1ef40f89298eedcc9914caa54c6a6a}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{astro-ph.HE}
@@ -567,225 +900,6 @@
       \verb 1603.02698
       \endverb
       \keyw{Astrophysics - High Energy Astrophysical Phenomena,General Relativity and Quantum Cosmology,Nuclear Theory}
-    \endentry
-    \entry{spera2017_pisnSNe}{article}{}
-      \name{author}{2}{}{%
-        {{hash=4a2658eece869e63c003859b79de5377}{%
-           family={{Spera}},
-           familyi={S\bibinitperiod},
-           given={Mario},
-           giveni={M\bibinitperiod}}}%
-        {{hash=a63bd1a4a95ee5ac182d54e3e4833309}{%
-           family={{Mapelli}},
-           familyi={M\bibinitperiod},
-           given={Michela},
-           giveni={M\bibinitperiod}}}%
-      }
-      \strng{namehash}{9d595ad8e88572712e0c300a45bac059}
-      \strng{fullhash}{1b8ca6c804b9910a58d3c3d97b313c1a}
-      \strng{bibnamehash}{9d595ad8e88572712e0c300a45bac059}
-      \strng{authorbibnamehash}{9d595ad8e88572712e0c300a45bac059}
-      \strng{authornamehash}{9d595ad8e88572712e0c300a45bac059}
-      \strng{authorfullhash}{1b8ca6c804b9910a58d3c3d97b313c1a}
-      \field{sortinit}{2}
-      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{eprintclass}{astro-ph.SR}
-      \field{eprinttype}{arXiv}
-      \field{journaltitle}{\mnras}
-      \field{month}{10}
-      \field{number}{4}
-      \field{title}{{Very massive stars, pair-instability supernovae and intermediate-mass black holes with the sevn code}}
-      \field{volume}{470}
-      \field{year}{2017}
-      \field{pages}{4739\bibrangedash 4749}
-      \range{pages}{11}
-      \verb{doi}
-      \verb 10.1093/mnras/stx1576
-      \endverb
-      \verb{eprint}
-      \verb 1706.06109
-      \endverb
-      \keyw{black hole physics,gravitational waves,methods: numerical,stars: mass-loss,supernovae: general,Astrophysics - Solar and Stellar Astrophysics,Astrophysics - High Energy Astrophysical Phenomena}
-    \endentry
-    \entry{MassGapStellarEvo_Costa2021}{article}{}
-      \name{author}{6}{}{%
-        {{hash=80a2ff110872e777023c0e992e44aef0}{%
-           family={{Costa}},
-           familyi={C\bibinitperiod},
-           given={Guglielmo},
-           giveni={G\bibinitperiod}}}%
-        {{hash=4dc1942d0660112e3da17613edc5e1ac}{%
-           family={{Bressan}},
-           familyi={B\bibinitperiod},
-           given={Alessandro},
-           giveni={A\bibinitperiod}}}%
-        {{hash=a63bd1a4a95ee5ac182d54e3e4833309}{%
-           family={{Mapelli}},
-           familyi={M\bibinitperiod},
-           given={Michela},
-           giveni={M\bibinitperiod}}}%
-        {{hash=fd1773589a858495de685099a6f91961}{%
-           family={{Marigo}},
-           familyi={M\bibinitperiod},
-           given={Paola},
-           giveni={P\bibinitperiod}}}%
-        {{hash=308d9a229eea2880fed745253fcf31e0}{%
-           family={{Iorio}},
-           familyi={I\bibinitperiod},
-           given={Giuliano},
-           giveni={G\bibinitperiod}}}%
-        {{hash=4a2658eece869e63c003859b79de5377}{%
-           family={{Spera}},
-           familyi={S\bibinitperiod},
-           given={Mario},
-           giveni={M\bibinitperiod}}}%
-      }
-      \strng{namehash}{473a66cec65a585786392c3be79910c6}
-      \strng{fullhash}{efa13d4e39dfd6d4e19edfaee19c4d2a}
-      \strng{bibnamehash}{473a66cec65a585786392c3be79910c6}
-      \strng{authorbibnamehash}{473a66cec65a585786392c3be79910c6}
-      \strng{authornamehash}{473a66cec65a585786392c3be79910c6}
-      \strng{authorfullhash}{efa13d4e39dfd6d4e19edfaee19c4d2a}
-      \field{sortinit}{2}
-      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{eprintclass}{astro-ph.SR}
-      \field{eprinttype}{arXiv}
-      \field{journaltitle}{\mnras}
-      \field{month}{3}
-      \field{number}{3}
-      \field{title}{{Formation of GW190521 from stellar evolution: the impact of the hydrogen-rich envelope, dredge-up, and $^{12}$C({\ensuremath{\alpha}}, {\ensuremath{\gamma}})$^{16}$O rate on the pair-instability black hole mass gap}}
-      \field{volume}{501}
-      \field{year}{2021}
-      \field{pages}{4514\bibrangedash 4533}
-      \range{pages}{20}
-      \verb{doi}
-      \verb 10.1093/mnras/staa3916
-      \endverb
-      \verb{eprint}
-      \verb 2010.02242
-      \endverb
-      \keyw{convection,stars: black holes,stars: evolution,stars: interiors,stars: massive,stars: mass-loss,Astrophysics - Solar and Stellar Astrophysics}
-    \endentry
-    \entry{GWTC-2}{article}{}
-      \name{author}{3}{}{%
-        {{hash=f8be78180236e580afcca88ecf22498d}{%
-           family={{Abbott}},
-           familyi={A\bibinitperiod},
-           given={R.},
-           giveni={R\bibinitperiod}}}%
-        {{hash=f7ae0f5b920293141b6fbd4a57c1ea8f}{%
-           family={{Abbott}},
-           familyi={A\bibinitperiod},
-           given={T.\bibnamedelimi D.},
-           giveni={T\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
-        {{hash=c4b12c788d52a4ea109e98f5758529ae}{%
-           family={{et al.}},
-           familyi={e\bibinitperiod}}}%
-      }
-      \strng{namehash}{c6dc9070a6d5c9f30dd40b5dfda2acf2}
-      \strng{fullhash}{4e495497b82d526de5e114dd939c47a6}
-      \strng{bibnamehash}{c6dc9070a6d5c9f30dd40b5dfda2acf2}
-      \strng{authorbibnamehash}{c6dc9070a6d5c9f30dd40b5dfda2acf2}
-      \strng{authornamehash}{c6dc9070a6d5c9f30dd40b5dfda2acf2}
-      \strng{authorfullhash}{4e495497b82d526de5e114dd939c47a6}
-      \field{extraname}{4}
-      \field{sortinit}{2}
-      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{eid}{021053}
-      \field{eprintclass}{gr-qc}
-      \field{eprinttype}{arXiv}
-      \field{journaltitle}{Physical Review X}
-      \field{month}{4}
-      \field{number}{2}
-      \field{title}{{GWTC-2: Compact Binary Coalescences Observed by LIGO and Virgo during the First Half of the Third Observing Run}}
-      \field{volume}{11}
-      \field{year}{2021}
-      \field{pages}{021053}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1103/PhysRevX.11.021053
-      \endverb
-      \verb{eprint}
-      \verb 2010.14527
-      \endverb
-      \keyw{General Relativity and Quantum Cosmology,Astrophysics - High Energy Astrophysical Phenomena}
-    \endentry
-    \entry{Rastello2021_dynamics}{article}{}
-      \name{author}{8}{}{%
-        {{hash=02b95add485ff7fcc5ea2a2b063cf549}{%
-           family={{Rastello}},
-           familyi={R\bibinitperiod},
-           given={Sara},
-           giveni={S\bibinitperiod}}}%
-        {{hash=a63bd1a4a95ee5ac182d54e3e4833309}{%
-           family={{Mapelli}},
-           familyi={M\bibinitperiod},
-           given={Michela},
-           giveni={M\bibinitperiod}}}%
-        {{hash=1b2a04f359a6ceb32ced2c02c085f9e8}{%
-           family={{Di Carlo}},
-           familyi={D\bibinitperiod},
-           given={Ugo\bibnamedelima N.},
-           giveni={U\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
-        {{hash=308d9a229eea2880fed745253fcf31e0}{%
-           family={{Iorio}},
-           familyi={I\bibinitperiod},
-           given={Giuliano},
-           giveni={G\bibinitperiod}}}%
-        {{hash=c9a6f6aef508583b81992b5f56a07bff}{%
-           family={{Ballone}},
-           familyi={B\bibinitperiod},
-           given={Alessandro},
-           giveni={A\bibinitperiod}}}%
-        {{hash=414d16414d3d21680b178e1d53ff1330}{%
-           family={{Giacobbo}},
-           familyi={G\bibinitperiod},
-           given={Nicola},
-           giveni={N\bibinitperiod}}}%
-        {{hash=d8d30994d94413fbae2d38fc8a3f7895}{%
-           family={{Santoliquido}},
-           familyi={S\bibinitperiod},
-           given={Filippo},
-           giveni={F\bibinitperiod}}}%
-        {{hash=495b12702d1e78f18383d0ee37f9620b}{%
-           family={{Torniamenti}},
-           familyi={T\bibinitperiod},
-           given={Stefano},
-           giveni={S\bibinitperiod}}}%
-      }
-      \strng{namehash}{465950077a7b9dadd99e909c61447d62}
-      \strng{fullhash}{a213b641d673995d651f17c6ceee8649}
-      \strng{bibnamehash}{465950077a7b9dadd99e909c61447d62}
-      \strng{authorbibnamehash}{465950077a7b9dadd99e909c61447d62}
-      \strng{authornamehash}{465950077a7b9dadd99e909c61447d62}
-      \strng{authorfullhash}{a213b641d673995d651f17c6ceee8649}
-      \field{sortinit}{2}
-      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{eprintclass}{astro-ph.GA}
-      \field{eprinttype}{arXiv}
-      \field{journaltitle}{\mnras}
-      \field{month}{11}
-      \field{number}{3}
-      \field{title}{{Dynamics of binary black holes in low-mass young star clusters}}
-      \field{volume}{507}
-      \field{year}{2021}
-      \field{pages}{3612\bibrangedash 3625}
-      \range{pages}{14}
-      \verb{doi}
-      \verb 10.1093/mnras/stab2355
-      \endverb
-      \verb{eprint}
-      \verb 2105.01669
-      \endverb
-      \keyw{black hole physics,gravitational waves,stars: kinematics and dynamics,Galaxy: open clusters and associations: general,Astrophysics - Astrophysics of Galaxies,Astrophysics - High Energy Astrophysical Phenomena,Astrophysics - Solar and Stellar Astrophysics}
     \endentry
     \entry{massgapreal_ozel2010}{article}{}
       \name{author}{4}{}{%
@@ -819,8 +933,8 @@
       \strng{authorbibnamehash}{25b69d0f4c0e72f5cde6397a9de93328}
       \strng{authornamehash}{25b69d0f4c0e72f5cde6397a9de93328}
       \strng{authorfullhash}{82c76157f4c36d22cee9f9b215f0bdd8}
-      \field{sortinit}{2}
-      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{The Astrophysical Journal}
@@ -831,56 +945,280 @@
       \field{pages}{1918}
       \range{pages}{1}
     \endentry
-    \entry{Abbot2021spectrumGW}{article}{}
-      \name{author}{4}{}{%
-        {{hash=f8be78180236e580afcca88ecf22498d}{%
-           family={{Abbott}},
+    \entry{misalignedbinary}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=b3e90739e3e8843d2e5f4b10e229e26d}{%
+           family={Albrecht},
            familyi={A\bibinitperiod},
-           given={R.},
-           giveni={R\bibinitperiod}}}%
-        {{hash=f7ae0f5b920293141b6fbd4a57c1ea8f}{%
-           family={{Abbott}},
-           familyi={A\bibinitperiod},
-           given={T.\bibnamedelimi D.},
-           giveni={T\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
-        {{hash=0099bb3c84ff7d2f01c3cddea2a17c1b}{%
-           family={{Abraham}},
-           familyi={A\bibinitperiod},
-           given={S.},
+           given={Simon},
            giveni={S\bibinitperiod}}}%
-        {{hash=c4b12c788d52a4ea109e98f5758529ae}{%
-           family={{et al.}},
-           familyi={e\bibinitperiod}}}%
+        {{hash=987e5cdf8fdc979662d7296c44dfcc49}{%
+           family={Winn},
+           familyi={W\bibinitperiod},
+           given={Joshua\bibnamedelima N},
+           giveni={J\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=da6e7a32020cd0e9fa2ee3d3908188e9}{%
+           family={Torres},
+           familyi={T\bibinitperiod},
+           given={Guillermo},
+           giveni={G\bibinitperiod}}}%
+        {{hash=5c49bbeb1fe05646472707963f080286}{%
+           family={Fabrycky},
+           familyi={F\bibinitperiod},
+           given={Daniel\bibnamedelima C},
+           giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=f9c6c84e6734c307c6ff49c215605f9d}{%
+           family={Setiawan},
+           familyi={S\bibinitperiod},
+           given={Johny},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d34105f647da09253b8f61b78610b5a9}{%
+           family={Gillon},
+           familyi={G\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=66b0cc1a476b130e797aa58c47a38517}{%
+           family={Jehin},
+           familyi={J\bibinitperiod},
+           given={Emmanuel},
+           giveni={E\bibinitperiod}}}%
+        {{hash=abda9b96a22b91340248672e8ade86b5}{%
+           family={Triaud},
+           familyi={T\bibinitperiod},
+           given={Amaury},
+           giveni={A\bibinitperiod}}}%
+        {{hash=f5d35eb8a124a5a563c6686d91ccc091}{%
+           family={Queloz},
+           familyi={Q\bibinitperiod},
+           given={Didier},
+           giveni={D\bibinitperiod}}}%
+        {{hash=616f2a1e9ea80c3b378f9379dee9b806}{%
+           family={Snellen},
+           familyi={S\bibinitperiod},
+           given={Ignas},
+           giveni={I\bibinitperiod}}}%
       }
-      \strng{namehash}{c6dc9070a6d5c9f30dd40b5dfda2acf2}
-      \strng{fullhash}{4362a7e1166acbd4b26b8f08bafdd83e}
-      \strng{bibnamehash}{c6dc9070a6d5c9f30dd40b5dfda2acf2}
-      \strng{authorbibnamehash}{c6dc9070a6d5c9f30dd40b5dfda2acf2}
-      \strng{authornamehash}{c6dc9070a6d5c9f30dd40b5dfda2acf2}
-      \strng{authorfullhash}{4362a7e1166acbd4b26b8f08bafdd83e}
-      \field{extraname}{5}
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{8e3416200b6da8bbcd681d3446da44ce}
+      \strng{fullhash}{069c7c85f1bf01a7078023f49d593e39}
+      \strng{bibnamehash}{8e3416200b6da8bbcd681d3446da44ce}
+      \strng{authorbibnamehash}{8e3416200b6da8bbcd681d3446da44ce}
+      \strng{authornamehash}{8e3416200b6da8bbcd681d3446da44ce}
+      \strng{authorfullhash}{069c7c85f1bf01a7078023f49d593e39}
       \field{sortinit}{3}
       \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{eid}{L7}
-      \field{eprintclass}{astro-ph.HE}
-      \field{eprinttype}{arXiv}
-      \field{journaltitle}{\apjl}
-      \field{month}{5}
-      \field{number}{1}
-      \field{title}{{Population Properties of Compact Objects from the Second LIGO-Virgo Gravitational-Wave Transient Catalog}}
-      \field{volume}{913}
-      \field{year}{2021}
-      \field{pages}{L7}
+      \field{journaltitle}{The Astrophysical Journal}
+      \field{number}{2}
+      \field{title}{The BANANA project. V. Misaligned and precessing stellar rotation axes in CV Velorum}
+      \field{volume}{785}
+      \field{year}{2014}
+      \field{pages}{83}
       \range{pages}{1}
-      \verb{doi}
-      \verb 10.3847/2041-8213/abe949
-      \endverb
-      \verb{eprint}
-      \verb 2010.14533
-      \endverb
-      \keyw{Gravitational waves,Astrophysical black holes,Stellar mass black holes,Massive stars,Compact objects,Bayesian statistics,678,98,1611,732,288,1900,Astrophysics - High Energy Astrophysical Phenomena,General Relativity and Quantum Cosmology}
+    \endentry
+    \entry{Sana2012}{article}{}
+      \name{author}{10}{}{%
+        {{hash=e0df016198cd7a7543f9fd461423a7c6}{%
+           family={Sana},
+           familyi={S\bibinitperiod},
+           given={Hugues},
+           giveni={H\bibinitperiod}}}%
+        {{hash=b1212243f6fcd330f15406e3c717041e}{%
+           family={De\bibnamedelima Mink},
+           familyi={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={SE},
+           giveni={S\bibinitperiod}}}%
+        {{hash=83fdc0af42c12571d9a8765f373edee0}{%
+           family={Koter},
+           familyi={K\bibinitperiod},
+           given={Alex},
+           giveni={A\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+        {{hash=5aaf8021b2da039699692618c3757eaa}{%
+           family={Langer},
+           familyi={L\bibinitperiod},
+           given={N},
+           giveni={N\bibinitperiod}}}%
+        {{hash=69e71d826b9e4604903f5ba91c116a8f}{%
+           family={Evans},
+           familyi={E\bibinitperiod},
+           given={CJ},
+           giveni={C\bibinitperiod}}}%
+        {{hash=606e0567b80d3c9d4509b393473671e1}{%
+           family={Gieles},
+           familyi={G\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+        {{hash=d37b1c860a27fa405cb8527447b5a453}{%
+           family={Gosset},
+           familyi={G\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+        {{hash=ee16ce45a3bf9130b5f8c20fad4cc72e}{%
+           family={Izzard},
+           familyi={I\bibinitperiod},
+           given={RG},
+           giveni={R\bibinitperiod}}}%
+        {{hash=b9e883f60241318a77ecbae13d592fe9}{%
+           family={Le\bibnamedelima Bouquin},
+           familyi={L\bibinitperiod\bibinitdelim B\bibinitperiod},
+           given={J-B},
+           giveni={J\bibinithyphendelim B\bibinitperiod}}}%
+        {{hash=010bfa0a85ee1520b30841984c2e65ca}{%
+           family={Schneider},
+           familyi={S\bibinitperiod},
+           given={FRN},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Association for the Advancement of Science}%
+      }
+      \strng{namehash}{f0f4615cf2c7157da7202e0613bb4c17}
+      \strng{fullhash}{0a187d63066e4df0e1a58d3e69cc6496}
+      \strng{bibnamehash}{f0f4615cf2c7157da7202e0613bb4c17}
+      \strng{authorbibnamehash}{f0f4615cf2c7157da7202e0613bb4c17}
+      \strng{authornamehash}{f0f4615cf2c7157da7202e0613bb4c17}
+      \strng{authorfullhash}{0a187d63066e4df0e1a58d3e69cc6496}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Science}
+      \field{number}{6093}
+      \field{title}{Binary interaction dominates the evolution of massive stars}
+      \field{volume}{337}
+      \field{year}{2012}
+      \field{pages}{444\bibrangedash 446}
+      \range{pages}{3}
+    \endentry
+    \entry{BHnoninteracting_Giesers2018}{article}{}
+      \name{author}{10}{}{%
+        {{hash=a9947fcda4a9106d31545410e0f47d40}{%
+           family={Giesers},
+           familyi={G\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=24ee6de43fb08f02195420da0033debf}{%
+           family={Dreizler},
+           familyi={D\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=f9f87d501def68475bd7cd07da863aa9}{%
+           family={Husser},
+           familyi={H\bibinitperiod},
+           given={Tim-Oliver},
+           giveni={T\bibinithyphendelim O\bibinitperiod}}}%
+        {{hash=a7aef8b3dc812983f67de046b49fb353}{%
+           family={Kamann},
+           familyi={K\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod}}}%
+        {{hash=649e1ec42abe843ef591af785d2421d7}{%
+           family={Anglada\bibnamedelima Escud{é}},
+           familyi={A\bibinitperiod\bibinitdelim E\bibinitperiod},
+           given={Guillem},
+           giveni={G\bibinitperiod}}}%
+        {{hash=33ce0284454c5f1cc70f4c1b03775990}{%
+           family={Brinchmann},
+           familyi={B\bibinitperiod},
+           given={Jarle},
+           giveni={J\bibinitperiod}}}%
+        {{hash=1389c48c03a834a57a2d3c99f331c86e}{%
+           family={Carollo},
+           familyi={C\bibinitperiod},
+           given={C\bibnamedelima Marcella},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=b86bee83f3daa5e316ae1079315b994e}{%
+           family={Roth},
+           familyi={R\bibinitperiod},
+           given={Martin\bibnamedelima M},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=22c3b48545fd7e76755283f8cfbdd69d}{%
+           family={Weilbacher},
+           familyi={W\bibinitperiod},
+           given={Peter\bibnamedelima M},
+           giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=c7c761579ff2c45b1ddcdb4ef12d5c43}{%
+           family={Wisotzki},
+           familyi={W\bibinitperiod},
+           given={Lutz},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{85ac487a498cb4529561408cd5a532dd}
+      \strng{fullhash}{a63578c20237f2babd1c756af217586c}
+      \strng{bibnamehash}{85ac487a498cb4529561408cd5a532dd}
+      \strng{authorbibnamehash}{85ac487a498cb4529561408cd5a532dd}
+      \strng{authornamehash}{85ac487a498cb4529561408cd5a532dd}
+      \strng{authorfullhash}{a63578c20237f2babd1c756af217586c}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Monthly Notices of the Royal Astronomical Society: Letters}
+      \field{number}{1}
+      \field{title}{A detached stellar-mass black hole candidate in the globular cluster NGC 3201}
+      \field{volume}{475}
+      \field{year}{2018}
+      \field{pages}{L15\bibrangedash L19}
+      \range{pages}{-1}
+    \endentry
+    \entry{BHmicrolensing}{article}{}
+      \name{author}{5}{}{%
+        {{hash=994743a6a1bd4bc8f1a4623ff228b5be}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={JR},
+           giveni={J\bibinitperiod}}}%
+        {{hash=697808a82905ff55dc71d8bad8544241}{%
+           family={Sinukoff},
+           familyi={S\bibinitperiod},
+           given={E},
+           giveni={E\bibinitperiod}}}%
+        {{hash=84357395555575962d9b5ce9886ab767}{%
+           family={Ofek},
+           familyi={O\bibinitperiod},
+           given={EO},
+           giveni={E\bibinitperiod}}}%
+        {{hash=ade5b18e290a983ab0e3d6cdf30da346}{%
+           family={Udalski},
+           familyi={U\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod}}}%
+        {{hash=4df75504927d326299fa3f3265b410a7}{%
+           family={Kozlowski},
+           familyi={K\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{9d1c5c36bc13a7cd58fd46dd3643d6ae}
+      \strng{fullhash}{d7e520d853767b5e10ad009c36daf970}
+      \strng{bibnamehash}{9d1c5c36bc13a7cd58fd46dd3643d6ae}
+      \strng{authorbibnamehash}{9d1c5c36bc13a7cd58fd46dd3643d6ae}
+      \strng{authornamehash}{9d1c5c36bc13a7cd58fd46dd3643d6ae}
+      \strng{authorfullhash}{d7e520d853767b5e10ad009c36daf970}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Astrophysical Journal}
+      \field{number}{1}
+      \field{title}{A search for stellar-mass black holes via astrometric microlensing}
+      \field{volume}{830}
+      \field{year}{2016}
+      \field{pages}{41}
+      \range{pages}{1}
     \endentry
     \entry{HMXBH_spins2021}{article}{}
       \name{author}{2}{}{%
@@ -904,8 +1242,8 @@
       \strng{authorbibnamehash}{c22d753983cf3597b203e9dd394062ce}
       \strng{authornamehash}{c22d753983cf3597b203e9dd394062ce}
       \strng{authorfullhash}{32df00253286a4f991ce7884b71d8353}
-      \field{sortinit}{3}
-      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{The Astrophysical Journal Letters}
@@ -915,443 +1253,6 @@
       \field{year}{2022}
       \field{pages}{L26}
       \range{pages}{1}
-    \endentry
-    \entry{Giacobbo2018spectrum}{article}{}
-      \name{author}{3}{}{%
-        {{hash=414d16414d3d21680b178e1d53ff1330}{%
-           family={{Giacobbo}},
-           familyi={G\bibinitperiod},
-           given={Nicola},
-           giveni={N\bibinitperiod}}}%
-        {{hash=a63bd1a4a95ee5ac182d54e3e4833309}{%
-           family={{Mapelli}},
-           familyi={M\bibinitperiod},
-           given={Michela},
-           giveni={M\bibinitperiod}}}%
-        {{hash=4a2658eece869e63c003859b79de5377}{%
-           family={{Spera}},
-           familyi={S\bibinitperiod},
-           given={Mario},
-           giveni={M\bibinitperiod}}}%
-      }
-      \strng{namehash}{ba1e52fd63a0dacf5cc6b2919fd646c6}
-      \strng{fullhash}{a1024047a5fddb47d1c15f22e1bf29a4}
-      \strng{bibnamehash}{ba1e52fd63a0dacf5cc6b2919fd646c6}
-      \strng{authorbibnamehash}{ba1e52fd63a0dacf5cc6b2919fd646c6}
-      \strng{authornamehash}{ba1e52fd63a0dacf5cc6b2919fd646c6}
-      \strng{authorfullhash}{a1024047a5fddb47d1c15f22e1bf29a4}
-      \field{extraname}{2}
-      \field{sortinit}{3}
-      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{eprintclass}{astro-ph.SR}
-      \field{eprinttype}{arXiv}
-      \field{journaltitle}{\mnras}
-      \field{month}{3}
-      \field{number}{3}
-      \field{title}{{Merging black hole binaries: the effects of progenitor's metallicity, mass-loss rate and Eddington factor}}
-      \field{volume}{474}
-      \field{year}{2018}
-      \field{pages}{2959\bibrangedash 2974}
-      \range{pages}{16}
-      \verb{doi}
-      \verb 10.1093/mnras/stx2933
-      \endverb
-      \verb{eprint}
-      \verb 1711.03556
-      \endverb
-      \keyw{black hole physics,gravitational waves,methods: numerical,binaries: general,stars: black holes,stars: mass-loss,Astrophysics - Solar and Stellar Astrophysics,Astrophysics - Astrophysics of Galaxies,Astrophysics - High Energy Astrophysical Phenomena}
-    \endentry
-    \entry{Rodriguez2016_BHspins}{article}{}
-      \name{author}{5}{}{%
-        {{hash=a1fbac823f836ac33b5cf62d5fd92df9}{%
-           family={{Rodriguez}},
-           familyi={R\bibinitperiod},
-           given={Carl\bibnamedelima L.},
-           giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
-        {{hash=b0c9d52075121c69bb9ad53d53371baf}{%
-           family={{Zevin}},
-           familyi={Z\bibinitperiod},
-           given={Michael},
-           giveni={M\bibinitperiod}}}%
-        {{hash=8a83d65b8932a16b0ea72356bcbd4d28}{%
-           family={{Pankow}},
-           familyi={P\bibinitperiod},
-           given={Chris},
-           giveni={C\bibinitperiod}}}%
-        {{hash=9db655cdcd2fcf58f5f4d8d31154089d}{%
-           family={{Kalogera}},
-           familyi={K\bibinitperiod},
-           given={Vasilliki},
-           giveni={V\bibinitperiod}}}%
-        {{hash=7d47e100757865d86f409e96c5fc9637}{%
-           family={{Rasio}},
-           familyi={R\bibinitperiod},
-           given={Frederic\bibnamedelima A.},
-           giveni={F\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-      }
-      \strng{namehash}{996639f62d6acdc8497dc055776536fd}
-      \strng{fullhash}{1c15fee251a6a7aa92d3635e50c8590f}
-      \strng{bibnamehash}{996639f62d6acdc8497dc055776536fd}
-      \strng{authorbibnamehash}{996639f62d6acdc8497dc055776536fd}
-      \strng{authornamehash}{996639f62d6acdc8497dc055776536fd}
-      \strng{authorfullhash}{1c15fee251a6a7aa92d3635e50c8590f}
-      \field{sortinit}{4}
-      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{eid}{L2}
-      \field{eprintclass}{astro-ph.HE}
-      \field{eprinttype}{arXiv}
-      \field{journaltitle}{\apjl}
-      \field{month}{11}
-      \field{number}{1}
-      \field{title}{{Illuminating Black Hole Binary Formation Channels with Spins in Advanced LIGO}}
-      \field{volume}{832}
-      \field{year}{2016}
-      \field{pages}{L2}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.3847/2041-8205/832/1/L2
-      \endverb
-      \verb{eprint}
-      \verb 1609.05916
-      \endverb
-      \keyw{binaries: general,gravitational waves,stars: black holes,supernovae: general,Astrophysics - High Energy Astrophysical Phenomena}
-    \endentry
-    \entry{BHradialvelocity}{article}{}
-      \name{author}{17}{}{%
-        {{hash=47ce5f68b0794fb7f711d6a97a2b1ed8}{%
-           family={Thompson},
-           familyi={T\bibinitperiod},
-           given={Todd\bibnamedelima A.},
-           giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-        {{hash=05848ee35faed053a4eb9c9dec4876e2}{%
-           family={Kochanek},
-           familyi={K\bibinitperiod},
-           given={Christopher\bibnamedelima S.},
-           giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-        {{hash=a9332da72b22a518764c5da3bb60c400}{%
-           family={Stanek},
-           familyi={S\bibinitperiod},
-           given={Krzysztof\bibnamedelima Z.},
-           giveni={K\bibinitperiod\bibinitdelim Z\bibinitperiod}}}%
-        {{hash=0620e2e82c294d533f6b88603c072cae}{%
-           family={Badenes},
-           familyi={B\bibinitperiod},
-           given={Carles},
-           giveni={C\bibinitperiod}}}%
-        {{hash=ae0fe3a52ac476c4add918e07f4abf1c}{%
-           family={Post},
-           familyi={P\bibinitperiod},
-           given={Richard\bibnamedelima S.},
-           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-        {{hash=b7951a6a70dabdbeeee4b796f3cffe32}{%
-           family={Jayasinghe},
-           familyi={J\bibinitperiod},
-           given={Tharindu},
-           giveni={T\bibinitperiod}}}%
-        {{hash=4a9ed99fe5d2d07a818204600c06001c}{%
-           family={Latham},
-           familyi={L\bibinitperiod},
-           given={David\bibnamedelima W.},
-           giveni={D\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
-        {{hash=e7cab1475456b8075cf3ca657a5ebec1}{%
-           family={Bieryla},
-           familyi={B\bibinitperiod},
-           given={Allyson},
-           giveni={A\bibinitperiod}}}%
-        {{hash=7e9e263143143bbec25023492895cc3a}{%
-           family={Esquerdo},
-           familyi={E\bibinitperiod},
-           given={Gilbert\bibnamedelima A.},
-           giveni={G\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-        {{hash=c8b19cebd0d04b728df521ed9522e046}{%
-           family={Berlind},
-           familyi={B\bibinitperiod},
-           given={Perry},
-           giveni={P\bibinitperiod}}}%
-        {{hash=7153547aecba4f1787b905ddb8b15969}{%
-           family={Calkins},
-           familyi={C\bibinitperiod},
-           given={Michael\bibnamedelima L.},
-           giveni={M\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
-        {{hash=c0662298a464db135e934b2cfd03fdeb}{%
-           family={Tayar},
-           familyi={T\bibinitperiod},
-           given={Jamie},
-           giveni={J\bibinitperiod}}}%
-        {{hash=b32eba690499673e63235e5393101748}{%
-           family={Lindegren},
-           familyi={L\bibinitperiod},
-           given={Lennart},
-           giveni={L\bibinitperiod}}}%
-        {{hash=9931c9ba23adf85e6453c496c4dc8738}{%
-           family={Johnson},
-           familyi={J\bibinitperiod},
-           given={Jennifer\bibnamedelima A.},
-           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-        {{hash=1f0736a562099a5bd3e8696d15ebe8a7}{%
-           family={Holoien},
-           familyi={H\bibinitperiod},
-           given={Thomas\bibnamedelima W.-S.},
-           giveni={T\bibinitperiod\bibinitdelim W\bibinithyphendelim S\bibinitperiod}}}%
-        {{hash=3d02b1434a996bc419f4d9bad8b79f3e}{%
-           family={Auchettl},
-           familyi={A\bibinitperiod},
-           given={Katie},
-           giveni={K\bibinitperiod}}}%
-        {{hash=f2d6cc392b5ed910ae07b8f5ffa374fe}{%
-           family={Covey},
-           familyi={C\bibinitperiod},
-           given={Kevin},
-           giveni={K\bibinitperiod}}}%
-      }
-      \strng{namehash}{00b038026f3f146bd5bce3fb08efa7d2}
-      \strng{fullhash}{c1ffc79aac01900c0d870f07e2c2836f}
-      \strng{bibnamehash}{00b038026f3f146bd5bce3fb08efa7d2}
-      \strng{authorbibnamehash}{00b038026f3f146bd5bce3fb08efa7d2}
-      \strng{authornamehash}{00b038026f3f146bd5bce3fb08efa7d2}
-      \strng{authorfullhash}{c1ffc79aac01900c0d870f07e2c2836f}
-      \field{sortinit}{4}
-      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Science}
-      \field{number}{6465}
-      \field{title}{A noninteracting low-mass black hole-giant star binary system}
-      \field{volume}{366}
-      \field{year}{2019}
-      \field{pages}{637\bibrangedash 640}
-      \range{pages}{4}
-      \verb{doi}
-      \verb 10.1126/science.aau4005
-      \endverb
-      \verb{eprint}
-      \verb https://www.science.org/doi/pdf/10.1126/science.aau4005
-      \endverb
-      \verb{urlraw}
-      \verb https://www.science.org/doi/abs/10.1126/science.aau4005
-      \endverb
-      \verb{url}
-      \verb https://www.science.org/doi/abs/10.1126/science.aau4005
-      \endverb
-    \endentry
-    \entry{GaiaDR2microlensing}{article}{}
-      \name{author}{2}{}{%
-        {{hash=dbe66651f98cd67d281db8455162246d}{%
-           family={{Wyrzykowski}},
-           familyi={W\bibinitperiod},
-           given={{Ł}ukasz},
-           giveni={Ł\bibinitperiod}}}%
-        {{hash=805cd5d20d9322527c7f76b0cbf51952}{%
-           family={{Mandel}},
-           familyi={M\bibinitperiod},
-           given={Ilya},
-           giveni={I\bibinitperiod}}}%
-      }
-      \strng{namehash}{6d1566cce076b07f0347b112a235a777}
-      \strng{fullhash}{835da1dfbbf8fb69cc9b9a19859a147f}
-      \strng{bibnamehash}{6d1566cce076b07f0347b112a235a777}
-      \strng{authorbibnamehash}{6d1566cce076b07f0347b112a235a777}
-      \strng{authornamehash}{6d1566cce076b07f0347b112a235a777}
-      \strng{authorfullhash}{835da1dfbbf8fb69cc9b9a19859a147f}
-      \field{sortinit}{4}
-      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{eid}{A20}
-      \field{eprintclass}{astro-ph.SR}
-      \field{eprinttype}{arXiv}
-      \field{journaltitle}{\aap}
-      \field{month}{4}
-      \field{title}{{Constraining the masses of microlensing black holes and the mass gap with Gaia DR2}}
-      \field{volume}{636}
-      \field{year}{2020}
-      \field{pages}{A20}
-      \range{pages}{-1}
-      \verb{doi}
-      \verb 10.1051/0004-6361/201935842
-      \endverb
-      \verb{eprint}
-      \verb 1904.07789
-      \endverb
-      \keyw{gravitational lensing: micro,Galaxy: stellar content,stars: neutron,stars: black holes,Astrophysics - Solar and Stellar Astrophysics}
-    \endentry
-    \entry{Limongi2010_preSNevo}{inproceedings}{}
-      \name{author}{2}{}{%
-        {{hash=6d4cc313616e56b066badd15ae01bcc0}{%
-           family={{Limongi}},
-           familyi={L\bibinitperiod},
-           given={Marco},
-           giveni={M\bibinitperiod}}}%
-        {{hash=60a37ab304de015e2071a53c89a9d77d}{%
-           family={{Chieffi}},
-           familyi={C\bibinitperiod},
-           given={Alessandro},
-           giveni={A\bibinitperiod}}}%
-      }
-      \strng{namehash}{979f7c07f310c8af2f5feea69dd0f45b}
-      \strng{fullhash}{2ec6fea93093321cb1f62237e0938778}
-      \strng{bibnamehash}{979f7c07f310c8af2f5feea69dd0f45b}
-      \strng{authorbibnamehash}{979f7c07f310c8af2f5feea69dd0f45b}
-      \strng{authornamehash}{979f7c07f310c8af2f5feea69dd0f45b}
-      \strng{authorfullhash}{2ec6fea93093321cb1f62237e0938778}
-      \field{sortinit}{4}
-      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Journal of Physics Conference Series}
-      \field{eid}{012002}
-      \field{month}{1}
-      \field{series}{Journal of Physics Conference Series}
-      \field{title}{{Presupernova evolution and explosion of massive stars}}
-      \field{volume}{202}
-      \field{year}{2010}
-      \field{pages}{012002}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1088/1742-6596/202/1/012002
-      \endverb
-    \endentry
-    \entry{G&H_WRmassloss}{article}{}
-      \name{author}{2}{}{%
-        {{hash=7e4dbf056768d018e6875a333f362fad}{%
-           family={{Gr{ä}fener}},
-           familyi={G\bibinitperiod},
-           given={G.},
-           giveni={G\bibinitperiod}}}%
-        {{hash=0835fb16ca8f71e4b387cd578faca820}{%
-           family={{Hamann}},
-           familyi={H\bibinitperiod},
-           given={W.\bibnamedelimi -R.},
-           giveni={W\bibinitperiod\bibinitdelim \bibinithyphendelim R\bibinitperiod}}}%
-      }
-      \strng{namehash}{0487de18afecd2511646421cc592d033}
-      \strng{fullhash}{c87341e5ae01440d3396e4bc673f93d8}
-      \strng{bibnamehash}{0487de18afecd2511646421cc592d033}
-      \strng{authorbibnamehash}{0487de18afecd2511646421cc592d033}
-      \strng{authornamehash}{0487de18afecd2511646421cc592d033}
-      \strng{authorfullhash}{c87341e5ae01440d3396e4bc673f93d8}
-      \field{sortinit}{4}
-      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{eprintclass}{astro-ph}
-      \field{eprinttype}{arXiv}
-      \field{journaltitle}{\aap}
-      \field{month}{5}
-      \field{number}{3}
-      \field{title}{{Mass loss from late-type WN stars and its Z-dependence. Very massive stars approaching the Eddington limit}}
-      \field{volume}{482}
-      \field{year}{2008}
-      \field{pages}{945\bibrangedash 960}
-      \range{pages}{16}
-      \verb{doi}
-      \verb 10.1051/0004-6361:20066176
-      \endverb
-      \verb{eprint}
-      \verb 0803.0866
-      \endverb
-      \keyw{stars: Wolf-Rayet,stars: early-type,stars: atmospheres,stars: mass-loss,stars: winds,outflows,stars: individual: WR 22,Astrophysics}
-    \endentry
-    \entry{Sukhbold2016_stellarevo}{article}{}
-      \name{author}{5}{}{%
-        {{hash=c2604435149a2e7a5766f90f2cab7431}{%
-           family={{Sukhbold}},
-           familyi={S\bibinitperiod},
-           given={Tuguldur},
-           giveni={T\bibinitperiod}}}%
-        {{hash=2553c16820c947df0ec43b418af891a1}{%
-           family={{Ertl}},
-           familyi={E\bibinitperiod},
-           given={T.},
-           giveni={T\bibinitperiod}}}%
-        {{hash=982f56012081b715bf2adefebba74e95}{%
-           family={{Woosley}},
-           familyi={W\bibinitperiod},
-           given={S.\bibnamedelimi E.},
-           giveni={S\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
-        {{hash=edd5384694fc82b84a911730c964dd7d}{%
-           family={{Brown}},
-           familyi={B\bibinitperiod},
-           given={Justin\bibnamedelima M.},
-           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-        {{hash=e4637a85d169b34670269ca4606533e1}{%
-           family={{Janka}},
-           familyi={J\bibinitperiod},
-           given={H.\bibnamedelimi -T.},
-           giveni={H\bibinitperiod\bibinitdelim \bibinithyphendelim T\bibinitperiod}}}%
-      }
-      \strng{namehash}{436c714adb5c0f1a1d039ca0624fe4c0}
-      \strng{fullhash}{f156742e3060de88c4ca0a73213def61}
-      \strng{bibnamehash}{436c714adb5c0f1a1d039ca0624fe4c0}
-      \strng{authorbibnamehash}{436c714adb5c0f1a1d039ca0624fe4c0}
-      \strng{authornamehash}{436c714adb5c0f1a1d039ca0624fe4c0}
-      \strng{authorfullhash}{f156742e3060de88c4ca0a73213def61}
-      \field{sortinit}{4}
-      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{eid}{38}
-      \field{eprintclass}{astro-ph.HE}
-      \field{eprinttype}{arXiv}
-      \field{journaltitle}{\apj}
-      \field{month}{4}
-      \field{number}{1}
-      \field{title}{{Core-collapse Supernovae from 9 to 120 Solar Masses Based on Neutrino-powered Explosions}}
-      \field{volume}{821}
-      \field{year}{2016}
-      \field{pages}{38}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.3847/0004-637X/821/1/38
-      \endverb
-      \verb{eprint}
-      \verb 1510.04643
-      \endverb
-      \keyw{nuclear reactions,nucleosynthesis,abundances,stars: black holes,stars: massive,stars: neutron,supernovae: general,Astrophysics - High Energy Astrophysical Phenomena,Astrophysics - Solar and Stellar Astrophysics}
-    \endentry
-    \entry{Tutukov2013_WRBHreview}{article}{}
-      \name{author}{3}{}{%
-        {{hash=0aad03f6ef3f28d9bd35b21383691e2a}{%
-           family={{Tutukov}},
-           familyi={T\bibinitperiod},
-           given={A.\bibnamedelimi V.},
-           giveni={A\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
-        {{hash=b061c58f7a3c87ad92dff716140f5643}{%
-           family={{Fedorova}},
-           familyi={F\bibinitperiod},
-           given={A.\bibnamedelimi V.},
-           giveni={A\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
-        {{hash=bc5480a4e4ca407e4ba7486773d862bd}{%
-           family={{Cherepashchuk}},
-           familyi={C\bibinitperiod},
-           given={A.\bibnamedelimi M.},
-           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-      }
-      \strng{namehash}{d15f733734d0504f4eb6c27fcd5b6c4a}
-      \strng{fullhash}{04757a0c6936c1b3a061d5b15a5bd51f}
-      \strng{bibnamehash}{d15f733734d0504f4eb6c27fcd5b6c4a}
-      \strng{authorbibnamehash}{d15f733734d0504f4eb6c27fcd5b6c4a}
-      \strng{authornamehash}{d15f733734d0504f4eb6c27fcd5b6c4a}
-      \strng{authorfullhash}{04757a0c6936c1b3a061d5b15a5bd51f}
-      \field{sortinit}{4}
-      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Astronomy Reports}
-      \field{month}{9}
-      \field{number}{9}
-      \field{title}{{Wolf-Rayet stars with relativistic companions}}
-      \field{volume}{57}
-      \field{year}{2013}
-      \field{pages}{657\bibrangedash 668}
-      \range{pages}{12}
-      \verb{doi}
-      \verb 10.1134/S1063772913090084
-      \endverb
     \endentry
     \entry{IC10X-1_Silverman2008}{article}{}
       \name{author}{2}{}{%
@@ -1416,8 +1317,8 @@
       \strng{authorbibnamehash}{4d85c74842901f1d5b832dcf7a24764f}
       \strng{authornamehash}{4d85c74842901f1d5b832dcf7a24764f}
       \strng{authorfullhash}{a8cd8249c8580ce38b40537a6e07929c}
-      \field{sortinit}{5}
-      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{\aap}
@@ -1471,8 +1372,8 @@
       \strng{authorbibnamehash}{f631970f4c317d6b64ff8bbea3725592}
       \strng{authornamehash}{f631970f4c317d6b64ff8bbea3725592}
       \strng{authorfullhash}{7eaa14f84be66f7308d8a92e2774c16f}
-      \field{sortinit}{5}
-      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1745-3925}
@@ -1554,8 +1455,8 @@
       \strng{authorbibnamehash}{895dafa9864079faf0be810426187fe8}
       \strng{authornamehash}{895dafa9864079faf0be810426187fe8}
       \strng{authorfullhash}{e5f977f635086c4e93fe29c145c66871}
-      \field{sortinit}{5}
-      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{The Astrophysical Journal}
@@ -2059,8 +1960,8 @@
       \strng{authorbibnamehash}{c4b2875f23e03fdf5edfd6f3b89e9889}
       \strng{authornamehash}{c4b2875f23e03fdf5edfd6f3b89e9889}
       \strng{authorfullhash}{094a88cd1da392201f0e5ea14f877bb1}
-      \field{sortinit}{7}
-      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{astro-ph.SR}
