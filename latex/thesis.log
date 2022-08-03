@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.2.10)  2 AUG 2022 13:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.2.10)  3 AUG 2022 23:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -945,11 +945,6 @@ Package pdftex.def Info: thesis-frn.pdf  used on input line 98.
 
 ]
 Chapter 1.
-
-Underfull \hbox (badness 10000) in paragraph at lines 149--150
-
- []
-
 [1
 
 ]
@@ -1062,152 +1057,189 @@ Package pdftex.def Info: ./images/spinchirpmass.png  used on input line 383.
 (PNG copy)> <./images/spineff.png (PNG copy)> <./images/spinmassratio.png (PNG 
 copy)>] [8 <./images/spinorientation.png (PNG copy)> <./images/spinchirpmass.pn
 g (PNG copy)>]
+<./images/accretiondiskSED.png, id=439, 421.575pt x 306.39468pt>
+File: ./images/accretiondiskSED.png Graphic file (type png)
+<use ./images/accretiondiskSED.png>
+Package pdftex.def Info: ./images/accretiondiskSED.png  used on input line 412.
+
+(pdftex.def)             Requested size: 254.14072pt x 184.70781pt.
+<./images/accretiondiskFeKalphaline.png, id=440, 475.7775pt x 478.78876pt>
+File: ./images/accretiondiskFeKalphaline.png Graphic file (type png)
+<use ./images/accretiondiskFeKalphaline.png>
+Package pdftex.def Info: ./images/accretiondiskFeKalphaline.png  used on input 
+line 418.
+(pdftex.def)             Requested size: 184.03156pt x 185.19997pt.
+
+Overfull \hbox (2.22166pt too wide) in paragraph at lines 410--420
+[]$[]$  $[]$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 429--430
+
+ []
+
+[9 <./images/accretiondiskSED.png (PNG copy)> <./images/accretiondiskFeKalphali
+ne.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 437--438
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 447--448
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 450--451
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 459--460
+
+ []
+
+[10] [11] [12
+
+]
 Chapter 2.
 
-Underfull \hbox (badness 10000) in paragraph at lines 430--431
+Underfull \hbox (badness 10000) in paragraph at lines 489--490
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 440--441
+Underfull \hbox (badness 10000) in paragraph at lines 499--500
 
  []
 
 
-Overfull \hbox (62.64125pt too wide) in paragraph at lines 448--470
+Overfull \hbox (62.64125pt too wide) in paragraph at lines 507--529
 [] 
  []
 
-[9
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 482--483
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 541--542
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 484--485
+Underfull \hbox (badness 10000) in paragraph at lines 543--544
 
  []
 
 
-Overfull \hbox (12.63824pt too wide) in paragraph at lines 486--486
+Overfull \hbox (12.63824pt too wide) in paragraph at lines 545--545
 []\T1/cmr/m/n/10 To model its metal-lic-ity we use the metal-licty gra-di-ent o
 f the MW that was ob-tained by \T1/cmr/bx/n/10 Lemasle2018
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 493--494
+Underfull \hbox (badness 10000) in paragraph at lines 552--553
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 495--496
+Underfull \hbox (badness 10000) in paragraph at lines 554--555
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 497--498
+Underfull \hbox (badness 10000) in paragraph at lines 556--557
 
  []
 
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 502--503
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 504--506
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 561--562
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 504--506
+Underfull \hbox (badness 10000) in paragraph at lines 563--565
 
  []
 
-[11] [12
+
+Underfull \hbox (badness 10000) in paragraph at lines 563--565
+
+ []
+
+[15] [16
 
 ]
 Chapter 3.
-[13] [14
+[17] [18
 
 ]
 Chapter 4.
-[15] [16]
+[19] [20]
 Chapter 5.
-[17
+[21
 
-] [18
+] [22
 
 ]
 Chapter 6.
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 593.
+(hyperref)                than one, level fixed on input line 652.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 615--616
-
- []
-
-[19] [20]
-Underfull \hbox (badness 10000) in paragraph at lines 653--654
+Underfull \hbox (badness 10000) in paragraph at lines 674--675
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 663--664
+[23] [24]
+Underfull \hbox (badness 10000) in paragraph at lines 712--713
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 691--692
+Underfull \hbox (badness 10000) in paragraph at lines 722--723
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 693--694
+Underfull \hbox (badness 10000) in paragraph at lines 750--751
 
  []
 
-[21] [22]
+
+Underfull \hbox (badness 10000) in paragraph at lines 752--753
+
+ []
+
+[25] [26]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 7
-20.
+79.
  (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-) [23
+) [27
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 721.
-
-[24]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 721.
+[28]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 780.
+ [29]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 780.
  (./thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 721.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 721.
-
-
-Package rerunfilecheck Warning: File `thesis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `thesis.out':
-(rerunfilecheck)             Before: 5D9C1353D092591A969E37989E1069FF;2810
-(rerunfilecheck)             After:  8FD4A3A0B5E205794F23E5254EDA845A;2796.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 721.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 780.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 780.
+Package rerunfilecheck Info: File `thesis.out' has not changed.
+(rerunfilecheck)             Checksum: 429A85256844AFA82EBCA69372CA370C;2747.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 780.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 21043 strings out of 483099
- 389324 string characters out of 5964234
- 1046479 words of memory out of 5000000
- 35569 multiletter control sequences out of 15000+600000
+ 21104 strings out of 483099
+ 391333 string characters out of 5964234
+ 1048126 words of memory out of 5000000
+ 35609 multiletter control sequences out of 15000+600000
  559019 words of font info for 90 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 41i,14n,65p,1364b,1912s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,14n,65p,1362b,2904s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf/
 fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
@@ -1237,10 +1269,10 @@ ublic/cm-super/sfrm0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1
 000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti0900.pfb></usr/share/
 texmf/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/pu
 blic/cm-super/sftt1000.pfb>
-Output written on thesis.pdf (30 pages, 2575898 bytes).
+Output written on thesis.pdf (35 pages, 2714048 bytes).
 PDF statistics:
- 702 PDF objects out of 1000 (max. 8388607)
- 601 compressed objects within 7 object streams
- 144 named destinations out of 1000 (max. 500000)
- 375 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 766 PDF objects out of 1000 (max. 8388607)
+ 657 compressed objects within 7 object streams
+ 163 named destinations out of 1000 (max. 500000)
+ 385 words of extra memory for PDF output out of 10000 (max. 10000000)
 
