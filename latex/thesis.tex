@@ -525,6 +525,7 @@ On the one hand, the left panel of Fig.\ \ref{fig:tensionmass} shows that the ob
 	\caption{\emph{Left:} cumulative distribution function (CDF) of primary and secondary black hole spins detected with the gravitational wave detectors in GWTC-2 (orange) compared with the ones of the LMXBs (pink) and HMXBs (blue). In black the prior beta distribution used for the fits. The spin distribution of the black hole binaries is in tension with the ones inferred from the X-ray binaries. \emph{Right:} Posterior distributions of the fraction of black hole binaries that could have evolved from a HMXB-like configuration. The more the primary spin is aligned to the orbital angular momentum (smaller $\sigma_{\rm \cos \theta}$ values, see Sec.\ \ref{subsec:tensionspin} for more infos) and the more the HMXB configuration is irrelevant in the underlying population \cite{HMXBH_spins2021}}\label{fig:tensionspin}
 \end{figure}
 
+
 \subsection{Strong tension in the spin distribution}\label{subsec:tensionspin}
 The spin distribution of the black holes detected with the gravitational waves (including both primary and secondary black holes) seems to be in tension with the spin distribution of the black holes detected in the X-ray binaries, as clearly visible in the left panel of Fig.\ \ref{fig:tensionspin}. The black hole binaries appear to host slowly spinning black holes, whereas both the LMXBs and HMXBs contain fast rotating black holes. Beta distribution fits to the observed spins of the LMXBs (pink) and HMXBs (blue) denote that the two types of X-ray binaries have spin distributions consistent within 90 \%. A single beta distribution fitted to the LMXBs and HMXBs altogether exhibits a disagreement at the 99.9 \% level with the spin distribution of the black hole binaries observed with the gravitational waves (orange).\cite{HMXBH_spins2021}\\
 
@@ -535,6 +536,27 @@ It is possible that a sub-population of the black hole binaries evolved through 
 The right panel in Fig.\ \ref{fig:tensionspin} shows the results of three possible estimates of the sub-population weight allowing for three different maximum tilts of the primary spin: no tilt ($\sigma_{\rm \cos \theta} = 0$), $\lesssim 12^{\circ}$ tilt ($\sigma_{\rm \cos \theta} = 0.2$) or $\lesssim 30^{\circ}$ tilt ($\sigma_{\rm \cos \theta} = 0.5$). The more the primary spin is forced to be aligned, the less the HMXB configuration is relevant in the formation history of the black hole binaries. The fraction of binaries belonging to the sub-population of HMXB-like binaries is only $< 19 \% $ for aligned spins, growing to $< 30 \%$ for slightly tilted spins ($\sigma_{\rm \cos \theta} = 0.2$) and up to $< 48 \%$ for mildly tilted spins ($\sigma_{\rm \cos \theta} = 0.5$).\\
 
 The evolutionary mechanisms necessary to create a rapidly spinning primary in a system that forms a black hole binary merging within a Hubble time are still under investigations. One of the proposed channels involves a stable mass transfer event from a Main Sequence donor to a Main Sequence accretor. If the angular momentum transport is inefficient inside the star and the mass transfer can remove its envelope tidally-locking the system, a lot of the angular momentum can be maintained in the core of the donor star. After a similar mass transfer, the donor will rapidly become a Wolf-Rayet and eventually produce a fast spinning black hole \cite{spinfastBH_Qin2019}. Population synthesis studies coupled with detailed stellar evolution models showed that only $\lesssim 12 \%$ of the HMXB binaries formed in this way had the right combination of parameters to evolve into a black hole binary that merges via gravitational wave emission within a Hubble time. Overall, only $\lesssim 20 \%$ of the merging black hole binaries seem to undergo this kind of evolution, in agreement with the upper limit of $\lesssim 30 \%$ found for slightly tilted spins \cite{HMXBHspins2022}.
+
+
+
+
+
+\chapter{Wolf-Rayet - black hole binaries}
+\paragraph{An intermediate evolutionary stage}
+The systems composed of two massive stars are the best possible progenitors for the black hole binaries observed with the gravitational wave detectors: the stars are massive enough to form a black hole ($\mzams \gtrsim 15-25~\msun$ at solar metallicity, according to the single stellar evolution \cite{Limongi2017_handbookSN}) and will likely undergo at least a mass transfer episode (82 O-type stars with mass $\sim 15-60~\msun$ observed in six Galactic open cluster revealed that $70 \%$ of the massive stars are born in binaries, close enough to allow mass transfer interaction \cite{Sana2012}). 
+
+Population-synthesis studies suggest that at least one mass transfer episode is necessary to shrink the orbit and allow the coalescence within a Hubble time \cite{spera2019_mergingBBH}. On the one hand, it is difficult to predict the type of mass transfer and the fate of the binary because they strongly depend on the orbital separation and on the details of the stellar evolution, as shown in Fig.\ \ref{fig:Sana2012MTfate}. On the other hand, usually the mass transfer and the strong stellar winds strip the hydrogen envelope of the massive stars, producing a Wolf-Rayet star. If the right conditions are met, the  Wolf-Rayet can form with a black hole companion: the strong winds of the Wolf-Rayet can power the accretion disk of the black hole and make the system visible as a X-ray binary.
+
+\paragraph{Chapter outline}
+This chapter reviews the theory of the single stellar evolution and of the main mass transfer processes (wind-fed accretion, Roche lobe overflow and Common Envelope) to better understand the evolution of the Wolf-Rayet - black hole binaries. I will report the observed properties of the known Wolf-Rayet - black hole systems, discussing the difficulties in the parameter estimation. Finally, I will describe the Cyg X-3 system: the only known Galactic Wolf-Rayet - black hole binary.
+
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=.65\textwidth]{./images/Sana2012MTfate.png}
+	\caption{70\% of O-type stars will be part of a binary with initial period < 1500 days and will undergo at least one mass transfer process. The type of mass transfer and the fate of the binary will depend on the details of the single stellar evolution and on the orbital separation. \cite{Sana2012}}\label{fig:Sana2012MTfate}
+\end{figure}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%% END OF "DEFINITIVE" PART %%%%%%%%
@@ -548,17 +570,20 @@ The evolutionary mechanisms necessary to create a rapidly spinning primary in a 
 
 
 
-
-
-
-\chapter{Theory and observations of Wolf-Rayet - black hole systems}
-\section{Single stellar evolution to form a WR}
+\section{Wolf - Rayet stars}
+\subsection{Spectral classification}
+WN, WC etc. 
+Anche M-L relation?
+Stellar winds empirical by Nugis and Lamers
+\subsection{Single stellar evolution}
 Little recap of single stellar evolution on what is and how evolves a WR, underlying e.g. the typical progenitor masses and the importance of the stellar winds.\\
+
+SSE descritta nel dettaglio fino alla massa del CO e alla sua depletion ad alte metallicità, argomento che verrà ripreso nella spiegazione delle CCSNe in SEVN
 
 
 PLOT: SSE of 30 and 40 Msun with Z=0.015 and 0.02 to show influence of mass and stellar winds.
 
-\section{Mass transfer in binary systems}
+\section{Mass transfer theory}
 Short overview of the main binary processes, with particular attention to the wind accretion, Roche lobe overflow and common envelope
 
 
@@ -647,14 +672,16 @@ Semimajor axis according to my model: Minimum possible a=3.005 Rsun with P=4.5 h
 
 \chapter{Models and simulations with SEVN2}
 \section{The SEVN2 population-synthesis code}
-Interpolates PARSEC tables, describe winds, criteria for identifying a WR, explain how, explain details of mass transfer, explain assumption on the pessimistic case, explain the three kick models, explain the three CCSN models (use histograms)\\
+Interpolates PARSEC tables, describe winds, criteria for identifying a WR, explain how, explain details of mass transfer, explain assumption on the pessimistic case, explain the three kick models, 
+\subsection{CCSN}
+explain the three CCSN models (use histograms)\\
 PLOT: histogram with compact remnants with different SN models\\
 (PLOT: histogram with compact remnants with different kick models )
 
 \section{Initial conditions for simulations}
 Describe the distributions of masses, periods, eccentricities from which I derived the 1 million simulations. Scheme with the parameter space explored
 
-\chapter{Results}
+\chapter{Results}\label{sec:results}
 \section{> 90 \% GW-BBH undergo WR-BH configuration}
 4 tabelle per i 4 modelli di kick che mostrano che nonostante si varino CCSN e metallicità è incontrovertibile che la WR-BH sia una configurazione obbligata.
 

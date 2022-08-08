@@ -326,6 +326,7 @@
       \strng{authorbibnamehash}{9d595ad8e88572712e0c300a45bac059}
       \strng{authornamehash}{9d595ad8e88572712e0c300a45bac059}
       \strng{authorfullhash}{1b8ca6c804b9910a58d3c3d97b313c1a}
+      \field{extraname}{1}
       \field{sortinit}{7}
       \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
       \field{labelnamesource}{author}
@@ -1860,6 +1861,111 @@
       \endverb
       \keyw{Astrophysics - High Energy Astrophysical Phenomena,Astrophysics - Solar and Stellar Astrophysics}
     \endentry
+    \entry{Limongi2017_handbookSN}{inbook}{}
+      \name{author}{1}{}{%
+        {{hash=6d4cc313616e56b066badd15ae01bcc0}{%
+           family={{Limongi}},
+           familyi={L\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=d79e7b46f39bb6e34cd1e984733bb2d0}{%
+           family={{Alsabti}},
+           familyi={A\bibinitperiod},
+           given={Athem\bibnamedelima W.},
+           giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=a881fd94608a0170ee25d8d25abe0291}{%
+           family={{Murdin}},
+           familyi={M\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{6d4cc313616e56b066badd15ae01bcc0}
+      \strng{fullhash}{6d4cc313616e56b066badd15ae01bcc0}
+      \strng{bibnamehash}{6d4cc313616e56b066badd15ae01bcc0}
+      \strng{authorbibnamehash}{6d4cc313616e56b066badd15ae01bcc0}
+      \strng{authornamehash}{6d4cc313616e56b066badd15ae01bcc0}
+      \strng{authorfullhash}{6d4cc313616e56b066badd15ae01bcc0}
+      \strng{editorbibnamehash}{ef76b3a202f2a390618ae6e12b0afa97}
+      \strng{editornamehash}{ef76b3a202f2a390618ae6e12b0afa97}
+      \strng{editorfullhash}{55ab847b1308fec2a7f23bdb7647572b}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Handbook of Supernovae}
+      \field{title}{{Supernovae from Massive Stars}}
+      \field{year}{2017}
+      \field{pages}{513}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1007/978-3-319-21846-5\_119
+      \endverb
+      \keyw{Physics,Astrophysics - Solar and Stellar Astrophysics}
+    \endentry
+    \entry{spera2019_mergingBBH}{article}{}
+      \name{author}{6}{}{%
+        {{hash=4a2658eece869e63c003859b79de5377}{%
+           family={{Spera}},
+           familyi={S\bibinitperiod},
+           given={Mario},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a63bd1a4a95ee5ac182d54e3e4833309}{%
+           family={{Mapelli}},
+           familyi={M\bibinitperiod},
+           given={Michela},
+           giveni={M\bibinitperiod}}}%
+        {{hash=414d16414d3d21680b178e1d53ff1330}{%
+           family={{Giacobbo}},
+           familyi={G\bibinitperiod},
+           given={Nicola},
+           giveni={N\bibinitperiod}}}%
+        {{hash=36682fffbb5cad0b7103d9bfcecdd59e}{%
+           family={{Trani}},
+           familyi={T\bibinitperiod},
+           given={Alessandro\bibnamedelima A.},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=4dc1942d0660112e3da17613edc5e1ac}{%
+           family={{Bressan}},
+           familyi={B\bibinitperiod},
+           given={Alessandro},
+           giveni={A\bibinitperiod}}}%
+        {{hash=80a2ff110872e777023c0e992e44aef0}{%
+           family={{Costa}},
+           familyi={C\bibinitperiod},
+           given={Guglielmo},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{9d595ad8e88572712e0c300a45bac059}
+      \strng{fullhash}{4805069b2f0d5cfcb4b7bdf027d18587}
+      \strng{bibnamehash}{9d595ad8e88572712e0c300a45bac059}
+      \strng{authorbibnamehash}{9d595ad8e88572712e0c300a45bac059}
+      \strng{authornamehash}{9d595ad8e88572712e0c300a45bac059}
+      \strng{authorfullhash}{4805069b2f0d5cfcb4b7bdf027d18587}
+      \field{extraname}{2}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{astro-ph.HE}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{\mnras}
+      \field{month}{5}
+      \field{number}{1}
+      \field{title}{{Merging black hole binaries with the SEVN code}}
+      \field{volume}{485}
+      \field{year}{2019}
+      \field{pages}{889\bibrangedash 907}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1093/mnras/stz359
+      \endverb
+      \verb{eprint}
+      \verb 1809.04605
+      \endverb
+      \keyw{black hole physics,gravitational waves,methods: numerical,binaries: general,stars: mass-loss,Astrophysics - High Energy Astrophysical Phenomena,Astrophysics - Instrumentation and Methods for Astrophysics,Astrophysics - Solar and Stellar Astrophysics}
+    \endentry
     \entry{IC10X-1_Silverman2008}{article}{}
       \name{author}{2}{}{%
         {{hash=e85072afe2307d56c9f8b266a24768bb}{%
@@ -1923,8 +2029,8 @@
       \strng{authorbibnamehash}{4d85c74842901f1d5b832dcf7a24764f}
       \strng{authornamehash}{4d85c74842901f1d5b832dcf7a24764f}
       \strng{authorfullhash}{a8cd8249c8580ce38b40537a6e07929c}
-      \field{sortinit}{7}
-      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{\aap}
@@ -1978,8 +2084,8 @@
       \strng{authorbibnamehash}{f631970f4c317d6b64ff8bbea3725592}
       \strng{authornamehash}{f631970f4c317d6b64ff8bbea3725592}
       \strng{authorfullhash}{7eaa14f84be66f7308d8a92e2774c16f}
-      \field{sortinit}{7}
-      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1745-3925}
@@ -2061,8 +2167,8 @@
       \strng{authorbibnamehash}{895dafa9864079faf0be810426187fe8}
       \strng{authornamehash}{895dafa9864079faf0be810426187fe8}
       \strng{authorfullhash}{e5f977f635086c4e93fe29c145c66871}
-      \field{sortinit}{7}
-      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{The Astrophysical Journal}
@@ -2123,8 +2229,8 @@
       \strng{authornamehash}{3acebbeb4657fab2c45661942dedf15d}
       \strng{authorfullhash}{4e6e2a4c4b19686bf928daacf4e77b21}
       \field{extraname}{1}
-      \field{sortinit}{7}
-      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{astro-ph.HE}
@@ -2179,8 +2285,8 @@
       \strng{authorbibnamehash}{0b5d371ec442011849963e2ff9ff4df5}
       \strng{authornamehash}{0b5d371ec442011849963e2ff9ff4df5}
       \strng{authorfullhash}{cea6176e1b0538e4d60ddb7a83c8e668}
-      \field{sortinit}{7}
-      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{astro-ph.HE}
@@ -2566,8 +2672,8 @@
       \strng{authorbibnamehash}{c4b2875f23e03fdf5edfd6f3b89e9889}
       \strng{authornamehash}{c4b2875f23e03fdf5edfd6f3b89e9889}
       \strng{authorfullhash}{094a88cd1da392201f0e5ea14f877bb1}
-      \field{sortinit}{9}
-      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{astro-ph.SR}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.2.10)  4 AUG 2022 22:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.2.10)  8 AUG 2022 18:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1155,86 +1155,91 @@ Package pdftex.def Info: ./images/tensionspinHMXBHlike.png  used on input line
 523.
 (pdftex.def)             Requested size: 214.70682pt x 139.39287pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 529--530
+Underfull \hbox (badness 10000) in paragraph at lines 530--531
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 535--536
+Underfull \hbox (badness 10000) in paragraph at lines 536--537
 
  []
 
 [13 <./images/tensionspin.png (PNG copy)> <./images/tensionspinHMXBHlike.png (P
 NG copy)>] [14]
 Chapter 2.
+<./images/Sana2012MTfate.png, id=554, 710.655pt x 563.10374pt>
+File: ./images/Sana2012MTfate.png Graphic file (type png)
+<use ./images/Sana2012MTfate.png>
+Package pdftex.def Info: ./images/Sana2012MTfate.png  used on input line 556.
+(pdftex.def)             Requested size: 284.80931pt x 225.6757pt.
+[15
 
-Underfull \hbox (badness 10000) in paragraph at lines 556--557
+ <./images/Sana2012MTfate.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 579--580
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 566--567
+Underfull \hbox (badness 10000) in paragraph at lines 591--592
 
  []
 
 
-Overfull \hbox (62.64125pt too wide) in paragraph at lines 574--596
+Overfull \hbox (62.64125pt too wide) in paragraph at lines 599--621
 [] 
  []
 
-[15
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 608--609
+Underfull \hbox (badness 10000) in paragraph at lines 633--634
+
+ []
+
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 635--636
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 610--611
-
- []
-
-
-Overfull \hbox (12.63824pt too wide) in paragraph at lines 612--612
+Overfull \hbox (12.63824pt too wide) in paragraph at lines 637--637
 []\T1/cmr/m/n/10 To model its metal-lic-ity we use the metal-licty gra-di-ent o
 f the MW that was ob-tained by \T1/cmr/bx/n/10 Lemasle2018
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 619--620
+Underfull \hbox (badness 10000) in paragraph at lines 644--645
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 621--622
+Underfull \hbox (badness 10000) in paragraph at lines 646--647
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 623--624
-
- []
-
-[16]
-Underfull \hbox (badness 10000) in paragraph at lines 628--629
+Underfull \hbox (badness 10000) in paragraph at lines 648--649
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 630--632
+Underfull \hbox (badness 10000) in paragraph at lines 653--654
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 630--632
+Underfull \hbox (badness 10000) in paragraph at lines 655--657
 
  []
 
-[17] [18
 
-]
+Underfull \hbox (badness 10000) in paragraph at lines 655--657
+
+ []
+
+[17] [18]
 Chapter 3.
-[19] [20
+[19
+
+] [20
 
 ]
 Chapter 4.
@@ -1248,68 +1253,75 @@ Chapter 5.
 Chapter 6.
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 719.
+(hyperref)                than one, level fixed on input line 746.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 741--742
+Underfull \hbox (badness 10000) in paragraph at lines 768--769
 
  []
 
 [25] [26]
-Underfull \hbox (badness 10000) in paragraph at lines 779--780
+Underfull \hbox (badness 10000) in paragraph at lines 806--807
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 789--790
+Underfull \hbox (badness 10000) in paragraph at lines 816--817
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 817--818
+Underfull \hbox (badness 10000) in paragraph at lines 844--845
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 819--820
+Underfull \hbox (badness 10000) in paragraph at lines 846--847
 
  []
 
 [27] [28]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 8
-46.
+73.
  (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 ) [29
 
 ]
-Overfull \hbox (30.96431pt too wide) in paragraph at lines 846--846
+Overfull \hbox (30.96431pt too wide) in paragraph at lines 873--873
 \T1/cmr/m/n/10 tion of merg-ing bi-nary black holes?^^Q In: \T1/cmr/m/it/10 arX
 iv e-prints\T1/cmr/m/n/10 , arXiv:2207.14290 (July 2022), arXiv:2207.14290. 
  []
 
 [30]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 847.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 874.
  [31]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 847.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 874.
  (./thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 847.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 847.
-Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: DA5DF3692AC0CB1037676C9CB1F31A47;2927.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 847.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 874.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 874.
+
+
+Package rerunfilecheck Warning: File `thesis.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `thesis.out':
+(rerunfilecheck)             Before: 7694F2F710CFB8A46AA19D6016B21C3B;2871
+(rerunfilecheck)             After:  907BB74A472E06D734616D6DD582486D;3084.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 874.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 21166 strings out of 483099
- 393042 string characters out of 5964234
- 1050744 words of memory out of 5000000
- 35655 multiletter control sequences out of 15000+600000
+ 21193 strings out of 483099
+ 393801 string characters out of 5964234
+ 1051238 words of memory out of 5000000
+ 35673 multiletter control sequences out of 15000+600000
  559019 words of font info for 90 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 41i,14n,65p,1411b,2905s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,14n,65p,1411b,2902s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf/
 fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
@@ -1339,10 +1351,10 @@ ublic/cm-super/sfrm0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1
 000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti0900.pfb></usr/share/
 texmf/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/pu
 blic/cm-super/sftt1000.pfb>
-Output written on thesis.pdf (37 pages, 3431229 bytes).
+Output written on thesis.pdf (37 pages, 3586036 bytes).
 PDF statistics:
- 838 PDF objects out of 1000 (max. 8388607)
- 716 compressed objects within 8 object streams
- 173 named destinations out of 1000 (max. 500000)
- 431 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 858 PDF objects out of 1000 (max. 8388607)
+ 734 compressed objects within 8 object streams
+ 181 named destinations out of 1000 (max. 500000)
+ 436 words of extra memory for PDF output out of 10000 (max. 10000000)
 
