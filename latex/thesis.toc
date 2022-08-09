@@ -1,7 +1,7 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {english}{}
 \contentsline {chapter}{Abstract}{iii}{Doc-Start}%
-\contentsline {chapter}{Contents}{v}{chapter*.1}%
+\contentsline {chapter}{Contents}{vi}{chapter*.1}%
 \contentsline {chapter}{\numberline {1}Demography of the black hole binaries}{1}{chapter.1}%
 \contentsline {paragraph}{The new gravitational wave era}{1}{section*.2}%
 \contentsline {paragraph}{Two main evolutionary channels}{1}{section*.3}%
@@ -33,38 +33,41 @@
 \contentsline {paragraph}{An intermediate evolutionary stage}{15}{section*.30}%
 \contentsline {paragraph}{Chapter outline}{15}{section*.31}%
 \contentsline {section}{\numberline {2.1}Wolf - Rayet stars}{16}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Spectral classification}{16}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Single stellar evolution}{16}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.1}Spectral classification of a Wolf-Rayet}{16}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Stellar winds}{16}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Evolution of a massive star into a Wolf-Rayet}{16}{subsection.2.1.3}%
+\contentsline {paragraph}{Equilibria and timescales of the stellar evolution}{16}{section*.33}%
+\contentsline {paragraph}{Hydrogen burning}{16}{section*.34}%
 \contentsline {section}{\numberline {2.2}Mass transfer theory}{16}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Observed candidates of Wolf-Rayet - black hole systems}{16}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Cyg X-3}{16}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Properties}{16}{subsection.2.4.1}%
-\contentsline {subsubsection}{Observations and identifications}{16}{section*.35}%
-\contentsline {subsubsection}{DIstance and metallicity}{17}{section*.36}%
-\contentsline {subsection}{\numberline {2.4.2}Period}{17}{subsection.2.4.2}%
-\contentsline {subsubsection}{Singh 2002}{17}{section*.37}%
-\contentsline {subsection}{\numberline {2.4.3}Mass ranges}{17}{subsection.2.4.3}%
-\contentsline {subsubsection}{Koljonen \& Maccarone 2017}{17}{section*.38}%
-\contentsline {subsubsection}{Zdziarski 2013}{18}{section*.39}%
-\contentsline {subsubsection}{Procedure}{18}{section*.40}%
-\contentsline {chapter}{\numberline {3}Models and simulations with SEVN2}{19}{chapter.3}%
-\contentsline {section}{\numberline {3.1}The SEVN2 population-synthesis code}{19}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}CCSN}{19}{subsection.3.1.1}%
-\contentsline {section}{\numberline {3.2}Initial conditions for simulations}{19}{section.3.2}%
-\contentsline {chapter}{\numberline {4}Results}{21}{chapter.4}%
-\contentsline {section}{\numberline {4.1}> 90 \% GW-BBH undergo WR-BH configuration}{21}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Fiducial model}{21}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Role of metallicity}{21}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Role of the kicks}{21}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Role of CCSN model}{21}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Probing the parameter space}{21}{section.4.6}%
-\contentsline {section}{\numberline {4.7}Compare with Belczynski+2013}{22}{section.4.7}%
-\contentsline {chapter}{\numberline {5}Conclusion}{23}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Annotazioni/Bozza}{25}{chapter.6}%
-\contentsline {subsection}{\numberline {6.0.1}Parameter space to explore}{25}{subsection.6.0.1}%
-\contentsline {subsection}{\numberline {6.0.2}Compare with Belczynski}{25}{subsection.6.0.2}%
-\contentsline {subsection}{\numberline {6.0.3}Notes on how SEVN works/how to interpret things/where to focus}{26}{subsection.6.0.3}%
-\contentsline {section}{\numberline {6.1}Compactness model implemented in SEVN}{27}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Pipeline}{28}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Results Cyg X-3}{28}{section.6.3}%
-\contentsline {chapter}{Bibliography}{29}{chapter*.41}%
+\contentsline {section}{\numberline {2.3}Observed candidates of Wolf-Rayet - black hole systems}{18}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Cyg X-3}{18}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Properties}{18}{subsection.2.4.1}%
+\contentsline {subsubsection}{Observations and identifications}{18}{section*.39}%
+\contentsline {subsubsection}{DIstance and metallicity}{18}{section*.40}%
+\contentsline {subsection}{\numberline {2.4.2}Period}{19}{subsection.2.4.2}%
+\contentsline {subsubsection}{Singh 2002}{19}{section*.41}%
+\contentsline {subsection}{\numberline {2.4.3}Mass ranges}{19}{subsection.2.4.3}%
+\contentsline {subsubsection}{Koljonen \& Maccarone 2017}{19}{section*.42}%
+\contentsline {subsubsection}{Zdziarski 2013}{19}{section*.43}%
+\contentsline {subsubsection}{Procedure}{19}{section*.44}%
+\contentsline {chapter}{\numberline {3}Models and simulations with SEVN2}{21}{chapter.3}%
+\contentsline {section}{\numberline {3.1}The SEVN2 population-synthesis code}{21}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}CCSN}{21}{subsection.3.1.1}%
+\contentsline {section}{\numberline {3.2}Initial conditions for simulations}{21}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Results}{23}{chapter.4}%
+\contentsline {section}{\numberline {4.1}> 90 \% GW-BBH undergo WR-BH configuration}{23}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Fiducial model}{23}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Role of metallicity}{23}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Role of the kicks}{23}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Role of CCSN model}{23}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Probing the parameter space}{23}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Compare with Belczynski+2013}{24}{section.4.7}%
+\contentsline {chapter}{\numberline {5}Conclusion}{25}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Annotazioni/Bozza}{27}{chapter.6}%
+\contentsline {subsection}{\numberline {6.0.1}Parameter space to explore}{27}{subsection.6.0.1}%
+\contentsline {subsection}{\numberline {6.0.2}Compare with Belczynski}{27}{subsection.6.0.2}%
+\contentsline {subsection}{\numberline {6.0.3}Notes on how SEVN works/how to interpret things/where to focus}{28}{subsection.6.0.3}%
+\contentsline {section}{\numberline {6.1}Compactness model implemented in SEVN}{29}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Pipeline}{30}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Results Cyg X-3}{30}{section.6.3}%
+\contentsline {chapter}{Bibliography}{31}{chapter*.45}%

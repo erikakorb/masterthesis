@@ -33,13 +33,13 @@ def GenerateBin(version,Nsim,Z,SN,kick,ppisn,df_name):
         filtered.to_csv(path_to_listBin,sep='\t',index=False,header=False)
         
         if len(filtered.index) == 0:
-        	print('##############################')
-        	print('No binaries to re-simulate')
-        	print('##############################')
-        	runsevn = 'no'
-       	else:
-       		runsevn = 'yes'
-       	return runsevn
+                print('##############################')
+                print('No binaries to re-simulate')
+                print('##############################')
+                runsevn = 'no'
+        else:
+                runsevn = 'yes'
+        return runsevn
         
         
 def ExtractIC(path):
@@ -74,12 +74,12 @@ def ExtractIC(path):
 ####################################################################
 # MANUALLY MODIFY AN INPUT BINARY FILE ####
 ####################################################
-path_listBin = 'listBin.dat'
+path_listBin = 'listStar.dat'
 df = pd.read_csv(path_listBin, sep='\s+', header=None)
-df[1] = '0.02'
-df[6] = '0.02'
+df[1] = '0.002'
+#df[6] = '0.002'
 df[3] = 'compact'
-df[8] = 'compact'
+#df[8] = 'compact'
 df.to_csv('listBin2.dat',sep='\t',index=False,header=False)
 
 

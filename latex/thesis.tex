@@ -571,17 +571,82 @@ This chapter reviews the theory of the single stellar evolution and of the main 
 
 
 \section{Wolf - Rayet stars}
-\subsection{Spectral classification}
-WN, WC etc. 
-Anche M-L relation?
-Stellar winds empirical by Nugis and Lamers
-\subsection{Single stellar evolution}
-Little recap of single stellar evolution on what is and how evolves a WR, underlying e.g. the typical progenitor masses and the importance of the stellar winds.\\
 
-SSE descritta nel dettaglio fino alla massa del CO e alla sua depletion ad alte metallicità, argomento che verrà ripreso nella spiegazione delle CCSNe in SEVN
+\subsection{Spectral classification of a Wolf-Rayet}
+WN,WC etc con le righe spettrali
+
+\subsection{Stellar winds}\label{subsec:stellarwinds}
 
 
-PLOT: SSE of 30 and 40 Msun with Z=0.015 and 0.02 to show influence of mass and stellar winds.
+\subsection{Evolution of a massive star into a Wolf-Rayet}\label{subsec:stellarevo}
+\paragraph{Equilibria and timescales of the stellar evolution}
+A star forms when a collapsing interstellar molecular cloud is able to reach central temperatures $\gtrsim 10^7$ K and ignite the hydrogen nuclear fusion. \cite{evostellare} The interior of the star becomes a hot plasma with a pressure gradient sufficient to balance the self-gravity: the star evolves in hydrostatic equilibrium. According to the virial theorem, perturbations of the hydrostatic equilibrium occur on the \emph{dynamical timescale}
+
+\begin{equation}\label{eq:taudyn}
+		\tau_\textup{dyn} \simeq \sqrt{\frac{R^3}{G M}} \simeq 30 \left(\frac{R}{R\sun}\right)^{3/2} \left(\frac{M\sun}{M}\right)^{1/2}\ \text{minutes}
+\end{equation}
+
+where $R$ is the radius of the star, $M$ its mass and $G$ is the gravitational constant.
+
+The energy released by the nuclear reactions is radiated from the surface and mantains the star in thermal equilibrium with $T_{\rm core} \approx const$. When the nuclear fuel is exhausted, the lower pressure gradient of the plasma causes a contraction of the star in order to maintain the hydrostatic equilibrium. Part of the gravitational energy is radiated away but part of it heats up the interior, until the it reaches the critical temperature to ignite heavier elements. The contraction is quasi-static and maintains the hydrostatic equilibrium. However, since a part of the energy produced by the contraction is not radiated away but heats up the interior, the process happens outside the thermal equilibrium and occurs in a \emph{thermal timescale} (also known as \emph{Kelvin-Helmholtz timescale})
+
+\begin{equation}\label{eq:tauth}
+	\tau_\textup{th} \simeq \frac{G M^2}{R L} \simeq 15 
+	\left(\frac{M}{M\sun}\right)^{2} \left(\frac{R\sun}{R}\right) \left(\frac{L\sun}{L}\right)\ \text{Myr}
+\end{equation}
+
+Aside from central exhaustion or local fluctuations in the core temperature, a star evolves in thermal equilibrium. However, the longest evolutionary timescale is the \emph{nuclear timescale} and quantifies the time required to burn all the nuclear fuel for a given element. The longest nuclear timescale is the one for the hydrogen burning, that is the most abundant element ($\sim 70~\%$ of the stellar mass), and provides an order-of-magnitude estimate for the stellar lifetime
+
+\begin{equation}\label{eq:taunuc}
+	\tau_\textup{nuc} \simeq 10 \left(\frac{M}{M\sun}\right) \left(\frac{L\sun}{L}\right)\ \text{Gyr}
+\end{equation}
+
+\paragraph{Hydrogen burning}
+The star begins its life as a \emph{Zero Age Main Sequence} when it ignites the hydrogen burning in the core, remaining in the \emph{Main Sequence} phase until the central hydrogen is exhausted. The evolution of the star is determined by its initial mass $\mzams$ and metallicity $\zzams$: the first limits the fuel available for the nuclear reactions and the second influences the amount of mass lost by stellar winds. On the one hand, stars in the Main Sequence satisfy the empirical relation $L \propto M^3$ that, put into the nuclear timescale of Eq.\ \ref{eq:taunuc}, results in $\tau_{\rm nuc} \propto M^{-2}$: the more massive the star, the larger the luminosity caused by more efficient and rapid nuclear reactions, thus, the shorter the lifetime. On the other hand, high metallicities cause efficient stellar winds and enhance the mass lost, as better explained in Sec.\ \ref{subsec:stellarwinds}.
+
+At the end of the core hydrogen burning the star contracts until it ignites the hydrogen in the shell.
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{figure}[h!]
+	\begin{minipage}{.49\textwidth}
+		\centering
+		\includegraphics[width=1.05\textwidth]{./images/HR_02.pdf}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{.49\textwidth}
+		\centering
+		\includegraphics[width=1.05\textwidth]{./images/HR_002.pdf}	
+	\end{minipage}
+	\caption{Hertzsprung-Russel diagrams with the single stellar evolution of massive stars at two different metallicities. The symbols indicate the different burning stages: beginning of core H burning i.\ e.\ ZAMS (filled circle), beginning of H shell burning (empty diamond), beginning of the core He burning (empty star) possibly as a Wolf-Rayet (filled star), beginning of He shell burning (empty square) possibly as a Wolf-Rayet (filled square), end of the CO burning (empty circle). At solar metallicity ($Z=0.02$, \emph{left} panel) Wolf-Rayet stars can be produced by stars with $\mzams \gtrsim 40~\msun$ while at metallicity one order-of-magnitude lower ($Z=0.002$, \emph{right} panel) the stellar winds are quenched and even stars with $\mzams \sim 100~\msun$ can't produce a Wolf-Rayet. The tracks are generated with the population-synthesis code SEVN \cite{spera2019_mergingBBH} that interpolates the tables produced with the PARSEC stellar evolution code \cite{parsec2015_chen} (more details on the codes in Sec.\ \ref{sec:SEVN}).}\label{fig:HRdiagrams}
+\end{figure}
+
+
+\begin{figure}[h!]
+	\begin{minipage}{.49\textwidth}
+		\centering
+		\includegraphics[width=1.05\textwidth]{./images/mass_Z02.pdf}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{.49\textwidth}
+		\vspace{2mm}
+		\centering
+		\includegraphics[width=1.05\textwidth]{./images/preSN.pdf}	
+	\end{minipage}
+	\caption{\emph{Left:} Time evolution of the mass of the stars (solid lines) and of their He cores (dashed lines) at solar metallicity. The symbols indicate the different burning stages, as explained in Sec.\ \ref{subsec:stellarevo}. \emph{Right:} Mass of the star and of their He and CO cores at the pre-SN stage, here coincident to the end of the CO burning. At solar metallicity the stellar winds strongly reduce the core sizes of stars with $\mzams \gtrsim 30 ~\msun$, transforming them into Wolf-Rayet for $\mzams \gtrsim 40 ~\msun$. At lower metallicity the cores and the stars are larger and they only reduce in stars with $\mzams \gtrsim 70-100 ~\msun$ that evolve too close to the Eddington limit. Both panels are generated with the population-synthesis code SEVN \cite{spera2019_mergingBBH} that interpolates the tables produced with the PARSEC stellar evolution code \cite{parsec2015_chen} (more details on the codes in Sec.\ \ref{sec:SEVN}).}\label{fig:masslostWR}
+\end{figure}
+
+
+
 
 \section{Mass transfer theory}
 Short overview of the main binary processes, with particular attention to the wind accretion, Roche lobe overflow and common envelope
@@ -671,7 +736,7 @@ Semimajor axis according to my model: Minimum possible a=3.005 Rsun with P=4.5 h
 
 
 \chapter{Models and simulations with SEVN2}
-\section{The SEVN2 population-synthesis code}
+\section{The SEVN2 population-synthesis code}\label{sec:SEVN}
 Interpolates PARSEC tables, describe winds, criteria for identifying a WR, explain how, explain details of mass transfer, explain assumption on the pessimistic case, explain the three kick models, 
 \subsection{CCSN}
 explain the three CCSN models (use histograms)\\
