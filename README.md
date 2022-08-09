@@ -1,5 +1,5 @@
 # latex
-The `latex` folder contain the `thesis.tex` file and all the auxiliary files needed for the compilation of the **thesis**. Inside the `biblio` folder there are also all the pdfs used as bibliography
+The `latex` folder contain the `thesis.tex` file and all the auxiliary files needed for the compilation of the **thesis**. Inside the `images` folder there are all the images used in the thesis.
 
 # script
 The `script` folder contains all the **python** and **jupyter-notebook scripts** used for the analysis of the **SEVN2** outputs
