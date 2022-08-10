@@ -1966,29 +1966,41 @@
       \endverb
       \keyw{black hole physics,gravitational waves,methods: numerical,binaries: general,stars: mass-loss,Astrophysics - High Energy Astrophysical Phenomena,Astrophysics - Instrumentation and Methods for Astrophysics,Astrophysics - Solar and Stellar Astrophysics}
     \endentry
-    \entry{evostellare}{book}{}
+    \entry{WR_signature}{article}{}
       \name{author}{1}{}{%
-        {{hash=52ec5250438ebc1d2858f3877a46d310}{%
-           family={Prialnik},
-           familyi={P\bibinitperiod},
-           given={Diana},
-           giveni={D\bibinitperiod}}}%
+        {{hash=39482bf1e636bed4d2c8093483b14aa0}{%
+           family={{Crowther}},
+           familyi={C\bibinitperiod},
+           given={Paul\bibnamedelima A.},
+           giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {Cambridge University Press}%
-      }
-      \strng{namehash}{52ec5250438ebc1d2858f3877a46d310}
-      \strng{fullhash}{52ec5250438ebc1d2858f3877a46d310}
-      \strng{bibnamehash}{52ec5250438ebc1d2858f3877a46d310}
-      \strng{authorbibnamehash}{52ec5250438ebc1d2858f3877a46d310}
-      \strng{authornamehash}{52ec5250438ebc1d2858f3877a46d310}
-      \strng{authorfullhash}{52ec5250438ebc1d2858f3877a46d310}
+      \strng{namehash}{39482bf1e636bed4d2c8093483b14aa0}
+      \strng{fullhash}{39482bf1e636bed4d2c8093483b14aa0}
+      \strng{bibnamehash}{39482bf1e636bed4d2c8093483b14aa0}
+      \strng{authorbibnamehash}{39482bf1e636bed4d2c8093483b14aa0}
+      \strng{authornamehash}{39482bf1e636bed4d2c8093483b14aa0}
+      \strng{authorfullhash}{39482bf1e636bed4d2c8093483b14aa0}
       \field{sortinit}{7}
       \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{An Introduction to the Theory of Stellar Structure and Evolution}
-      \field{year}{2000}
+      \field{eprintclass}{astro-ph}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{\araa}
+      \field{month}{9}
+      \field{number}{1}
+      \field{title}{{Physical Properties of Wolf-Rayet Stars}}
+      \field{volume}{45}
+      \field{year}{2007}
+      \field{pages}{177\bibrangedash 219}
+      \range{pages}{43}
+      \verb{doi}
+      \verb 10.1146/annurev.astro.45.051806.110615
+      \endverb
+      \verb{eprint}
+      \verb astro-ph/0610356
+      \endverb
+      \keyw{Astrophysics}
     \endentry
     \entry{parsec2015_chen}{article}{}
       \name{author}{6}{}{%
@@ -2029,8 +2041,8 @@
       \strng{authorbibnamehash}{7653fd4505db2c70f7a9844756669da7}
       \strng{authornamehash}{7653fd4505db2c70f7a9844756669da7}
       \strng{authorfullhash}{429a60450a00dba2115ff57e29ec8b39}
-      \field{sortinit}{8}
-      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{astro-ph.SR}
@@ -2050,6 +2062,266 @@
       \verb 1506.01681
       \endverb
       \keyw{stars: evolution,Hertzsprung-Russell and colour-magnitude diagrams,stars: massive,stars: mass-loss,supergiants,stars: Wolf-Rayet,Astrophysics - Solar and Stellar Astrophysics}
+    \endentry
+    \entry{Limongi2010_preSNevo}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=6d4cc313616e56b066badd15ae01bcc0}{%
+           family={{Limongi}},
+           familyi={L\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod}}}%
+        {{hash=60a37ab304de015e2071a53c89a9d77d}{%
+           family={{Chieffi}},
+           familyi={C\bibinitperiod},
+           given={Alessandro},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{979f7c07f310c8af2f5feea69dd0f45b}
+      \strng{fullhash}{2ec6fea93093321cb1f62237e0938778}
+      \strng{bibnamehash}{979f7c07f310c8af2f5feea69dd0f45b}
+      \strng{authorbibnamehash}{979f7c07f310c8af2f5feea69dd0f45b}
+      \strng{authornamehash}{979f7c07f310c8af2f5feea69dd0f45b}
+      \strng{authorfullhash}{2ec6fea93093321cb1f62237e0938778}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Journal of Physics Conference Series}
+      \field{eid}{012002}
+      \field{month}{1}
+      \field{series}{Journal of Physics Conference Series}
+      \field{title}{{Presupernova evolution and explosion of massive stars}}
+      \field{volume}{202}
+      \field{year}{2010}
+      \field{pages}{012002}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/1742-6596/202/1/012002
+      \endverb
+    \endentry
+    \entry{Nugis2000_WRwinds}{article}{}
+      \name{author}{2}{}{%
+        {{hash=83f3264f01a896cd52d3a5e4e8ce8b76}{%
+           family={{Nugis}},
+           familyi={N\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=2fa6bf844a3a22868e59e81e6bafe53f}{%
+           family={{Lamers}},
+           familyi={L\bibinitperiod},
+           given={H.\bibnamedelimi J.\bibnamedelimi G.\bibnamedelimi L.\bibnamedelimi M.},
+           giveni={H\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim L\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{b83b0f445b713c92821b8d2644fb99d0}
+      \strng{fullhash}{342b4c548787986cc5055bf71b792eaa}
+      \strng{bibnamehash}{b83b0f445b713c92821b8d2644fb99d0}
+      \strng{authorbibnamehash}{b83b0f445b713c92821b8d2644fb99d0}
+      \strng{authornamehash}{b83b0f445b713c92821b8d2644fb99d0}
+      \strng{authorfullhash}{342b4c548787986cc5055bf71b792eaa}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{\aap}
+      \field{month}{8}
+      \field{title}{{Mass-loss rates of Wolf-Rayet stars as a function of stellar parameters}}
+      \field{volume}{360}
+      \field{year}{2000}
+      \field{pages}{227\bibrangedash 244}
+      \range{pages}{18}
+      \keyw{STARS: ATMOSPHERES,STARS: MASS-LOSS,STARS: EMISSION-LINE,BE,STARS: EVOLUTION,STARS: WOLF-RAYET}
+    \endentry
+    \entry{Grafener2011_M-L_WR}{article}{}
+      \name{author}{4}{}{%
+        {{hash=7e4dbf056768d018e6875a333f362fad}{%
+           family={Gr{ä}fener},
+           familyi={G\bibinitperiod},
+           given={G},
+           giveni={G\bibinitperiod}}}%
+        {{hash=1f7f1f65553f8366994ea149c599294e}{%
+           family={Vink},
+           familyi={V\bibinitperiod},
+           given={JS},
+           giveni={J\bibinitperiod}}}%
+        {{hash=83fdc0af42c12571d9a8765f373edee0}{%
+           family={Koter},
+           familyi={K\bibinitperiod},
+           given={Alex},
+           giveni={A\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+        {{hash=5aaf8021b2da039699692618c3757eaa}{%
+           family={Langer},
+           familyi={L\bibinitperiod},
+           given={N},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {EDP Sciences}%
+      }
+      \strng{namehash}{0487de18afecd2511646421cc592d033}
+      \strng{fullhash}{f8bd2580d0bf19fd966791b7184a1869}
+      \strng{bibnamehash}{0487de18afecd2511646421cc592d033}
+      \strng{authorbibnamehash}{0487de18afecd2511646421cc592d033}
+      \strng{authornamehash}{0487de18afecd2511646421cc592d033}
+      \strng{authorfullhash}{f8bd2580d0bf19fd966791b7184a1869}
+      \field{extraname}{1}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Astronomy \& Astrophysics}
+      \field{title}{The Eddington factor as the key to understand the winds of the most massive stars-Evidence for a $\Gamma$-dependence of Wolf-Rayet type mass loss}
+      \field{volume}{535}
+      \field{year}{2011}
+      \field{pages}{A56}
+      \range{pages}{-1}
+    \endentry
+    \entry{G&H_WRmassloss}{article}{}
+      \name{author}{2}{}{%
+        {{hash=7e4dbf056768d018e6875a333f362fad}{%
+           family={{Gr{ä}fener}},
+           familyi={G\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=0835fb16ca8f71e4b387cd578faca820}{%
+           family={{Hamann}},
+           familyi={H\bibinitperiod},
+           given={W.\bibnamedelimi -R.},
+           giveni={W\bibinitperiod\bibinitdelim \bibinithyphendelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{0487de18afecd2511646421cc592d033}
+      \strng{fullhash}{c87341e5ae01440d3396e4bc673f93d8}
+      \strng{bibnamehash}{0487de18afecd2511646421cc592d033}
+      \strng{authorbibnamehash}{0487de18afecd2511646421cc592d033}
+      \strng{authornamehash}{0487de18afecd2511646421cc592d033}
+      \strng{authorfullhash}{c87341e5ae01440d3396e4bc673f93d8}
+      \field{extraname}{2}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{astro-ph}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{\aap}
+      \field{month}{5}
+      \field{number}{3}
+      \field{title}{{Mass loss from late-type WN stars and its Z-dependence. Very massive stars approaching the Eddington limit}}
+      \field{volume}{482}
+      \field{year}{2008}
+      \field{pages}{945\bibrangedash 960}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1051/0004-6361:20066176
+      \endverb
+      \verb{eprint}
+      \verb 0803.0866
+      \endverb
+      \keyw{stars: Wolf-Rayet,stars: early-type,stars: atmospheres,stars: mass-loss,stars: winds,outflows,stars: individual: WR 22,Astrophysics}
+    \endentry
+    \entry{Vink2001}{article}{}
+      \name{author}{3}{}{%
+        {{hash=bbeaac6c4df3ba1e36a94c609d84ecd3}{%
+           family={Vink},
+           familyi={V\bibinitperiod},
+           given={Jorick\bibnamedelima S},
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=83fdc0af42c12571d9a8765f373edee0}{%
+           family={Koter},
+           familyi={K\bibinitperiod},
+           given={Alex},
+           giveni={A\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+        {{hash=2fa6bf844a3a22868e59e81e6bafe53f}{%
+           family={Lamers},
+           familyi={L\bibinitperiod},
+           given={HJGLM},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {EDP Sciences}%
+      }
+      \strng{namehash}{5a811adc7923860249f086e1187dce2d}
+      \strng{fullhash}{bf4391eca0553362e2f378304b5c6164}
+      \strng{bibnamehash}{5a811adc7923860249f086e1187dce2d}
+      \strng{authorbibnamehash}{5a811adc7923860249f086e1187dce2d}
+      \strng{authornamehash}{5a811adc7923860249f086e1187dce2d}
+      \strng{authorfullhash}{bf4391eca0553362e2f378304b5c6164}
+      \field{extraname}{1}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Astronomy \& Astrophysics}
+      \field{number}{2}
+      \field{title}{Mass-loss predictions for O and B stars as a function of metallicity}
+      \field{volume}{369}
+      \field{year}{2001}
+      \field{pages}{574\bibrangedash 588}
+      \range{pages}{15}
+    \endentry
+    \entry{Vink2011}{article}{}
+      \name{author}{6}{}{%
+        {{hash=bbeaac6c4df3ba1e36a94c609d84ecd3}{%
+           family={{Vink}},
+           familyi={V\bibinitperiod},
+           given={Jorick\bibnamedelima S.},
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=6d2d30d822208c6a740597f44ae7a116}{%
+           family={{Muijres}},
+           familyi={M\bibinitperiod},
+           given={L.\bibnamedelimi E.},
+           giveni={L\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=af9632d9d3454074d6c7c3b1b5046d96}{%
+           family={{Anthonisse}},
+           familyi={A\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=15a8797475712c1383878fc12d4ea836}{%
+           family={{de Koter}},
+           familyi={d\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=7e4dbf056768d018e6875a333f362fad}{%
+           family={{Gr{ä}fener}},
+           familyi={G\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=5aaf8021b2da039699692618c3757eaa}{%
+           family={{Langer}},
+           familyi={L\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{5a811adc7923860249f086e1187dce2d}
+      \strng{fullhash}{c2d0dea84facf81e7f7fac0c887c07d5}
+      \strng{bibnamehash}{5a811adc7923860249f086e1187dce2d}
+      \strng{authorbibnamehash}{5a811adc7923860249f086e1187dce2d}
+      \strng{authornamehash}{5a811adc7923860249f086e1187dce2d}
+      \strng{authorfullhash}{c2d0dea84facf81e7f7fac0c887c07d5}
+      \field{extraname}{2}
+      \field{sortinit}{9}
+      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{A132}
+      \field{eprintclass}{astro-ph.SR}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{\aap}
+      \field{month}{7}
+      \field{title}{{Wind modelling of very massive stars up to 300 solar masses}}
+      \field{volume}{531}
+      \field{year}{2011}
+      \field{pages}{A132}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1051/0004-6361/201116614
+      \endverb
+      \verb{eprint}
+      \verb 1105.0556
+      \endverb
+      \keyw{stars: massive,supergiants,stars: winds,outflows,stars: Wolf-Rayet,stars: mass-loss,Astrophysics - Solar and Stellar Astrophysics,Astrophysics - Cosmology and Nongalactic Astrophysics,Astrophysics - Astrophysics of Galaxies,Astrophysics - High Energy Astrophysical Phenomena}
     \endentry
     \entry{IC10X-1_Silverman2008}{article}{}
       \name{author}{2}{}{%
@@ -2073,8 +2345,8 @@
       \strng{authorbibnamehash}{8675177c676e86184adb1692f6e777b5}
       \strng{authornamehash}{8675177c676e86184adb1692f6e777b5}
       \strng{authorfullhash}{ec932c3c0d7c1cfdbf277742fec3dd14}
-      \field{sortinit}{8}
-      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{The Astrophysical Journal}
@@ -2114,8 +2386,8 @@
       \strng{authorbibnamehash}{4d85c74842901f1d5b832dcf7a24764f}
       \strng{authornamehash}{4d85c74842901f1d5b832dcf7a24764f}
       \strng{authorfullhash}{a8cd8249c8580ce38b40537a6e07929c}
-      \field{sortinit}{8}
-      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{\aap}
@@ -2169,8 +2441,8 @@
       \strng{authorbibnamehash}{f631970f4c317d6b64ff8bbea3725592}
       \strng{authornamehash}{f631970f4c317d6b64ff8bbea3725592}
       \strng{authorfullhash}{7eaa14f84be66f7308d8a92e2774c16f}
-      \field{sortinit}{8}
-      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1745-3925}
@@ -2252,8 +2524,8 @@
       \strng{authorbibnamehash}{895dafa9864079faf0be810426187fe8}
       \strng{authornamehash}{895dafa9864079faf0be810426187fe8}
       \strng{authorfullhash}{e5f977f635086c4e93fe29c145c66871}
-      \field{sortinit}{8}
-      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{The Astrophysical Journal}
@@ -2314,8 +2586,8 @@
       \strng{authornamehash}{3acebbeb4657fab2c45661942dedf15d}
       \strng{authorfullhash}{4e6e2a4c4b19686bf928daacf4e77b21}
       \field{extraname}{1}
-      \field{sortinit}{8}
-      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{astro-ph.HE}
@@ -2370,8 +2642,8 @@
       \strng{authorbibnamehash}{0b5d371ec442011849963e2ff9ff4df5}
       \strng{authornamehash}{0b5d371ec442011849963e2ff9ff4df5}
       \strng{authorfullhash}{cea6176e1b0538e4d60ddb7a83c8e668}
-      \field{sortinit}{8}
-      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{astro-ph.HE}
@@ -2416,8 +2688,8 @@
       \strng{authorbibnamehash}{b7fc5126b672b841ebf755c3ee8962d9}
       \strng{authornamehash}{b7fc5126b672b841ebf755c3ee8962d9}
       \strng{authorfullhash}{83df90bc1569eaa2aa64a2ba63ffe402}
-      \field{sortinit}{9}
-      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{astro-ph.HE}
@@ -2477,8 +2749,8 @@
       \strng{authornamehash}{3acebbeb4657fab2c45661942dedf15d}
       \strng{authorfullhash}{7fe8bcabc3cae0ab1074bbe3f6943327}
       \field{extraname}{2}
-      \field{sortinit}{9}
-      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0035-8711}
@@ -2552,8 +2824,8 @@
       \strng{authorbibnamehash}{13343d8fc5b9822aaf6354455e3253d6}
       \strng{authornamehash}{13343d8fc5b9822aaf6354455e3253d6}
       \strng{authorfullhash}{62a7b249b6a343789c7ff2a5bfaba162}
-      \field{sortinit}{9}
-      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{astro-ph.HE}
@@ -2612,8 +2884,8 @@
       \strng{authornamehash}{e8935adc0b03e45d9fa167915e46a4ef}
       \strng{authorfullhash}{c65f8f0c28bd5b5fc3ba0a46ef231b01}
       \field{extraname}{1}
-      \field{sortinit}{9}
-      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Monthly Notices of the Royal Astronomical Society}
