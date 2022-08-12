@@ -2177,48 +2177,6 @@
       \field{pages}{A56}
       \range{pages}{-1}
     \endentry
-    \entry{G&H_WRmassloss}{article}{}
-      \name{author}{2}{}{%
-        {{hash=7e4dbf056768d018e6875a333f362fad}{%
-           family={{Gr{ä}fener}},
-           familyi={G\bibinitperiod},
-           given={G.},
-           giveni={G\bibinitperiod}}}%
-        {{hash=0835fb16ca8f71e4b387cd578faca820}{%
-           family={{Hamann}},
-           familyi={H\bibinitperiod},
-           given={W.\bibnamedelimi -R.},
-           giveni={W\bibinitperiod\bibinitdelim \bibinithyphendelim R\bibinitperiod}}}%
-      }
-      \strng{namehash}{0487de18afecd2511646421cc592d033}
-      \strng{fullhash}{c87341e5ae01440d3396e4bc673f93d8}
-      \strng{bibnamehash}{0487de18afecd2511646421cc592d033}
-      \strng{authorbibnamehash}{0487de18afecd2511646421cc592d033}
-      \strng{authornamehash}{0487de18afecd2511646421cc592d033}
-      \strng{authorfullhash}{c87341e5ae01440d3396e4bc673f93d8}
-      \field{extraname}{2}
-      \field{sortinit}{8}
-      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{eprintclass}{astro-ph}
-      \field{eprinttype}{arXiv}
-      \field{journaltitle}{\aap}
-      \field{month}{5}
-      \field{number}{3}
-      \field{title}{{Mass loss from late-type WN stars and its Z-dependence. Very massive stars approaching the Eddington limit}}
-      \field{volume}{482}
-      \field{year}{2008}
-      \field{pages}{945\bibrangedash 960}
-      \range{pages}{16}
-      \verb{doi}
-      \verb 10.1051/0004-6361:20066176
-      \endverb
-      \verb{eprint}
-      \verb 0803.0866
-      \endverb
-      \keyw{stars: Wolf-Rayet,stars: early-type,stars: atmospheres,stars: mass-loss,stars: winds,outflows,stars: individual: WR 22,Astrophysics}
-    \endentry
     \entry{Vink2001}{article}{}
       \name{author}{3}{}{%
         {{hash=bbeaac6c4df3ba1e36a94c609d84ecd3}{%
@@ -2260,6 +2218,48 @@
       \field{year}{2001}
       \field{pages}{574\bibrangedash 588}
       \range{pages}{15}
+    \endentry
+    \entry{G&H_WRmassloss}{article}{}
+      \name{author}{2}{}{%
+        {{hash=7e4dbf056768d018e6875a333f362fad}{%
+           family={{Gr{ä}fener}},
+           familyi={G\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=0835fb16ca8f71e4b387cd578faca820}{%
+           family={{Hamann}},
+           familyi={H\bibinitperiod},
+           given={W.\bibnamedelimi -R.},
+           giveni={W\bibinitperiod\bibinitdelim \bibinithyphendelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{0487de18afecd2511646421cc592d033}
+      \strng{fullhash}{c87341e5ae01440d3396e4bc673f93d8}
+      \strng{bibnamehash}{0487de18afecd2511646421cc592d033}
+      \strng{authorbibnamehash}{0487de18afecd2511646421cc592d033}
+      \strng{authornamehash}{0487de18afecd2511646421cc592d033}
+      \strng{authorfullhash}{c87341e5ae01440d3396e4bc673f93d8}
+      \field{extraname}{2}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{astro-ph}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{\aap}
+      \field{month}{5}
+      \field{number}{3}
+      \field{title}{{Mass loss from late-type WN stars and its Z-dependence. Very massive stars approaching the Eddington limit}}
+      \field{volume}{482}
+      \field{year}{2008}
+      \field{pages}{945\bibrangedash 960}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1051/0004-6361:20066176
+      \endverb
+      \verb{eprint}
+      \verb 0803.0866
+      \endverb
+      \keyw{stars: Wolf-Rayet,stars: early-type,stars: atmospheres,stars: mass-loss,stars: winds,outflows,stars: individual: WR 22,Astrophysics}
     \endentry
     \entry{Vink2011}{article}{}
       \name{author}{6}{}{%
@@ -2322,6 +2322,30 @@
       \verb 1105.0556
       \endverb
       \keyw{stars: massive,supergiants,stars: winds,outflows,stars: Wolf-Rayet,stars: mass-loss,Astrophysics - Solar and Stellar Astrophysics,Astrophysics - Cosmology and Nongalactic Astrophysics,Astrophysics - Astrophysics of Galaxies,Astrophysics - High Energy Astrophysical Phenomena}
+    \endentry
+    \entry{evostellare}{book}{}
+      \name{author}{1}{}{%
+        {{hash=52ec5250438ebc1d2858f3877a46d310}{%
+           family={Prialnik},
+           familyi={P\bibinitperiod},
+           given={Diana},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{52ec5250438ebc1d2858f3877a46d310}
+      \strng{fullhash}{52ec5250438ebc1d2858f3877a46d310}
+      \strng{bibnamehash}{52ec5250438ebc1d2858f3877a46d310}
+      \strng{authorbibnamehash}{52ec5250438ebc1d2858f3877a46d310}
+      \strng{authornamehash}{52ec5250438ebc1d2858f3877a46d310}
+      \strng{authorfullhash}{52ec5250438ebc1d2858f3877a46d310}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{An Introduction to the Theory of Stellar Structure and Evolution}
+      \field{year}{2000}
     \endentry
     \entry{IC10X-1_Silverman2008}{article}{}
       \name{author}{2}{}{%

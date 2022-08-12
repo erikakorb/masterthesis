@@ -45,19 +45,21 @@
 \contentsline {paragraph}{Metallicity dependence}{18}{section*.41}%
 \contentsline {paragraph}{Eddington factor dependence}{18}{section*.42}%
 \contentsline {subsection}{\numberline {2.1.4}Evolution of a massive star into a Wolf-Rayet}{19}{subsection.2.1.4}%
-\contentsline {section}{\numberline {2.2}Mass transfer theory}{19}{section.2.2}%
-\contentsline {paragraph}{Evolutionary timescales}{19}{section*.45}%
-\contentsline {section}{\numberline {2.3}Observed candidates of Wolf-Rayet - black hole systems}{21}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Cyg X-3}{21}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Properties}{21}{subsection.2.4.1}%
-\contentsline {subsubsection}{Observations and identifications}{21}{section*.48}%
-\contentsline {subsubsection}{DIstance and metallicity}{21}{section*.49}%
-\contentsline {subsection}{\numberline {2.4.2}Period}{22}{subsection.2.4.2}%
-\contentsline {subsubsection}{Singh 2002}{22}{section*.50}%
-\contentsline {subsection}{\numberline {2.4.3}Mass ranges}{22}{subsection.2.4.3}%
-\contentsline {subsubsection}{Koljonen \& Maccarone 2017}{22}{section*.51}%
-\contentsline {subsubsection}{Zdziarski 2013}{22}{section*.52}%
-\contentsline {subsubsection}{Procedure}{22}{section*.53}%
+\contentsline {paragraph}{Wolf-Rayet stars with \texttt {PARSEC} and \texttt {SEVN}}{19}{section*.43}%
+\contentsline {paragraph}{Stellar evolution timescales}{19}{section*.44}%
+\contentsline {paragraph}{Stellar evolution from the ZAMS to the end of the CO burning}{20}{section*.45}%
+\contentsline {section}{\numberline {2.2}Mass transfer theory}{20}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Observed candidates of Wolf-Rayet - black hole systems}{20}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Cyg X-3}{22}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Properties}{22}{subsection.2.4.1}%
+\contentsline {subsubsection}{Observations and identifications}{22}{section*.50}%
+\contentsline {subsubsection}{DIstance and metallicity}{22}{section*.51}%
+\contentsline {subsection}{\numberline {2.4.2}Period}{23}{subsection.2.4.2}%
+\contentsline {subsubsection}{Singh 2002}{23}{section*.52}%
+\contentsline {subsection}{\numberline {2.4.3}Mass ranges}{23}{subsection.2.4.3}%
+\contentsline {subsubsection}{Koljonen \& Maccarone 2017}{23}{section*.53}%
+\contentsline {subsubsection}{Zdziarski 2013}{23}{section*.54}%
+\contentsline {subsubsection}{Procedure}{23}{section*.55}%
 \contentsline {chapter}{\numberline {3}Models and simulations with SEVN2}{25}{chapter.3}%
 \contentsline {section}{\numberline {3.1}The SEVN2 population-synthesis code}{25}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}CCSN}{25}{subsection.3.1.1}%
@@ -78,4 +80,4 @@
 \contentsline {section}{\numberline {6.1}Compactness model implemented in SEVN}{33}{section.6.1}%
 \contentsline {section}{\numberline {6.2}Pipeline}{34}{section.6.2}%
 \contentsline {section}{\numberline {6.3}Results Cyg X-3}{34}{section.6.3}%
-\contentsline {chapter}{Bibliography}{35}{chapter*.54}%
+\contentsline {chapter}{Bibliography}{35}{chapter*.56}%

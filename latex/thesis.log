@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.2.10)  10 AUG 2022 20:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.2.10)  11 AUG 2022 14:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1211,54 +1211,74 @@ Underfull \hbox (badness 10000) in paragraph at lines 661--662
 
  []
 
-
+[18]
 Underfull \hbox (badness 10000) in paragraph at lines 674--675
 
  []
 
-[18]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 6
 99.
- (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-<./images/HR_02.pdf, id=662, 867.24pt x 867.24pt>
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 701.
+
+Underfull \hbox (badness 10000) in paragraph at lines 701--702
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 703--704
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 708--709
+
+ []
+
+[19]
+<./images/HR_02.pdf, id=700, 867.24pt x 867.24pt>
 File: ./images/HR_02.pdf Graphic file (type pdf)
 <use ./images/HR_02.pdf>
-Package pdftex.def Info: ./images/HR_02.pdf  used on input line 727.
+Package pdftex.def Info: ./images/HR_02.pdf  used on input line 750.
 (pdftex.def)             Requested size: 225.44281pt x 225.43738pt.
 
-Overfull \hbox (10.736pt too wide) in paragraph at lines 727--728
+Overfull \hbox (10.736pt too wide) in paragraph at lines 750--751
  [][] 
  []
 
-<./images/HR_002.pdf, id=663, 867.24pt x 867.24pt>
+<./images/HR_002.pdf, id=701, 867.24pt x 867.24pt>
 File: ./images/HR_002.pdf Graphic file (type pdf)
 <use ./images/HR_002.pdf>
-Package pdftex.def Info: ./images/HR_002.pdf  used on input line 732.
+Package pdftex.def Info: ./images/HR_002.pdf  used on input line 755.
 (pdftex.def)             Requested size: 225.44281pt x 225.43738pt.
 
-Overfull \hbox (10.736pt too wide) in paragraph at lines 732--733
+Overfull \hbox (10.736pt too wide) in paragraph at lines 755--756
  [][] 
  []
 
-<./images/mass_Z02.pdf, id=670, 867.24pt x 867.24pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./images/mass_Z02.pdf, id=708, 867.24pt x 867.24pt>
 File: ./images/mass_Z02.pdf Graphic file (type pdf)
 <use ./images/mass_Z02.pdf>
-Package pdftex.def Info: ./images/mass_Z02.pdf  used on input line 741.
+Package pdftex.def Info: ./images/mass_Z02.pdf  used on input line 764.
 (pdftex.def)             Requested size: 225.44281pt x 225.43738pt.
 
-Overfull \hbox (10.736pt too wide) in paragraph at lines 741--742
+Overfull \hbox (10.736pt too wide) in paragraph at lines 764--765
  [][] 
  []
 
-<./images/preSN.pdf, id=671, 867.24pt x 867.24pt>
+<./images/preSN.pdf, id=709, 867.24pt x 867.24pt>
 File: ./images/preSN.pdf Graphic file (type pdf)
 <use ./images/preSN.pdf>
-Package pdftex.def Info: ./images/preSN.pdf  used on input line 747.
+Package pdftex.def Info: ./images/preSN.pdf  used on input line 770.
 (pdftex.def)             Requested size: 225.44281pt x 225.43738pt.
 
-Overfull \hbox (10.736pt too wide) in paragraph at lines 747--748
+Overfull \hbox (10.736pt too wide) in paragraph at lines 770--771
  [][] 
  []
 
@@ -1266,50 +1286,48 @@ Overfull \hbox (10.736pt too wide) in paragraph at lines 747--748
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 759--760
+Underfull \hbox (badness 10000) in paragraph at lines 787--788
 
  []
 
-[19 <./images/HR_02.pdf> <./images/HR_002.pdf
+
+Overfull \hbox (62.64125pt too wide) in paragraph at lines 795--817
+[] 
+ []
+
+[20]
+
+LaTeX Warning: Text page 21 contains only floats.
+
+[21 <./images/HR_02.pdf> <./images/HR_002.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/HR_002.pdf): PDF inclusion: mu
 ltiple pdfs with page group included in a single page
->]
-Underfull \hbox (badness 10000) in paragraph at lines 785--786
+> <./images/mass_Z02.pdf
 
- []
-
-[20 <./images/mass_Z02.pdf> <./images/preSN.pdf
+pdfTeX warning: /usr/bin/pdflatex (file ./images/mass_Z02.pdf): PDF inclusion: 
+multiple pdfs with page group included in a single page
+> <./images/preSN.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/preSN.pdf): PDF inclusion: mul
 tiple pdfs with page group included in a single page
 >]
-Overfull \hbox (62.64125pt too wide) in paragraph at lines 793--815
-[] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 827--828
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 829--830
 
  []
 
 
-Overfull \hbox (12.63824pt too wide) in paragraph at lines 831--831
+Underfull \hbox (badness 10000) in paragraph at lines 831--832
+
+ []
+
+
+Overfull \hbox (12.63824pt too wide) in paragraph at lines 833--833
 []\T1/cmr/m/n/10 To model its metal-lic-ity we use the metal-licty gra-di-ent o
 f the MW that was ob-tained by \T1/cmr/bx/n/10 Lemasle2018
  []
 
-[21]
-Underfull \hbox (badness 10000) in paragraph at lines 838--839
-
- []
-
-
+[22]
 Underfull \hbox (badness 10000) in paragraph at lines 840--841
 
  []
@@ -1320,21 +1338,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 842--843
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 847--848
+Underfull \hbox (badness 10000) in paragraph at lines 844--845
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 849--851
+Underfull \hbox (badness 10000) in paragraph at lines 849--850
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 849--851
+Underfull \hbox (badness 10000) in paragraph at lines 851--853
 
  []
 
-[22] [23] [24
+
+Underfull \hbox (badness 10000) in paragraph at lines 851--853
+
+ []
+
+[23] [24
 
 ]
 Chapter 3.
@@ -1352,25 +1375,20 @@ Chapter 5.
 Chapter 6.
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 940.
+(hyperref)                than one, level fixed on input line 942.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 962--963
+Underfull \hbox (badness 10000) in paragraph at lines 964--965
 
  []
 
 [31] [32]
-Underfull \hbox (badness 10000) in paragraph at lines 1000--1001
+Underfull \hbox (badness 10000) in paragraph at lines 1002--1003
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1010--1011
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1038--1039
+Underfull \hbox (badness 10000) in paragraph at lines 1012--1013
 
  []
 
@@ -1379,37 +1397,42 @@ Underfull \hbox (badness 10000) in paragraph at lines 1040--1041
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1042--1043
+
+ []
+
 [33] [34] [35
 
 ]
-Overfull \hbox (30.96431pt too wide) in paragraph at lines 1067--1067
+Overfull \hbox (30.96431pt too wide) in paragraph at lines 1069--1069
 \T1/cmr/m/n/10 tion of merg-ing bi-nary black holes?^^Q In: \T1/cmr/m/it/10 arX
 iv e-prints\T1/cmr/m/n/10 , arXiv:2207.14290 (July 2022), arXiv:2207.14290. 
  []
 
 [36]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1068.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1070.
  [37]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1068.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1070.
  (./thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1068.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1068.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1070.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1070.
 
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 6A2D20B82B97E3EA3F6D33A20383405C;3297.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1068.
+(rerunfilecheck)             Checksum: 98AF379441CBC46DBC85B3F408FF25AB;3297.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1070.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 21373 strings out of 483099
- 397653 string characters out of 5964234
- 1057065 words of memory out of 5000000
- 35804 multiletter control sequences out of 15000+600000
- 559332 words of font info for 91 fonts, out of 8000000 for 9000
+ 21402 strings out of 483099
+ 398048 string characters out of 5964234
+ 1061220 words of memory out of 5000000
+ 35821 multiletter control sequences out of 15000+600000
+ 563031 words of font info for 103 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 41i,14n,65p,1411b,2897s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,14n,65p,1470b,2897s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/share/texmf
 /fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmbsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1
@@ -1419,33 +1442,36 @@ fonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
 i12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr
-/share/texmf/fonts/type1/public/cm-super/sfbx0900.pfb></usr/share/texmf/fonts/t
-ype1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super
-/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/
-share/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf/fonts/ty
-pe1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/
-sfcc0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1000.pfb></usr/s
-hare/texmf/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf/fonts/typ
-e1/public/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
-frm0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/sh
-are/texmf/fonts/type1/public/cm-super/sfti0900.pfb></usr/share/texmf/fonts/type
-1/public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
-tt0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on thesis.pdf (43 pages, 4175864 bytes).
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf/fo
+nts/type1/public/cm-super/sfbx0900.pfb></usr/share/texmf/fonts/type1/public/cm-
+super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb><
+/usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fon
+ts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf/fonts/type1/public/cm-s
+uper/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc0900.pfb></
+usr/share/texmf/fonts/type1/public/cm-super/sfcc1000.pfb></usr/share/texmf/font
+s/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf/fonts/type1/public/cm-su
+per/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></u
+sr/share/texmf/fonts/type1/public/cm-super/sfrm0900.pfb></usr/share/texmf/fonts
+/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-sup
+er/sfti0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb></us
+r/share/texmf/fonts/type1/public/cm-super/sftt0900.pfb></usr/share/texmf/fonts/
+type1/public/cm-super/sftt1000.pfb>
+Output written on thesis.pdf (43 pages, 4237036 bytes).
 PDF statistics:
- 1073 PDF objects out of 1200 (max. 8388607)
- 915 compressed objects within 10 object streams
- 219 named destinations out of 1000 (max. 500000)
+ 1108 PDF objects out of 1200 (max. 8388607)
+ 947 compressed objects within 10 object streams
+ 223 named destinations out of 1000 (max. 500000)
  506 words of extra memory for PDF output out of 10000 (max. 10000000)
 

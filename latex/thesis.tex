@@ -625,7 +625,7 @@ The left panel of Fig.\ \ref{fig:MLandwinds} shows the quadratic dependence of t
 \subsection{Stellar winds of the massive stars}\label{subsec:stellarwinds}
 \paragraph{Metallicity dependence} O,B and Wolf-Rayet stars are massive and hot stars with $\rm T_{\rm eff} \gtrsim 12~000$ K that emit the bulk of photons in the UV regime and suffer \emph{line-driven winds}. The radiation coming from th interior of the star is so energetic that ionizes the atoms of C, N, O, Ne, Si, S in the photosphere. The absorption lines of the ions, especially of the ones of the C IV, are precisely in the UV regime: photons impinging on the ions are absorbed and their momentum is transferred. The accelerated ions share their momentum via Coulomb interactions with nearby nuclei and electrons, with the net effect of accelerating the whole gas. Intuitively, the higher the temperature and the metal content and the more a larger number of ions can be produced and absorb the momentum of the photons, increasing the amount of mass lost.\\
 
-In 2001, Vink et.\ al \cite{Vink2001} carried out Montecarlo simulations on a grid of 540 models of O and B Main Sequence stars, quantifying the dependence of the mass loss rate $\mdot$ on the metallicity $Z$ and effective temperature $\rm T_{\rm eff}$ as
+In 2001, Vink et al.\ \cite{Vink2001} carried out Montecarlo simulations on a grid of 540 models of O and B Main Sequence stars, quantifying the dependence of the mass loss rate $\mdot$ on the metallicity $Z$ and effective temperature $\rm T_{\rm eff}$ as
 
 \begin{equation}\label{eq:Vink2001}
 \dot{M} \propto Z^{0.85}~v_\infty^p \quad \quad p = 
@@ -637,7 +637,7 @@ In 2001, Vink et.\ al \cite{Vink2001} carried out Montecarlo simulations on a gr
 
 where $v_\infty$ is the terminal velocity of the wind, reached when the gas is far enough from the star that is no more accelerated by the radiation field. The mass loss rate depends also on the stellar mass and luminosity; although with slightly different exponents for the different temperature ranges, the order-of-magnitude dependence is $\mdot \propto L^{2.2} M^{-1.3}$. \\
 
-Wolf-Rayet stars have a metal-enhanced composition on their surface, suggesting a mass loss rates dependence on both the mass fraction of the metals heavier than He ($Z$)and on the one of the helium alone ($Y$). In 2000, Nugis \& Lamers \cite{Nugis2000_WRwinds} observed 34 WN and 30 WC stars in the Milky Way, quantifying the dependence as
+Wolf-Rayet stars have a metal-enhanced composition on their surface, suggesting a mass loss rates dependence on both the mass fraction of the metals heavier than He ($Z$) and on the one of the helium alone ($Y$). In 2000, Nugis \& Lamers \cite{Nugis2000_WRwinds} observed 34 WN and 30 WC stars in the Milky Way, quantifying the dependence as
 
 \begin{equation}\label{eq:NugisLamers2000}
 	\mdot \sim 1.0 \times 10^{-11}~(L/L_\odot)^{1.29}~Y^{1.7}~Z^{0.5}
@@ -661,7 +661,7 @@ The Eddington factor for a fully ionized plasma is given by
 The surface abundance of hydrogen $X_H$ is known from spectroscopic observations. Measuring the intrisic luminosing and adopting the mass-luminosity relations, as described in Sec.\ \ref{subsec:massWR}, it is possible to recover the Eddingtor factor of the observed stars.\\
 
 
-Stars that approach and overcome the Eddington limit $\Gamma_e \geq 1$ have enhanced mass losses and are likely the progenitors of the Wolf-Rayet stars, as discussed in Sec.\ \ref{subsec:stellarevo}. The evolution close to the Eddington limit, coupled with multiple scatterings in the winds, can explain the strong stellar winds of the Wolf-Rayets. In 2008, Gr{\"a}fener \& Hamann \cite{G&H_WRmassloss} used detailed and self-consistent modeling of non-LTE atmospheres and winds of WNL stars to compute the expected mass loss rates.
+Stars that approach and overcome the Eddington limit $\Gamma_e \geq 1$ have enhanced mass losses and are likely the progenitors of the Wolf-Rayet stars, as discussed in Sec.\ \ref{subsec:stellarevo}. The evolution close to the Eddington limit, coupled with multiple scatterings in the winds, can explain the strong stellar winds of the Wolf-Rayets. In 2008, Gr{\"a}fener \& Hamann \cite{G&H_WRmassloss} used detailed and self-consistent modeling of non-LTE atmospheres and winds of WNL stars to compute the expected mass loss rates. A rough fit \cite{parsec2015_chen} to their relations underlines a continuity to the 2001 models of Vink et al.\
 
 \begin{equation}\label{eqn:WRwindGH2008}
 \dot M \propto Z^{\alpha} \quad \quad  \alpha = 
@@ -671,9 +671,9 @@ Stars that approach and overcome the Eddington limit $\Gamma_e \geq 1$ have enha
 \end{cases}
 \end{equation}
 
-They found that the metallicity-dependence of Eq.\ \ref{eq:Vink2001} is enhanced for stars closer to the Eddington limit. As shown in the right panel of Fig \ref{fig:MLandwinds}, not accounting for the dependence on $\Gamma_e$ results in a severe underestimation of the mass loss rates, especially at lower metallicities.\\
+Gr{\"a}fener \& Hamann found that the metallicity-dependence of Eq.\ \ref{eq:Vink2001} is enhanced for stars closer to the Eddington limit. As shown in the right panel of Fig \ref{fig:MLandwinds}, not accounting for the dependence on $\Gamma_e$ results in a severe underestimation of the mass loss rates, especially at lower metallicities.\\
 
-Vink et.\ al in 2011 \cite{Vink2011} re-calculated the mass loss rates on models of massive and very massive stars ($40-300~\msun$) including a dependence on the Eddington factor, finding
+Vink et al.\ in 2011 \cite{Vink2011} re-calculated the mass loss rates on models of massive and very massive stars ($40-300~\msun$) including a dependence on the Eddington factor, finding
 
 \begin{equation}\label{eqn:Vink2011}
 \begin{cases}
@@ -696,19 +696,42 @@ Vink et.\ al in 2011 \cite{Vink2011} re-calculated the mass loss rates on models
 
 \subsection{Evolution of a massive star into a Wolf-Rayet}\label{subsec:stellarevo}
 
-Sequenza evolutiva di Limongi Chieffi 2012 con \texttt{FRANEC}. Poi stessa descrizione con PARSEC,notando differenze
+In this section I will discuss the evolution of the massive stars with particular attention to the conditions that favor the creation of Wolf-Rayet stars. I considered only stars with initial masses $\mzams \geq 20~\msun$ that are massive enough to likely produce a black hole in place of a neutron star after the core-collapse supernova (see Sec.\ \ref{subsec:SNmodels}). I will refer to the evolutionary tracks shown in Fig.\ \ref{fig:HRdiagrams} and \ref{fig:masslostWR} that I generated with the population-synthesis code \texttt{SEVN} \cite{spera2019_mergingBBH} interpolating the output tables of the \texttt{PARSEC} stellar evolution code \cite{parsec2015_chen} (further details in Sec.\ \ref{sec:SEVN}). The scope of this section is to provide a self-consistent reference to the work carried out in this thesis and presented in Sec.\ \ref{sec:results}. 
 
-differenze nell'amount of overshooting e nel criterio di XH con cui una stella diventa WR
+\paragraph{Wolf-Rayet stars with \texttt{PARSEC} and \texttt{SEVN}} The stellar winds implemented by \texttt{PARSEC} on the massive stars account both for the dependence on the metallicity and on the Eddington factor (see Sec.\ \ref{subsec:stellarwinds} for more details). In particular, the mass loss rates of the Blue Super Giants (BSG) and LBVs follow Vink et al.\ 2001 and Gr{\"a}fener \& Hamann 2008 (Eq.\ \ref{eqn:WRwindGH2008}) while the ones of the Wolf-Rayets are based on the work of Nugis \& Lamers in 2000 (Eq. \ref{eq:NugisLamers2000}).\\
 
-SEVN che interpola parsec fa diventare una WR "tardi" quando XH < 0.2 soltanto mentre franec lo fa con HX < 0.4. Inoltre, parsec ha un overshooting di 0.7 contro i 0.2 di franec
+On the one hand, \texttt{PARSEC} classifies the Wolf-Rayet subtypes WNL,WNE and WC according to the surface abundance of many elements (hydrogen, helium, carbon, nitrogen, oxygen and iron) at different metallicities. For instance, at solar metallicity, the hydrogen fraction of WNL is $X_{\rm WNL} \leq 0.2$ while WNE and WC are consistent with no hydrogen $X_{\rm WNE} = X_{\rm WC} = 0$. On the other hand, \texttt{SEVN} considers a star as a Wolf-Rayet imposing a condition \emph{only} on the hydrogen fraction, requiring that $X_H \leq 0.2$. Stars with so little hydrogen on the surface are interpolated with different evolutionary tables: the stars are considered as pure-Helium and are computed starting from a helium Zero Age Main Sequence (He-ZAMS), obtained removing the hydrogen envelope to a normal star at the beginning of the core-He burning phase. The He-ZAMS stars then evolve following the same prescriptions of the normal stars. \cite{spera2019_mergingBBH}\\
 
-Oppure niente confronto , meglio, e metto solo parsec interpolato che fa meno confusione, ma con il disclaimer che la soglia ritardata per diventare WR potrebbe causare una sovrastima della massa minima per entrare in WR, ponendo quindi una sorta di upper limit.
+It is important to point out that in this work the minimum masses needed to produce the Wolf-Rayet stars are higher with respect to other known works in the literature, for instance when compared to the ones obtained from the \texttt{FRANEC} stellar evolution code \cite{Limongi2010_preSNevo}. The main differences are in the amount of overshooting for the convective core\footnote{According to the mixing-length-theory, the mean free path $l_c = \Lambda_c H_p$ of the convective bubbles that overshoot into the upper radiative envelope can be parameterize as a fraction $\Lambda_c$ of the pressure scale height $H_p$. \cite{parsec2015_chen}} in the central H-burning phase (0.2 $H_p$ in \texttt{FRANEC} and 0.5 $H_p$ in \texttt{PARSEC}) and in the threshold to classify a star as a Wolf-Rayet ($X_H \leq 0.4$ in \texttt{FRANEC} and $X_H \leq 0.2$ in \texttt{PARSEC} when interpolated with \texttt{SEVN}). Given that the Wolf-Rayets evolve with increased depletion of the hydrogen envelope, the $X_H \leq 0.4$ condition in \texttt{FRANEC} allows to form Wolf-Rayet stars earlier than in the \texttt{PARSEC} tracks interpolated by \texttt{SEVN}. In particular, \texttt{FRANEC} lowers the minimum initial mass required to form a Wolf-Rayet at solar metallicity to $\mzams \sim 30~\msun$, while the \texttt{PARSEC} tables interpolated by \texttt{SEVN} require a minimum mass of $\mzams \sim 40~\msun$. 
 
 
-%\paragraph{Hydrogen burning}
-%The star begins its life as a \emph{Zero Age Main Sequence} when it ignites the hydrogen burning in the core, remaining in the \emph{Main Sequence} phase until the central hydrogen is exhausted. The evolution of the star is determined by its initial mass $\mzams$ and metallicity $\zzams$: the first limits the fuel available for the nuclear reactions and the second influences the amount of mass lost by stellar winds. On the one hand, stars in the Main Sequence satisfy the empirical relation $L \propto M^3$ that, put into the nuclear timescale of Eq.\ \ref{eq:taunuc}, results in $\tau_{\rm nuc} \propto M^{-2}$: the more massive the star, the larger the luminosity caused by more efficient and rapid nuclear reactions, thus, the shorter the lifetime. On the other hand, high metallicities cause efficient stellar winds and enhance the mass lost, as better explained in Sec.\ \ref{subsec:stellarwinds}.
+\paragraph{Stellar evolution timescales} In this paragraph I briefly recall the main timescales that drive the single stellar evolution \cite{evostellare}. The time required for a star to react to a perturbation will determine not only its evolution but, if the star is a member of a binary system, will also influence the stability and efficiency of the mass transfer processes (further details in Sec. \ref{subsec:masstransfer}). \\
 
-%At the end of the core hydrogen burning the star contracts until it ignites the hydrogen in the shell.
+Stars are self-gravitating objects of hot plasma that remain in hydrostatic equilibrium throughout their life: the internal pressure gradient of the gas and photons is balanced by the self-gravity. According to the virial theorem, perturbations of the hydrostatic equilibrium occur on the \emph{dynamical timescale}
+
+\begin{equation}\label{eq:taudyn}
+\tau_\textup{dyn} \simeq \sqrt{\frac{R^3}{G M}} \simeq 30 \left(\frac{R}{R\sun}\right)^{3/2} \left(\frac{M\sun}{M}\right)^{1/2}\ \text{minutes}
+\end{equation}
+
+
+The energy released by the nuclear reactions is radiated from the surface and mantains the star in thermal equilibrium with $T_{\rm core} \approx const$. When the nuclear fuel is exhausted, the lower pressure gradient of the plasma causes a contraction of the star, in order to maintain the hydrostatic equilibrium. Part of the gravitational energy is radiated away but part of it heats up the interior, until it reaches the critical temperature to ignite heavier elements. The contraction is quasi-static and maintains the hydrostatic equilibrium. However, since a part of the energy produced by the contraction is not radiated away but heats up the interior, the process happens outside the thermal equilibrium and occurs in a \emph{thermal timescale} (also known as \emph{Kelvin-Helmholtz timescale})
+
+\begin{equation}\label{eq:tauth}
+\tau_\textup{th} \simeq \frac{G M^2}{R L} \simeq 15 
+\left(\frac{M}{M\sun}\right)^{2} \left(\frac{R\sun}{R}\right) \left(\frac{L\sun}{L}\right)\ \text{Myr}
+\end{equation}
+
+Aside from central exhaustion or local fluctuations in the core temperature, a star evolves in thermal equilibrium. However, the longest evolutionary timescale is the \emph{nuclear timescale} and quantifies the time required to burn all the nuclear fuel for a given element. The longest nuclear timescale is the one for the hydrogen burning, that is the most abundant element ($\sim 70~\%$ of the stellar mass), and provides an order-of-magnitude estimate for the stellar lifetime
+
+\begin{equation}\label{eq:taunuc}
+\tau_\textup{nuc} \simeq 10 \left(\frac{M}{M\sun}\right) \left(\frac{L\sun}{L}\right)\ \text{Gyr}
+\end{equation}
+
+\paragraph{Stellar evolution from the ZAMS to the end of the CO burning} The star begin their life in the \emph{Zero Age Main Sequence} (ZAMS, black filled circles) when their core has temperatures $T_{\rm core} \gtrsim 10^{7}$ K elevated enough to ignite the hydrogen burning in the core. The evolution proceeds in the \emph{Main Sequence} (MS) phase until the central hydrogen is exhausted. 
+
+During the core H-burning phase, the stars satisfy the empirical mass-luminosity relation $L \propto M^3$. Recalling that the nuclear timescale $\tau_{\rm nuc}$ required to burn the hydrogen is an order-of-magnitude estimate of the stellar lifetime, the mass-luminosity relation of the Main Sequence substituted into the definition of the nuclear timescale of Eq.\ \ref{eq:taunuc} results in $\tau_{\rm nuc} \propto M^{-2}$: the more massive the star, the larger the luminosity caused by more efficient and rapid nuclear reactions, thus, the shorter the lifetime. For instance, the left panel of Fig.\ \ref{fig:masslostWR} illustrates that, at solar metallicity, stars with $\mzams \sim 20~\msun$ live for $\sim 8$ Myrs, contrarly to the more massive stars of $\mzams \sim 100~\msun$ that survive only for $\sim 3$ Myrs.
+
+The stars considered here are so massive that they burn the hydrogen in a large convective core surrounded by a radiative envelope. In the final stages of the core H-burning, the star contracts to increase the core temperature
 
 
 
@@ -746,37 +769,16 @@ Oppure niente confronto , meglio, e metto solo parsec interpolato che fa meno co
 		\centering
 		\includegraphics[width=1.05\textwidth]{./images/preSN.pdf}	
 	\end{minipage}
-	\caption{\emph{Left:} Time evolution of the mass of the stars (solid lines) and of their He cores (dashed lines) at solar metallicity. The symbols indicate the different burning stages, as explained in Sec.\ \ref{subsec:stellarevo}. \emph{Right:} Mass of the star and of their He and CO cores at the pre-SN stage, here coincident to the end of the CO burning. At solar metallicity the stellar winds strongly reduce the core sizes of stars with $\mzams \gtrsim 30 ~\msun$, transforming them into Wolf-Rayet for $\mzams \gtrsim 40 ~\msun$. At lower metallicity the cores and the stars are larger and they only reduce in stars with $\mzams \gtrsim 70-100 ~\msun$ that evolve too close to the Eddington limit. I generatedboth panels with the population-synthesis code \texttt{SEVN} \cite{spera2019_mergingBBH}, that interpolates the tables produced with the \texttt{PARSEC} stellar evolution code \cite{parsec2015_chen} (more details on the codes in Sec.\ \ref{sec:SEVN}).}\label{fig:masslostWR}
+	\caption{\emph{Left:} Time evolution of the mass of the stars (solid lines) and of their He cores (dashed lines) at solar metallicity. The symbols indicate the different burning stages, as explained in Sec.\ \ref{subsec:stellarevo}. \emph{Right:} Mass of the star and of their He and CO cores at the pre-SN stage, here coincident to the end of the CO burning. At solar metallicity the stellar winds strongly reduce the core sizes of stars with $\mzams \gtrsim 30 ~\msun$, transforming them into Wolf-Rayet for $\mzams \gtrsim 40 ~\msun$. At lower metallicity the cores and the stars are larger and they only reduce in stars with $\mzams \gtrsim 70-100 ~\msun$ that evolve too close to the Eddington limit. I generated both panels with the population-synthesis code \texttt{SEVN} \cite{spera2019_mergingBBH}, that interpolates the tables produced with the \texttt{PARSEC} stellar evolution code \cite{parsec2015_chen} (more details on the codes in Sec.\ \ref{sec:SEVN}).}\label{fig:masslostWR}
 \end{figure}
 
 
 
 
-\section{Mass transfer theory}
+\section{Mass transfer theory}\label{subsec:masstransfer}
 
 
-\paragraph{Evolutionary timescales}
-Stability and efficiency of the mass transfer processes depend on the timescales over which the stars react to a change in their structure, in this case the removal or the accretion of the external layer.\\
 
-Stars are self-gravitating objects of hot plasma that remain in hydrostatic equilibrium throughout their life: the internal pressure gradient of the gas and photons is balanced by the self-gravity. According to the virial theorem, perturbations of the hydrostatic equilibrium occur on the \emph{dynamical timescale}
-
-\begin{equation}\label{eq:taudyn}
-\tau_\textup{dyn} \simeq \sqrt{\frac{R^3}{G M}} \simeq 30 \left(\frac{R}{R\sun}\right)^{3/2} \left(\frac{M\sun}{M}\right)^{1/2}\ \text{minutes}
-\end{equation}
-
-
-The energy released by the nuclear reactions is radiated from the surface and mantains the star in thermal equilibrium with $T_{\rm core} \approx const$. When the nuclear fuel is exhausted, the lower pressure gradient of the plasma causes a contraction of the star, in order to maintain the hydrostatic equilibrium. Part of the gravitational energy is radiated away but part of it heats up the interior, until it reaches the critical temperature to ignite heavier elements. The contraction is quasi-static and maintains the hydrostatic equilibrium. However, since a part of the energy produced by the contraction is not radiated away but heats up the interior, the process happens outside the thermal equilibrium and occurs in a \emph{thermal timescale} (also known as \emph{Kelvin-Helmholtz timescale})
-
-\begin{equation}\label{eq:tauth}
-\tau_\textup{th} \simeq \frac{G M^2}{R L} \simeq 15 
-\left(\frac{M}{M\sun}\right)^{2} \left(\frac{R\sun}{R}\right) \left(\frac{L\sun}{L}\right)\ \text{Myr}
-\end{equation}
-
-Aside from central exhaustion or local fluctuations in the core temperature, a star evolves in thermal equilibrium. However, the longest evolutionary timescale is the \emph{nuclear timescale} and quantifies the time required to burn all the nuclear fuel for a given element. The longest nuclear timescale is the one for the hydrogen burning, that is the most abundant element ($\sim 70~\%$ of the stellar mass), and provides an order-of-magnitude estimate for the stellar lifetime
-
-\begin{equation}\label{eq:taunuc}
-\tau_\textup{nuc} \simeq 10 \left(\frac{M}{M\sun}\right) \left(\frac{L\sun}{L}\right)\ \text{Gyr}
-\end{equation}
 
 %Short overview of the main binary processes, with particular attention to the wind accretion, Roche lobe overflow and common envelope
 
@@ -867,7 +869,7 @@ Semimajor axis according to my model: Minimum possible a=3.005 Rsun with P=4.5 h
 \chapter{Models and simulations with SEVN2}
 \section{The SEVN2 population-synthesis code}\label{sec:SEVN}
 Interpolates PARSEC tables, describe winds, criteria for identifying a WR, explain how, explain details of mass transfer, explain assumption on the pessimistic case, explain the three kick models, 
-\subsection{CCSN}
+\subsection{CCSN}\label{subsec:SNmodels}
 explain the three CCSN models (use histograms)\\
 PLOT: histogram with compact remnants with different SN models\\
 (PLOT: histogram with compact remnants with different kick models )
