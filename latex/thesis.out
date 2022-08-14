@@ -1,44 +1,45 @@
 \BOOKMARK [0][-]{Doc-Start}{Abstract}{}% 1
 \BOOKMARK [0][-]{chapter*.1}{Contents}{}% 2
-\BOOKMARK [0][-]{chapter.1}{Demography of the black hole binaries}{}% 3
+\BOOKMARK [0][-]{chapter.1}{Demography of binary black holes}{}% 3
 \BOOKMARK [1][-]{section.1.1}{Gravitational waves}{chapter.1}% 4
 \BOOKMARK [2][-]{subsection.1.1.1}{Theory and methods for parameter estimation}{section.1.1}% 5
-\BOOKMARK [2][-]{subsection.1.1.2}{Mass and spin observed distributions}{section.1.1}% 6
+\BOOKMARK [2][-]{subsection.1.1.2}{Observed distributions of mass and spin}{section.1.1}% 6
 \BOOKMARK [1][-]{section.1.2}{X-ray binaries}{chapter.1}% 7
 \BOOKMARK [2][-]{subsection.1.2.1}{X-ray binaries hosting a black hole}{section.1.2}% 8
-\BOOKMARK [2][-]{subsection.1.2.2}{Measuring the properties of the X-ray binaries}{section.1.2}% 9
+\BOOKMARK [2][-]{subsection.1.2.2}{Measuring the properties of X-ray binaries}{section.1.2}% 9
 \BOOKMARK [1][-]{section.1.3}{Tensions in the underlying populations}{chapter.1}% 10
 \BOOKMARK [2][-]{subsection.1.3.1}{Similarities in the mass distribution}{section.1.3}% 11
 \BOOKMARK [2][-]{subsection.1.3.2}{Strong tension in the spin distribution}{section.1.3}% 12
-\BOOKMARK [0][-]{chapter.2}{Wolf-Rayet - black hole binaries}{}% 13
+\BOOKMARK [0][-]{chapter.2}{Wolf-Rayet \205 black hole binaries}{}% 13
 \BOOKMARK [1][-]{section.2.1}{Wolf - Rayet stars}{chapter.2}% 14
-\BOOKMARK [2][-]{subsection.2.1.1}{Spectral classification of a Wolf-Rayet}{section.2.1}% 15
-\BOOKMARK [2][-]{subsection.2.1.2}{Stellar winds}{section.2.1}% 16
-\BOOKMARK [2][-]{subsection.2.1.3}{Evolution of a massive star into a Wolf-Rayet}{section.2.1}% 17
-\BOOKMARK [1][-]{section.2.2}{Mass transfer theory}{chapter.2}% 18
-\BOOKMARK [1][-]{section.2.3}{Observed candidates of Wolf-Rayet - black hole systems}{chapter.2}% 19
-\BOOKMARK [1][-]{section.2.4}{Cyg X-3}{chapter.2}% 20
-\BOOKMARK [2][-]{subsection.2.4.1}{Properties}{section.2.4}% 21
-\BOOKMARK [2][-]{subsection.2.4.2}{Period}{section.2.4}% 22
-\BOOKMARK [2][-]{subsection.2.4.3}{Mass ranges}{section.2.4}% 23
-\BOOKMARK [0][-]{chapter.3}{Models and simulations with SEVN2}{}% 24
-\BOOKMARK [1][-]{section.3.1}{The SEVN2 population-synthesis code}{chapter.3}% 25
-\BOOKMARK [2][-]{subsection.3.1.1}{CCSN}{section.3.1}% 26
-\BOOKMARK [1][-]{section.3.2}{Initial conditions for simulations}{chapter.3}% 27
-\BOOKMARK [0][-]{chapter.4}{Results}{}% 28
-\BOOKMARK [1][-]{section.4.1}{> 90 \045 GW-BBH undergo WR-BH configuration}{chapter.4}% 29
-\BOOKMARK [1][-]{section.4.2}{Fiducial model}{chapter.4}% 30
-\BOOKMARK [1][-]{section.4.3}{Role of metallicity}{chapter.4}% 31
-\BOOKMARK [1][-]{section.4.4}{Role of the kicks}{chapter.4}% 32
-\BOOKMARK [1][-]{section.4.5}{Role of CCSN model}{chapter.4}% 33
-\BOOKMARK [1][-]{section.4.6}{Probing the parameter space}{chapter.4}% 34
-\BOOKMARK [1][-]{section.4.7}{Compare with Belczynski+2013}{chapter.4}% 35
-\BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 36
-\BOOKMARK [0][-]{chapter.6}{Annotazioni/Bozza}{}% 37
-\BOOKMARK [1][-]{subsection.6.0.1}{Parameter space to explore}{chapter.6}% 38
-\BOOKMARK [2][-]{subsection.6.0.2}{Compare with Belczynski}{subsection.6.0.1}% 39
-\BOOKMARK [2][-]{subsection.6.0.3}{Notes on how SEVN works/how to interpret things/where to focus}{subsection.6.0.1}% 40
-\BOOKMARK [1][-]{section.6.1}{Compactness model implemented in SEVN}{chapter.6}% 41
-\BOOKMARK [1][-]{section.6.2}{Pipeline}{chapter.6}% 42
-\BOOKMARK [1][-]{section.6.3}{Results Cyg X-3}{chapter.6}% 43
-\BOOKMARK [0][-]{chapter*.45}{Bibliography}{}% 44
+\BOOKMARK [2][-]{subsection.2.1.1}{Spectral classification of a Wolf-Rayet star}{section.2.1}% 15
+\BOOKMARK [2][-]{subsection.2.1.2}{Mass determination of a Wolf-Rayet star}{section.2.1}% 16
+\BOOKMARK [2][-]{subsection.2.1.3}{Stellar winds of the massive stars}{section.2.1}% 17
+\BOOKMARK [2][-]{subsection.2.1.4}{Evolution of a massive star into a Wolf-Rayet}{section.2.1}% 18
+\BOOKMARK [1][-]{section.2.2}{Mass transfer theory}{chapter.2}% 19
+\BOOKMARK [1][-]{section.2.3}{Observed candidates of Wolf-Rayet \205 black hole systems}{chapter.2}% 20
+\BOOKMARK [1][-]{section.2.4}{Cyg X-3}{chapter.2}% 21
+\BOOKMARK [2][-]{subsection.2.4.1}{Properties}{section.2.4}% 22
+\BOOKMARK [2][-]{subsection.2.4.2}{Period}{section.2.4}% 23
+\BOOKMARK [2][-]{subsection.2.4.3}{Mass ranges}{section.2.4}% 24
+\BOOKMARK [0][-]{chapter.3}{Models and simulations with SEVN2}{}% 25
+\BOOKMARK [1][-]{section.3.1}{The SEVN2 population-synthesis code}{chapter.3}% 26
+\BOOKMARK [2][-]{subsection.3.1.1}{CCSN}{section.3.1}% 27
+\BOOKMARK [1][-]{section.3.2}{Initial conditions for simulations}{chapter.3}% 28
+\BOOKMARK [0][-]{chapter.4}{Results}{}% 29
+\BOOKMARK [1][-]{section.4.1}{> 90 \045 GW-BBH undergo WR-BH configuration}{chapter.4}% 30
+\BOOKMARK [1][-]{section.4.2}{Fiducial model}{chapter.4}% 31
+\BOOKMARK [1][-]{section.4.3}{Role of metallicity}{chapter.4}% 32
+\BOOKMARK [1][-]{section.4.4}{Role of the kicks}{chapter.4}% 33
+\BOOKMARK [1][-]{section.4.5}{Role of CCSN model}{chapter.4}% 34
+\BOOKMARK [1][-]{section.4.6}{Probing the parameter space}{chapter.4}% 35
+\BOOKMARK [1][-]{section.4.7}{Compare with Belczynski+2013}{chapter.4}% 36
+\BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 37
+\BOOKMARK [0][-]{chapter.6}{Annotazioni/Bozza}{}% 38
+\BOOKMARK [1][-]{subsection.6.0.1}{Parameter space to explore}{chapter.6}% 39
+\BOOKMARK [2][-]{subsection.6.0.2}{Compare with Belczynski}{subsection.6.0.1}% 40
+\BOOKMARK [2][-]{subsection.6.0.3}{Notes on how SEVN works/how to interpret things/where to focus}{subsection.6.0.1}% 41
+\BOOKMARK [1][-]{section.6.1}{Compactness model implemented in SEVN}{chapter.6}% 42
+\BOOKMARK [1][-]{section.6.2}{Pipeline}{chapter.6}% 43
+\BOOKMARK [1][-]{section.6.3}{Results Cyg X-3}{chapter.6}% 44
+\BOOKMARK [0][-]{chapter*.56}{Bibliography}{}% 45

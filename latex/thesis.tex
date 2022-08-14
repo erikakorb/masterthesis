@@ -19,6 +19,7 @@
 %,colorlinks=true,linkcolor=black,citecolor=blue, urlcolor=blue} 							%nascondi riquadri hyp.
 \usepackage{booktabs} 							%tabelle
 \usepackage{threeparttable}	
+\usepackage{multirow}
 \usepackage[labelfont=bf, font=small]{caption} 	%didascalie
 \usepackage{import} 							%inkscape
 
@@ -78,6 +79,10 @@
 \newcommand{\rluno}{\ensuremath{r_\textup{L,1}}}
 \newcommand{\rldue}{\ensuremath{r_\textup{L,2}}}
 
+\newcommand{\micmap}[1]{\textcolor{red}{MM:\bf#1}}
+\newcommand{\erika}[1]{\textcolor{green}{\bf#1}}
+\usepackage{soul}
+\usepackage{xcolor}
 
 %sommario
 \newenvironment{abstract}{\newpage \thispagestyle{empty} \vspace*{3\baselineskip}
@@ -124,7 +129,7 @@
 
 \begin{abstract}%%%%%%%% abstract provvisorio %%%%
 \addcontentsline{toc}{chapter}{Abstract}
-I study the formation of binary black hole systems by means of population-synthesis simulations, with the code SEVN (Stellar EVolution for N-body). My main goal is to determine their formation history, with particular attention to mass transfer processes (stellar winds, Roche Lobe overflow, common envelope). I focus my work on the formation channels that include the production of a Wolf-Rayet - black hole binary, finding that this is the most common formation pathway at solar metallicity. I compare my results with the properties of the observed Wolf-Rayet - black hole systems, including the Cyg X-3 binary.
+I study the formation of binary black hole systems by means of population-synthesis simulations, with the code SEVN (Stellar EVolution for N-body). My main goal is to determine their formation history, with particular attention to mass transfer processes (stellar winds, Roche lobe overflow, common envelope). I focus my work on the formation channels that include the production of a Wolf-Rayet -- black hole binary, finding that this is the most common formation pathway at solar metallicity. I compare my results with the properties of the observed Wolf-Rayet -- black hole systems, including the Cyg X-3 binary.
 \end{abstract}
 
 \tableofcontents
@@ -133,43 +138,47 @@ I study the formation of binary black hole systems by means of population-synthe
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \mainmatter
 
-\chapter{Demography of the black hole binaries}
+% Binary black hole quando si intende una binaria con 2 black hole, black hole binary quando uno dei due può non essere un black hole
+% In questa tesi intendo sempre due buchi neri
+\chapter{Demography of \erika{binary black holes}}
 
-\paragraph{The new gravitational wave era} In September 2015, the detection of the first gravitational wave GW150914 not only confirmed the existence of binary systems made of two stellar black holes but also demonstrated that such systems are capable of merging via emission of gravitational waves within a Hubble time $H_0$. \cite{Abbott2016firstGW} In March 2020, the LIGO Scientific, Virgo and KAGRA Collaboration ended the third observing run and, by November 2021, produced the third Gravitational-Wave Transient Catalog GWTC-3, revealing a total of $\sim 80$ merging binary black holes discovered with the gravitational wave detectors. Overall, the GWTC-3 revealed $\sim 90$ mergers of compact objects binaries, including also double neutron star and neutron star-black hole systems that won't be considered in this thesis. \cite{GWTC-3} 
+\paragraph{The new gravitational wave era} In September 2015, the detection of the first gravitational wave event, GW150914, not only confirmed the existence of binary systems made of two stellar black holes but also demonstrated that such systems are capable of merging via emission of gravitational waves within a Hubble time $H_0^{-1}$ \cite{Abbott2016firstGW}. In March 2020, the LIGO, Virgo and KAGRA Collaboration \erika{(hereafter, \emph{LVC})} ended the third observing run and, by November 2021, produced the third gravitational-wave transient catalog (GWTC-3), revealing a total of $\sim 80$ merging binary black holes discovered with the gravitational wave detectors. Overall, GWTC-3 revealed $\sim 90$ mergers of compact objects binaries, including also double neutron star and neutron star-black hole systems that will not be considered in this thesis \cite{GWTC-3}. 
 
 
 \paragraph{Two main evolutionary channels}
-The formation pathaways of the black hole binaries are an active field of research and can be divided into two main evolutionary scenarios: isolated binary or dynamically active environments. They can be investigated analyzing of the features in the distribution of the masses, spins and related quantities: different formation channels lead to different predictions on the black hole masses, mass ratio $q=M_2/M_1$ ($M_1 \geq M_2$), spin alignment and magnitude.
+The formation pathways of \erika{binary black holes} are an active field of research and can be divided into two main evolutionary scenarios: isolated binary or dynamically active environments. They can be investigated analyzing of the features in the distribution of the masses, spins and related quantities: different formation channels lead to different predictions on black hole mass, mass ratio $q=M_2/M_1$ ($M_1 \geq M_2$), spin alignment and magnitude.
  
-On the one hand, in the isolated binary evolution the tidal interactions and mass transfer episodes are thought to be so efficient to favour the production of compact objects with similar masses ($q \sim 1$) \cite{giacobbomapelli2018_mobse_fryer} with spins aligned and parallel to the orbital angular momentum \cite{Kalogera2000_spinaligned}. On the other hand, binaries that evolved in dynamically active environment likely underwent exchanges and hierarchical mergers, allowing for more asymmetric masses ($q << 1$) \cite{Rastello2021_dynamics} and favouring an isotropic spin orientation \cite{Rodriguez2016_BHspins}.
+In the isolated binary evolution scenario, tidal interactions and mass transfer episodes are thought to be so efficient to favour the production of compact objects with similar masses ($q \sim 1$) \cite{giacobbomapelli2018_mobse_fryer} with spins aligned and parallel to the orbital angular momentum \cite{Kalogera2000_spinaligned}. Binaries that evolve in a dynamically active environment likely undergo exchanges and hierarchical mergers, allowing for more asymmetric masses ($q << 1$) \cite{Rastello2021_dynamics} and favoring an isotropic spin orientation \cite{Rodriguez2016_BHspins}.
 
-Single stellar evolution prohibits the formation of black hoes in the pair-instability mass-gap $\sim 60 - 120 ~\msun$ \cite{spera2017_pisnSNe}: the existence of black holes in the gap, like the ones of GW190521 ($\sim 69~\msun$ and $\sim 95~\msun$ \cite{GWTC-1}), requires either an hierarchical merging history or a different modeling in the stellar evolution (for instance, lowering the rate of the triple-$\alpha$ reaction can push to higher masses the lower boundary of the mass gap \cite{MassGapStellarEvo_Costa2021}).
+Single stellar evolution prohibits the formation of black hoes in the pair-instability mass gap $\sim 60 - 120 ~\msun$ \cite{spera2017_pisnSNe}: the existence of black holes in the gap, like the ones of GW190521 ($\sim 66~\msun$ and $\sim 85~\msun$ \cite{GW190521_abbott2020}), requires either a hierarchical merger history or a different modeling in the stellar evolution (for instance, lowering the rate of the triple-$\alpha$ reaction can push to higher masses the lower boundary of the mass gap \cite{MassGapStellarEvo_Costa2021}).
 
-The magnitude of the primary (first formed) and secondary (last formed) black hole can be related to the dominant mass transfer processes. On the one hand, X-ray binaries observations indicate that the secondary black-holes can be spin-up by accretion due to stellar winds or Roche Lobe Overflow episodes. On the other hand, primary black holes formed through a Common Envelope are thought to be almost zero-spinning black holes because their progenitors dissipated the angular momentum when they lost their envelope \cite{spinBH_Qin2018}.  Nevertheless, the observation of high-mass X-ray binaries with fast spinning black holes and Main Sequence companions suggests that the current modeling and understanding of the angular momentum transport in the single and stellar binary evolution is still rather poor and needs further investigation \cite{spinfastBH_Qin2019}. Moreover, spins are difficult to constrain with a good precision in the gravitational wave signals (they cause second-order effects in the gravitational waveform) and their connection to the progenitor evolution is further challenged by the core-collapse supernova: it likely acts as a random variable, modifying both the magnitude and the orientation of the spin of the new-born black hole. \cite{GWTC-3_interpretation}
+The spin magnitude of the primary (first formed) and secondary (last formed) black hole can be related to the dominant mass transfer processes. On the one hand, X-ray binaries observations indicate that the secondary black hole can be spun-up by tides \cite{spinupBH_Bavera2020}. On the other hand, primary black holes formed through a common envelope are thought to be almost zero-spinning black holes because their progenitors dissipated the angular momentum when they lost their envelope \cite{spinBH_Qin2018}.  Nevertheless, the observation of high-mass X-ray binaries with fast spinning black holes and main sequence companions suggests that the current modeling and understanding of the angular momentum transport in single and stellar binary evolution is still rather poor and needs further investigation \cite{spinfastBH_Qin2019}. Moreover, spins are difficult to constrain with a good precision in gravitational-wave signals (they cause second-order effects in the gravitational waveform) and their connection to the progenitor evolution is further challenged by the core-collapse supernova, which modifies both the magnitude and the orientation of the spin of the new-born black hole \cite{GWTC-3_interpretation}.
 
 \paragraph{Chapter outline}
-In the following sections I will explain the theoretical background and observational methodology used to determine the properties of the black hole binaries revealed with the gravitational waves and of their candidate progenitors, the X-ray binaries. Then, I will discuss how the tension between the masses and the spins of the  black hole binaries and the ones of the X-ray binaries challenges the role of the X-ray binaries as the black hole binary progenitors.
+In the following sections I will explain the theoretical background and observational methodology used to determine the properties of \erika{binary black holes}  revealed with the gravitational waves \erika{(hereafter, \emph{LVC binary black holes})} and of their progenitor candidates, the X-ray binaries. Then, I will discuss the possible tension between \erika{the binary black holes and X-ray binaries mass and spin distributions.} % L'ho un attimo riscritta sperando sia più scorrevole
 
 
 \section{Gravitational waves}
 \subsection{Theory and methods for parameter estimation}\label{subsec:GWtheorymethod}
-\paragraph{A match-filtering method} The detection and characterization of the binaries observed with the gravitational waves relies on matched-filtering techniques and Bayesian analysis. 
+\paragraph{A match-filtering method} The detection and characterization of the binaries observed with gravitational waves relies on matched-filtering techniques and Bayesian analysis. 
 
 First, the signal is detected with the match-filtering technique. The detection pipeline filters the recorded signal with waveform templates generated by numerical relativity calculations. Different binary properties produce different waveforms, therefore a match in the signal not only reveals a detection but allows an approximate estimate of the binary parameters.
 
-Once the signal is detected, general-relativity models that include, for instance, spin precession are used to refine the waveform template and the fit. Eventually, Bayesian anaylsis is carried out to each model to derive posterior distributions of the source parameters: the final best estimates are usually the median values of the posterior with uncertainty given by the 90\% credible interval extrema.
+Once the signal is detected, general-relativity models that include, for instance, spin precession are used to refine the waveform template and the fit. Eventually, Bayesian analysis is carried out on each data-set to derive posterior distributions of source parameters: the final best estimates are usually the median values of the posterior distribution with uncertainty given by the 90\% credible interval.
 
-\paragraph{Spin determination} A black hole binary undergoing a quasi-circular inspiral is characterized by fifteen parameters: eight intrinsic (mass $M_i$ and three-dimensional components of the spin vectors $\vec{S}_i$ for each $i$-th black hole) and seven extrinsic, for the sky location and orbit orientation (right ascension $\alpha$, declination $\delta$, luminosity distance $d_L$, orbital inclination $\iota$, polarization angle $\Phi$, time of coalescence $t_c$ and phase at the coalescence $\phi_c$). \cite{GWTC-1}
+\paragraph{Spin determination} A black hole binary undergoing a quasi-circular inspiral is characterized by fifteen parameters\footnote{The $16^{th}$ parameter, eccentricity, is currently neglected in the LVC analysis for computational reasons.}: eight intrinsic (mass $M_i$ and three-dimensional components of the spin vectors $\vec{S}_i$ for each $i$-th black hole) and seven extrinsic, for the sky location and orbit orientation (right ascension $\alpha$, declination $\delta$, luminosity distance $d_L$, orbital inclination $\iota$, polarization angle $\Phi$, time of coalescence $t_c$ and phase at the coalescence $\phi_c$) \cite{GWTC-1}.
 
-In reality, the three spin vectors are the most difficult parameters to characterize because they imprint a second-order effect in the waveform, requiring advanced numerical relativity calculations to be correctly modeled. In place of the six spin vectors, the pipeline anaylsis fits six effective spin parameters that are slightly easier to obtain from the observations: the two dimensionless spin magnitudes $\chi_i$, the two polar tilt angles $\theta_i$, the effective spin $\chi_{eff}$ and the effective precessing spin $\chi_p$. All the values are calculated at the reference frequency of 20 Hz.
+In reality, the three spin vectors are the most difficult parameters to characterize because they imprint a second-order effect in the waveform, requiring advanced numerical relativity calculations to be correctly modeled. In place of the six spin vectors, the pipeline analysis fits six effective spin parameters that are slightly easier to obtain from the observations: the two dimensionless spin magnitudes $\chi_i$, the two polar tilt angles $\theta_i$, the effective spin $\chi_{eff}$ and the effective precessing spin $\chi_p$. All the values are calculated at the reference frequency of 20 Hz.
 
 The \emph{dimensionless spin} $\chi_i$ quantifies the amplitude of the spin by measuring how much the black hole is close to being a Schwarzschild, non-rotating black hole ($\chi_i = 0$) or to a maximally-spinning Kerr black hole ($\chi_i = 1$)
 
 \begin{equation}\label{eq:chispin}
-	\chi_i = \frac{|\vec{S}_i| c}{G M_i} \quad  \in [0,1]   \qquad \qquad i=1,2
+	\chi_i = \frac{|\vec{S}_i| c}{G M_i} \quad  \in [0,1]   \qquad \qquad i=1,2,
 \end{equation}
 
-The two polar angles $\theta_i$ measure the inclination of each black hole spin with respect to the orbital angular momentum $\hat{L}_N$ and enter in the definition of both the effective spin $\chi_{eff}$ and the effective precessing spin $\chi_p$. The \emph{effective spin} $\chi_{eff}$ measures the mass-weighted component of the black hole spins that is aligned with the Newtonian orbital angular momentum $\hat{L}_N$ (normal to the orbital plane)
+where $\vec{S}_i$ is the spin vector, $G$ the gravity constant, and $c$ the speed of light.
+
+The two polar angles $\theta_i$ measure the inclination of each black hole spin with respect to the orbital angular momentum $\hat{L}_N$ and enter in the definition of both the effective spin $\chi_{eff}$ and the effective precessing spin $\chi_p$. The \emph{effective spin} $\chi_{eff}$ measures the mass-weighted components of black hole spins that are aligned with the Newtonian orbital angular momentum $\hat{L}_N$ (normal to the orbital plane)
 
 \begin{equation}\label{eq:chieff}
 	\chi_{eff} = \frac{M_1 \chi_1 \cos\theta_1 + M_2 \chi_2 \cos\theta_2}{M_1 + M_2}
@@ -181,26 +190,23 @@ The \emph{effective precessing spin}, which measures the dominant spin projected
 	\chi_p = \max \left\{\chi_1 \sin\theta_1,~ \left(\frac{3+4q}{4+3q}\right) q\chi_2 \sin\theta_2\right\}
 \end{equation}
 
-where $q=M_2/M_1$ is the binary mass ratio. \cite{GWTC-3_interpretation}
+where $q=M_2/M_1$ is the binary mass ratio \cite{GWTC-3_interpretation}.
 
 
 
-\paragraph{A toy model for the main parameter estimation} Beside the Bayesian analysis, it is still possible to obtain order-of-magnitude estimates of the key quantities that shape the waveform, like the masses, by simply using as toy model a circular binary that converts all the orbital energy lost into gravitational wave radiation. \\
+\paragraph{A toy model for the main parameter estimation} Beside Bayesian analysis, it is still possible to obtain order-of-magnitude estimates of the key quantities that shape the waveform, like the masses, by simply using as toy model a circular binary that converts all the orbital energy lost into gravitational wave radiation. \\
 
-According to the theory of the general relativity, the amplitude of the gravitational wave is proportional to the second derivative with respect to time of the mass quadrupole moment of the compact source.  Explicit calculation of the quadrupole moment of a circular binary relates the amplitude $h$  of the gravitational wave emitted to the luminosity distance $d_L$, the gravitational wave frequency $\nu_{\rm GW}$ and the chirp mass $\mathcal{M}$ according to
+According to the theory of the general relativity, the amplitude of  gravitational waves is proportional to the second derivative with respect to time of the mass quadrupole moment of the compact source.  Explicit calculation of the quadrupole moment of a circular binary relates the amplitude $h$  of the gravitational wave emitted to the luminosity distance $d_L$, the gravitational wave frequency $\nu_{\rm GW}$ and the chirp mass $\mathcal{M}$ according to \cite{MaggioreGW,GWreview}:
 
 \begin{equation}\label{eq:h}
-h = \frac{4}{d_L} \left(\frac{G \mathcal{M}}{c^2}\right)^{5/3} \left(\frac{\pi \nu_{\rm GW}}{c}\right)^{2/3} 
+h = \frac{4}{d_L} \left(\frac{G \mathcal{M}}{c^2}\right)^{5/3} \left(\frac{\pi \,{}\nu_{\rm GW}}{c}\right)^{2/3} 
 \end{equation}
 
-where $G$ is the gravitational constant and $c$ the speed of light. \cite{MaggioreGW,GWreview} 
-
-
-The \emph{chirp mass} $\mathcal{M}$ is defined as a combination of the masses of the binary and is defined in every time interval of the signal by the different values $\nu_{\rm GW}$ and slopes $\dot{\nu}_{\rm GW}$ of the gravitational wave frequency, as follows
+The \emph{chirp mass} $\mathcal{M}$ is defined as a combination of the masses of the binary and is defined in every time interval of the signal by the different value $\nu_{\rm GW}$ and derivative $\dot{\nu}_{\rm GW}$ of the gravitational wave frequency, as follows
 
 \begin{equation}\label{eq:Mchirp}
 \mathcal{M} = 
-\frac{(M_1M_2)^{3/5}}{(M_1+M_2)^{1/5}} =
+\frac{(M_1\,{}M_2)^{3/5}}{(M_1+M_2)^{1/5}} =
 \frac{c^3}{G} \left(\frac{5}{96}~ \pi^{-8/3}~\nu_{\rm GW}^{-11/3}~ \dot{\nu}_{\rm GW}\right)^{3/5}
 \end{equation}
 
@@ -211,9 +217,9 @@ The chirp mass is easily obtainable from the signal analysis by Fourier-transfor
 \end{equation}
 
 
-The gravitational wave frequency dependence in Eq.\ \ref{eq:h} already encloses all the information on the compactness of the orbit. The binary considered in the toy model is circular so its mass quadrupole moment is symmetric under a $180^\circ$ rotation: every half-orbit the gravitational wave produced has the same phase. In other words, a circular binary produces a gravitational wave  with frequency that is twice the rotational frequency:  $\nu_{\rm GW} = 2 \nu_{\rm s}$. \\
+The gravitational wave frequency dependence in Eq.\ \ref{eq:h} already encloses all the information on the compactness of the orbit. The binary considered in the toy model is circular so its mass quadrupole moment is symmetric under a $180^\circ$ rotation: every half-orbit the gravitational wave produced has the same phase. In other words, a circular binary produces a gravitational wave  with frequency that is twice the orbital frequency:  $\nu_{\rm GW} = 2 \nu_{\rm s}$. \\
 
-As the binary spirals-in, the orbit tightens and the rotational frequency increases, causing a rise also in the gravitational wave frequency and in the amplitude of the signal, according to Eq.\ \ref{eq:h}: it is the so-called \emph{chirp signal}. The peak of the signal, both in terms of frequency and amplitude, is reached at the coalescence, when the orbital separation reaches its minimum and is just the sum of the two Schwarzschild radii
+As the binary spirals-in, the orbit tightens and the orbital frequency increases, causing a rise also in the gravitational wave frequency and in the amplitude of the signal, according to Eq.\ \ref{eq:h}: it is the so-called \emph{chirp signal}. The peak of the signal, both in terms of frequency and amplitude, is reached at coalescence, when the orbital separation reaches its minimum and is just the sum of the two Schwarzschild radii %in alternativa potrei prendere R_ISCO che non rompe Kepler
 
 \begin{equation}\label{eq:Rcoalescence}
 R_{\rm coalescence} = \frac{2G}{c^2} (M_1 + M_2)
@@ -223,18 +229,18 @@ Using Kepler's third law and the relation $\nu_{\rm GW} = 2 \nu_{\rm s}$, the pe
 
 
 \begin{equation}\label{eq:nupeak}
-	\nu_{\rm GW, max} = \frac{1}{\pi \sqrt{8}}\frac{c^3}{G(M_1+M_2)}
+	\nu_{\rm GW, max} = \frac{1}{\pi \sqrt{8}}\frac{c^3}{G\,{}(M_1+M_2)}
 \end{equation}
 
 
 
 
-\paragraph{Coalescence to determine masses, orbital separation and luminosity distance} The coalescence is the key observational moment that allows to characterize the main parameters of the binary. Eq.\ \ref{eq:nupeak} and \ref{eq:Mchirp} show that precise measurements on the peak frequency provide both the total and chirp mass of the system, allowing the disentanglement of the single masses. Measuring the peak frequency, therefore the total mass, also allows the determination of the orbital distance at coalescence. Given that the amplitude of the gravitational wave is directly the signal recorded by the detectors, it is possible to use Eq.\ \ref{eq:h} with the values known at the coalescence to obtain the luminosity distance of the source.
+\paragraph{Coalescence to determine masses, orbital separation and luminosity distance} Eq.\ \ref{eq:nupeak} and \ref{eq:Mchirp} show that precise measurements on the inspiral and peak frequency provide the chirp and total mass of the system. Measuring the peak frequency, therefore the total mass, also allows the determination of the orbital distance at coalescence. Given that the amplitude of the gravitational wave is the signal recorded by the detectors, it is possible to use Eq.\ \ref{eq:h} with the values known at the coalescence to obtain the luminosity distance of the source.
 
 
-On the one hand, assuming a cosmological model, it is possible to convert the luminosity distance into the redshift of the source. On the other hand, gravitational wave observations provide an independent luminosity distance measurement that, coupled with electromagnatic counterpart observations, allow an independent method to estimate the Hubble cosmological parameter $H_0$. \cite{H0fromGW}
+On the one hand, assuming a cosmological model, it is possible to convert the luminosity distance into the redshift of the source. On the other hand, gravitational wave observations provide an independent luminosity distance measurement that, coupled with electromagnetic counterpart observations, allows an independent method to estimate the Hubble cosmological parameter $H_0$ \cite{H0fromGW}.
 
-The gravitational waves are stretched by the expansion of the universe, therefore it is mandatory to use the redshift information to correct the parameters determined so far in the detector's frame and obtain the intrinsic ones in the source's frame. Because of the cosmological redshift $z$, the observed frequency of the gravitational wave is lower than the one emitted. The frequency-dependence enters in the determination of the chirp mass in Eq.\ \ref{eq:Mchirp} and, according to Eq.\ \ref{eq:nupeak}, a lower peak frequency results in an over-estimation of the source total mass. Eventually, both masses need to be reduced as
+Gravitational waves are stretched by the expansion of the Universe, therefore it is mandatory to use the redshift information to correct the parameters determined so far in the detector's frame and obtain the intrinsic ones in the source's frame. Because of the cosmological redshift $z$, the observed frequency of the gravitational wave is lower than the one emitted. The frequency-dependence enters in the determination of the chirp mass in Eq.\ \ref{eq:Mchirp} and, according to Eq.\ \ref{eq:nupeak}, a lower peak frequency results in an over-estimation of the source total mass. Eventually, both masses need to be reduced as
 
 \begin{equation}\label{eq:Massesredshift}
 	M_i^{source} = \frac{M_i^{det}}{(1+z)} \qquad \qquad i=1,2
@@ -243,10 +249,10 @@ The gravitational waves are stretched by the expansion of the universe, therefor
 
 \begin{figure}[h]
 	\includegraphics[width=\textwidth]{./images/GW150914.png}
-	\caption{Signal detection of GW150914. \textit{Top:} amplitude time-series. \textit{Bottom:} frequency time-series. \cite{Abbott2016firstGW}}\label{fig:GW150914}
+	\caption{Signal detection of GW150914 \cite{Abbott2016firstGW}. \textit{Top:} amplitude time-series. \textit{Bottom:} frequency time-series.}\label{fig:GW150914}
 \end{figure}
 
-\paragraph{GW150914-like binaries} It is possible to apply the above formulas to get an order-of-magnitude estimate of any binary detection. For instance, the Bayesian analysis of the signal of GW150914 reported in Fig.\ \ref{fig:GW150914} revealed two black holes of masses $M_1=35.6^{+4.7}_{-3.1} ~ \msun$ and $M_2=30.6^{+3.0}_{-4.4} ~ \msun$ at redshift $z=0.09^{+0.03}_{0.03}$ within 90\% confidence intervals. \cite{GWTC-1} Using Eq.\ \ref{eq:Massesredshift}, the masses revealed in the detector frame where about 10\% heavier, respectively $M_1 \sim 39 ~ \msun$ and $M_1 \sim 33 ~ \msun$. The corresponding chirp mass was $\mathcal{M} \sim 30 \msun$ and the total mass $M \sim 70 ~ \msun$, meaning that at the coalescence the binary had a radius of only $R_{\rm coalescence} \sim 200~\text{km}$ and produced a peak gravitational wave at $\nu_{\rm GW, peak} \sim 300 ~\text{Hz}$. The binary had a luminosity distance of $d_L=410~\text{Mpc}$ and the gravitational wave was detected with an amplitude of $h \sim 10^{-21}~ \text{Hz}^{-1/2}$.
+\paragraph{GW150914-like binaries} It is possible to apply the above formulas to get an order-of-magnitude estimate of any binary detection. For instance, the Bayesian analysis of the signal of GW150914 reported in Fig.\ \ref{fig:GW150914} revealed two black holes of masses $M_1=35.6^{+4.7}_{-3.1} ~ \msun$ and $M_2=30.6^{+3.0}_{-4.4} ~ \msun$ at redshift $z=0.09^{+0.03}_{0.03}$ within 90\% confidence intervals \cite{GWTC-1}. Using Eq.\ \ref{eq:Massesredshift}, the masses revealed in the detector frame where about 10\% heavier, respectively $M_1 \sim 39 ~ \msun$ and $M_1 \sim 33 ~ \msun$. The corresponding chirp mass was $\mathcal{M} \sim 30 \msun$ and the total mass $M \sim 70 ~ \msun$, meaning that at the coalescence the binary had a radius of only $R_{\rm coalescence} \sim 200~\text{km}$ and produced a peak gravitational wave at $\nu_{\rm GW, peak} \sim 300 ~\text{Hz}$. The binary had a luminosity distance of $d_L=410~\text{Mpc}$ and the gravitational wave was detected with an amplitude of $h \sim 10^{-21}~ \text{Hz}^{-1/2}$.
 
 
 \begin{figure}[h]
@@ -259,7 +265,7 @@ The gravitational waves are stretched by the expansion of the universe, therefor
 		\centering
 		\includegraphics[width=1.02\textwidth]{./images/O3BNSrange.png}	
 	\end{minipage}
-	\caption{Sensitivity curves (\emph{left}) and binary neutron star observational probability density (\emph{right}) of the LIGO and Virgo interferometers during the third observing run O3. The lower sensitivity of Virgo for $\nu \gtrsim 150~\text{Hz}$ limits the observable volume, especially for the lighter sources like the binaries of neutron stars. \cite{GWTC-3}}\label{fig:O3sensitivity}
+	\caption{Sensitivity curves (\emph{left}) and binary neutron star observational probability density (\emph{right}) of the LIGO and Virgo interferometers during the third observing run O3. The lower sensitivity of Virgo for $\nu \gtrsim 150~\text{Hz}$ limits the observable volume, especially for the lighter sources like the binaries of neutron stars \cite{GWTC-3}.}\label{fig:O3sensitivity}
 \end{figure}
 
 
@@ -275,26 +281,61 @@ The gravitational waves are stretched by the expansion of the universe, therefor
 		\centering
 		\includegraphics[width=1.02\textwidth]{./images/EThorizon.png}	
 	\end{minipage}
-	\caption{Example of the possible sensitivity curves (\emph{left}) and observable horizons (\emph{right}) of the planned third generation interferometers Einstein Telescope and Cosmic Explorer. Unlike the advanced LIGO interferometer, Einstein Telescope and Cosmic Explorer will detect for the first time black hole binaries well-beyond redshift $z \gtrsim 1$. \cite{EThorizonsensitivity}}\label{fig:ETsensitivity}
+	\caption{Example of the possible sensitivity curves (\emph{left}) and instrumental horizons (\emph{right}) of the planned third generation interferometers Einstein Telescope and Cosmic Explorer. Unlike the advanced LIGO interferometer, Einstein Telescope and Cosmic Explorer will detect \erika{binary black holes} well-beyond redshift $z \sim 2$ \cite{EThorizonsensitivity}.}\label{fig:ETsensitivity}
 \end{figure}
 
 
 \paragraph{Sensitivity, biases and future perspectives}
-According to Eq.\ \ref{eq:h}, the further the sources and the lower the amplitude of the gravitational wave that reaches the detector.  To have a quantitative comparison it is useful to use as proxy-source a binary neutron star: the limits on its equation of state impose that a single neutron star has at maximum a mass of $\sim 3~\msun$, therefore the binary chirp mass is well-defined and doesn't exceed $\mathcal{M} \sim 2.6 ~\msun$. \cite{NSreview} Fig. \ref{fig:O3sensitivity} reports the sensitivity curves of the LIGO and Virgo interferometers and the end of the third observing run O3, highlighting how the worst sensitivity of Virgo at the high frequency (mainly caused by the photon shot noise) limits the maximum observable distance of the binary neutron star by a factor of 2 when compared to the performances of LIGO. \cite{GWTC-3} 
+According to Eq.\ \ref{eq:h}, the farther the sources are, the lower the amplitude of the gravitational wave that reaches the detector.  To have a quantitative comparison it is useful to use as proxy-source a binary neutron star: the limits on its equation of state impose that a single neutron star has at maximum a mass of $\sim 3~\msun$, therefore the binary chirp mass is well-defined and doesn't exceed $\mathcal{M} \sim 2.6 ~\msun$ \cite{NSreview}. Fig. \ref{fig:O3sensitivity} reports the sensitivity curves of the LIGO and Virgo interferometers and the end of the third observing run O3, highlighting how the worst sensitivity of Virgo at the high frequency (mainly caused by the photon shot noise) limits the maximum observable distance of the binary neutron star by a factor of 2 when compared to the performances of LIGO \cite{GWTC-3}.
 
-In terms of binary black holes, a source like GW150914 that peaks at $\nu \sim 300~\text{Hz}$ could be observed by the LIGO interferometers with sensitivity of $h \sim 10^{-23}~ \text{Hz}^{-1/2}$ up to a luminosity distance of $d_L \sim 1.6~\text{Gpc}$: the binary can now be observed in a volume of space $\sim 64$ times bigger. The observable volume is maximum for binaries that merge close to the best sensitivity range at $\sim 100-200~\text{Hz}$, that, according to Eq.\ \ref{eq:nupeak} are likely binaries composed of heavy black holes with total mass of $M \sim 100-200~\msun$: the gravitational wave detectors are biased towards the observation of heavy binary black holes.
-
-
-Third generation gravitational wave detectors, like the planned Einstein Telescope and Cosmic Explorer, will be at least an order of magnitude more sensible than the refined versions of the LIGO and Virgo interferometers, allowing to probe the mergers of binary compact objects beyond redshift $z \gtrsim 1$. As shown in Fig.\ \ref{fig:ETsensitivity}, the maximum observable distance depends on the source mass and on the interferometers sensitivity, that ultimately depends on its design and is still under development (Fig.\ \ref{fig:ETsensitivity} is only one of the proposed designs, but is representative of the goals of the projects). \cite{EThorizonsensitivity} Again, Eq.\ \ref{eq:h} underlines how the detection improvement is mainly for the black hole binaries: their heavier mass produces stronger amplitude signals than the neutron star binaries, making them visible even at cosmic distances.
+In terms of binary black holes, a source like GW150914 that peaks at $\nu \sim 300~\text{Hz}$ could be observed by the LIGO interferometers with sensitivity of $h \sim 10^{-23}~ \text{Hz}^{-1/2}$ up to a luminosity distance of $d_L \sim 1.6~\text{Gpc}$: the binary can now be observed in a volume of space $\sim 64$ times bigger. The observable volume is maximum for binaries that merge close to the best sensitivity range at $\sim 100-200~\text{Hz}$, that, according to Eq.\ \ref{eq:nupeak} are likely binaries composed of heavy black holes with a total mass  $M_1+M_2 \sim 60-100~\msun$: the gravitational wave detectors are biased towards the observation of heavy binary black holes.
 
 
+Third generation gravitational wave detectors, like the planned Einstein Telescope and Cosmic Explorer, will be at least one order of magnitude more sensible than advanced LIGO and Virgo at design sensitivity, allowing to probe binary compact object mergers beyond redshift $z \sim 2$. As shown in Fig.\ \ref{fig:ETsensitivity}, the maximum observable distance depends on source mass and interferometers' sensitivity, that ultimately depends on its design (Fig.\ \ref{fig:ETsensitivity} is only one of the proposed designs, but is representative of the goals of the project)  \cite{EThorizonsensitivity}. Again, Eq.\ \ref{eq:h} underlines how the detection improvement is mainly for \erika{binary black holes}: their heavier mass produces stronger amplitude signals than binary neutron stars, making them visible even at high redshift.
 
-\subsection{Mass and spin observed distributions}\label{subsec:GWmassspin}%pluto
 
-\paragraph{Merger rate densities and posterior distribution}
-The parameter distributions of the observed gravitational wave sources are usually expressed either in terms of cumulative density functions or in terms of \emph{merger rate densities}. The merger rate densities represent the number of sources that merge in a comoving hypervolume and in a given parameter range. Given that the gravitational waves can be detected over different comoving hypervolumes depending on their frequency, chirp mass and detector sensitivity, the merger rate densities are the distribution functions that can better reproduce the intrinsic astrophysical ones.
 
-Any distribution function is expressed in the form of a posterior probability and accounts for the many astrophysical and statistical limitations that affect the rough observed distributions. The corrections may enter as priors (like the intrinsic astrophysical population), likelihoods (like the signal-to-noise ratio that indicates the probability that each source is of astrophysical origin) or as normalization factors (like the correction for the sensible comoving hypervolume available for the detection, integrated for the observation time). In general, the observations are corrected for the limited sensitivity and detection efficiency but there is no extrapolation made to account also for the observational biases. \cite{GWTC-3}
+\subsection{Observed distributions of mass and spin}\label{subsec:GWmassspin}
+
+\paragraph{Merger rate densities and posterior distributions}% pluto, ho riscritto il paragrafo
+\erika{The parameter distributions of the observed gravitational wave sources are usually expressed either in terms of cumulative density functions (CDFs) or in terms of \emph{merger rate densities} (MRDs), the latter being the number of sources that merge in a co-moving volume and in a given time range. Both distributions are derived as posterior distribution functions (PDFs) $p(\theta)$ of some parameter $\theta$ in the framework of an hierarchical Bayesian analysis, that accounts for the observational biases and fits the hyper-parameters $\Lambda$ for the intrinsic population properties. From a theoretical perspective, the hyper-parameter fits are one of the most fundamental information to extract from the observations: their values can be directly compared with the predictions of the population-synthesis codes, discriminating between the different models proposed for the formation of the compact object merges \cite{GWTC-3_interpretation, BayesforGW}.} \\
+
+\erika{The astrophysical PDF of the source parameter $\theta$ is calculated averaging the prior distribution of the source $\pi(\theta|\Lambda)$ over the population hyper-parameters $\Lambda$ }
+
+\begin{equation}\label{eq:posteriorMRD}
+    p(\theta) = \int \pi(\theta|\Lambda)~p(\Lambda|\vec{d})~\rm d \Lambda
+\end{equation}
+
+\erika{The prior $\pi(\theta|\Lambda)$ is the intrinsic distribution of the source parameter $\theta$ for a given set of hyper-parameters $\Lambda$. The hyper-posterior $p(\Lambda|\vec{d})$ indicates the most probable values for the hyper-parameters $\Lambda$ given the observed data vector $\vec{d}$. Intuitively, the hyper-posterior could be a Gaussian that shifts and tightens around the true values of the hyper-parameters the more data are collected i.\ e.\ the more the data are representative of the population of interest.}
+
+\erika{To be more clear, it is possible to consider as an example a posterior distribution of the primary mass $p(M_1)$ similar to the one shown in the left-hand panel of Fig.\ \ref{fig:primarymassspectrum}. A reasonable choice for the prior could be a power-law (possibly related to the power-law of the initial mass functions of the stars \cite{Kroupa2001}) plus a Gaussian $\mathcal{N} (\mu,\sigma)$ centered in $\mu$ with dispersion $\sigma$ (to indicate possible over-densities)} % lo so che ci sarebbe anche una massa minima per il modello vero, ma qui sto solo facendo un "esempio didattico" semplice
+
+\begin{equation}\label{eq:priormassprimary}
+    \pi(M_1|\alpha,\mu,\sigma) \propto M_1^{-\alpha}~\mathcal{N} (\mu,\sigma)
+\end{equation}
+
+\erika{The three hyper-parameters $\vec{\Lambda} = (\alpha,\mu,\sigma)$ will be then determined by the fit to the data. Since population-synthesis codes too can predict the intrinsic distribution of the primary masses $p(M_1)$, it is possible to reject the results and the corresponding underlying assumptions of the ones that, for instance, predict a Gaussian peak in a different position than the one obtained from the hyper-parameter fits.}\\
+
+
+\erika{According to Bayes theorem, the hyper-posterior $p(\Lambda|\vec{d})$ is proportional to the hyper-likelihood $\mathcal{L}(\vec{d}|\Lambda)$ an to the hyper-prior $\pi(\Lambda)$}
+
+\begin{equation}\label{eq:hyperposterior}
+     p(\Lambda|\vec{d}) \propto~\mathcal{L}(\vec{d}|\Lambda)~\pi(\Lambda)
+\end{equation}
+
+\erika{The hyper-prior $\pi(\Lambda)$ indicates the prior beliefs on the hyper-parameters $\Lambda$ and usually is assumed to be uniform and non-informative. The hyper-likelihood $\mathcal{L}(\vec{d}|\Lambda)$ is the key quantity determined by the data and accounts for the observational biases. Assuming that the number of detected gravitational-waves $N_{\rm det}$ is related to the intrinsic number of events through a Poisson statistics, the hyper-likelihood can be modelled as}
+
+\begin{equation}\label{eq:hyperlikelihood}
+    \mathcal{L}(\vec{d}, N_{\rm det}| \Lambda) \propto N^{N_{\rm det}}~e^{-N\xi(\Lambda)} ~\prod_{i=1}^{N_{\rm det}} \int \mathcal{L}(d_i|\theta)~\pi(\theta|\Lambda)~\rm d\theta
+\end{equation}
+
+\erika{The product $N^{N_{\rm det}}~e^{-N\xi(\Lambda)}$ encodes the information on the observational biases and detection efficiency. In fact, $N$ indicates the expected number of mergers over the observation period while $\xi(\Lambda)$ is the fraction of mergers that are detectable for the population characterized by hyper-parameters $\Lambda$. $N^{N_{\rm det}}~e^{-N\xi(\Lambda)}$ is strongly influenced by the dimension of the co-moving time-volume $\langle V\,T\rangle$ explored by the detector, namely the instrumental horizon integrated for the observation time.}
+
+\erika{The single-event likelihood $\mathcal{L}(d_i|\theta)$ is usually obtained via importance sampling from a default prior $\pi_{\rm def}(\pi)$. Therefore, the integral of the prior $\pi(\theta|\Lambda)$ over the single-event likelihood $\mathcal{L}(d_i|\theta)$ can be evaluated averaging over the posterior samples}
+
+\begin{equation}
+   \int \mathcal{L}(d_i|\theta)~\pi(\theta|\Lambda)~\rm d\theta \approx \langle~ \frac{\pi(\theta|\Lambda)}{\pi_{\rm def}(\pi)}~\rangle
+\end{equation}
 
 
 \begin{figure}
@@ -308,28 +349,27 @@ Any distribution function is expressed in the form of a posterior probability an
 		\centering
 		\includegraphics[width=\textwidth]{./images/MassCumulative.png}	
 	\end{minipage}
-	\caption{Differential merger rate (\emph{left}) and cumulative density function (\emph{right}) of the primary mass of the black hole binaries detected with the gravitational waves. In blue the posterior distributions obtained after the third observing run O3, in grey the ones obtained after O2. Thick solid lines denote the median values and are surrounded by the 90 \% credible intervals.The vertical grey band on the differential merger rate indicates the 90 \% credible interval for the mean of the Gaussian peak. \cite{GWTC-3_interpretation}}\label{fig:primarymassspectrum}
+	\caption{Differential merger rate density  (\emph{left}) and cumulative density function (\emph{right}) of the primary mass of the \erika{binary black holes} detected with the gravitational waves. In blue the posterior distributions obtained with GWTC-3, in grey the ones obtained with GWTC-2. The thick solid lines denote the median values and are surrounded by the 90 \% credible intervals.The vertical grey band on the differential merger rate indicates the 90 \% credible interval for the mean of the Gaussian peak \cite{GWTC-3_interpretation}.}\label{fig:primarymassspectrum}
 \end{figure}
 
 
 \paragraph{Primary mass spectrum}
-For each binary source, the primary mass is defined as the most massive one. Both the cumulative density function and the differential merger rate of the primary mass of the black hole binaries obtained at the end of the third observing run O3 are similar to the ones obtained at the end of the second observing run O2, as shown in Fig.\ \ref{fig:primarymassspectrum}. \cite{GWTC-3_interpretation}
+For each binary source, the primary mass is defined as the most massive compact object. The differential merger rate density of the primary mass observed at the end of O3b is a power-law with slope $\alpha = 3.5_{-0.56}^{+0.6}$ with a Gaussian peak centered in $M_{\rm 1,\mu} = 34_{-4.0}^{+2.6}~ \msun$. GWTC-3 contains more low-mass system than GWTC-2, causing a steeper decline in the power law at higher masses and reducing the mass of the 99th percentile, now at $\sim 44~\msun$ and not at $\sim 60~\msun$ as it was in GWTC-2. There are strong over-densities at $\sim 10~\msun$ and $\sim 35~\msun$ that may reflect properties of the astrophysical environment but that are still under investigation.
 
-The differential merger rate of the primary mass observed at the end of O3 is a power-law with slope $\alpha = 3.5_{-0.56}^{+0.6}$ with a Gaussian peak centered in $M_{\rm 1,\mu} = 34_{-4.0}^{+2.6}~ \msun$. GWTC-3 hosts more low-mass system than GWTC-2, causing a steeper decline in the power law at higher masses and reducing the mass of the 99th percentile, now at $\sim 44~\msun$ and not at $\sim 60~\msun$ as it was in GWTC-2. There are strong overdensities at $\sim 10~\msun$ and $\sim 35~\msun$ that may reflect properties of the astrophysical environment but that are still under investigation.
-
-Even though the region $\gtrsim 70~\msun$ is still weakly explored, there is no strong evidence for or against a mass-gap, at least up to $\sim 75~\msun$. Still, a similar finding challenges the existence of the pair-instability mass-gap $\sim 60 - 120~\msun$ \cite{spera2017_pisnSNe}: either the single stellar evolution models need to be corrected \cite{MassGapStellarEvo_Costa2021} or the formation in dynamically active environments is required \cite{Rastello2021_dynamics}. On the other hand, there is still evidence of a lower-mass gap between $\sim 3~\msun$ and $\sim 5~\msun$, potentially due to the physics of core-collapse supernovae and in agreement with the dearth of compact objects observed in the galactic X-ray binaries \cite{massgapreal_ozel2010}.
+Even though the region $\gtrsim 70~\msun$ is still weakly explored, there is no strong evidence for or against an upper mass gap, at least up to $\sim 75~\msun$. Still, a similar finding challenges the existence of the pair-instability mass gap ($\sim 60 - 120~\msun$ \cite{spera2017_pisnSNe}): either the single stellar evolution models need to be corrected \cite{MassGapStellarEvo_Costa2021} or the formation in dynamically active environments is required \cite{Rastello2021_dynamics}. On the other hand, there is still mild support for a lower-mass gap between $\sim 3~\msun$ and $\sim 5~\msun$, potentially due to the physics of core-collapse supernovae and in agreement with the dearth of compact objects observed in nearby X-ray binaries \cite{massgapreal_ozel2010}.
 
 
 
 
 \paragraph{Spin distribution}
-At the end of the third observing run, the black hole population exhibits a preference for low-spinning black holes $\chi \lesssim 0.4$, with a peak distribution at $\chi \sim 0.2$ and a large tail at higher values. Separate analysis of the fastest ($\chi_A$) and slowest ($\chi_B$) spinning components of the binary revealed that the rapid-spinning components are still quite slow $\chi_A \sim 0.4$ while the slow-spinning ones are concentrated below $\chi_B \sim 0.2$, as expected. Posterior distributions for the spin magnitudes are shown in Fig.\ \ref{fig:spinmagnitude}.
+At the end of the third observing run, the black hole population exhibits a preference for low-spinning black holes $\chi \lesssim 0.4$, with a peak distribution at $\chi \sim 0.2$ and a long tail at higher values. Separate analysis of the fastest ($\chi_A$) and slowest ($\chi_B$) spinning components of the binary revealed that the rapid-spinning components are still quite slow $\chi_A \sim 0.4$ while the slow-spinning ones are concentrated below $\chi_B \sim 0.2$, as expected. Posterior distributions for the spin magnitudes are shown in Fig.\ \ref{fig:spinmagnitude}.
 
-The effective spin parameter $\chi_{eff}$ distribution is a Gaussian centered in $\chi_{eff, \mu} = 0.06_{-0.05}^{+0.04}$. The distribution peak is compatible with $\chi_{eff} = 0$, indicating spins misaligned with the orbital angular momentum. Detailed analysis required the existence of negative effective spins $\chi_{eff} < 0$, related to polar angles $\theta \geq 90^\circ $ and thus to black holes anti-aligned with the orbital angular momentum that likely formed in dynamically active environments. Moreover, data from GWTC-3 exhibit a mild anti-correlation between the effective spin parameter $\chi_{eff}$ and the mass ratio $q$, as shown in Fig.\ \ref{fig:spineffective}. If confirmed, the anti-correlation would challenge the usual evolutionary pathways for the binary black hole progenitors, indicating that field binaries formed with $q \sim 1$ don't have spins aligned with the orbital angular momentum ($\chi_{eff} \sim 1$),  because either the tides and mass transfer are not so efficient or there is some additional and yet un-considered effect, like a third-body perturbation \cite{misalignedbinary}. 
+% ho un po' riaggiustato visto che dicevi che non ti era del tutto chiaro
+\erika{As shown in the left-hand panel of Fig.\ \ref{fig:spineffective}, the effective spin parameter $\chi_{eff}$ distribution is still consistent with a Gaussian centered in $\chi_{eff, \mu} = 0.06_{-0.05}^{+0.04}$ with a peak still compatible with $\chi_{eff} = 0$, indicating either very low spin magnitudes or spins misaligned with the orbital angular momentum. In particular, the distribution extends to negative effective spins $\chi_{eff} < 0$, suggesting the existence of polar angle tilts $\theta \geq 90^\circ $ i.\ e.\ black holes anti-aligned with the orbital angular momentum that likely formed in dynamically active environments. This evolutionary scenario is consistent also with the flatter and more isotropic-oriented distribution of the tilt angles shown in the right-hand panel of Fig.\ \ref{fig:spineffective}. }
 
 
 
-\begin{figure}
+\begin{figure}[h!]
 	\begin{minipage}{.49\textwidth}
 		\centering
 		\includegraphics[width=\textwidth]{./images/spinmagnitude.png}
@@ -340,11 +380,11 @@ The effective spin parameter $\chi_{eff}$ distribution is a Gaussian centered in
 		\centering
 		\includegraphics[width=0.975\textwidth]{./images/spinmagnitudehighlow.png}	
 	\end{minipage}
-	\caption{\emph{Left:} Spin magnitudes $\chi$ posterior distribution of all the merging black holes at the end of the third observing run O3 (in gray) compared to the 90 \% credible intervals for the sample limited at the end of O2 (in blue). \emph{Right:} Separate posterior distributions within 90 \% credible bounds of the fastest ($\chi_A$, in blue) and slowest ($\chi_B$, in green) black holes in the binaries. The new observations indicate a preference for slow-spinning black holes $\chi \lesssim 0.4$, with a fast-spinning component still rather slow $\chi_A \sim 0.4$ \cite{GWTC-3_interpretation}} \label{fig:spinmagnitude}
+	\caption{\emph{Left:} Spin magnitude ($\chi$) posterior distribution of all the merging black holes in GWTC-3 (gray) compared to the 90 \% credible intervals for GWTC-2 (in blue). \emph{Right:} Separate posterior distributions within 90 \% credible bounds of the fastest ($\chi_A$, in blue) and slowest ($\chi_B$, in green) black holes in the binary. The new observations indicate a preference for slow-spinning black holes $\chi \lesssim 0.4$, with a fast-spinning component still rather slow $\chi_A \sim 0.4$ \cite{GWTC-3_interpretation}} \label{fig:spinmagnitude}
 \end{figure}
 
 
-\begin{figure}
+\begin{figure}[h!]
 	\begin{minipage}{.49\textwidth}
 		\centering
 		\includegraphics[width=\textwidth]{./images/spineff.png}
@@ -353,26 +393,15 @@ The effective spin parameter $\chi_{eff}$ distribution is a Gaussian centered in
 	\begin{minipage}{.49\textwidth}
 		\vspace{-1mm}
 		\centering
-		\includegraphics[width=0.96\textwidth]{./images/spinmassratio.png}	
+		\includegraphics[width=0.96\textwidth]{./images/spinorientation.png}	
 	\end{minipage}
-	\caption{\emph{Left:} Gaussian posteriors of the effective spin $\chi_{eff}$ of all the merging black holes at the end of the third observing run O3 (in gray) compared to the 90 \% credible intervals for the sample limited at the end of O2 (in blue). \emph{Right:} Effective spin $\chi_{eff}$ anti-correlating with the mass ratio $q$. Black points mark the median of the posterior distributions obtained using an informed prior where mean and standard deviation of the Gaussian posterior of $\chi_{eff}$ were allowed to evolve with $q$. Blue shaded areas indicate 90 \% credible intervals for each median point. \cite{GWTC-3_interpretation}} \label{fig:spineffective}
+	\caption{\emph{Left:} Gaussian posteriors of the effective spin $\chi_{eff}$ of all the merging black holes in GWTC-3 (gray) compared to the 90 \% credible intervals for GWTC-2 (blue). \emph{Right:} Posterior distribution of the polar angle $\theta$ of all the merging black holes in GWTC-3 (gray) compared to the 90 \% credible intervals in GWTC-2 (blue) \cite{GWTC-3_interpretation}.} \label{fig:spineffective}
 \end{figure}
 
-
-
-The new detections included in the GWTC-3 catalogue strongly favour an isotropically oriented distribution of spins, as shown in the left panel of Fig.\ \ref{fig:spinorientation}. The scenario is consistent with the evolution in a dynamically active environment.
-
-So far the analysis carried out assumed the same spin distribution at all masses, even though the low-mass binaries dominate the sample and seven high-mass binaries made up $\sim 70 \%$ of the moderate spins. A more refined analysis compared the spin magnitude aligned with the orbital angular momentum $|s_z|$ with the chirp mass of each binary. The result is shown in the right panel of Fig.\ \ref{fig:spinorientation}. All the binaries are consistent with spins misaligned with the orbital angular momentum ($|s_z| = 0$) even tough there are over-densities in the chirp mass distribution: if confirmed by further detections it would challenge the correlations predicted by the hierarchical formtion scenario. The large spread of the high-mass binaries $\mathcal{M} \gtrsim 30~\msun$ with respect to the low-mass ones is consistent with having a large number of detection at low masses and fewer at high masses: at the moment it is not possible to refute or confirm an aligned spin magnitude dependence with the chirp mass.
-
-
-
-
-
-
-\begin{figure}
+\begin{figure}[h!]
 	\begin{minipage}{.49\textwidth}
 		\centering
-		\includegraphics[width=\textwidth]{./images/spinorientation.png}
+		\includegraphics[width=\textwidth]{./images/spinmassratio.png}
 	\end{minipage}
 	\hfill
 	\begin{minipage}{.49\textwidth}
@@ -380,8 +409,20 @@ So far the analysis carried out assumed the same spin distribution at all masses
 		\centering
 		\includegraphics[width=0.95\textwidth]{./images/spinchirpmass.png}	
 	\end{minipage}
-	\caption{\emph{Left:} Posterior distribution of the polar angle $\theta$ of all the merging black holes at the end of the third observing run O3 (in gray) compared to the 90 \% credible intervals for the sample limited at the end of O2 (in blue). \emph{Right:} Spin magnitude aligned with the orbital angular momentum $|s_z|$ as a function of the binary chirp mass. Light(dark) shaded areas indicate 90 \% (50 \%) credible intervals. \cite{GWTC-3_interpretation}}\label{fig:spinorientation}
+	\caption{\emph{Left:} Effective spin $\chi_{eff}$ anti-correlating with the mass ratio $q$. Black points mark the median of the PDF obtained using an informed prior where mean and standard deviation of the Gaussian posterior of $\chi_{eff}$ were allowed to evolve with $q$. Blue shaded areas indicate the 90 \% credible intervals for each median point. \emph{Right:} Spin component parallel or anti-parallel to the orbital angular momentum vector $\vec{s}_z$ as a function of the binary chirp mass. Light (dark) shaded areas indicate 90 \% (50 \%) credible intervals \cite{GWTC-3_interpretation}.}\label{fig:spincorrelations}
 \end{figure}
+
+
+
+Data from GWTC-3 exhibit a mild anti-correlation between the effective spin parameter $\chi_{eff}$ and the mass ratio $q$, as shown in the left-hand panel of Fig.\ \ref{fig:spincorrelations}. If confirmed, the anti-correlation would challenge the usual evolutionary pathways for binary black hole progenitors, indicating that field binaries formed with $q \sim 1$ do not have spins aligned with the orbital angular momentum ($\chi_{eff} \sim 1$),  because either the tides and mass transfer are not so efficient or there is some additional and yet unknown effect, like a third-body perturbation \cite{misalignedbinary}.
+
+
+So far the LVC analysis has been carried out assuming the same spin distribution at all masses, even though the low-mass binaries dominate the sample and seven high-mass binaries make up $\sim 70 \%$ of the moderate spins. A more refined analysis compared the spin component aligned with the orbital angular momentum $|s_z|$ with the chirp mass of each binary. The result is shown in the right-hand panel of Fig.\ \ref{fig:spincorrelations}. All the binaries are consistent with spins misaligned with the orbital angular momentum ($|s_z| = 0$) even tough there are over-densities in the chirp mass distribution: \st{if confirmed by further detections it would challenge the correlations predicted by the hierarchical formation scenario} \micmap{no un attimo, questa frase dove l'hai trovata? è vero che i bbh gerarchici tendono ad avere spin $\sim{0.7}$ più o meno isotropicamente distribuito - il meno è per gli AGN disk - ma nessuno si immagina una correlazione, semmai una sottopopolazione di gerarchici. Finora abbiamo solo GW190521 che sia affidabile} \erika{Fine della sezione A pag 36 del paper sull'interpretazione di GWTC-3  (https://ui.adsabs.harvard.edu/abs/2021arXiv211103634T/abstract) Cito la frase che ammetto aver quasi copiato ciecamente " Figure 19 (la mia 1.7 dx) suggests aligned spin magnitude remains constrained to be close to zero independently of the most well-identified peaks in the mass distribution, contrary to what would be expected from hierarchical formation scenarios for these peaks [110, 197–201]."}. The large spread of the high-mass binaries $\mathcal{M} \gtrsim 30~\msun$ with respect to the low-mass ones is consistent with having a large number of detections at low masses and fewer at high masses: at the moment it is not possible to reject or confirm an aligned spin magnitude dependence with the chirp mass.
+
+
+
+
+
 
 
 
@@ -389,19 +430,21 @@ So far the analysis carried out assumed the same spin distribution at all masses
 
 
 \section{X-ray binaries}
+
 \subsection{X-ray binaries hosting a black hole}\label{subsec:XraybinariesSED}
+
 \paragraph{The best way to observe a black hole}
-X-ray binaries that host a black hole are currently the best observational candidates as binary black hole progenitors: not only such systems are already in a binary configuration but the accretion onto the compact object powers an X-ray emission that allows us to observe them \cite{Xbinaries_massmeasure}. Observability is precisely the key property of the X-ray binaries: even though $\sim 70 \%$ of the massive stars are born in binary systems \cite{Sana2012}, many black holes are quiescent and can be observed only with accurate radial velocity measurements \cite{BHnoninteracting_Giesers2018}. Isolated black holes, that could dynamically exchange with a binary, are even more difficult to observe and currently the best detection technique is microlensig \cite{BHmicrolensing}.
+X-ray binaries that host a black hole and a massive star are currently the best observational candidates as binary black hole progenitors: not only such systems are already in a binary configuration but the accretion onto the compact object powers an X-ray emission that allows us to observe them \cite{Xbinaries_massmeasure}. The possibility to observe them is precisely the key property of X-ray binaries: even though $\sim 70 \%$ of massive stars are born in binary systems \cite{Sana2012}, most black holes are quiescent and can be observed only with accurate measurements of their radial velocity or proper motions \cite{BHnoninteracting_Giesers2018}. Isolated black holes, that could dynamically exchange with a binary, are even more difficult to observe and currently the best detection technique for them is microlensing \cite{BHmicrolensing}.
 
 \paragraph{LMXBs and HMXBs}
-The mass of the non-degenerate donor star and the type of the accretion determine two sub-classes of X-ray binaries hosting a black hole: Low-Mass X-ray Binaries (LMXBs) and High-Mass X-ray Binaries (HMXBs). LMXBs typically have low-mass stars $\lesssim 2-3~\msun$ that fill their Roche Lobe. HMXBs donors, on the contrary, are more massive stars $\gtrsim 5~\msun$ that don't fill their Roche Lobe but become wind-fed systems. Up-to-date, about $\sim 30$ X-ray binaries are known to host a black hole \cite{HMXBH_spins2021}.
+The mass of the non-degenerate donor star and the type of accretion determine two sub-classes of X-ray binaries hosting a black hole: low-Mass X-ray binaries (LMXBs) and high-mass X-ray binaries (HMXBs). LMXBs typically host low-mass stars $\lesssim 2-3~\msun$ that fill their Roche lobe. In contrast, HMXB  donors are more massive stars $\gtrsim 5~\msun$ that typically do not fill their Roche lobe but become wind-fed systems. Up-to-date, about $\sim 30$ X-ray binaries are estimated to host a black hole \cite{HMXBH_spins2021}.
 
 \paragraph{Spectral energy distribution in the X-rays}
-The X-ray spectral energy distribution of an X-ray binary is dominated by the emission of the accretion disk surrounding the compact object. A classic Shakura-Sunyaev accretion disk emits most of its photons in the UV/soft X-ray regime $\sim 10^{2}-10^{4}$ keV with an X-ray luminosity $L_X \gtrsim 10^{37}~\text{erg s}^{-1}$, has an effective radiation temperature of $\sim 10^{7}-10^{8}~K$ and produces a thermal multi-color blackbody continuum \cite{S&S1973_accretiondisk}. Usually the accretion disks are surrounded with a corona of hot thermal electrons: photons in the low energy tail of the disk thermal emission (soft optical/UV) that encounter the corona suffer multiple inverse Compton scatterings (i.\ e.\ suffer a thermal Comptonization) and are re-emitted in the form of a hard X-ray power-law spectrum. Part of the X-ray power-law radiation is directly emitted towards the observer at infinity but another part is re-emitted back to the accretion disk, reprocessed by it and eventually reflected at the infinity. 
+The X-ray spectral energy distribution of an X-ray binary is dominated by the emission of the accretion disk surrounding the compact object. A classic Shakura-Sunyaev accretion disk around a stellar-sized compact object emits most of its photons in the UV/soft X-ray regime $\sim 10^{2}-10^{4}$ keV with an X-ray luminosity $L_X \gtrsim 10^{37}~\text{erg s}^{-1}$, has an effective radiation temperature of $\sim 10^{7}-10^{8}~K$ and produces a thermal multi-color black-body continuum \cite{S&S1973_accretiondisk}. Usually, accretion disks are surrounded by a corona of hot thermal electrons: photons in the low energy tail of the disk thermal emission (soft optical/UV) that encounter the corona suffer multiple inverse Compton scatterings (i.\ e.\ suffer a thermal Comptonization) and are re-emitted in the form of a hard X-ray power-law spectrum. Part of the X-ray power-law radiation is directly emitted towards the observer at infinity but another part is re-emitted back to the accretion disk, reprocessed by it and eventually reflected at the infinity. 
  
-The X-ray photons reprocessed by the corona are more energetic than the ones originally produced in the accretion disk and see the disk as a slab of cold gas, interacting with it mainly through Compton scattering and photoelectric absorption followed by fluorescent line emissions. On the one hand, the energy dependence of the photoelectric absorption favors the absorption of the soft X-rays, causing a down-scaling in the corresponding region of the reflected continuum. One other hand, the hard X-rays are Compton-scattered back, thus reflected towards the observer at the infinity, except for the ones more energetic than $\sim 20-30$ keV, that suffer the Compton recoil. Overall, the X-ray continuum due to the reflection is characterized by a hump at $\sim 20$ keV and by the fluorescent lines emitted by the ionized heavy elements, mainly iron. The 6.4 keV line of the Fe K$\alpha$ line is the strongest fluorescent line and is caused by the absorption of an incident photon with energy larger than 7.1 keV, as shown in the right panel of Fig. \ref{fig:accretiondisk}.
+The X-ray photons reprocessed by the corona are more energetic than the ones originally produced in the accretion disk and see the disk as a slab of cold gas, interacting with it mainly through Compton scattering and photoelectric absorption followed by fluorescent line emissions. On the one hand, the energy dependence of the photoelectric absorption favours the absorption of the soft X-rays, causing a down-scaling in the corresponding region of the reflected continuum. One other hand, the hard X-rays are Compton-scattered back, thus reflected towards the observer at the infinity, except for the ones more energetic than $\sim 20-30$ keV, which suffer Compton recoil. Overall, the X-ray continuum due to reflection is characterized by a hump at $\sim 20$ keV and by the fluorescent lines emitted by the ionized heavy elements, mainly iron. The 6.4 keV line of the Fe K$\alpha$ line is the strongest fluorescent line and is caused by the absorption of an incident photon with energy larger than 7.1 keV, as shown in the right-hand panel of Fig. \ref{fig:accretiondisk}.
 
-The X-ray continuum seen by an observer at infinity can be divided into the soft and hard X-ray regions, respectively below or above 10 keV. The soft X-ray spectrum is dominated by the thermal continuum of the disk and exhibits a multi-color black body shape peaked at $\sim 2$ keV. The hard X-ray spectrum is determined by the radiation reprocessed by the hot corona: the hard power-law of the photons directly emitted from the corona is modulated by the hump at $\sim 20$ keV and the fluorescence emission lines caused by the additional reflection on the accretion disk, as shown in the left panel of Fig. \ref{fig:accretiondisk}. \cite{FeKalphaline_Fabian2000}
+The X-ray continuum seen by an observer at infinity can be divided into soft and hard X-ray regimes, respectively below or above 10 keV. The soft X-ray spectrum is dominated by the thermal continuum of the disk and exhibits a multi-color black body shape peaked at $\sim 2$ keV. The hard X-ray spectrum is determined by the radiation reprocessed by the hot corona: the hard power-law of the photons directly emitted from the corona is modulated by the hump at $\sim 20$ keV and the fluorescence emission lines caused by the additional reflection on the accretion disk, as shown in the left-hand panel of Fig. \ref{fig:accretiondisk} \cite{FeKalphaline_Fabian2000}.
 
 
 \begin{figure}
@@ -415,24 +458,24 @@ The X-ray continuum seen by an observer at infinity can be divided into the soft
 		\centering
 		\includegraphics[width=\textwidth]{./images/accretiondiskFeKalphaline.png}	
 	\end{minipage}
-	\caption{\emph{Left:} Sketch of the dominant components in the spectral energy distribution of a X-ray binary. In the soft X-ray the emision is dominated by the thermal continuum of the disk, visible as a multi-color blackbody peaked at $\sim 2$ keV. In the hard X-ray, the radiation reprocessed by the corona is either directly emitted towards the observer as power-law or is reflected by the disk, causing a hump at $\sim 20$ keV and the strong fluorescent Fe K$\alpha$ line at $6.4$ keV. Credit: J. Miller \emph{Right:} Montecarlo simulation of the X-ray spectrum reflected by a cold slab of gas. An incident power-law radiation (dashed line) is damped in the soft X-rays, exhibiting strong fluorescent lines an a hump before the cut-off due to the Compton recoil. \cite{FeKalphaline_Fabian2000}}\label{fig:accretiondisk}
+	\caption{\emph{Left:} Sketch of the dominant components in the spectral energy distribution of an X-ray binary. In the soft X-rays, the emission is dominated by the thermal continuum of the disk, visible as a multi-color black-body peaked at $\sim 2$ keV. In the hard X-rays, the radiation reprocessed by the corona is either directly emitted towards the observer as a power-law or is reflected by the disk, causing a hump at $\sim 20$ keV and the strong fluorescent Fe K$\alpha$ line at $6.4$ keV. Credit: J. Miller \emph{Right:} Montecarlo simulation of the X-ray spectrum reflected by a cold slab of gas. An incident power-law radiation (dashed line) is damped in the soft X-rays, exhibiting strong fluorescent lines and a hump before the cut-off due to Compton recoil \cite{FeKalphaline_Fabian2000}.}\label{fig:accretiondisk}
 \end{figure}
 
-\subsection{Measuring the properties of the X-ray binaries}\label{subsec:Xraymeasure}
+\subsection{Measuring the properties of  X-ray binaries}\label{subsec:Xraymeasure}
 \paragraph{Masses, period and inclination}
-Inspection of the radial velocity and X-ray light curves provides essential informations to characterize the orbital properties of the X-ray binaries. On the one hand, the period can be directly obtained from the periodicity of the light and velocity curves and often is the most-accurate orbital parameter. On the other hand, the mass estimates of the black holes are less precise and rely on the determination of many other uncertain quantities, like the companion mass, binary mass ratio, inclination and distance.
+Inspection of the radial velocity and X-ray light curves provides essential information to characterize the orbital properties of X-ray binaries. The orbital period can directly be obtained from the periodicity of the light and velocity curves and often is the most-accurate orbital parameter. The mass estimate of the compact object is less precise and relies on the determination of other uncertain quantities, \erika{like the companion mass, binary mass ratio, inclination and distance.}
 
-The dynamical method is the most robust and common procedure to determine the mass of an object in a binary system. Its application is limited to the systems that satisfy three conditions: the companion star is visible in the optical/near-infrared band, single spectral lines can be identified in its optical/near-infrared spectrum (resolving power $\lambda/\Delta \lambda \gtrsim 1500$), at least one photospheric absorption line can be used as proxy for the orbital motion. Therefore, the dynamical method cannot be applied to distant X-ray binaries (not enough resolving power), to systems with a companion not visible in the optical/near-infrared band and, most importantly, to systems subject to outburst or strong stellar winds. These limitations prevent the application of the dynamical mass determination to many high mass X-ray binares. For instance, as explained in Sec.\ \ref{sec:WRBHobserved}, the strong winds of the Wolf-Rayet stars coupled with the X-ray variability of the compact object caused the revision of many dynamical mass measurement in the Wolf -Rayet - black hole binaries \cite{ICX10X-1_Laycock2015_revisited}.
+The dynamical method is the most robust and common procedure to determine the mass of an object in a binary system. Its application is limited to the systems that satisfy three conditions: the companion star is visible in the optical/near-infrared band, single spectral lines can be identified in its optical/near-infrared spectrum (resolving power $\lambda/\Delta \lambda \gtrsim 1500$), at least one photospheric absorption line can be used as a proxy for the orbital motion. Therefore, the dynamical method cannot be applied to distant X-ray binaries (not enough resolving power), to systems with a companion not visible in the optical/near-infrared band and, most importantly, to systems subject to outbursts or strong stellar winds. These limitations prevent the application of the dynamical mass determination to many HMXBs. For instance, as explained in Sec.\ \ref{sec:WRBHobserved}, the strong winds of the  Wolf-Rayet star coupled with the X-ray variability of the compact object caused the revision of several important dynamical mass measurements in the Wolf -Rayet -- black hole binaries \cite{ICX10X-1_Laycock2015_revisited}.
 
-Alternative techniques for the mass measurement are available but still require a good calibration, as for the case of the scaling relations with the X-ray spectral and timing properties \cite{Xbinaries_massfromXtiming}.\\
+Alternative techniques for the mass measurement are available but still require a good calibration, as for the case of the scaling relations with the X-ray spectral and timing properties in presence of quasi-periodic oscillations \cite{Xbinaries_massfromXtiming}.\\
 
-In the dynamical method, the spectral lines that trace the orbital motion are used to build the velocity curves and extract the orbital period $P_{orb}$ and the radial velocity semi-amplitude $K_c$ of the companion star. Kepler's third law corrects the measures for the inclination angle $i$ and the mass ratio $q=M_c/M_{\rm BH}$ and couples them into the \emph{mass function} $f(M)$: a non-linear expression relating the masses of the companion star $M_c$ and of the compact object $M_{\rm BH}$
+According to the dynamical method, the spectral lines that trace the orbital motion are used to build the velocity curves and extract the orbital period $P_{orb}$ and the radial velocity semi-amplitude $K_c$ of the companion star. Kepler's third law corrects the measures for the inclination angle $i$ and the mass ratio $q=M_c/M_{\rm BH}$ and couples them into the \emph{mass function} $f(M)$: a non-linear expression relating the masses of the companion star $M_c$ and of the compact object $M_{\rm BH}$:
 
 \begin{equation}\label{eq:massfunction}
 	f(M) = \frac{K_c^3 P_{\rm orb}}{2 \pi G} = \frac{M_{\rm BH}^3 \sin^3 i}{(M_{\rm BH} + M_c)^2} = \frac{M_{\rm BH}^3 \sin^3 i}{(1+q)^2}
 \end{equation}
 
-The above formula is for a circular binary: a reasonable assumption for a system that likely already had the time to circularize, given that its X-ray visibility is the result of a mass transfer process. Eventually, the mass of the black hole in the binary can be determined with further assumptions and measurements on the mass ratio $q$ (or, alternatively, on the companion mass $M_c$) and on the inclination of the system $i$.\\
+The above formula is for a circular binary: a reasonable assumption for a system that likely already had time to circularize, given that its X-ray emission is the result of a mass-transfer process. Eventually, the mass of the black hole in the binary can be determined with further assumptions and measurements on the mass ratio $q$ (or, alternatively, on the companion mass $M_c$) and on the inclination of the system $i$.\\
 
 The mass ratio can be determined assuming a spherically symmetric star that fills its Roche lobe in a tidally locked system. Under these conditions, the rotational broadening ($V \sin i$) of the absorption lines in the stellar photosphere can be related to the mass ratio $q$ of the system \cite{Xbinaries_qmeasure}
 
@@ -440,31 +483,28 @@ The mass ratio can be determined assuming a spherically symmetric star that fill
 	\frac{V \sin i}{K_c} \sim 0.462~q^{1/3} (1+q)^{2/3} 
 \end{equation}
 
-The measurement of $q$ is not always feasible and usually leads to under-estimate its value. The main uncertainty arises from the assumption of sphericity in a Roche Lobe filling system that, on the contrary, has tidal distortions. Moreover, the rotational broadening is usually of $\sim 30-120~\text{km s}^{-1}$ and requires a very large resolving power $\lambda/\Delta \lambda \gtrsim 5000$ to be measured, limiting the determination of $q$ only to the nearest binaries. 
+The measurement of $q$ is not always feasible and usually leads to under-estimate its value. The main uncertainty arises from the assumption of spherical symmetry in a Roche lobe filling system that, on the contrary, has tidal distortions. Moreover, the rotational broadening is usually of $\sim 30-120~\text{km s}^{-1}$ and requires a very large resolving power $\lambda/\Delta \lambda \gtrsim 5000$ to be measured, limiting the determination of $q$ only to the nearest binaries. 
 
-For many systems, including the HMXBs that are not filling their Roche Lobe, the mass function is not calculated with the mass ratio but with the companion mass. Fits on the stellar spectrum or mass-luminosity relations can provide the mass of the companion star. Nevertheless, also this result is a big source of uncertainty, especially for the HMXBs: the strong winds and mass lost deeply modify the photosphere of the star, therefore the synthetic spectra based on single stellar evolution models or the empirical mass-luminosity relations might be incorrect.\\
+For many systems, including the HMXBs that are not filling their Roche lobe, the mass function is not calculated with the mass ratio but with the companion mass. Fits on the stellar spectrum or mass-luminosity relations can provide the mass of the companion star. \erika{Usually the mass-luminosity relations are empirically obtained either by calibrations on synthetic spectra based on single stellar evolution models or by extrapolating the star properties from their position in the color-magnitude diagram (see Sec.\ \ref{subsec:massWR} for an example of a mass-luminosity relation for the Wolf-Rayet stars). The methodology requires a good modelling of stellar photospheres and optical/infrared emissions. However, strong winds and mass transfer events that expose the inner layers of the star or super-Eddington accretion onto the compact object may change the optical/infrared properties of the X-ray binary, leading to an uncertain estimate of the mass of the non-degenerate star \cite{superEddingtonaccBH_Ambrosi2018}. }
+
+The inclination angle $i$ is usually obtained fitting the optical/near-infrared light curves with synthetic ellipsoidal models. Assuming that the companion star is filling its Roche lobe, tidal deformations of the star surface are expected to modulate the light curve profile and the amplitude of the modulation can be linked to the inclination angle. The light curve modulation can be affected by many sources of error (outburst, winds, etc.) and requires a very complex modeling, resulting in inaccurate determinations of the inclination angle. \erika{A similar, uncertain, result can be obtained also assuming that the inclination of the black hole high energy jet is the same of the binary: observations on the MAXI J1820+070 X-binary showed that spin-orbit misalignments can be $\gtrsim 40^{\circ}$ \cite{BHspinmisaligned_2022}.} Unless the system is an eclipsing binary, its inclination angle is poorly constrained and, given the cubic dependence in the mass function of Eq.\ \ref{eq:massfunction}, provides the biggest source of uncertainty in the black holes mass determination \cite{Xbinaries_massmeasure}.\\
 
 
-The inclination angle $i$ is usually obtained fitting the optical/near-infrared light curves with synthetic ellipsoidal model. Assuming that the companion star is filling its Roche Lobe, tidal deformations of the star surface are expected to modulate the light curve profile and the amplitude of the modulation can be linked to the inclination angle. The light curve modulation can be affected by many sources of error (outburst, winds, etc.) and requires a very complex modeling, resulting in inaccurate determinations of the inclination angle.  Unless the system it is an eclipsing binary, it inclination angle is poorly constrained and, given the cubic dependence in the mass function of Eq.\ \ref{eq:massfunction}, provides the biggest source of uncertainty in the black holes mass determination. \cite{Xbinaries_massmeasure}\\
-
-
-HMXBs usually do not fill their Roche lobe and power the accretion through strong stellar winds: not only the method just described would provide very uncertain determinations for the inclination angle and companion mass but it would result in a very imprecise measure of the black hole mass. Therefore, the mass of the compact object in HMXBs is usually the result of a multi-parametric fit to the radial velocity curve and to the optical/near-infrared and X-ray light curves. The distance of the source is one of the parameters included in the multi-parametric model and the fit result is very sensible to it. For instance, recent radio astrometric distace measurements re-defined Cyg X-1 as a system hosting an O-type star of $\sim 40~\msun$ with a black hole of $\sim 21~\msun$, making it the most massive black holes detected so far in a X-ray binary \cite{cygnusx1}.
+HMXBs usually do not fill their Roche lobe and power the accretion through strong stellar winds: not only the method just described would provide very uncertain determinations for the inclination angle and companion mass but it would result in a very imprecise measure of the black hole mass. Therefore, the mass of the compact object in HMXBs is usually the result of a multi-parametric fit to the radial velocity curve and to the optical/near-infrared and X-ray light curves. The distance of the source is one of the parameters included in the multi-parametric model and the fit result is very sensible to it. For instance, recent radio astrometric distance measurements re-defined Cyg X-1 as a system hosting an O-type star of $\sim 40~\msun$ with a black hole of $\sim 21~\msun$, making it the most massive black hole detected so far in an X-ray binary \cite{cygnusx1}.
 
 
 
 
 \paragraph{Spin}
-Two techniques are generally used to measure the spin of the black holes and require a fit to the X-ray spectrum of the accretion disk, either on the continuum or on the Fe K$\alpha$ lines (see Sec.\ \ref{subsec:XraybinariesSED} for a more detailed description of the X-ray spectral energy distribution). Both methods assume a geometrically thin disk, radiatively efficient and with emission that terminates at the innermost stable circular orbit (ISCO): the faster the rotation of a Kerr black hole, the closer the ISCO. \cite{Xbinaries_spinBHmeasure}\\
+Two techniques are generally used to measure the spin of black holes and require a fit to the X-ray spectrum of the accretion disk, either on the continuum or on the Fe K$\alpha$ lines (see Sec.\ \ref{subsec:XraybinariesSED} for a more detailed description of the X-ray spectral energy distribution). Both methods assume a geometrically thin and radiatively efficient disk, with emission that terminates at the innermost stable circular orbit (ISCO) \cite{Xbinaries_spinBHmeasure}.\\
 
-The Fe K$\alpha$ line at 6.4 keV is a very strong fluorescent line produced by the X-ray radiation reflected from the accretion disk. In principle the line is very narrow but it is broadened by the Doppler effect, due to the disk rotation, and by the gravitational redshift, due to the vicinity to the black hole. Fast spinning Kerr black holes have a ISCO that is both closer to the black hole and more rapidly rotating, enhancing respectively the gravitational redshift and the Doppler shift. As shown in the left panel of Fig.\ \ref{fig:spinmeasure}, the spin of the black hole can be reconstructed by carefully fitting the broadening of the Fe K$\alpha$ line in the reflected X-ray spectrum.
+The Fe K$\alpha$ line at 6.4 keV is a very strong fluorescent line produced by the X-ray radiation reflected from the accretion disk. In principle the line is very narrow but it is broadened by the Doppler effect, due to the disk rotation, and by the gravitational redshift, due to the vicinity to the black hole. Fast spinning Kerr black holes have an ISCO that is both closer to the black hole and more rapidly rotating, enhancing the gravitational redshift and the Doppler shift, respectively. As shown in the left-hand panel of Fig.\ \ref{fig:spinmeasure}, the spin of the black hole can be reconstructed by carefully fitting the broadening of the Fe K$\alpha$ line in the reflected X-ray spectrum.
 
-The fit to the reflection spectrum has the great advantage of being a \textit{relative} measurement. Moreover, the spin determination can be carried out without knowing a priori the black hole mass, its distance and accretion rate, allowing the spins to be inferred in many system with poorly constrained black hole masses \cite{HMXBH_spins2021}. On the contrary, the emissivity and ionization of the disk need to be already modeled to provide a good fit. Reflection spectra are also very sensitive to the inner disk inclination, although this information can be extracted by the same fit used for the Fe K$\alpha$ line.\\
+The fit to the reflection spectrum has the great advantage of being a \textit{relative} measurement. Moreover, the spin determination can be carried out without knowing a priori the black hole mass, its distance and accretion rate, allowing the spins to be inferred in many systems with poorly constrained black hole masses \cite{HMXBH_spins2021}. On the contrary, the emissivity and ionization of the disk need to be already modeled to provide a good fit. Reflection spectra are also very sensitive to the inner disk inclination, although this information can be extracted by the same fit used for the Fe K$\alpha$ line.\\
 
-Spin determination through the fit of the hard continuum relies again on having a ISCO of the disk closer to the black hole for high spin values. The thermal emission of the disk can be modeled as a multi-color blackbody, where each anulus emits as a thermal blackbody with radiation temperature $T \propto r^{-3/4}$ hotter for anuli closer to the black hole. Fast rotating black holes have accretion disks with ISCO very close to the black horizon that, being hotter, shift the peak of the multi-color emission towards higher energies: fitting the absolute shift in the flux emitted in the hard X-rays results in the spin determination, as shown in the right panel of Fig.\ \ref{fig:spinmeasure}.
+Spin determination through the fit of the hard continuum relies again on having an ISCO of the disk closer to the black hole for high spin values. The thermal emission of the disk can be modeled as a multi-color black-body, where each anulus emits as a thermal black-body with radiation temperature $T \propto r^{-3/4}$ hotter for anuli closer to the black hole. Fast rotating black holes have accretion disks with ISCO very close to the black horizon that, being hotter, shift the peak of the multi-color emission towards higher energies: fitting the absolute shift in the flux emitted in the hard X-rays results in the spin determination, as shown in the right-hand panel of Fig.\ \ref{fig:spinmeasure}.
 
-The method has many drawbacks, the main one being its necessity to fit the \textit{absolute} flux shift in a region where the emitted flux is strongly influenced also by the hard power-law emitted by the corona (see the left panel of Fig.\ \ref{fig:accretiondisk} for a comparison): the choice of the hard component strongly impacts the spin value. Further sources of uncertainty come from the a priori knowledge of the inner disk inclination, atmospheric scattering corrections and, most importantly, mass and distance of the black hole, required to have an accurate model for the absolute flux emitted by the disk. \cite{Xbinaries_spinBHmeasure}
-
-
+The method has many drawbacks, the main one being its necessity to fit the \textit{absolute} flux shift in a region where the emitted flux is strongly influenced also by the hard power-law emitted by the corona (see the left-hand panel of Fig.\ \ref{fig:accretiondisk} for a comparison): the choice of the hard component strongly impacts the spin value. Further sources of uncertainty come from the a priori knowledge of the inner disk inclination \erika{(in particular, the delicate assumption of spin and orbital angular momentum aligned \cite{BHspinmisaligned_2022})}, atmospheric scattering corrections and, most importantly, mass and distance of the black hole, required to have an accurate model for the absolute flux emitted by the disk \cite{Xbinaries_spinBHmeasure}.
 
 
 \begin{figure}
@@ -478,12 +518,12 @@ The method has many drawbacks, the main one being its necessity to fit the \text
 		\centering
 		\includegraphics[width=\textwidth]{./images/spincontinuum.png}	
 	\end{minipage}
-	\caption{Example of the black hole spin measurement from fits to the Fe K$\alpha$ line (\emph{left}) or to the X-ray hard continuum (\emph{right}) of the candidate X-ray binary GRS 1915+ 105. The Fe K$\alpha$ fluorescent line causes the absorption at $\sim 7$ keV in the right panel and results in a strong, broadened emission centered at 6.4 keV in the left panel. The spectrum on the left is obtained with \textit{NuStar} while the one on the right with \textit{RXTE}. \cite{GSR1915_lowhardXstate}}\label{fig:spinmeasure}
+	\caption{Example of the black hole spin measurement from fits to the Fe K$\alpha$ line (\emph{left}) or to the X-ray hard continuum (\emph{right}) of the candidate X-ray binary GRS 1915+ 105. The Fe K$\alpha$ fluorescent line causes the absorption at $\sim 7$ keV in the right-hand panel and results in a strong, broadened emission centered at 6.4 keV in the left-hand panel. The spectrum on the left is obtained with \textit{NuStar} while the one on the right with \textit{RXTE} \cite{GSR1915_lowhardXstate}.}\label{fig:spinmeasure}
 \end{figure}
 
 
 \section{Tensions in the underlying populations}%pluto
-Up-to-date, one of the most detailed analysis of the mass and spin distribution of the underlying binary black hole populations compared the data of 44 binary black holes of the GWTC-2 catalogue with the only X-ray binaries with a reliable mass or spin measurement: 29 LMXBs and 3 HMXBs (see Sec.\ \ref{subsec:Xraymeasure} for a discussion on the main uncertainties in the X-ray parameter estimation) \cite{HMXBH_spins2021}. The study included as HMXBs the X-ray binaries with O-type donor star LMC X-1, M33 X-7 and Cyg X-1, excluding the Wolf-Rayet - black hole binaries like NGC 300 X-1 or IC 10 X-1 because they have a less reliable mass measurements \cite{ICX10X-1_Laycock2015_revisited} (see the discussion in Sec.\ \ref{sec:WRBHobserved}). Even though the binary black hole sample is limited to GWTC-2 \cite{GWTC-2}, it is reasonable to expect that the same conclusions can be obtained using the GWTC-3 data, as discussed in Sec.\ \ref{subsec:GWmassspin}. On the contrary, the limited sample of X-ray binaries with reliable mass and spin measurements causes the largest uncertainties.
+Up-to-date, one of the most detailed analysis of the mass and spin distribution of the underlying binary black hole populations compared the data of 44 binary black holes of the GWTC-2 catalogue with the only X-ray binaries with a reliable mass or \micmap{or o and? pensavo fosse and} \erika{or, di 29 spin noti di LMXBH solo 20 hanno anche la massa nota} spin measurement: 3 HMXBs and 29 LMXBs\erika{, of which only 20 have a reliable mass}  (see Sec.\ \ref{subsec:Xraymeasure} for a discussion on the main uncertainties in the X-ray parameter estimation) \cite{HMXBH_spins2021}. This study included as HMXBs the X-ray binaries with O-type donor star LMC X-1, M33 X-7 and Cyg X-1, excluding the Wolf-Rayet -- black hole binaries like NGC 300 X-1 or IC 10 X-1 because they have a less reliable mass measurements \cite{ICX10X-1_Laycock2015_revisited} (see the discussion in Sec.\ \ref{sec:WRBHobserved}). Even though the binary black hole sample is limited to GWTC-2 \cite{GWTC-2}, it is reasonable to expect that the same conclusions can be obtained using the GWTC-3 data, as discussed in Sec.\ \ref{subsec:GWmassspin}. In contrast, the limited sample of X-ray binaries with reliable mass and spin measurements causes the largest uncertainties.
 
 
 \begin{figure}[h]
@@ -497,17 +537,17 @@ Up-to-date, one of the most detailed analysis of the mass and spin distribution 
 		\centering
 		\includegraphics[width=\textwidth]{./images/tensionLMXBHmass.png}	
 	\end{minipage}
-	\caption{Observed cumulative distribution function (CDF) of the observed HMXBs (blue, \emph{left} panel) and LMXBs (pink, \emph{right} panel) compared with the CDFs (orange bands) expected if the X-ray binaries share the same primary black hole mass distribution of the primaries in the black hole binaries detected with the gravitational waves, once it is corrected for the selection effects (green line). In the left panel, the purple bands show the original observed CDF for black hole binaries not yet corrected for observational effects. In the right panel, the green bands show the CDF extracted from the sub-sample of the black hole binaries with secondary mass $< 8~\msun$. Dark (light) shaded areas delimit 50 \% (90 \%) credible intervals. \cite{HMXBH_spins2021}}\label{fig:tensionmass}
+	\caption{Observed cumulative distribution function (CDF) of the observed HMXBs (blue, \emph{left-hand} panel) and LMXBs (pink, \emph{right-hand} panel) compared with the CDFs (orange bands) expected if the X-ray binaries share the same primary black hole mass distribution as the primaries of the LVC binary black holes, once it is corrected for selection effects (green line). In the left-hand panel, the purple bands show the original observed CDF for binary black holes not yet corrected for observational effects. In the right-hand panel, the green bands show the CDF extracted from the sub-sample of the LVC binary black holes with secondary mass $< 8~\msun$. Dark (light) shaded areas delimit 50 \% (90 \%) credible intervals \cite{HMXBH_spins2021}}.\label{fig:tensionmass}
 \end{figure}
 
 \subsection{Similarities in the mass distribution}
-The mass distribution of the primary (more massive) black hole of the black hole binaries detected with the gravitational waves seems compatible with the mass distribution of the black holes detected in the LMXBs and HMXBs, once the corrections for gravitational wave selection effects and similar mass pairing are taken into account. If confirmed, the relation would indicate that X-ray binaries hosting a black hole could be the progenitors of the black hole binaries detected with the gravitational waves. However, the small sample of X-ray binaries with reliable mass measurements ($\sim 30$) is affected by a large Possion uncertainty, possibly hiding inconsistencies in the underlying populations. Moreover, observational selection effects on the X-ray binaries are not accounted for and may further change the degree of consistency. \\
+The mass distribution of the primary (more massive) black hole of the LVC binary black holes seems compatible with the mass distribution of the black holes in LMXBs and HMXBs, once the corrections for gravitational wave selection effects and similar mass pairing are taken into account. If confirmed, the relation would indicate that X-ray binaries hosting a black hole could be the progenitors of the binary black hole mergers. However, the small sample of X-ray binaries with reliable mass measurements ($\sim 20$) is affected by a large Poisson uncertainty, possibly hiding inconsistencies in the underlying populations. Moreover, observational selection effects on the X-ray binaries are not accounted for and may further change the degree of consistency. \\
 
-The left and right panel in Fig.\ \ref{fig:tensionmass} show the agreement between the cumulative distribution functions (CDF) of the primary black hole population underlying in the gravitational wave observations and the CDFs for the black hole population underlying in the HMXBs and LMXBs, respectively. The observed CDF of the 44 black hole primaries considered in the GWTC-2 (purple bands in the left panel of Fig.\ \ref{fig:tensionmass}) is corrected for the observational selection effects that favor the detection of gravitational waves produced by heavy black holes (see Sec.\ \ref{subsec:GWtheorymethod}). The corrected posterior CDF (green line in the left panel of Fig.\ \ref{fig:tensionmass}) is indeed shifted towards lower masses and describes the \textit{intrinsic} primary mass distribution of the black holes detected with the gravitational waves. 
+The left- and right-hand panel in Fig.\ \ref{fig:tensionmass} show the agreement between the cumulative distribution functions (CDF) of the primary black hole population underlying in the gravitational wave observations and the CDFs for the black hole population underlying in the HMXBs and LMXBs, respectively. The observed CDF of the 44 black hole primaries considered in the GWTC-2 (purple bands in the left-hand panel of Fig.\ \ref{fig:tensionmass}) is corrected for the observational selection effects that favour the detection of gravitational waves produced by heavy black holes (see Sec.\ \ref{subsec:GWtheorymethod}). The corrected posterior CDF (green line in the left-hand panel of Fig.\ \ref{fig:tensionmass}) is indeed shifted towards lower masses and describes the \textit{intrinsic} primary mass distribution of the black holes detected by the LVC. 
 
-The observed CDFs of HMXBs and LMXBs (respectively the blue/pink dashed lines in the left/right panel of Fig.\ \ref{fig:tensionmass}) cannot be directly compared with the intrinsic CDF of the primary black hole masses. The considered sample of HMXBs and LMXBs contains, respectively, only 3 and 29 black holes: their CDFs are dominated by the Poisson uncertainty if they are extracted from the same intrinsic population of the black hole binaries. To account for Poisson noise, many sets of 3 or 29 black holes are randomly extracted from the intrinsic black hole binary distribution (the green line already found). Each set is then used to build a CDF. Subsequently, all the extracted CDFs of 3(29) black holes are put together to reconstruct a CDF representative of the black holes in HMXBs(LMXBs) than will become primary black holes in the black hole binary systems detected with the gravitational waves (orange bands in both the panels of \ref{fig:tensionmass}). The extracted CDFs have very large credible intervals, as expected from the huge Poissonian noise acting on the limited sample of the X-ray binaries. \\
+The observed CDFs of HMXBs and LMXBs (the blue and pink dashed lines in the left- and right-hand panels of Fig.\ \ref{fig:tensionmass}, respectively) cannot be directly compared with the intrinsic CDF of the primary black hole masses. The considered sample of HMXBs and LMXBs with \erika{reliable masses} contains, respectively, only 3 and 20 black holes: their CDFs are dominated by Poisson uncertainties if they are extracted from the same intrinsic population of binary black holes. To account for Poisson noise, many sets of 3 or 20 black holes are randomly extracted from the intrinsic binary black hole distribution (the green line already found). Each set is then used to build a CDF. Subsequently, all the extracted CDFs of 3 (20) black holes are put together to reconstruct a CDF representative of the black holes in HMXBs(LMXBs) than will become primary black holes in the binary black hole systems detected with gravitational waves (orange bands in both the panels of \ref{fig:tensionmass}). The extracted CDFs have very large credible intervals, as expected from the huge Poissonian noise acting on the limited sample of the X-ray binaries. \\
 
-On the one hand, the left panel of Fig.\ \ref{fig:tensionmass} shows that the observed mass distribution of the black holes in HMXBs (blue) is compatible within 50 \% credible intervals with the distribution expected if the black holes of the HMXBs become the primaries of the black holes binaries detected with the gravitational waves (orange). On the other hand, the right panel of Fig.\ \ref{fig:tensionmass} shows that LMXBs seem to have an observed black hole mass distribution (pink) too much shifted in the lower masses with respect to the one expected from being a progenitor of the black hole binaries (orange). However, the discrepancy is removed if the expected CDF is not extracted from all the 44 black hole binaries but only from the binaries with light secondary black holes $M_2 < 8~\msun$ (green bands). The selection of the sub-sample of binaries is justified because isolated binaries seems to favor the production of similar masses remnants and the LMXBs already host a low-mass secondary $\lesssim 2-3~\msun$. Even though secondary stars so light will unlikely produce black holes up to $8~\msun$, the agreement in the CDFs could suggest that possible differences in the LMXBs and binary black hole masses may be caused by the mass of the secondary star and not by the mass of the primary black hole. \cite{HMXBH_spins2021}
+On the one hand, the left-hand panel of Fig.\ \ref{fig:tensionmass} shows that the observed mass distribution of black holes in HMXBs (blue) is compatible within 50 \% credible intervals with the distribution expected if the black holes of the HMXBs become the primaries of the LVC binary black holes (orange). On the other hand, the right-hand panel of Fig.\ \ref{fig:tensionmass} shows that LMXBs seem to have an observed black hole mass distribution (pink) too much shifted towards lower masses with respect to the one expected from being a progenitor of the LVC binary black holes (orange). However, the discrepancy is removed if the expected CDF is not extracted from all the 44 \erika{binary black holes} but only from the binaries with light secondary black holes $M_2 < 8~\msun$ (green bands). The selection of the sub-sample of binaries is justified because isolated binaries seems to favour the production of similar masses remnants and the LMXBs already host a low-mass secondary $\lesssim 2-3~\msun$. Even though secondary stars so light will unlikely produce black holes up to $8~\msun$, the agreement in the CDFs could suggest that possible differences in the LMXBs and binary black hole masses may be caused by the mass of the secondary star and not by the mass of the primary black hole \cite{HMXBH_spins2021}.
 
 
 
@@ -522,40 +562,165 @@ On the one hand, the left panel of Fig.\ \ref{fig:tensionmass} shows that the ob
 		\centering
 		\includegraphics[width=\textwidth]{./images/tensionspinHMXBHlike.png}	
 	\end{minipage}
-	\caption{\emph{Left:} cumulative distribution function (CDF) of primary and secondary black hole spins detected with the gravitational wave detectors in GWTC-2 (orange) compared with the ones of the LMXBs (pink) and HMXBs (blue). In black the prior beta distribution used for the fits. The spin distribution of the black hole binaries is in tension with the ones inferred from the X-ray binaries. \emph{Right:} Posterior distributions of the fraction of black hole binaries that could have evolved from a HMXB-like configuration. The more the primary spin is aligned to the orbital angular momentum (smaller $\sigma_{\rm \cos \theta}$ values, see Sec.\ \ref{subsec:tensionspin} for more infos) and the more the HMXB configuration is irrelevant in the underlying population \cite{HMXBH_spins2021}}\label{fig:tensionspin}
+	\caption{\emph{Left:} cumulative distribution function (CDF) of primary and secondary black hole spins detected with gravitational wave detectors in GWTC-2 (orange) compared with the ones of LMXBs (pink) and HMXBs (blue). The black lines show the prior beta distribution used for the fits. The spin distribution of the binary black holes is in tension with the ones inferred from the X-ray binaries. \emph{Right:} Posterior distributions of the fraction of binary black holes that could have evolved from a HMXB-like configuration. The more the primary spin is aligned to the orbital angular momentum (smaller $\sigma_{\rm \cos \theta}$ values, see Sec.\ \ref{subsec:tensionspin} for more detail) and the more the HMXB configuration is irrelevant in the underlying population \cite{HMXBH_spins2021}.}\label{fig:tensionspin}
 \end{figure}
 
 
 \subsection{Strong tension in the spin distribution}\label{subsec:tensionspin}
-The spin distribution of the black holes detected with the gravitational waves (including both primary and secondary black holes) seems to be in tension with the spin distribution of the black holes detected in the X-ray binaries, as clearly visible in the left panel of Fig.\ \ref{fig:tensionspin}. The black hole binaries appear to host slowly spinning black holes, whereas both the LMXBs and HMXBs contain fast rotating black holes. Beta distribution fits to the observed spins of the LMXBs (pink) and HMXBs (blue) denote that the two types of X-ray binaries have spin distributions consistent within 90 \%. A single beta distribution fitted to the LMXBs and HMXBs altogether exhibits a disagreement at the 99.9 \% level with the spin distribution of the black hole binaries observed with the gravitational waves (orange).\cite{HMXBH_spins2021}\\
+The spin distribution of the black holes detected with the gravitational waves (including both primary and secondary black holes) seems to be in tension with the spin distribution of the black holes detected in X-ray binaries, as visible in the left-hand panel of Fig.\ \ref{fig:tensionspin}. The LVC binary black holes appear to host slowly spinning black holes, whereas both the LMXBs and HMXBs contain fast rotating black holes. Beta distribution fits to the observed spins of the LMXBs (pink) and HMXBs (blue) denote that the two types of X-ray binaries have spin distributions consistent within 90~\%. A single beta distribution fitted to the LMXBs and HMXBs altogether exhibits a disagreement at the 99.9~\% level with the spin distribution of the LVC binary black holes (orange).\cite{HMXBH_spins2021}\\
 
-The three HMXBs considered here (LMC X-1, M33 X-7 and Cyg X-1) host very fast spinning black holes $\chi \gtrsim 0.8$: if they produce a black hole binary in the isolated binary evolution scenario, it is likely that the mass transfer processes and tidally locking will align the spins to the orbital angular momentum of the binary \cite{Kalogera2000_spinaligned}. However, supernova kicks may still cause a tilt in the spin orientation, allowing to model the spin tilts angles $\theta$ with a half-Gaussian in $\cos \theta$, peaked at aligned spins $\cos \theta = 1$  with some standard deviation $\sigma_{\rm \cos \theta}$: the larger the tilt angle, the larger the standard deviation \cite{spintiltmodel_Talbot2017}. 
+The three HMXBs considered here (LMC X-1, M33 X-7 and Cyg X-1) host very fast spinning black holes $\chi \gtrsim 0.8$: if they produce a binary black hole in the isolated binary evolution scenario, it is likely that mass transfer and tidal locking will align the spins to the orbital angular momentum of the binary \cite{Kalogera2000_spinaligned}. Nevertheless, supernova kicks may still cause a tilt in the spin orientation. \erika{Overall, the toy model usually adopted for the tilt angles $\theta$ is a half-Gaussian in $\cos \theta$, peaked at aligned spins $\cos \theta = 1$  with some standard deviation $\sigma_{\rm \cos \theta}$: the larger the tilt angle, the larger the standard deviation} \cite{spintiltmodel_Talbot2017}. % so che è un toy model ma devo comunque introdurlo perché è il toy model usato da fishbach e kalogera, i cui parametri compaiono nei grafici che mostro
 
-It is possible that a sub-population of the black hole binaries evolved through a HMXB-like configuration; Bayesian inference methods can be used to put upper limits to the fraction of black hole binaries belonging to it. One of the input parameters of the inference method is the effective spin $\chi_{eff}$ i.\ e.\ the mass-weighted component of the spins aligned to the orbital angular momentum (see Eq.\ \ref{eq:chieff}). Determining the upper limits in the sub-population weight means assuming that the $\chi_{eff}$ is mainly determined by the spin of the primary black hole. Therefore, a black hole binary coming from a HMXB-like configuration will be modeled with secondary spin narrowly peak around zero and primary spin distributed with the half-Gaussian in $\cos \theta$. 
+It is possible that a sub-population of binary black holes has evolved through a HMXB-like configuration; Bayesian inference methods can be used to put upper limits to the fraction of binary black holes belonging to it. One of the input parameters of the inference method is the effective spin $\chi_{eff}$ i.\ e.\ the mass-weighted component of the spins aligned to the orbital angular momentum (see Eq.\ \ref{eq:chieff}). Determining the upper limits in the sub-population weight means assuming that the $\chi_{eff}$ is mainly determined by the spin of the primary black hole. Therefore, a black hole binary coming from a HMXB-like configuration will be modeled with secondary spin narrowly peak around zero and primary spin distributed with the half-Gaussian in $\cos \theta$. 
 
-The right panel in Fig.\ \ref{fig:tensionspin} shows the results of three possible estimates of the sub-population weight allowing for three different maximum tilts of the primary spin: no tilt ($\sigma_{\rm \cos \theta} = 0$), $\lesssim 12^{\circ}$ tilt ($\sigma_{\rm \cos \theta} = 0.2$) or $\lesssim 30^{\circ}$ tilt ($\sigma_{\rm \cos \theta} = 0.5$). The more the primary spin is forced to be aligned, the less the HMXB configuration is relevant in the formation history of the black hole binaries. The fraction of binaries belonging to the sub-population of HMXB-like binaries is only $< 19 \% $ for aligned spins, growing to $< 30 \%$ for slightly tilted spins ($\sigma_{\rm \cos \theta} = 0.2$) and up to $< 48 \%$ for mildly tilted spins ($\sigma_{\rm \cos \theta} = 0.5$).\\
+The right-hand panel in Fig.\ \ref{fig:tensionspin} shows the results of three possible estimates of the sub-population weight allowing for three different maximum tilts of the primary spin: no tilt ($\sigma_{\rm \cos \theta} = 0$), $\lesssim 12^{\circ}$ tilt ($\sigma_{\rm \cos \theta} = 0.2$) or $\lesssim 30^{\circ}$ tilt ($\sigma_{\rm \cos \theta} = 0.5$). The more the primary spin is forced to be aligned, the less the HMXB configuration is relevant in the formation history of the binary black hole. The fraction of binaries belonging to the sub-population of HMXB-like binaries is only $< 19 \% $ for aligned spins, growing to $< 30 \%$ for slightly tilted spins ($\sigma_{\rm \cos \theta} = 0.2$) and up to $< 48 \%$ for mildly tilted spins ($\sigma_{\rm \cos \theta} = 0.5$).\\
 
-The evolutionary mechanisms necessary to create a rapidly spinning primary in a system that forms a black hole binary merging within a Hubble time are still under investigations. One of the proposed channels involves a stable mass transfer event from a Main Sequence donor to a Main Sequence accretor. If the angular momentum transport is inefficient inside the star and the mass transfer can remove its envelope tidally-locking the system, a lot of the angular momentum can be maintained in the core of the donor star. After a similar mass transfer, the donor will rapidly become a Wolf-Rayet and eventually produce a fast spinning black hole \cite{spinfastBH_Qin2019}. Population synthesis studies coupled with detailed stellar evolution models showed that only $\lesssim 12 \%$ of the HMXB binaries formed in this way had the right combination of parameters to evolve into a black hole binary that merges via gravitational wave emission within a Hubble time. Overall, only $\lesssim 20 \%$ of the merging black hole binaries seem to undergo this kind of evolution, in agreement with the upper limit of $\lesssim 30 \%$ found for slightly tilted spins \cite{HMXBHspins2022}.
-
-
+The evolutionary mechanisms necessary to create a rapidly spinning primary in a system that forms a binary black hole merging within a Hubble time are still under investigations. One of the proposed channels involves a stable mass transfer event from a main sequence donor to a main sequence accretor. If the angular momentum transport is inefficient inside the star and the mass transfer can remove its envelope tidally-locking the system, a lot of the angular momentum can be maintained in the core of the donor star. After a similar mass transfer, the donor will rapidly become a Wolf-Rayet star and eventually produce a fast spinning black hole \cite{spinfastBH_Qin2019}. Population synthesis studies coupled with detailed stellar evolution models showed that only $\lesssim 12 \%$ of the HMXB binaries formed in this way had the right combination of parameters to evolve into a black hole binary that merges via gravitational wave emission within a Hubble time. Overall, only $\lesssim 20 \%$ of the merging \erika{binary black holes} seem to undergo this kind of evolution, in agreement with the upper limit of $\lesssim 30 \%$ found for slightly tilted spins \cite{HMXBHspins2022}.
 
 
 
-\chapter{Wolf-Rayet - black hole binaries}
+
+
+\chapter{Wolf-Rayet -- black hole binaries}
 \paragraph{An intermediate evolutionary stage}
-The systems composed of two massive stars are the best possible progenitors for the black hole binaries observed with the gravitational wave detectors: the stars are massive enough to form a black hole ($\mzams \gtrsim 15-25~\msun$ at solar metallicity, according to the single stellar evolution \cite{Limongi2017_handbookSN}) and will likely undergo at least a mass transfer episode (82 O-type stars with mass $\sim 15-60~\msun$ observed in six Galactic open cluster revealed that $70 \%$ of the massive stars are born in binaries, close enough to allow mass transfer interaction \cite{Sana2012}). 
+The systems composed of two massive stars are the best possible progenitors for the LVC binary black holes, if the stars are massive enough to form a black hole ($\mzams \gtrsim 15-25~\msun$ at solar metallicity, according to single stellar evolution \cite{Limongi2017_handbookSN}) and if their orbit is tight enough to undergo at least one mass transfer episode: 82 O-type stars with mass $\sim 15-60~\msun$ observed in six Galactic open clusters revealed that $70 \%$ of the massive stars are born in binaries, close enough to allow mass transfer interaction \cite{Sana2012}. 
 
-Population-synthesis studies suggest that at least one mass transfer episode is necessary to shrink the orbit and allow the coalescence within a Hubble time \cite{spera2019_mergingBBH}. On the one hand, it is difficult to predict the type of mass transfer and the fate of the binary because they strongly depend on the orbital separation and on the details of the stellar evolution, as shown in Fig.\ \ref{fig:Sana2012MTfate}. On the other hand, usually the mass transfer and the strong stellar winds strip the hydrogen envelope of the massive stars, producing a Wolf-Rayet star. If the right conditions are met, the  Wolf-Rayet can form with a black hole companion: the strong winds of the Wolf-Rayet can power the accretion disk of the black hole and make the system visible as a X-ray binary.
+Population-synthesis studies suggest that at least one mass transfer episode is necessary to shrink the orbit and allow the coalescence within a Hubble time \cite{spera2019_mergingBBH}. On the one hand, it is difficult to predict the type of mass transfer and the fate of the binary because they strongly depend on the orbital separation and on stellar evolution details, as shown in Fig.\ \ref{fig:Sana2012MTfate}. On the other hand, usually the mass transfer and the strong stellar winds strip the hydrogen envelope of massive stars, producing a Wolf-Rayet star. If the right conditions are met, the binary system evolves until it becomes a black hole -- Wolf-Rayet star system: the strong winds of the Wolf-Rayet star can power the accretion disk of the black hole and make the system visible as an X-ray binary.
 
 \paragraph{Chapter outline}
-This chapter reviews the theory of the single stellar evolution and of the main mass transfer processes (wind-fed accretion, Roche lobe overflow and Common Envelope) to better understand the evolution of the Wolf-Rayet - black hole binaries. I will report the observed properties of the known Wolf-Rayet - black hole systems, discussing the difficulties in the parameter estimation. Finally, I will describe the Cyg X-3 system: the only known Galactic Wolf-Rayet - black hole binary.
+This chapter reviews the theory of single stellar evolution and the main mass transfer processes (wind-fed accretion, Roche lobe overflow and common envelope) to better understand the evolution of Wolf-Rayet -- black hole binaries. I will report the observed properties of the known Wolf-Rayet -- black hole systems, discussing the main issues in parameter estimation. Finally, I will describe the Cyg X-3 system: the only known Galactic Wolf-Rayet -- black hole binary.
 
 
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=.65\textwidth]{./images/Sana2012MTfate.png}
-	\caption{70\% of O-type stars will be part of a binary with initial period < 1500 days and will undergo at least one mass transfer process. The type of mass transfer and the fate of the binary will depend on the details of the single stellar evolution and on the orbital separation. \cite{Sana2012}}\label{fig:Sana2012MTfate}
+	\caption{70\% of O-type stars will be part of a binary with initial period $< 1500$ days and will undergo at least one mass transfer process. The type of mass transfer and the fate of the binary will depend on the details of single stellar evolution and on the orbital separation \cite{Sana2012}.}\label{fig:Sana2012MTfate}
 \end{figure}
+
+
+
+\section{Wolf - Rayet stars}
+\subsection{Spectral classification of a Wolf-Rayet star}\label{subsec:WRclassification}
+\paragraph{Peculiar properties} Wolf-Rayet (WR) stars are named after the French astronomers Charles Wolf and Georges Rayet that in 1867 first discovered three stars in the Cygnus constellation with strong and broad emission lines. More than a century after, a few hundreds of Wolf-Rayet stars were discovered in the Milky Way, $\sim 40 \%$ of which are part of binary systems.
+
+Stellar spectra usually exhibit a continuum with narrow absorption lines. Generally, the hot radiation coming from the interior is absorbed by atoms and molecules in a cooler stellar photosphere ($T_{\rm eff} \lesssim 60 000$ K in the hotter O-type stars). In contrast, the photosphere of Wolf-Rayet stars is much hotter ($T_{\rm eff} \sim 60~000 - 100~000$ K) and hosts many heavy elements, often ionized (like He, N, C or O). The atoms and ions in the photosphere strongly interact with the energetic photons coming from the interior: they produce recombination and fluorescence emission lines (visible in the UV, optical and near-IR bands) while efficiently absorbing the momentum of photons via multiple-scatterings. The net effect is the production of a very dense and strong wind ($\mdot \sim 10^{-4}-10^{-5}~\msun~\yr^{-1}$) with broad emission lines of elements and ions usually absent in other stellar spectra.
+
+\paragraph{Classification and evolutionary sequence}The spectrum of Wolf-Rayet stars is their distinctive feature and is used to classify them on the basis of the presence and abundance of peculiar elements in the photosphere. The most important lines adopted for the classification are reported in Tab.\ \ref{tab:WRclassification} and characterize the three sub-types: WN (strong lines of helium and nitrogen), WC (strong lines of helium, carbon and less prominent lines of oxygen) and WO (strong lines of oxygen and less prominent lines of helium and carbon). The WN stars can be further divided into two subfamilies on the basis of their surface hydrogen abundance $X_H$: WNL (late) if $X_H \gtrsim 0.5$ or WNE (early) if $X_H \lesssim 0.5$. In contrast, WC and WO stars lack hydrogen lines: it is probable that they lost the external envelope because of stellar winds or as a result of mass transfer.  
+
+The helium, nitrogen, carbon and oxygen detected in the photosphere were produced by the CNO cycle and triple-$\alpha$ reactions of H- and He-burning, respectively. Usually these elements can reach the photosphere only as a result of dredge-up events, but their abundance is lower than the one detected in Wolf-Rayet stars. Recalling that the hydrogen envelope is either small or depleted, it is likely that the observed types of Wolf-Rayet stars are part of an evolutionary sequence of massive stars: the external layers are progressively removed and expose the more metal-rich ones. According to this interpretation, the evolution would proceed as
+
+\[\rm WNL \rightarrow WNE \rightarrow WC \rightarrow WO\]
+
+\paragraph{Type II and Ib/c supernovae} Wolf-Rayet stars that explode with little (WN) or no hydrogen envelopes (WC,WO) are likely the progenitors of, respectively, the Type II and Type Ib/Ic core-collapse supernovae. The stronger hints come from the observations of supernova light curves: Type II supernovae exhibit hydrogen lines, Type Ib lack hydrogen but exhibit He and Type Ic lack both hydrogen and helium \cite{WR_signature,parsec2015_chen,Limongi2010_preSNevo}.
+
+%pluto some lines may still need to be added but for the rest is ok
+\renewcommand{\arraystretch}{1.5}
+\begin{figure}[h]
+	\centering
+		\begin{tabular}{lll}
+			\toprule
+			WR type & Typical atoms & Wavelength $\lambda$ of the strongest lines \\
+			\midrule
+			\multirow{2}{*}{WN}  & He I-II  & 1640 \AA , 4686 \AA, 5412 \AA, 1.012 $\mu\rm m$~[He II] \\
+			& N III-V & \\ 
+			\hline
+			\multirow{2}{*}{WC}  & C III-IV  & 4650 \AA, 5696 \AA ~[C III]; 1550 \AA,  5548-51 \AA, 5801-12 \AA, 2.08 $\mu\rm m$~[C IV] \\
+			& O III-V & \\
+			\hline
+			\multirow{2}{*}{WO}  & C IV  &\\
+			& O V-VI & 3811-34 \AA~[O VI]\\
+			\bottomrule 	
+		\end{tabular}
+		\captionof{table}{Main UV, optical and near-IR emission lines used for the spectral classification of Wolf-Rayet stars \cite{WR_signature}.} \label{tab:WRclassification}
+\end{figure}
+
+
+
+\subsection{Mass determination of a Wolf-Rayet star}\label{subsec:massWR}
+\paragraph{Dynamical masses} The mass of the Wolf-Rayet stars that are member of a binary system with a non-degenerate companion can be determined with the dynamical method described in Sec.\ \ref{subsec:Xraymeasure}. The largest uncertainties come from binary inclination, thus, observations in eclipsing binaries (for which the edge-on orientation better constraints the inclination) allow the most precise mass determinations. Dynamical measurements revealed that WC stars are lighter than the WN ones, supporting the evolutionary sequence of Wolf-Rayet stars described in Sec. \ref{subsec:WRclassification}: WC are limited to $\rm M_{\rm WC}\sim 9-16~\msun$ while WN extend to $\rm M_{\rm WN}\sim 10-83~\msun$ \cite{WR_signature}.
+
+\paragraph{Isolated Wolf-Rayet stars and Wolf-Rayet stars with a degenerate companion} The dynamical method cannot be used for stars with a degenerate companion (like a neutron star or a black hole) or for the isolated ones. Furthermore, the dense stellar wind of Wolf-Rayet stars prohibits reliable measurements of the surface gravity from the photospheric lines. 
+
+The only method left relies on the theory of stellar evolution.  Detailed calculations can relate the mass of a star in a given evolutionary stage to its expected observable properties, including its luminosity. If the distance and age of the Wolf-Rayet star are known (for instance for  Wolf-Rayet stars in star clusters), it is possible to reconstruct its intrinsic luminosity. Thus, to determine the mass of an isolated Wolf-Rayet star it is sufficient to measure its luminosity and adopt a mass-luminosity relation obtained from theoretical calculations. It is important to note that the mass-luminosity relations strongly depend on stellar evolution assumptions and need to be carefully calibrated, for instance with Wolf-Rayet stars in binary systems whose mass is already known from dynamics \cite{Nugis2000_WRwinds}.
+
+\paragraph{Upper mass-luminosity relation} The luminosity of a star depends on the nuclear reactions acting in the core of the star and, thus, on the chemical composition. In general, stars that are not chemically-homogeneous and have a mean molecular weight higher in the core and lighter in the surface. However, considering a homogeneous star allows to put an upper limit on the mass related to a given luminosity: if the core is lighter (because of the chemical homogeneity imposed) more mass is required to produce the same luminosity. 
+
+The left-hand panel of Fig.\ \ref{fig:MLandwinds} shows the quadratic dependence of the luminosity on the mass of chemically-homogeneous stars. The same massive star is more luminous if the core is heavier, with a linear dependence of the luminosity on the hydrogen abundance $X_H$: the less the hydrogen content in the large convective core, the higher the mean molecular weight, thus, the higher the surface luminosity \cite{Grafener2011_M-L_WR}.
+ 
+ 
+\begin{figure}[h]
+	\begin{minipage}{.49\textwidth}
+		\centering
+		\includegraphics[width=.94\textwidth]{./images/MLrelation.png}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{.49\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{./images/stellarwinds.pdf}	
+	\end{minipage}
+	\caption{\emph{Left:} Mass-luminosity relations for chemically-homogeneous massive stars with fixed hydrogen abundance $X_H$. The black crosses indicate the computed stellar models, the dashed red lines the fits for hydrogen-core burning stars with different $X_H$, the solid red line indicates pure-Helium stars ($X_H = 0$) burning helium in their cores \cite{Grafener2011_M-L_WR}. \emph{Right:} Mass loss rates dependent only on the metallicity as in Vink et al.\ 2001 \cite{Vink2001} (red solid lines) or also on the Eddington factor as in Gr{\"a}fener \& Hamann \cite{G&H_WRmassloss} (blue solid lines). The simplified model of Vink et al.\ 2001 strongly underestimates the mass lost by low-metallicity stars close to the Eddington limit $\Gamma_e \sim 1$. The red dashed line indicates a model not considered in this thesis \cite{G&H_WRmassloss}.}\label{fig:MLandwinds}
+\end{figure}
+
+\subsection{Stellar winds of the massive stars}\label{subsec:stellarwinds}
+\paragraph{Metallicity dependence} O,B and Wolf-Rayet stars are massive and hot stars with $\rm T_{\rm eff} \gtrsim 12~000$ K that emit the bulk of photons in the UV regime and suffer \emph{line-driven winds}. The radiation coming from the star interior is so energetic that ionizes the atoms of C, N, O, Ne, Si, S in the photosphere. The absorption lines of the ions, especially of the ones of the C IV, are precisely in the UV regime: photons impinging on the ions are absorbed and their momentum is transferred. The accelerated ions share their momentum via Coulomb interactions with nearby nuclei and electrons, with the net effect of accelerating the whole gas. Intuitively, the higher the temperature and the metal content and the more a larger number of ions can be produced and absorb the momentum of the photons, increasing the amount of mass lost.\\
+
+In 2001, Vink et. al.\ \cite{Vink2001} carried out Montecarlo simulations on a grid of 540 models of O and B Main Sequence stars, quantifying the dependence of the mass loss rate $\mdot$ on the metallicity $Z$ and effective temperature $\rm T_{\rm eff}$ as
+
+\begin{equation}\label{eq:Vink2001}
+\dot{M} \propto Z^{0.85}~v_\infty^p \quad \quad p = 
+\begin{cases}
+-1.23 & T_\textup{eff} \gtrsim \SI{25 000}{K} \\
+-1.60 & \SI{12 000}{K} \lesssim T_\textup{eff} \lesssim \SI{25 000}{K}
+\end{cases}
+\end{equation}
+
+where $v_\infty$ is the terminal velocity of the wind, reached when the gas is far enough from the star that is no more accelerated by the radiation field. The mass loss rate depends also on the stellar mass and luminosity; although with slightly different exponents for the different temperature ranges, the order-of-magnitude dependence is $\mdot \propto L^{2.2} M^{-1.3}$. \\
+
+Wolf-Rayet stars have a metal-enhanced composition on their surface, suggesting a mass loss rates dependence on both the mass fraction of the metals heavier than He ($Z$)and on the one of the helium alone ($Y$). In 2000, Nugis \& Lamers \cite{Nugis2000_WRwinds} observed 34 WN and 30 WC stars in the Milky Way, quantifying the dependence as
+
+\begin{equation}\label{eq:NugisLamers2000}
+	\mdot \sim 1.0 \times 10^{-11}~(L/L_\odot)^{1.29}~Y^{1.7}~Z^{0.5}
+\end{equation}
+
+\paragraph{Eddington factor dependence}
+Hot stars like the O,B and the Wolf-Rayet have radiative external envelopes: the radiation pressure of the energetic photons produced in the core pushes on the free electrons, that interact via Thomson scattering and efficiently transport the energy outwards. However, the radiation pressure can be so strong to overcome the self-gravity of the star: the external layers are no more in hydrostatic equilibrium and are pushed away. The mass expelled changes the observed luminosity and the star becomes a variable; a Luminous Blue Variable (LBV) if the original stars were of the O or B types.
+
+Assuming that the pressure gradient of the star is due only to the Thomson scattering, the self-gravity of the star cannot support the hydrostatic equilibrium if the luminosity $L$ exceeds the Eddington one $L_{\rm Edd}$. The maximum permitted luminosity $L=L_{\rm Edd}$ defines the \emph{Eddington limit} $\Gamma_e$
+
+\begin{equation}\label{eqn:Eddingtonfactor}
+\Gamma_e = \frac{L}{L_\textup{Edd}} = \frac{L k_\textup{es}}{4 \pi c G M}
+\end{equation}
+
+The Eddington factor for a fully ionized plasma is given by
+
+\begin{equation}\label{eq:EddingtonObserved}
+\Gamma_e = 10^{-4.813}~(1+X_H)~(L/L_\odot)~(M_\odot/M)
+\end{equation}
+
+The surface abundance of hydrogen $X_H$ is known from spectroscopic observations. Measuring the intrinsic luminosity and adopting the mass-luminosity relations, as described in Sec.\ \ref{subsec:massWR}, it is possible to recover the Eddington factor of the observed stars.\\
+
+
+Stars that approach and overcome the Eddington limit $\Gamma_e \geq 1$ have enhanced mass losses and are likely the progenitors of the Wolf-Rayet stars, as discussed in Sec.\ \ref{subsec:stellarevo}. The evolution close to the Eddington limit, coupled with multiple scatterings in the winds, can explain the strong stellar winds of the Wolf-Rayets. In 2008, Gr{\"a}fener \& Hamann \cite{G&H_WRmassloss} used detailed and self-consistent modeling of non-LTE atmospheres and winds of WNL stars to compute the expected mass loss rates. A rough fit \cite{parsec2015_chen} to their relations underlines a continuity to the 2001 models of Vink et al.\
+
+\begin{equation}\label{eqn:WRwindGH2008}
+\dot M \propto Z^{\alpha} \quad \quad  \alpha = 
+\begin{cases}
+0.85 & \Gamma_e < 2/3 \\
+2.45-2.4~\Gamma_e & 2/3 \leq \Gamma_e \leq 1
+\end{cases}
+\end{equation}
+
+Gr{\"a}fener \& Hamann found that the metallicity-dependence of Eq.\ \ref{eq:Vink2001} is enhanced for stars closer to the Eddington limit. As shown in the right-hand panel of Fig \ref{fig:MLandwinds}, not accounting for the dependence on $\Gamma_e$ results in a severe underestimation of the mass loss rates, especially at lower metallicities.\\
+
+Vink et al.\ in 2011 \cite{Vink2011} re-calculated the mass loss rates on models of massive and very massive stars ($40-300~\msun$) including a dependence on the Eddington factor, finding
+
+\begin{equation}\label{eqn:Vink2011}
+\begin{cases}
+\dot M \propto M^{0.68}\ \Gamma_e^{2.2} & 0.4 \lesssim \Gamma_e \lesssim 0.7 \\
+\dot M \propto M^{0.78}\ \Gamma_e^{4.77} & \Gamma_e \gtrsim 0.7
+\end{cases}
+\end{equation}
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -568,52 +733,46 @@ This chapter reviews the theory of the single stellar evolution and of the main 
 %%%%%%%%%% WORK IN PROGRESS BELOW %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-
-\section{Wolf - Rayet stars}
-
-\subsection{Spectral classification of a Wolf-Rayet}
-WN,WC etc con le righe spettrali
-
-\subsection{Stellar winds}\label{subsec:stellarwinds}
-
-
 \subsection{Evolution of a massive star into a Wolf-Rayet}\label{subsec:stellarevo}
-\paragraph{Equilibria and timescales of the stellar evolution}
-A star forms when a collapsing interstellar molecular cloud is able to reach central temperatures $\gtrsim 10^7$ K and ignite the hydrogen nuclear fusion. \cite{evostellare} The interior of the star becomes a hot plasma with a pressure gradient sufficient to balance the self-gravity: the star evolves in hydrostatic equilibrium. According to the virial theorem, perturbations of the hydrostatic equilibrium occur on the \emph{dynamical timescale}
+
+In this section I will discuss the evolution of the massive stars with particular attention to the conditions that favor the creation of Wolf-Rayet stars. I considered only stars with initial masses $\mzams \geq 20~\msun$, massive enough to likely produce a black hole in place of a neutron star after the core-collapse supernova (see Sec.\ \ref{subsec:SNmodels}), and with $\mzams \leq 100~\msun$, to avoid the discussion of the pair-instability supernovae that form at $Z=0.002$: the work of this thesis only focuses at solar metallicity $Z\sim 0.02$ where this phenomenon is not relevant \cite{spera2017_pisnSNe}. I will refer to the evolutionary tracks shown in Fig.\ \ref{fig:HRdiagrams} and \ref{fig:masslostWR} that I generated with the population-synthesis code \texttt{SEVN} \cite{spera2019_mergingBBH} interpolating the output tables of the \texttt{PARSEC} stellar evolution code \cite{parsec2015_chen} (further details in Sec.\ \ref{sec:SEVN}). The scope of this section is to provide a self-consistent reference to the work carried out in this thesis and presented in Sec.\ \ref{sec:results}. 
+
+\paragraph{Wolf-Rayet stars with \texttt{PARSEC} and \texttt{SEVN}} The stellar winds implemented by \texttt{PARSEC} on the massive stars account both for the dependence on the metallicity and on the Eddington factor (see Sec.\ \ref{subsec:stellarwinds} for more details). In particular, the mass loss rates of the Blue Super Giants (BSG) and LBVs follow Vink et al.\ 2001 and Gr{\"a}fener \& Hamann 2008 (Eq.\ \ref{eqn:WRwindGH2008}) while the ones of the Wolf-Rayets are based on the work of Nugis \& Lamers in 2000 (Eq.\ \ref{eq:NugisLamers2000}).\\
+
+On the one hand, \texttt{PARSEC} classifies the Wolf-Rayet sub-types WNL,WNE and WC according to the surface abundance of many elements (hydrogen, helium, carbon, nitrogen, oxygen and iron) at different metallicities. For instance, at solar metallicity, the hydrogen fraction of WNL is $X_{\rm WNL} \leq 0.2$ while WNE and WC are consistent with no hydrogen $X_{\rm WNE} = X_{\rm WC} = 0$. On the other hand, \texttt{SEVN} considers a star as a Wolf-Rayet imposing a condition \emph{only} on the hydrogen fraction, requiring that $X_H \leq 0.2$. Stars with so little hydrogen on the surface are interpolated with different evolutionary tables: the stars are considered as pure-Helium and are computed starting from a helium Zero Age Main Sequence (He-ZAMS), obtained removing the hydrogen envelope to a normal star at the beginning of the core-He burning phase. The He-ZAMS stars then evolve following the same prescriptions of the normal stars \cite{spera2019_mergingBBH}.\\
+
+It is important to point out that in this work the minimum masses needed to produce the Wolf-Rayet stars are higher with respect to other known works in the literature, for instance when compared to the ones obtained from the \texttt{FRANEC} stellar evolution code \cite{Limongi2010_preSNevo}. The main differences are in the amount of overshooting for the convective core\footnote{According to the mixing-length-theory, the mean free path $l_c = \Lambda_c H_p$ of the convective bubbles that overshoot into the upper radiative envelope can be parameterize as a fraction $\Lambda_c$ of the pressure scale height $H_p$ \cite{parsec2015_chen}.} in the central H-burning phase (0.2 $H_p$ in \texttt{FRANEC} and 0.5 $H_p$ in \texttt{PARSEC}) and in the threshold to classify a star as a Wolf-Rayet ($X_H \leq 0.4$ in \texttt{FRANEC} and $X_H \leq 0.2$ in \texttt{PARSEC} when interpolated with \texttt{SEVN}). Given that the Wolf-Rayets evolve with increased depletion of the hydrogen envelope, the $X_H \leq 0.4$ condition in \texttt{FRANEC} allows to form Wolf-Rayet stars earlier than in the \texttt{PARSEC} tracks interpolated by \texttt{SEVN}. In particular, \texttt{FRANEC} lowers the minimum initial mass required to form a Wolf-Rayet at solar metallicity to $\mzams \sim 30~\msun$, while the \texttt{PARSEC} tables interpolated by \texttt{SEVN} require a minimum mass of $\mzams \sim 40~\msun$. 
+
+
+\paragraph{Stellar evolution timescales} In this paragraph I briefly recall the main timescales that drive the single stellar evolution \cite{evostellare}. The time required for a star to react to a perturbation will determine not only its evolution but, if the star is a member of a binary system, will also influence the stability and efficiency of the mass transfer processes (further details in Sec. \ref{subsec:masstransfer}). \\
+
+Stars are self-gravitating objects of hot plasma that remain in hydrostatic equilibrium throughout their life: the internal pressure gradient of the gas and photons is balanced by the self-gravity. According to the virial theorem, perturbations of the hydrostatic equilibrium occur on the \emph{dynamical timescale}
 
 \begin{equation}\label{eq:taudyn}
-		\tau_\textup{dyn} \simeq \sqrt{\frac{R^3}{G M}} \simeq 30 \left(\frac{R}{R\sun}\right)^{3/2} \left(\frac{M\sun}{M}\right)^{1/2}\ \text{minutes}
+\tau_\textup{dyn} \simeq \sqrt{\frac{R^3}{G M}} \simeq 30 \left(\frac{R}{R\sun}\right)^{3/2} \left(\frac{M\sun}{M}\right)^{1/2}\ \text{minutes}
 \end{equation}
 
-where $R$ is the radius of the star, $M$ its mass and $G$ is the gravitational constant.
 
-The energy released by the nuclear reactions is radiated from the surface and mantains the star in thermal equilibrium with $T_{\rm core} \approx const$. When the nuclear fuel is exhausted, the lower pressure gradient of the plasma causes a contraction of the star in order to maintain the hydrostatic equilibrium. Part of the gravitational energy is radiated away but part of it heats up the interior, until the it reaches the critical temperature to ignite heavier elements. The contraction is quasi-static and maintains the hydrostatic equilibrium. However, since a part of the energy produced by the contraction is not radiated away but heats up the interior, the process happens outside the thermal equilibrium and occurs in a \emph{thermal timescale} (also known as \emph{Kelvin-Helmholtz timescale})
+The energy released by the nuclear reactions is radiated from the surface and maintains the star in thermal equilibrium with $T_{\rm core} \approx const$. When the nuclear fuel is exhausted, the lower pressure gradient of the plasma causes a contraction of the star, in order to maintain the hydrostatic equilibrium. Part of the gravitational energy is radiated away but part of it heats up the interior, until it reaches the critical temperature to ignite heavier elements. The contraction is quasi-static and maintains the hydrostatic equilibrium. However, since a part of the energy produced by the contraction is not radiated away but heats up the interior, the process happens outside the thermal equilibrium and occurs in a \emph{thermal timescale} (also known as \emph{Kelvin-Helmholtz timescale})
 
 \begin{equation}\label{eq:tauth}
-	\tau_\textup{th} \simeq \frac{G M^2}{R L} \simeq 15 
-	\left(\frac{M}{M\sun}\right)^{2} \left(\frac{R\sun}{R}\right) \left(\frac{L\sun}{L}\right)\ \text{Myr}
+\tau_\textup{th} \simeq \frac{G M^2}{R L} \simeq 15 
+\left(\frac{M}{M\sun}\right)^{2} \left(\frac{R\sun}{R}\right) \left(\frac{L\sun}{L}\right)\ \text{Myr}
 \end{equation}
 
 Aside from central exhaustion or local fluctuations in the core temperature, a star evolves in thermal equilibrium. However, the longest evolutionary timescale is the \emph{nuclear timescale} and quantifies the time required to burn all the nuclear fuel for a given element. The longest nuclear timescale is the one for the hydrogen burning, that is the most abundant element ($\sim 70~\%$ of the stellar mass), and provides an order-of-magnitude estimate for the stellar lifetime
 
 \begin{equation}\label{eq:taunuc}
-	\tau_\textup{nuc} \simeq 10 \left(\frac{M}{M\sun}\right) \left(\frac{L\sun}{L}\right)\ \text{Gyr}
+\tau_\textup{nuc} \simeq 10 \left(\frac{M}{M\sun}\right) \left(\frac{L\sun}{L}\right)\ \text{Gyr}
 \end{equation}
 
-\paragraph{Hydrogen burning}
-The star begins its life as a \emph{Zero Age Main Sequence} when it ignites the hydrogen burning in the core, remaining in the \emph{Main Sequence} phase until the central hydrogen is exhausted. The evolution of the star is determined by its initial mass $\mzams$ and metallicity $\zzams$: the first limits the fuel available for the nuclear reactions and the second influences the amount of mass lost by stellar winds. On the one hand, stars in the Main Sequence satisfy the empirical relation $L \propto M^3$ that, put into the nuclear timescale of Eq.\ \ref{eq:taunuc}, results in $\tau_{\rm nuc} \propto M^{-2}$: the more massive the star, the larger the luminosity caused by more efficient and rapid nuclear reactions, thus, the shorter the lifetime. On the other hand, high metallicities cause efficient stellar winds and enhance the mass lost, as better explained in Sec.\ \ref{subsec:stellarwinds}.
+\paragraph{Stellar evolution from the ZAMS to the end of the CO burning} The star begin their life in the \emph{Zero Age Main Sequence} (ZAMS, filled circles) when their cores have temperatures $T_{\rm core} \gtrsim 10^{7}$ K elevated enough to ignite the hydrogen burning in the core. The evolution proceeds in the \emph{Main Sequence} (MS) phase until the central hydrogen is exhausted \cite{evostellare}. 
 
-At the end of the core hydrogen burning the star contracts until it ignites the hydrogen in the shell.
+During the core H-burning phase, the stars satisfy the empirical mass-luminosity relation $L \propto M^3$. Recalling that the nuclear timescale $\tau_{\rm nuc}$ required to burn the hydrogen is an order-of-magnitude estimate of the stellar lifetime, the mass-luminosity relation of the Main Sequence substituted into the definition of the nuclear timescale of Eq.\ \ref{eq:taunuc} results in $\tau_{\rm nuc} \propto M^{-2}$: the more massive the star, the larger the luminosity caused by more efficient and rapid nuclear reactions, thus, the shorter the lifetime. For instance, the left-hand panel of Fig.\ \ref{fig:masslostWR} illustrates that, at solar metallicity, stars with $\mzams \sim 20~\msun$ live for $\sim 8$ Myrs, contrarily to the more massive stars of $\mzams \sim 100~\msun$ that survive only for $\sim 3$ Myrs (nevertheless, both stars have lifetimes much shorter than the $\sim 10$ Gyrs of the Sun).
 
+The stars considered here are so massive that they burn hydrogen in a large convective core surrounded by a radiative envelope. In the final stages of the core H-burning, the energy released diminishes and lowers the radiation pressure. To maintain the hydrostatic and thermal equilibrium, the core contracts and heats up again: the nuclear reactions increase again the luminosity produced and the surface effective temperature, thus, the star exhibits a left-ward hook in the Hertzsprung-Russel (HR) diagram (see Fig.\ \ref{fig:HRdiagrams}). \\
 
-
-
-
-
-
-
-
+At the end of the core H-burning phase, the star is so contracted that the hydrogen shell surrounding the core is hot enough to ignite (empty diamonds). According to the mirror principle, if the layers below a burning shell contract then the layers above will expand. Stars with $\mzams \gtrsim 20~\msun$ have a core too massive to maintain the thermal equilibrium without a central burning, therefore, in the H-shell burning phase the star undergoes a core contraction and envelope expansion in a thermal timescale. Recalling Eq.\ \ref{eq:tauth} and Eq.\ \ref{eq:taunuc}, the thermal timescale is orders of magnitudes faster than the nuclear timescale: massive stars that burn hydrogen in their shells move so rapidly in the color-magnitude diagram during this phase that they are very unlikely to be observed, causing the so-called Hertzsprung-Gap (HG). \\
 
 
 
@@ -627,7 +786,7 @@ At the end of the core hydrogen burning the star contracts until it ignites the 
 		\centering
 		\includegraphics[width=1.05\textwidth]{./images/HR_002.pdf}	
 	\end{minipage}
-	\caption{Hertzsprung-Russel diagrams with the single stellar evolution of massive stars at two different metallicities. The symbols indicate the different burning stages: beginning of core H burning i.\ e.\ ZAMS (filled circle), beginning of H shell burning (empty diamond), beginning of the core He burning (empty star) possibly as a Wolf-Rayet (filled star), beginning of He shell burning (empty square) possibly as a Wolf-Rayet (filled square), end of the CO burning (empty circle). At solar metallicity ($Z=0.02$, \emph{left} panel) Wolf-Rayet stars can be produced by stars with $\mzams \gtrsim 40~\msun$ while at metallicity one order-of-magnitude lower ($Z=0.002$, \emph{right} panel) the stellar winds are quenched and even stars with $\mzams \sim 100~\msun$ can't produce a Wolf-Rayet. The tracks are generated with the population-synthesis code SEVN \cite{spera2019_mergingBBH} that interpolates the tables produced with the PARSEC stellar evolution code \cite{parsec2015_chen} (more details on the codes in Sec.\ \ref{sec:SEVN}).}\label{fig:HRdiagrams}
+	\caption{Hertzsprung-Russel diagrams with the single stellar evolution of massive stars at two different metallicities. The symbols indicate the different burning stages: beginning of core H burning i.\ e.\ ZAMS (filled circle), beginning of H shell burning (empty diamond), beginning of the core He burning (empty star) possibly as a Wolf-Rayet (filled star), beginning of He shell burning (empty square) possibly as a Wolf-Rayet (filled square), end of the CO burning (empty circle). At solar metallicity ($Z=0.02$, \emph{left} panel) Wolf-Rayet stars can be produced by stars with $\mzams \gtrsim 40~\msun$ while at metallicity one order-of-magnitude lower ($Z=0.002$, \emph{right} panel) the stellar winds are quenched and even stars with $\mzams \sim 100~\msun$ can't produce a Wolf-Rayet. I generated the tracks with the population-synthesis code \texttt{SEVN} \cite{spera2019_mergingBBH}, that interpolates the tables produced with the \texttt{PARSEC} stellar evolution code \cite{parsec2015_chen} (more details on the codes in Sec.\ \ref{sec:SEVN}).}\label{fig:HRdiagrams}
 \end{figure}
 
 
@@ -642,24 +801,36 @@ At the end of the core hydrogen burning the star contracts until it ignites the 
 		\centering
 		\includegraphics[width=1.05\textwidth]{./images/preSN.pdf}	
 	\end{minipage}
-	\caption{\emph{Left:} Time evolution of the mass of the stars (solid lines) and of their He cores (dashed lines) at solar metallicity. The symbols indicate the different burning stages, as explained in Sec.\ \ref{subsec:stellarevo}. \emph{Right:} Mass of the star and of their He and CO cores at the pre-SN stage, here coincident to the end of the CO burning. At solar metallicity the stellar winds strongly reduce the core sizes of stars with $\mzams \gtrsim 30 ~\msun$, transforming them into Wolf-Rayet for $\mzams \gtrsim 40 ~\msun$. At lower metallicity the cores and the stars are larger and they only reduce in stars with $\mzams \gtrsim 70-100 ~\msun$ that evolve too close to the Eddington limit. Both panels are generated with the population-synthesis code SEVN \cite{spera2019_mergingBBH} that interpolates the tables produced with the PARSEC stellar evolution code \cite{parsec2015_chen} (more details on the codes in Sec.\ \ref{sec:SEVN}).}\label{fig:masslostWR}
+	\caption{\emph{Left:} Time evolution of the mass of the stars (solid lines) and of their He cores (dashed lines) at solar metallicity. The symbols indicate the different burning stages, as explained in Sec.\ \ref{subsec:stellarevo}. \emph{Right:} Mass of the star and of their He and CO cores at the pre-SN stage, here coincident to the end of the CO burning. At solar metallicity the stellar winds strongly reduce the core sizes of stars with $\mzams \gtrsim 30 ~\msun$, transforming them into Wolf-Rayet for $\mzams \gtrsim 40 ~\msun$. At lower metallicity the cores and the stars are larger and they only reduce in stars with $\mzams \gtrsim 70-100 ~\msun$ that evolve too close to the Eddington limit. I generated both panels with the population-synthesis code \texttt{SEVN} \cite{spera2019_mergingBBH}, that interpolates the tables produced with the \texttt{PARSEC} stellar evolution code \cite{parsec2015_chen} (more details on the codes in Sec.\ \ref{sec:SEVN}).}\label{fig:masslostWR}
 \end{figure}
 
 
 
+When the contraction heats up the core beyond $T_{\rm core} \gtrsim 10^{8}$ K, helium is ignited (empty stars). In theory, at this point the envelope has expanded and cooled so much that becomes convective and causes the star to evolve along the Hayashi line (an almost vertical line typical of stars dominated by the convective energy transport that with small variations in the super-adiabatic gradient can transport outward a wide range of luminosity for a given temperature). In reality, very massive stars will evolve close to the Eddington limit (black line in Fig.\ \ref{fig:HRdiagrams}) while the more metallic ones will suffer strong winds: in both cases, the net effects are depletion of the more external layers and exposition of the more internal and hot ones. Therefore, more massive and metallic stars will keep evolving in the blue region of the HR diagram and will eventually lose all the external hydrogen envelope, starting the core-He burning as Wolf-Rayet stars (filled stars). 
 
-\section{Mass transfer theory}
-Short overview of the main binary processes, with particular attention to the wind accretion, Roche lobe overflow and common envelope
+For instance, as shown in Fig. \ref{fig:HRdiagrams}, a $\mzams \sim 20~\msun$ star at solar metallicity $Z=0.02$ will start to burn helium in its core with an effective temperature of $T_{\rm eff} \sim 4~000$ K much cooler than the $T_{\rm eff} \sim 10~000$ K of the same star with metallicity $Z=0.002$ one order-of-magnitude smaller. Low-metallicity stars have quenched stellar winds that allow the star to retain and burn more mass: the core evolution is so fast that the external layers of the star are only slightly modified by the winds and survive beyond the Eddington limit (for instance, comparing the left- and right-hand panels of Fig.\ \ref{fig:HRdiagrams} it is evident that the markers of the burning stages are closer and in hotter positions for the less metallic stars). In contrast, stellar winds and instability near the Eddington limit strongly influence the evolution of stars with solar metallicity and $\mzams \gtrsim 35-40~\msun$ (left-hand panel of Fig.\ \ref{fig:HRdiagrams} and right-hand panel of Fig. \ref{fig:masslostWR}): the external layers are so much depleted that stars with $\mzams \gtrsim 40~\msun$ rapidly become Wolf-Rayet stars after a brief phase as LBV. The mass losses limit also the fuel to grow the He and CO cores: solar metallicity stars at the pre-supernova (pre-SN) stage have cores and total masses up to $\sim 30~\msun$ lighter with respect to the stars evolved at $Z=0.002$. While low-metallicity stars are mostly affected by the instability at the Eddington limit and the effect is relevant only for massive stars $\mzams \sim 70-100~\msun$, solar-metallicity stars are strongly depleted by their winds and the ones with $\mzams \gtrsim 40~\msun$ will explode as Wolf-Rayets of $M_{\rm WR} \sim 15-20~\msun$. It is important to notice that the depletion is so irrelevant in the single stellar evolution of low-metallicity stars that even stars up to $\sim 100~\msun$ do not form Wolf-Rayets at $Z=0.002$.\\
+
+Stars that reach the core He-burning phase then evolve just in $\sim 10^{5}$ yrs towards a series of contractions and expansions where helium starts to burn in the shell (squares, filled if the stage is reached as a Wolf-Rayet or empty otherwise) and then CO starts to burn in the core, similarly to the evolution during the H-burning. \texttt{SEVN} stops the evolution of the star at the end of the CO-burning (empty circles) because the burning cycles of the heavier elements require detailed modelling of the star interior and occur in just few days. The supernova explosion and remnant properties are then calculated as a function of the mass of the CO core, as explained in Sec.\ \ref{subsec:SNmodels}.
 
 
-\section{Observed candidates of Wolf-Rayet - black hole systems}\label{sec:WRBHobserved}
-The core is the paragraph I already wrote for the Computational Astrophysics exam (a table with the observed properties and short explanations on the uncertainties of the measurments). Brief review of the literature on possible evolutions of the systems as GW mergers.\\
+
+
+\section{Mass transfer theory}\label{subsec:masstransfer}
+
+
+
+
+%Short overview of the main binary processes, with particular attention to the wind accretion, Roche lobe overflow and common envelope
+
+
+\section{Observed candidates of Wolf-Rayet -- black hole systems}\label{sec:WRBHobserved}
+The core is the paragraph I already wrote for the Computational Astrophysics exam (a table with the observed properties and short explanations on the uncertainties of the measurments that derive from the WR mass measure \ref{subsec:massWR}). Brief review of the literature on possible evolutions of the systems as GW mergers.\\
 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure*}
+\begin{figure}
 	\begin{threeparttable}
 		\begin{tabular}{llccccc}
 			\toprule
@@ -683,7 +854,7 @@ The core is the paragraph I already wrote for the Computational Astrophysics exa
 		\centering
 		\captionof{table}{Properties of the seven WR-BH candidates. The table is inspired by \cite{observations}. $t_\textup{GW}$ is an order-of-magnitude estimate calculated assuming $M_{1,\rm BH} = M_{2,\rm BH} = 10~\msun$, given the uncertainties in the mass determination discussed in Section . The other parameters are extracted from the above referenced papers and from \cite{M101ULX-1_Liu2013} (M101 ULX-1), \cite{Cyg-X3_Zd2013} (Cyg X-3), \cite{NGC4490cand_Esposito2013c} (CXOU J123030.3+413853), \cite{NGC253cand_Maccarone2014} (CXOU J004732.0-251722.1), \cite{observations} (CG-X1), \cite{observationsZSFR_Mapelli2010a} (Z).} \label{tab:observations}
 	\end{threeparttable}
-\end{figure*}
+\end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -738,7 +909,7 @@ Semimajor axis according to my model: Minimum possible a=3.005 Rsun with P=4.5 h
 \chapter{Models and simulations with SEVN2}
 \section{The SEVN2 population-synthesis code}\label{sec:SEVN}
 Interpolates PARSEC tables, describe winds, criteria for identifying a WR, explain how, explain details of mass transfer, explain assumption on the pessimistic case, explain the three kick models, 
-\subsection{CCSN}
+\subsection{CCSN}\label{subsec:SNmodels}
 explain the three CCSN models (use histograms)\\
 PLOT: histogram with compact remnants with different SN models\\
 (PLOT: histogram with compact remnants with different kick models )
@@ -776,7 +947,6 @@ Mostrare a vs m1+m2 remnant e m1vsm2 Cyg X-3 a set di 3 CCSN variando i tre kick
 
 \section{Compare with Belczynski+2013}
 ??? Ha senso??
-
 
 
 
