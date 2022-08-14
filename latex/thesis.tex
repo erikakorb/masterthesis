@@ -76,8 +76,9 @@
 \newcommand{\msun}{\ensuremath{M\sun}}
 \newcommand{\zsun}{\ensuremath{Z\sun}}
 \newcommand{\yr}{\text{yr}}
-\newcommand{\rluno}{\ensuremath{r_\textup{L,1}}}
-\newcommand{\rldue}{\ensuremath{r_\textup{L,2}}}
+\newcommand{\rl}{\ensuremath{R_\textup{L}}}
+\newcommand{\rlone}{\ensuremath{R_\textup{L,1}}}
+\newcommand{\rltwo}{\ensuremath{R_\textup{L,2}}}
 
 \newcommand{\micmap}[1]{\textcolor{red}{MM:\bf#1}}
 \newcommand{\erika}[1]{\textcolor{green}{\bf#1}}
@@ -687,7 +688,7 @@ Hot stars like the O,B and the Wolf-Rayet have radiative external envelopes: the
 
 Assuming that the pressure gradient of the star is due only to the Thomson scattering, the self-gravity of the star cannot support the hydrostatic equilibrium if the luminosity $L$ exceeds the Eddington one $L_{\rm Edd}$. The maximum permitted luminosity $L=L_{\rm Edd}$ defines the \emph{Eddington limit} $\Gamma_e$
 
-\begin{equation}\label{eqn:Eddingtonfactor}
+\begin{equation}\label{eq:Eddingtonfactor}
 \Gamma_e = \frac{L}{L_\textup{Edd}} = \frac{L k_\textup{es}}{4 \pi c G M}
 \end{equation}
 
@@ -702,7 +703,7 @@ The surface abundance of hydrogen $X_H$ is known from spectroscopic observations
 
 Stars that approach and overcome the Eddington limit $\Gamma_e \geq 1$ have enhanced mass losses and are likely the progenitors of the Wolf-Rayet stars, as discussed in Sec.\ \ref{subsec:stellarevo}. The evolution close to the Eddington limit, coupled with multiple scatterings in the winds, can explain the strong stellar winds of the Wolf-Rayets. In 2008, Gr{\"a}fener \& Hamann \cite{G&H_WRmassloss} used detailed and self-consistent modeling of non-LTE atmospheres and winds of WNL stars to compute the expected mass loss rates. A rough fit \cite{parsec2015_chen} to their relations underlines a continuity to the 2001 models of Vink et al.\
 
-\begin{equation}\label{eqn:WRwindGH2008}
+\begin{equation}\label{eq:WRwindGH2008}
 \dot M \propto Z^{\alpha} \quad \quad  \alpha = 
 \begin{cases}
 0.85 & \Gamma_e < 2/3 \\
@@ -714,7 +715,7 @@ Gr{\"a}fener \& Hamann found that the metallicity-dependence of Eq.\ \ref{eq:Vin
 
 Vink et al.\ in 2011 \cite{Vink2011} re-calculated the mass loss rates on models of massive and very massive stars ($40-300~\msun$) including a dependence on the Eddington factor, finding
 
-\begin{equation}\label{eqn:Vink2011}
+\begin{equation}\label{eq:Vink2011}
 \begin{cases}
 \dot M \propto M^{0.68}\ \Gamma_e^{2.2} & 0.4 \lesssim \Gamma_e \lesssim 0.7 \\
 \dot M \propto M^{0.78}\ \Gamma_e^{4.77} & \Gamma_e \gtrsim 0.7
@@ -723,56 +724,18 @@ Vink et al.\ in 2011 \cite{Vink2011} re-calculated the mass loss rates on models
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%% END OF "DEFINITIVE" PART %%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% paperino
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%% WORK IN PROGRESS BELOW %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Evolution of a massive star into a Wolf-Rayet}\label{subsec:stellarevo}
 
 In this section I will discuss the evolution of the massive stars with particular attention to the conditions that favor the creation of Wolf-Rayet stars. I considered only stars with initial masses $\mzams \geq 20~\msun$, massive enough to likely produce a black hole in place of a neutron star after the core-collapse supernova (see Sec.\ \ref{subsec:SNmodels}), and with $\mzams \leq 100~\msun$, to avoid the discussion of the pair-instability supernovae that form at $Z=0.002$: the work of this thesis only focuses at solar metallicity $Z\sim 0.02$ where this phenomenon is not relevant \cite{spera2017_pisnSNe}. I will refer to the evolutionary tracks shown in Fig.\ \ref{fig:HRdiagrams} and \ref{fig:masslostWR} that I generated with the population-synthesis code \texttt{SEVN} \cite{spera2019_mergingBBH} interpolating the output tables of the \texttt{PARSEC} stellar evolution code \cite{parsec2015_chen} (further details in Sec.\ \ref{sec:SEVN}). The scope of this section is to provide a self-consistent reference to the work carried out in this thesis and presented in Sec.\ \ref{sec:results}. 
 
-\paragraph{Wolf-Rayet stars with \texttt{PARSEC} and \texttt{SEVN}} The stellar winds implemented by \texttt{PARSEC} on the massive stars account both for the dependence on the metallicity and on the Eddington factor (see Sec.\ \ref{subsec:stellarwinds} for more details). In particular, the mass loss rates of the Blue Super Giants (BSG) and LBVs follow Vink et al.\ 2001 and Gr{\"a}fener \& Hamann 2008 (Eq.\ \ref{eqn:WRwindGH2008}) while the ones of the Wolf-Rayets are based on the work of Nugis \& Lamers in 2000 (Eq.\ \ref{eq:NugisLamers2000}).\\
+\paragraph{Wolf-Rayet stars with \texttt{PARSEC} and \texttt{SEVN}} The stellar winds implemented by \texttt{PARSEC} on the massive stars account both for the dependence on the metallicity and on the Eddington factor (see Sec.\ \ref{subsec:stellarwinds} for more details). In particular, the mass loss rates of the Blue Super Giants (BSG) and LBVs follow Vink et al.\ 2001 and Gr{\"a}fener \& Hamann 2008 (Eq.\ \ref{eq:WRwindGH2008}) while the ones of the Wolf-Rayets are based on the work of Nugis \& Lamers in 2000 (Eq.\ \ref{eq:NugisLamers2000}).\\
 
 On the one hand, \texttt{PARSEC} classifies the Wolf-Rayet sub-types WNL,WNE and WC according to the surface abundance of many elements (hydrogen, helium, carbon, nitrogen, oxygen and iron) at different metallicities. For instance, at solar metallicity, the hydrogen fraction of WNL is $X_{\rm WNL} \leq 0.2$ while WNE and WC are consistent with no hydrogen $X_{\rm WNE} = X_{\rm WC} = 0$. On the other hand, \texttt{SEVN} considers a star as a Wolf-Rayet imposing a condition \emph{only} on the hydrogen fraction, requiring that $X_H \leq 0.2$. Stars with so little hydrogen on the surface are interpolated with different evolutionary tables: the stars are considered as pure-Helium and are computed starting from a helium Zero Age Main Sequence (He-ZAMS), obtained removing the hydrogen envelope to a normal star at the beginning of the core-He burning phase. The He-ZAMS stars then evolve following the same prescriptions of the normal stars \cite{spera2019_mergingBBH}.\\
 
 It is important to point out that in this work the minimum masses needed to produce the Wolf-Rayet stars are higher with respect to other known works in the literature, for instance when compared to the ones obtained from the \texttt{FRANEC} stellar evolution code \cite{Limongi2010_preSNevo}. The main differences are in the amount of overshooting for the convective core\footnote{According to the mixing-length-theory, the mean free path $l_c = \Lambda_c H_p$ of the convective bubbles that overshoot into the upper radiative envelope can be parameterize as a fraction $\Lambda_c$ of the pressure scale height $H_p$ \cite{parsec2015_chen}.} in the central H-burning phase (0.2 $H_p$ in \texttt{FRANEC} and 0.5 $H_p$ in \texttt{PARSEC}) and in the threshold to classify a star as a Wolf-Rayet ($X_H \leq 0.4$ in \texttt{FRANEC} and $X_H \leq 0.2$ in \texttt{PARSEC} when interpolated with \texttt{SEVN}). Given that the Wolf-Rayets evolve with increased depletion of the hydrogen envelope, the $X_H \leq 0.4$ condition in \texttt{FRANEC} allows to form Wolf-Rayet stars earlier than in the \texttt{PARSEC} tracks interpolated by \texttt{SEVN}. In particular, \texttt{FRANEC} lowers the minimum initial mass required to form a Wolf-Rayet at solar metallicity to $\mzams \sim 30~\msun$, while the \texttt{PARSEC} tables interpolated by \texttt{SEVN} require a minimum mass of $\mzams \sim 40~\msun$. 
 
-
-\paragraph{Stellar evolution timescales} In this paragraph I briefly recall the main timescales that drive the single stellar evolution \cite{evostellare}. The time required for a star to react to a perturbation will determine not only its evolution but, if the star is a member of a binary system, will also influence the stability and efficiency of the mass transfer processes (further details in Sec. \ref{subsec:masstransfer}). \\
-
-Stars are self-gravitating objects of hot plasma that remain in hydrostatic equilibrium throughout their life: the internal pressure gradient of the gas and photons is balanced by the self-gravity. According to the virial theorem, perturbations of the hydrostatic equilibrium occur on the \emph{dynamical timescale}
-
-\begin{equation}\label{eq:taudyn}
-\tau_\textup{dyn} \simeq \sqrt{\frac{R^3}{G M}} \simeq 30 \left(\frac{R}{R\sun}\right)^{3/2} \left(\frac{M\sun}{M}\right)^{1/2}\ \text{minutes}
-\end{equation}
-
-
-The energy released by the nuclear reactions is radiated from the surface and maintains the star in thermal equilibrium with $T_{\rm core} \approx const$. When the nuclear fuel is exhausted, the lower pressure gradient of the plasma causes a contraction of the star, in order to maintain the hydrostatic equilibrium. Part of the gravitational energy is radiated away but part of it heats up the interior, until it reaches the critical temperature to ignite heavier elements. The contraction is quasi-static and maintains the hydrostatic equilibrium. However, since a part of the energy produced by the contraction is not radiated away but heats up the interior, the process happens outside the thermal equilibrium and occurs in a \emph{thermal timescale} (also known as \emph{Kelvin-Helmholtz timescale})
-
-\begin{equation}\label{eq:tauth}
-\tau_\textup{th} \simeq \frac{G M^2}{R L} \simeq 15 
-\left(\frac{M}{M\sun}\right)^{2} \left(\frac{R\sun}{R}\right) \left(\frac{L\sun}{L}\right)\ \text{Myr}
-\end{equation}
-
-Aside from central exhaustion or local fluctuations in the core temperature, a star evolves in thermal equilibrium. However, the longest evolutionary timescale is the \emph{nuclear timescale} and quantifies the time required to burn all the nuclear fuel for a given element. The longest nuclear timescale is the one for the hydrogen burning, that is the most abundant element ($\sim 70~\%$ of the stellar mass), and provides an order-of-magnitude estimate for the stellar lifetime
-
-\begin{equation}\label{eq:taunuc}
-\tau_\textup{nuc} \simeq 10 \left(\frac{M}{M\sun}\right) \left(\frac{L\sun}{L}\right)\ \text{Gyr}
-\end{equation}
-
-\paragraph{Stellar evolution from the ZAMS to the end of the CO burning} The star begin their life in the \emph{Zero Age Main Sequence} (ZAMS, filled circles) when their cores have temperatures $T_{\rm core} \gtrsim 10^{7}$ K elevated enough to ignite the hydrogen burning in the core. The evolution proceeds in the \emph{Main Sequence} (MS) phase until the central hydrogen is exhausted \cite{evostellare}. 
-
-During the core H-burning phase, the stars satisfy the empirical mass-luminosity relation $L \propto M^3$. Recalling that the nuclear timescale $\tau_{\rm nuc}$ required to burn the hydrogen is an order-of-magnitude estimate of the stellar lifetime, the mass-luminosity relation of the Main Sequence substituted into the definition of the nuclear timescale of Eq.\ \ref{eq:taunuc} results in $\tau_{\rm nuc} \propto M^{-2}$: the more massive the star, the larger the luminosity caused by more efficient and rapid nuclear reactions, thus, the shorter the lifetime. For instance, the left-hand panel of Fig.\ \ref{fig:masslostWR} illustrates that, at solar metallicity, stars with $\mzams \sim 20~\msun$ live for $\sim 8$ Myrs, contrarily to the more massive stars of $\mzams \sim 100~\msun$ that survive only for $\sim 3$ Myrs (nevertheless, both stars have lifetimes much shorter than the $\sim 10$ Gyrs of the Sun).
-
-The stars considered here are so massive that they burn hydrogen in a large convective core surrounded by a radiative envelope. In the final stages of the core H-burning, the energy released diminishes and lowers the radiation pressure. To maintain the hydrostatic and thermal equilibrium, the core contracts and heats up again: the nuclear reactions increase again the luminosity produced and the surface effective temperature, thus, the star exhibits a left-ward hook in the Hertzsprung-Russel (HR) diagram (see Fig.\ \ref{fig:HRdiagrams}). \\
-
-At the end of the core H-burning phase, the star is so contracted that the hydrogen shell surrounding the core is hot enough to ignite (empty diamonds). According to the mirror principle, if the layers below a burning shell contract then the layers above will expand. Stars with $\mzams \gtrsim 20~\msun$ have a core too massive to maintain the thermal equilibrium without a central burning, therefore, in the H-shell burning phase the star undergoes a core contraction and envelope expansion in a thermal timescale. Recalling Eq.\ \ref{eq:tauth} and Eq.\ \ref{eq:taunuc}, the thermal timescale is orders of magnitudes faster than the nuclear timescale: massive stars that burn hydrogen in their shells move so rapidly in the color-magnitude diagram during this phase that they are very unlikely to be observed, causing the so-called Hertzsprung-Gap (HG). \\
 
 
 
@@ -806,6 +769,37 @@ At the end of the core H-burning phase, the star is so contracted that the hydro
 
 
 
+\paragraph{Stellar evolution timescales} In this paragraph I briefly recall the main timescales that drive the single stellar evolution \cite{evostellare}. The time required for a star to react to a perturbation will determine not only its evolution but, if the star is a member of a binary system, will also influence the stability and efficiency of the mass transfer processes (further details in Sec. \ref{subsec:masstransfer}). \\
+
+Stars are self-gravitating objects of hot plasma that remain in hydrostatic equilibrium throughout their life: the internal pressure gradient of the gas and photons is balanced by the self-gravity. According to the virial theorem, perturbations of the hydrostatic equilibrium occur on the \emph{dynamical timescale}
+
+\begin{equation}\label{eq:taudyn}
+\tau_\textup{dyn} \simeq \sqrt{\frac{R^3}{G M}} \simeq 30 \left(\frac{R}{R\sun}\right)^{3/2} \left(\frac{M\sun}{M}\right)^{1/2}\ \text{minutes}
+\end{equation}
+
+
+The energy released by the nuclear reactions is radiated from the surface and maintains the star in thermal equilibrium with $T_{\rm core} \approx const$. When the nuclear fuel is exhausted, the lower pressure gradient of the plasma causes a contraction of the star, in order to maintain the hydrostatic equilibrium. Part of the gravitational energy is radiated away but part of it heats up the interior, until it reaches the critical temperature to ignite heavier elements. The contraction is quasi-static and maintains the hydrostatic equilibrium. However, since a part of the energy produced by the contraction is not radiated away but heats up the interior, the process happens outside the thermal equilibrium and occurs in a \emph{thermal timescale} (also known as \emph{Kelvin-Helmholtz timescale})
+
+\begin{equation}\label{eq:tauth}
+\tau_\textup{th} \simeq \frac{G M^2}{R L} \simeq 15 
+\left(\frac{M}{M\sun}\right)^{2} \left(\frac{R\sun}{R}\right) \left(\frac{L\sun}{L}\right)\ \text{Myr}
+\end{equation}
+
+Aside from central exhaustion or local fluctuations in the core temperature, a star evolves in thermal equilibrium. However, the longest evolutionary timescale is the \emph{nuclear timescale} and quantifies the time required to burn all the nuclear fuel for a given element. The longest nuclear timescale is the one for the hydrogen burning, that is the most abundant element ($\sim 70~\%$ of the stellar mass), and provides an order-of-magnitude estimate for the stellar lifetime
+
+\begin{equation}\label{eq:taunuc}
+\tau_\textup{nuc} \simeq 10 \left(\frac{M}{M\sun}\right) \left(\frac{L\sun}{L}\right)\ \text{Gyr}
+\end{equation}
+
+\paragraph{Stellar evolution from the ZAMS to the end of the CO burning} The star begin their life in the \emph{Zero Age Main Sequence} (ZAMS, filled circles) when their cores have temperatures $T_{\rm core} \gtrsim 10^{7}$ K elevated enough to ignite the hydrogen burning in the core. The evolution proceeds in the \emph{Main Sequence} (MS) phase until the central hydrogen is exhausted \cite{evostellare}. 
+
+During the core H-burning phase, the stars satisfy the empirical mass-luminosity relation $L \propto M^3$. Recalling that the nuclear timescale $\tau_{\rm nuc}$ required to burn the hydrogen is an order-of-magnitude estimate of the stellar lifetime, the mass-luminosity relation of the Main Sequence substituted into the definition of the nuclear timescale of Eq.\ \ref{eq:taunuc} results in $\tau_{\rm nuc} \propto M^{-2}$: the more massive the star, the larger the luminosity caused by more efficient and rapid nuclear reactions, thus, the shorter the lifetime. For instance, the left-hand panel of Fig.\ \ref{fig:masslostWR} illustrates that, at solar metallicity, stars with $\mzams \sim 20~\msun$ live for $\sim 8$ Myrs, contrarily to the more massive stars of $\mzams \sim 100~\msun$ that survive only for $\sim 3$ Myrs (nevertheless, both stars have lifetimes much shorter than the $\sim 10$ Gyrs of the Sun).
+
+The stars considered here are so massive that they burn hydrogen in a large convective core surrounded by a radiative envelope. In the final stages of the core H-burning, the energy released diminishes and lowers the radiation pressure. To maintain the hydrostatic and thermal equilibrium, the core contracts and heats up again: the nuclear reactions increase again the luminosity produced and the surface effective temperature, thus, the star exhibits a left-ward hook in the Hertzsprung-Russel (HR) diagram (see Fig.\ \ref{fig:HRdiagrams}). \\
+
+At the end of the core H-burning phase, the star is so contracted that the hydrogen shell surrounding the core is hot enough to ignite (empty diamonds). According to the mirror principle, if the layers below a burning shell contract then the layers above will expand. Stars with $\mzams \gtrsim 20~\msun$ have a core too massive to maintain the thermal equilibrium without a central burning, therefore, in the H-shell burning phase the star undergoes a core contraction and envelope expansion in a thermal timescale. Recalling Eq.\ \ref{eq:tauth} and Eq.\ \ref{eq:taunuc}, the thermal timescale is orders of magnitudes faster than the nuclear timescale: massive stars that burn hydrogen in their shells move so rapidly in the color-magnitude diagram during this phase that they are very unlikely to be observed, causing the so-called Hertzsprung-Gap (HG). \\
+
+
 When the contraction heats up the core beyond $T_{\rm core} \gtrsim 10^{8}$ K, helium is ignited (empty stars). In theory, at this point the envelope has expanded and cooled so much that becomes convective and causes the star to evolve along the Hayashi line (an almost vertical line typical of stars dominated by the convective energy transport that with small variations in the super-adiabatic gradient can transport outward a wide range of luminosity for a given temperature). In reality, very massive stars will evolve close to the Eddington limit (black line in Fig.\ \ref{fig:HRdiagrams}) while the more metallic ones will suffer strong winds: in both cases, the net effects are depletion of the more external layers and exposition of the more internal and hot ones. Therefore, more massive and metallic stars will keep evolving in the blue region of the HR diagram and will eventually lose all the external hydrogen envelope, starting the core-He burning as Wolf-Rayet stars (filled stars). 
 
 For instance, as shown in Fig. \ref{fig:HRdiagrams}, a $\mzams \sim 20~\msun$ star at solar metallicity $Z=0.02$ will start to burn helium in its core with an effective temperature of $T_{\rm eff} \sim 4~000$ K much cooler than the $T_{\rm eff} \sim 10~000$ K of the same star with metallicity $Z=0.002$ one order-of-magnitude smaller. Low-metallicity stars have quenched stellar winds that allow the star to retain and burn more mass: the core evolution is so fast that the external layers of the star are only slightly modified by the winds and survive beyond the Eddington limit (for instance, comparing the left- and right-hand panels of Fig.\ \ref{fig:HRdiagrams} it is evident that the markers of the burning stages are closer and in hotter positions for the less metallic stars). In contrast, stellar winds and instability near the Eddington limit strongly influence the evolution of stars with solar metallicity and $\mzams \gtrsim 35-40~\msun$ (left-hand panel of Fig.\ \ref{fig:HRdiagrams} and right-hand panel of Fig. \ref{fig:masslostWR}): the external layers are so much depleted that stars with $\mzams \gtrsim 40~\msun$ rapidly become Wolf-Rayet stars after a brief phase as LBV. The mass losses limit also the fuel to grow the He and CO cores: solar metallicity stars at the pre-supernova (pre-SN) stage have cores and total masses up to $\sim 30~\msun$ lighter with respect to the stars evolved at $Z=0.002$. While low-metallicity stars are mostly affected by the instability at the Eddington limit and the effect is relevant only for massive stars $\mzams \sim 70-100~\msun$, solar-metallicity stars are strongly depleted by their winds and the ones with $\mzams \gtrsim 40~\msun$ will explode as Wolf-Rayets of $M_{\rm WR} \sim 15-20~\msun$. It is important to notice that the depletion is so irrelevant in the single stellar evolution of low-metallicity stars that even stars up to $\sim 100~\msun$ do not form Wolf-Rayets at $Z=0.002$.\\
@@ -814,13 +808,161 @@ Stars that reach the core He-burning phase then evolve just in $\sim 10^{5}$ yrs
 
 
 
-
 \section{Mass transfer theory}\label{subsec:masstransfer}
+\subsection{Conservative and non-conservative mass transfer}\label{subsec:conservativeMT}
+The angular momentum $L$ of a binary system with circular orbit (for simplicity) of radius $a$ is
+
+\begin{equation}\label{eq:L}
+L = \mu\,a\,v_\textup{orb} = \frac{M_1 M_2}{M_1 + M_2} \sqrt{G \left(M_1 + M_2\right) a}
+\end{equation}
+
+where the reduced mass $\mu$ and the orbital velocity $v_{\rm orb}$ are related to the primary $M_1$ and secondary $M_2$ masses through
+
+\begin{equation}\label{eq:mu_vorb}
+\mu = \frac{M_1 M_2}{M_1 + M_2} \quad \quad  v_\textup{orb}=\sqrt{\frac{G \left(M_1+M_2\right)}{a}} 
+\end{equation}
+
+\paragraph{Conservative case} If the orbital angular momentum $L$ and the total mass of the system $M_1 + M_2$ remain constant, the mass transfer is conservative. In this scenario, the relation of Eq.\ \ref{eq:L} becomes
+
+\begin{equation}\label{eq:a_const}
+a \left(M_1M_2\right)^2 = const
+\end{equation}
+
+and is showed in the left-hand panel of Fig.\ \ref{fig:masstransferRochelobe}. A system with primary $M_1 \geq M_2$ that transfers mass to the secondary $M_2$ shrinks its orbit until $M_2 \sim M_1$: when the accreting star becomes more massive than the donor, the orbit widens again.
+
+\paragraph{Non-conservative case} Binaries can lose angular momentum and mass, for instance because of friction with the surrounding medium and because secondary stars are not able to accrete all the mass lost by the donors, respectively. Variations in the total angular momentum and mass of the system determine a non-conservative mass transfer and complicated models to determine the variation of the semi-major axis. From a qualitative point of view, Eq.\ \ref{eq:L} indicates a direct proportionality between orbital angular momentum and semi-major axis: the orbit shrinks if angular momentum is lost. Instead, Eq. \ref{eq:mu_vorb} suggests that less massive binaries have lower orbital velocities: energy conservation requires that the orbit widens \cite{Hurley2002}. 
+
+Real binaries undergo non-conservative mass transfer episodes where the mass losses dominate over the orbital angular momentum losses. A binary mainly loses mass because of the combined effect of isotropic losses of the primary (especially through stellar winds or common envelope episodes, see Sec.\ \ref{subsec:windfed} and Sec.\ref{subsec:Commonenvelope}) and limited accretion of the secondary. 
+
+\paragraph{Eddington limited accretion}
+According to the virial theorem, a star in hydrostatic equilibrium that accretes mass convert part of its gravitational energy into radiation. Accretion generally occurs in a thermal timescale $\tau_{\rm th}$ (see Sec\ \ref{eq:tauth}) with a mass accretion rate $\mdot_{\rm acc} = M/\tau_{\rm th}$ and produces an accretion luminosity $L_{\rm acc}$ of
+
+\begin{equation}
+L_\textup{acc} = \frac{G M \mdot_{\rm acc}}{R}
+\end{equation}
+
+Imposing hydrostatic equilibrium requires that the accretion luminosity doesn't overcome the Eddington luminosity of Eq.\ \ref{eq:Eddingtonfactor}. The condition on the luminosity $L_{\rm acc} \leq L_{\rm Edd}$ becomes an upper limit to the maximum accretion rate allowed to maintain hydrostatic equilibrium
+
+\begin{equation}\label{eq:Eddingtonaccretion}
+\mdot_{\rm acc} \leq \dot{M}_\textup{Edd} = \frac{4 \pi c R}{k}
+\end{equation}
+
+The accretion rate is mainly limited by the star' size ($\dot{M}_\textup{Edd} \propto R$): only the bigger stars can accrete rapidly a lot of mass. Eddington limited accretion strongly reduces the mass accretion rates onto compact objects to almost negligible quantities ($\dot{M}_\textup{Edd} \sim\SI{e-8}{M\sun~\yr^{-1}}$ for a neutron star with radius $R\sim\SI{10}{\kilo\metre}$). Whether a compact object can or cannot accrete beyond the Eddington limit is still a matter of debate and is not the focus of this thesis, although theoretical modelling suggest that super-Eddington accreting compact objects should be unstable and could become exotic, like the \emph{Thorne-{\.Z}ytkow objects} \cite{binaries}.
+
+
+\begin{figure}[h]
+	\begin{minipage}{.55\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{./images/masstransfer.pdf}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{.44\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{./images/Rochepotential.pdf}	
+	\end{minipage}
+	\caption{\emph{Left:} Conservative mass transfer from $M_1$ to $M_2$ first shrinks the semi-major axis of the orbit $a$ and then, when the secondary star becomes more massive than the primary $M_2 \geq M_1$, the orbit widens (see Eq.\ \ref{eq:a_const}). \emph{Right:} Orbital plane section of the equipotential curves of the Roche potential in the frame co-rotating with the binary. The Roche lobe is the black thick line containing the Lagrangian point $L_1$ \cite{tauris_evo_binaria}.}\label{fig:masstransferRochelobe}
+\end{figure}
+
+\subsection{Wind-fed binaries}\label{subsec:windfed}
+Stellar winds cause an isotropic spread of the mass lost by the primary $M_1$, thus, it is reasonable to consider the secondary star $M_2$ as orbiting in a gas cloud. If the orbital velocity $v_{\rm orb}$ is small compared to the wind velocity $v_w \gg v_{\rm orb}$, accretion can be assumed spherical and described with the Bondi-Hoyle formalism \cite{BondiHoyle1944}: the average mass accreted over an orbital period by the secondary is
+
+\begin{equation}\label{eq:accretionbondihoyle}
+\langle \dot{M_2} \rangle = \frac{1}{\sqrt{1-e^2}} \left(\frac{G M_2}{v_w^2}\right)^2 \frac{\alpha_w}{2 a^2} \frac{1}{\left(1+v^2\right)^{3/2}} \dot{M_1}
+\end{equation}
+
+where $e$ is the eccentricity, $a$ the semi-major axis, $\alpha_w \approx 1.5$ an efficiency constant, $v$ is the ratio of the orbital velocity $v_{\rm orb}$ (calculated as in Eq.\ \ref{eq:mu_vorb}) and the wind velocity $v_w$ (calculated as the relative motion of the gas particles with respect to the secondary, proportional to the escape velocity with proportionality constant $\beta_w \approx 0.5-7$)
+
+\begin{equation}
+v = \frac{v_\textup{orb}}{v_w} \quad \quad v_w^2=2\beta_w \frac{G M_1}{R_1}
+\end{equation}
+
+Typical line-driven winds are one order-of magnitude faster than orbital velocities ($v_w \sim \SI{1000}{km/s}$ and $v_{\rm orb} \sim \SI{400}{km/s}$, respectively \cite{CygX-3_Koljonen2017}): the $v$ term in Eq.\ \ref{eq:accretionbondihoyle} can be neglected and the average mass accreted becomes
+
+\begin{equation}\label{eq:windfedaccretion}
+\langle \dot{M_2} \rangle \propto \left(\frac{v_\textup{orb}}{v_w}\right)^4 \dot{M_1}
+\end{equation}
+
+The velocity ratio enters with the fourth power, strongly diminishing the efficiency of the wind-accretion: even enhanced mass losses of the primary $\mdot_1 \sim \SI{e-4}{\msun~\yr^{-1}}$ result in negligible accretion rates $\mdot_2 \sim \SI{e-8}{\msun~\yr^{-1}}$. Nevertheless, similar accretion rates are close to the ones allowed by Eddington-limited accretion onto compact objects (see Sec.\ \ref{subsec:conservativeMT}) and, even if small, are sufficient to power the formation and emission of the accretion disks in many X-ray binaries.
+
+\subsection{Roche lobe overflow}\label{subsec:Rochelobeoverflow}
+\paragraph{The Roche potential}
+In the frame co-rotating with the binary, the sum of the gravitational and centrifugal potential is called Roche potential and its equipotential curves are shown in the right-hand panel of Fig.\ \ref{fig:masstransferRochelobe}. The potential wells of the stars become drop-shaped because of the orbital motion and are called Roche lobes. In order to describe them, in 1983 Eggleton \cite{Eggleton1983} introduced the Roche lobe radius $\rl$ as the radius of a sphere with volume equivalent to the one enclosed by a Roche lobe 
+
+\begin{equation}\label{eq:rocheloberadius}
+\rl = \frac{0.49~q^{2/3}}{0.6~q^{2/3} + \ln \left(1+q^{1/3}\right)}~a
+\end{equation}
+
+where $a$ is the semimajor-axis of the system and $q=M_1/M_2$ ($q=M_2/M_1$) is the ratio between the mass of the star belonging to the lobe $M_1$ ($M_2$) and its companion $M_2$ ($M_1$). The formula is obtained assuming circular and synchronized orbit, a condition often true for mass-transferring systems where the tight orbits are rapidly circularized and synchronized by tides.
+
+\paragraph{Stability of the Roche lobe overflow} When a star expands beyond its Roche lobe (for instance because of stellar evolution or because the orbit shrinks), the layers outside the Roche lobe are no more bound to the star's potential well and can either be lost by the binary or accreted by the companion in the so-called Roche lobe overflow (RLO) process. The stability and efficiency of the RLO are still poorly understood and provide an active field of research because they depend on many factors, like the presence of a convective or radiative envelope and a core more or less prominent (both determine the response of the star to the removal of the external envelopes) or the possibility that the mass is transferred also from the external atmosphere of the star and outflows from the outer Lagrangian point of the donor (both determine the mass loss rates) \cite{marchant2021_masstransferMESA}.\\
+
+A star that loses its external layers needs to re-adjusts its dimension in order to return in an equilibrium state. If the new equilibrium is achieved with a stellar radius still larger than the Roche lobe radius, the star will keep losing its outer layers in an unstable runaway that will lead the system to a common envelope (see Sec.\ \ref{subsec:Commonenvelope}). In contrary, if the star returns in the equilibrium state inside the Roche lobe, the RLO ends in a stable way. In this case, the stellar evolution may stimulate further expansions (for instance during the Hertzsprung-Gap phase or by igniting the core He-burning, as described in Sec.\ \ref{subsec:stellarevo}): the star can undergo a series of stable RLOs and transfer a large amount of mass. For instance, in 2002 Hurley et al.\ \cite{Hurley2002} proposed that stable RLO would lead to a mass loss rate strongly proportional to the amount of Roche lobe overfilling 
+
+\begin{equation}\label{eq:masslostRoche}
+    \mdot_{1,\rm nuc} \propto \left[ \ln \left(\frac{R_1}{\rlone} \right)\right]^3
+\end{equation}
+
+RLOs can be unstable over dynamical or thermal timescales, respectively for mass losses that perturb the hydrostatic or thermal equilibrium (see Sec.\ \ref{subsec:stellarevo}). As suggested by Webbink in 1984 \cite{Webbink1984_CE}, the (in)stability can be studied assuming that the radius is only a function of the mass $R\propto M^{\zeta}$ and, thus, comparing the logarithmic variation of the Roche lobe ($\zeta_L$) with the one induced in the stellar radius over the dynamical ($\zeta_\textup{ad}$)\footnote{The subscript ``ad'' recalls that dynamical perturbations act so rapidly that can be modelled as adiabatic processes.} or thermal ($\zeta_\textup{th}$) timescale
+
+\begin{equation}\label{eq:zetaRLO}
+\zeta_L = \frac{d \ln r_L}{d \ln M} \quad \zeta_\textup{ad} = \left(\frac{d \ln R}{d \ln M}\right)_\textup{ad} \quad \zeta_\textup{th} = \left(\frac{d \ln R}{d \ln M}\right)_\textup{th}
+\end{equation}
+
+The most rapid variation determines the dominant perturbation timescale, thus the reference mass-radius exponent $\zeta_* = \min\{\zeta_\textup{ad},\zeta_\textup{th}\}$ that, once compared to the Roche lobe variation $\zeta_L$, defines a Roche lobe overflow to be
+
+\begin{equation}
+\begin{cases}
+\text{stable} &  \zeta_* \geq \zeta_L \\
+\text{unstable} &  \zeta_* \leq \zeta_L
+\end{cases}
+\end{equation}
+
+Inequality signs are a consequence of the negative denominators: the variation of the Roche lobe radius is referred to stars that are \emph{losing} mass ($d \ln M \leq 0$). As a reference, the left-hand panel of Fig.\ \ref{fig:RLOstability} shows a qualitative comparison between mass transfer episodes that are stable ($\zeta_* \geq \zeta_L$, S point), unstable on a thermal timescale but stable on the dynamical one ($\zeta_\textup{th} \leq \zeta_L \leq \zeta_\textup{ad}$, T point) or unstable on a dynamical timescale ($\zeta_\textup{ad} \leq \zeta_L$, P point).
+
+\paragraph{Role of stellar envelopes, core sizes and mass ratios} The convective or radiative nature of the envelopes strongly affects the re-adjustments in the stellar structure after the removal of the external layers, eventually determining stability and efficiency of the RLOs. Radiative envelopes have a steep density gradient that prevents the onset of convection: the pressure exerted by the outer layers is so small that, once they are removed, the star almost does not need to expand to restore the equilibrium. Thus, stars with radiative envelopes have final radii usually lower than the initial ones ($\zeta_{\rm {ad}} \gg 0$) and will likely undergo stable RLOs. Convective envelopes, on the contrary, have an adiabatic structure that almost restores the initial radius via adiabatic expansion ($\zeta_{\rm {ad}} \lesssim 0$): similar stars will likely still overfill their Roche lobe after their re-adjustments and will enter unstable RLOs \cite{binaries} .\\
+
+Stars with convective envelopes may avoid unstable Roche lobe overflows if they have a large core. The result comes from studies the modelled completely convective stars and stars with a central core with, respectively, \emph{complete} or \emph{condensed} politropes\footnote{Convective envelopes, or full stars for the complete politrope case, were modelled with a politropic index $n=3/2$.}. In 1987, Hjelliming \& Webbink \cite{hjellmingwebbink1987_coreRLOF} used this approach to study RLO instability on the dynamical timescale and found that the core, when is present, increases the convective efficiency of the external envelope: the star loses more energy and reduces its radius as shown in the right-hand panel of Fig.\ \ref{fig:RLOstability}, likely avoiding an unstable RLO. The more evolved the star, the more the core becomes important in the structure, it grows in size and mass fraction because of the advanced nuclear burnings and of the removal of the external envelopes (caused by stellar winds and previous mass transfer episodes).\\
+
+The binary mas ratio is another factor influencing the RLO stability, since it enters in the Roche lobe radius definition of Eq.\ \ref{eq:rocheloberadius}. As shown in the right-hand panel of Fig.\ \ref{fig:RLOstability}, if the donor star $M_1$ is much more massive than the companion $M_2$ ($q=M_1/M_2 \gg 1$) the more mass transferred and the more the potential well of the companion expands, shrinking the Roche lobe of the donor and facilitating the onset of an unstable RLO. On the contrary, stars with similar masses have similar Roche lobes with sizes modulated by the semi-major axis: assuming, as a reference, a conservative mass transfer as the one shown in the left-hand panel of Fig.\ \ref{fig:masstransferRochelobe}, systems with $q \sim 1$ have negligible changes in the semi-major axis extent, thus in the Roche lobe sizes. \\
+
+Many works in the literature started from the above considerations to obtain models and thresholds that could numerically determine whether or not a binary system would enter a stable or unstable mass transfer. Similar models often are too much simplified and calibrated on old stellar tracks (or even to politropes) but provide a fast and easy-to-implement method to calculate the RLO (in)stability in population-synthesis codes. For instance, many codes (including the one adopted in this thesis, \texttt{SEVN} \cite{spera2019_mergingBBH}) derived part of their mass transfer prescriptions from the formalism suggested in 2002 by Hurley et al.\ for the \texttt{BSE} code \cite{Hurley2002}. These codes assume a one-to-one correspondence between the burning stage, the radiative/convective nature of the envelope and the core size, starting a RLO unstable on the dynamical timescale when the mass ratio $q=M_{\rm donor}/M_{\rm accretor}$ is larger than a given threshold $q_{\rm crit}$, calibrated with stellar evolution models and function of the core size $q_{\rm core}=M_{\rm core, donor}/M_{\rm donor}$
+
+\begin{equation}\label{eq:qcrit}
+	q \geq q_\textup{crit} \left(q_\textup{core}\right)
+\end{equation}
+
+Unfortunately, recent studies pointed out that there is not an unique correlation between the burning stage, the extent of the radiative/convective envelope, the core size and the RLO (in)stability \cite{klencki2020_mtproblems}. Moreover, many of the values for the $q_{\rm crit}$ and mass loss rates (like the one of Eq.\ \ref{eq:masslostRoche}) were obtained from old stellar tracks (or politropic models) that did not properly model the more massive stars, suggesting that an updated and corrected modelling of the mass transfer that accounts for up-to-date stellar evolution is required.
 
 
 
 
-%Short overview of the main binary processes, with particular attention to the wind accretion, Roche lobe overflow and common envelope
+\begin{figure}[h]
+	\begin{minipage}{.49\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{./images/stp_roche.pdf}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{.49\textwidth}
+	    \vspace{-7mm}
+		\centering
+		\includegraphics[width=\textwidth]{./images/core_he_rlof.pdf}	
+	\end{minipage}
+	\caption{\emph{Left:} Examples of the RLO (in)stability scenarios for a $\SI{2}{\msun}$ binary with fixed donor mass-radius exponents ($\zeta_\textup{ad}=1.5$ and $\zeta_\textup{th}=\zeta_\textup{eq}=0.25$, illustrated respectively by the dashed and dotted lines). Different donor masses determine different Roche lobe radii (solid line, Eq.\ \ref{eq:rocheloberadius}), thus the same adjustment to the mass loss ($\zeta_*$) might determine a RLO stable ($\zeta_* \geq \zeta_L$, S point), stable on the dynamical timescale but unstable on the thermal one ($\zeta_\textup{th} \leq \zeta_L \leq \zeta_\textup{ad}$, T point) or unstable also on the dynamical timescale ($\zeta_\textup{ad} \leq \zeta_L$, point P) \cite{binaries}. \emph{Right:} Adiabatic variation of the stellar radius as a function of the mass lost ($R_0$ and $M_0$ are the values before the mass loss). Solid lines: condensed politropes with growing core sizes (from top to bottom $q_\textup{core}$=0.10, 0.25, 0.50, 0.75). Dotted line: complete politrope, models a fully convective star with $n=3/2$. Dashed lines: Roche lobe radii for different initial mass ratios (from top to bottom $q_i=M_{\rm don}/M_{\rm acc}=1,2,3$). A convective star may avoid a dynamically unstable RLO if it has a prominent core $q_{\rm core} \gg$ or it has a companion with similar mass $q \sim 1$ \cite{hjellmingwebbink1987_coreRLOF}.}\label{fig:RLOstability}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% END OF "DEFINITIVE" PART %%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% paperino
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% WORK IN PROGRESS BELOW %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\subsection{Common envelope}\label{subsec:Commonenvelope}
+
 
 
 \section{Observed candidates of Wolf-Rayet -- black hole systems}\label{sec:WRBHobserved}
@@ -908,7 +1050,9 @@ Semimajor axis according to my model: Minimum possible a=3.005 Rsun with P=4.5 h
 
 \chapter{Models and simulations with SEVN2}
 \section{The SEVN2 population-synthesis code}\label{sec:SEVN}
-Interpolates PARSEC tables, describe winds, criteria for identifying a WR, explain how, explain details of mass transfer, explain assumption on the pessimistic case, explain the three kick models, 
+Interpolates PARSEC tables, describe winds, criteria for identifying a WR, explain how, explain 
+\subsection{Mass transfer}\label{subsec:masstransferSEVN}
+details of mass transfer, explain assumption on the pessimistic case, explain the three kick models, 
 \subsection{CCSN}\label{subsec:SNmodels}
 explain the three CCSN models (use histograms)\\
 PLOT: histogram with compact remnants with different SN models\\

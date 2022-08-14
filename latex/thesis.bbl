@@ -2667,6 +2667,378 @@
       \field{title}{An Introduction to the Theory of Stellar Structure and Evolution}
       \field{year}{2000}
     \endentry
+    \entry{Hurley2002}{article}{}
+      \name{author}{3}{}{%
+        {{hash=b16f581c045266a61c9402cc7bbf1e11}{%
+           family={{Hurley}},
+           familyi={H\bibinitperiod},
+           given={Jarrod\bibnamedelima R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=437df807788f2a2d28d42aa60aec62e1}{%
+           family={{Tout}},
+           familyi={T\bibinitperiod},
+           given={Christopher\bibnamedelima A.},
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=e16d0b1ec2d5745eba8aa644264a755b}{%
+           family={{Pols}},
+           familyi={P\bibinitperiod},
+           given={Onno\bibnamedelima R.},
+           giveni={O\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{7b364b4f19cbefa0d74c60cb5b9bd7c3}
+      \strng{fullhash}{140cecda0d31ff6619e1735270b870df}
+      \strng{bibnamehash}{7b364b4f19cbefa0d74c60cb5b9bd7c3}
+      \strng{authorbibnamehash}{7b364b4f19cbefa0d74c60cb5b9bd7c3}
+      \strng{authornamehash}{7b364b4f19cbefa0d74c60cb5b9bd7c3}
+      \strng{authorfullhash}{140cecda0d31ff6619e1735270b870df}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{astro-ph}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{\mnras}
+      \field{month}{2}
+      \field{number}{4}
+      \field{title}{{Evolution of binary stars and the effect of tides on binary populations}}
+      \field{volume}{329}
+      \field{year}{2002}
+      \field{pages}{897\bibrangedash 928}
+      \range{pages}{32}
+      \verb{doi}
+      \verb 10.1046/j.1365-8711.2002.05038.x
+      \endverb
+      \verb{eprint}
+      \verb astro-ph/0201220
+      \endverb
+      \keyw{METHODS: ANALYTICAL,METHODS: STATISTICAL,BINARIES: GENERAL,STARS: EVOLUTION,STARS: VARIABLES: OTHER,GALAXIES: STELLAR CONTENT,Astrophysics}
+    \endentry
+    \entry{binaries}{online}{}
+      \name{author}{1}{}{%
+        {{hash=e16d0b1ec2d5745eba8aa644264a755b}{%
+           family={{Pols}},
+           familyi={P\bibinitperiod},
+           given={Onno\bibnamedelima R.},
+           giveni={O\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{e16d0b1ec2d5745eba8aa644264a755b}
+      \strng{fullhash}{e16d0b1ec2d5745eba8aa644264a755b}
+      \strng{bibnamehash}{e16d0b1ec2d5745eba8aa644264a755b}
+      \strng{authorbibnamehash}{e16d0b1ec2d5745eba8aa644264a755b}
+      \strng{authornamehash}{e16d0b1ec2d5745eba8aa644264a755b}
+      \strng{authorfullhash}{e16d0b1ec2d5745eba8aa644264a755b}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Lecture notes for a Utrecht University MSc course}}
+      \field{year}{2011}
+      \verb{urlraw}
+      \verb https://www.astro.ru.nl/~onnop/education/binaries_utrecht_notes/Binaries_ch6-8.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.astro.ru.nl/~onnop/education/binaries_utrecht_notes/Binaries_ch6-8.pdf
+      \endverb
+    \endentry
+    \entry{tauris_evo_binaria}{inbook}{}
+      \name{author}{2}{}{%
+        {{hash=e8f154d49f5ec4d85ae323f3c77afbc0}{%
+           family={{Tauris}},
+           familyi={T\bibinitperiod},
+           given={T.\bibnamedelimi M.},
+           giveni={T\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=2da11cbafcb27e8f4605e8aca9bc68fa}{%
+           family={{van den Heuvel}},
+           familyi={v\bibinitperiod},
+           given={E.\bibnamedelimi P.\bibnamedelimi J.},
+           giveni={E\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{0a7e7fe3f0d34c2e84ca6eca0bafbc4c}
+      \strng{fullhash}{eee8a2a31fc4a59624ba4b2eca2096fc}
+      \strng{bibnamehash}{0a7e7fe3f0d34c2e84ca6eca0bafbc4c}
+      \strng{authorbibnamehash}{0a7e7fe3f0d34c2e84ca6eca0bafbc4c}
+      \strng{authornamehash}{0a7e7fe3f0d34c2e84ca6eca0bafbc4c}
+      \strng{authorfullhash}{eee8a2a31fc4a59624ba4b2eca2096fc}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Compact stellar X-ray sources}
+      \field{title}{{Formation and evolution of compact stellar X-ray sources}}
+      \field{volume}{39}
+      \field{year}{2006}
+      \field{pages}{623\bibrangedash 665}
+      \range{pages}{43}
+      \keyw{Stellar X-Ray Sources,Formation,Evolution,Astrophysics}
+    \endentry
+    \entry{BondiHoyle1944}{article}{}
+      \name{author}{2}{}{%
+        {{hash=9a8251710496aab97c226b3ad49d6501}{%
+           family={Bondi},
+           familyi={B\bibinitperiod},
+           given={Hermann},
+           giveni={H\bibinitperiod}}}%
+        {{hash=078470d185900f936a0890f9555e75ad}{%
+           family={Hoyle},
+           familyi={H\bibinitperiod},
+           given={Fred},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford Academic}%
+      }
+      \strng{namehash}{9a26bffe66509a4bb194a4f8e46dcdde}
+      \strng{fullhash}{ace79c4af9a9d0e431af0daa0d693477}
+      \strng{bibnamehash}{9a26bffe66509a4bb194a4f8e46dcdde}
+      \strng{authorbibnamehash}{9a26bffe66509a4bb194a4f8e46dcdde}
+      \strng{authornamehash}{9a26bffe66509a4bb194a4f8e46dcdde}
+      \strng{authorfullhash}{ace79c4af9a9d0e431af0daa0d693477}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Monthly Notices of the Royal Astronomical Society}
+      \field{number}{5}
+      \field{title}{On the mechanism of accretion by stars}
+      \field{volume}{104}
+      \field{year}{1944}
+      \field{pages}{273\bibrangedash 282}
+      \range{pages}{10}
+    \endentry
+    \entry{CygX-3_Koljonen2017}{article}{}
+      \name{author}{2}{}{%
+        {{hash=465ce0f1cc06455afaef6b756c130875}{%
+           family={{Koljonen}},
+           familyi={K\bibinitperiod},
+           given={K.\bibnamedelimi I.\bibnamedelimi I.},
+           giveni={K\bibinitperiod\bibinitdelim I\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+        {{hash=4add971460bbcce9e8c020192b03e779}{%
+           family={{Maccarone}},
+           familyi={M\bibinitperiod},
+           given={T.\bibnamedelimi J.},
+           giveni={T\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{7ebaf364e09001d4152b2a505782ac2f}
+      \strng{fullhash}{54ddfca7e2564544ff8d82030a4ec504}
+      \strng{bibnamehash}{7ebaf364e09001d4152b2a505782ac2f}
+      \strng{authorbibnamehash}{7ebaf364e09001d4152b2a505782ac2f}
+      \strng{authornamehash}{7ebaf364e09001d4152b2a505782ac2f}
+      \strng{authorfullhash}{54ddfca7e2564544ff8d82030a4ec504}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{astro-ph.HE}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{\mnras}
+      \field{month}{12}
+      \field{number}{2}
+      \field{title}{{Gemini/GNIRS infrared spectroscopy of the Wolf-Rayet stellar wind in Cygnus X-3}}
+      \field{volume}{472}
+      \field{year}{2017}
+      \field{pages}{2181\bibrangedash 2195}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1093/mnras/stx2106
+      \endverb
+      \verb{eprint}
+      \verb 1708.04050
+      \endverb
+      \keyw{Line: profiles,binaries: close,stars: winds,outflows,stars: individual: Cyg X-3,stars: Wolf-Rayet,infrared: stars,Astrophysics - High Energy Astrophysical Phenomena,Astrophysics - Solar and Stellar Astrophysics}
+    \endentry
+    \entry{Eggleton1983}{article}{}
+      \name{author}{1}{}{%
+        {{hash=dca83cc53d25cba3930c0e586dd41167}{%
+           family={{Eggleton}},
+           familyi={E\bibinitperiod},
+           given={P.\bibnamedelimi P.},
+           giveni={P\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{dca83cc53d25cba3930c0e586dd41167}
+      \strng{fullhash}{dca83cc53d25cba3930c0e586dd41167}
+      \strng{bibnamehash}{dca83cc53d25cba3930c0e586dd41167}
+      \strng{authorbibnamehash}{dca83cc53d25cba3930c0e586dd41167}
+      \strng{authornamehash}{dca83cc53d25cba3930c0e586dd41167}
+      \strng{authorfullhash}{dca83cc53d25cba3930c0e586dd41167}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{\apj}
+      \field{month}{5}
+      \field{title}{{Aproximations to the radii of Roche lobes.}}
+      \field{volume}{268}
+      \field{year}{1983}
+      \field{pages}{368\bibrangedash 369}
+      \range{pages}{2}
+      \verb{doi}
+      \verb 10.1086/160960
+      \endverb
+      \keyw{Binary Stars,Celestial Mechanics,Orbital Elements,Roche Limit,Mass Ratios,Radii,Astrophysics}
+    \endentry
+    \entry{marchant2021_masstransferMESA}{article}{}
+      \name{author}{7}{}{%
+        {{hash=df306944f6319aba6370f47953721217}{%
+           family={Marchant},
+           familyi={M\bibinitperiod},
+           given={Pablo},
+           giveni={P\bibinitperiod}}}%
+        {{hash=469680a42d04665e23322688fc62971a}{%
+           family={Pappas},
+           familyi={P\bibinitperiod},
+           given={Kaliro{ë}\bibnamedelima MW},
+           giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=0ddb1222b03e1583e6deaa21c582f9db}{%
+           family={Gallegos-Garcia},
+           familyi={G\bibinithyphendelim G\bibinitperiod},
+           given={Monica},
+           giveni={M\bibinitperiod}}}%
+        {{hash=5dec59b7b97112fc30252e759dd21dee}{%
+           family={Berry},
+           familyi={B\bibinitperiod},
+           given={Christopher\bibnamedelima PL},
+           giveni={C\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=b4d5a9d2734dea127647f20d72ca090f}{%
+           family={Taam},
+           familyi={T\bibinitperiod},
+           given={Ronald\bibnamedelima E},
+           giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=60f2706bc72ced3eaac8bf5eef91c543}{%
+           family={Kalogera},
+           familyi={K\bibinitperiod},
+           given={Vicky},
+           giveni={V\bibinitperiod}}}%
+        {{hash=76ed1d949e3fe9e6ba2c5555ab312134}{%
+           family={Podsiadlowski},
+           familyi={P\bibinitperiod},
+           given={Philipp},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {EDP Sciences}%
+      }
+      \strng{namehash}{8fda762e0ed459a4a18ced0f369efd67}
+      \strng{fullhash}{3d1b8536f78175bcb7ddf8cbdb7bdb1b}
+      \strng{bibnamehash}{8fda762e0ed459a4a18ced0f369efd67}
+      \strng{authorbibnamehash}{8fda762e0ed459a4a18ced0f369efd67}
+      \strng{authornamehash}{8fda762e0ed459a4a18ced0f369efd67}
+      \strng{authorfullhash}{3d1b8536f78175bcb7ddf8cbdb7bdb1b}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Astronomy \& Astrophysics}
+      \field{title}{The role of mass transfer and common envelope evolution in the formation of merging binary black holes}
+      \field{volume}{650}
+      \field{year}{2021}
+      \field{pages}{A107}
+      \range{pages}{-1}
+    \endentry
+    \entry{Webbink1984_CE}{article}{}
+      \name{author}{1}{}{%
+        {{hash=a78f47a4984765c4033d79dccc6a3c01}{%
+           family={{Webbink}},
+           familyi={W\bibinitperiod},
+           given={R.\bibnamedelimi F.},
+           giveni={R\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \strng{namehash}{a78f47a4984765c4033d79dccc6a3c01}
+      \strng{fullhash}{a78f47a4984765c4033d79dccc6a3c01}
+      \strng{bibnamehash}{a78f47a4984765c4033d79dccc6a3c01}
+      \strng{authorbibnamehash}{a78f47a4984765c4033d79dccc6a3c01}
+      \strng{authornamehash}{a78f47a4984765c4033d79dccc6a3c01}
+      \strng{authorfullhash}{a78f47a4984765c4033d79dccc6a3c01}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{\apj}
+      \field{month}{2}
+      \field{title}{{Double white dwarfs as progenitors of R Coronae Borealis stars and type I supernovae.}}
+      \field{volume}{277}
+      \field{year}{1984}
+      \field{pages}{355\bibrangedash 360}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1086/161701
+      \endverb
+      \keyw{Binary Stars,Corona Borealis Constellation,R Coronae Borealis Stars,Stellar Evolution,Supernovae,White Dwarf Stars,B Stars,Carbon Stars,Chandrasekhar Equation,O Stars,Stellar Mass Accretion,Stellar Mass Ejection,Astrophysics}
+    \endentry
+    \entry{hjellmingwebbink1987_coreRLOF}{article}{}
+      \name{author}{2}{}{%
+        {{hash=72c2c1005e7594cae7284e58f0dddd39}{%
+           family={{Hjellming}},
+           familyi={H\bibinitperiod},
+           given={Michael\bibnamedelima S.},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=52488b16c67910c4e90f9f2d9688bd71}{%
+           family={{Webbink}},
+           familyi={W\bibinitperiod},
+           given={Ronald\bibnamedelima F.},
+           giveni={R\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \strng{namehash}{5699f3643e4aca0c99f0b5bb5620ed34}
+      \strng{fullhash}{5df5e2847735399fadf19a33c62901ae}
+      \strng{bibnamehash}{5699f3643e4aca0c99f0b5bb5620ed34}
+      \strng{authorbibnamehash}{5699f3643e4aca0c99f0b5bb5620ed34}
+      \strng{authornamehash}{5699f3643e4aca0c99f0b5bb5620ed34}
+      \strng{authorfullhash}{5df5e2847735399fadf19a33c62901ae}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{\apj}
+      \field{month}{7}
+      \field{title}{{Thresholds for Rapid Mass Transfer in Binary System. I. Polytropic Models}}
+      \field{volume}{318}
+      \field{year}{1987}
+      \field{pages}{794}
+      \range{pages}{1}
+      \keyw{Binary Stars,Mass Transfer,Polytropic Processes,Stellar Mass Ejection,Stellar Models,Adiabatic Conditions,Main Sequence Stars,Stellar Envelopes,Stellar Evolution,Stellar Mass Accretion,Tables (Data),Astrophysics,STARS: BINARIES,STARS: MASS LOSS}
+    \endentry
+    \entry{klencki2020_mtproblems}{article}{}
+      \name{author}{4}{}{%
+        {{hash=0dddf20191ce6df89681dffd09b0765f}{%
+           family={Klencki},
+           familyi={K\bibinitperiod},
+           given={Jakub},
+           giveni={J\bibinitperiod}}}%
+        {{hash=3ae14a8ef06b64c43e246e20ef73a385}{%
+           family={Nelemans},
+           familyi={N\bibinitperiod},
+           given={Gijs},
+           giveni={G\bibinitperiod}}}%
+        {{hash=f7f132b15e0fdd75c6cf11791358ad86}{%
+           family={Istrate},
+           familyi={I\bibinitperiod},
+           given={Alina\bibnamedelima G},
+           giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=1800c6d5edfd7590ca3aa69113ee149c}{%
+           family={Pols},
+           familyi={P\bibinitperiod},
+           given={Onno},
+           giveni={O\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {EDP Sciences}%
+      }
+      \strng{namehash}{0b78aa03d41e99ae1ab3f559c0b89a80}
+      \strng{fullhash}{d7ff4331afad41f546a9012c3b273d2a}
+      \strng{bibnamehash}{0b78aa03d41e99ae1ab3f559c0b89a80}
+      \strng{authorbibnamehash}{0b78aa03d41e99ae1ab3f559c0b89a80}
+      \strng{authornamehash}{0b78aa03d41e99ae1ab3f559c0b89a80}
+      \strng{authorfullhash}{d7ff4331afad41f546a9012c3b273d2a}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Astronomy \& Astrophysics}
+      \field{title}{Massive donors in interacting binaries: effect of metallicity}
+      \field{volume}{638}
+      \field{year}{2020}
+      \field{pages}{A55}
+      \range{pages}{-1}
+    \endentry
     \entry{IC10X-1_Silverman2008}{article}{}
       \name{author}{2}{}{%
         {{hash=e85072afe2307d56c9f8b266a24768bb}{%
@@ -3239,47 +3611,6 @@
       \field{year}{2010}
       \field{pages}{234\bibrangedash 253}
       \range{pages}{20}
-    \endentry
-    \entry{CygX-3_Koljonen2017}{article}{}
-      \name{author}{2}{}{%
-        {{hash=465ce0f1cc06455afaef6b756c130875}{%
-           family={{Koljonen}},
-           familyi={K\bibinitperiod},
-           given={K.\bibnamedelimi I.\bibnamedelimi I.},
-           giveni={K\bibinitperiod\bibinitdelim I\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
-        {{hash=4add971460bbcce9e8c020192b03e779}{%
-           family={{Maccarone}},
-           familyi={M\bibinitperiod},
-           given={T.\bibnamedelimi J.},
-           giveni={T\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-      }
-      \strng{namehash}{7ebaf364e09001d4152b2a505782ac2f}
-      \strng{fullhash}{54ddfca7e2564544ff8d82030a4ec504}
-      \strng{bibnamehash}{7ebaf364e09001d4152b2a505782ac2f}
-      \strng{authorbibnamehash}{7ebaf364e09001d4152b2a505782ac2f}
-      \strng{authornamehash}{7ebaf364e09001d4152b2a505782ac2f}
-      \strng{authorfullhash}{54ddfca7e2564544ff8d82030a4ec504}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{eprintclass}{astro-ph.HE}
-      \field{eprinttype}{arXiv}
-      \field{journaltitle}{\mnras}
-      \field{month}{12}
-      \field{number}{2}
-      \field{title}{{Gemini/GNIRS infrared spectroscopy of the Wolf-Rayet stellar wind in Cygnus X-3}}
-      \field{volume}{472}
-      \field{year}{2017}
-      \field{pages}{2181\bibrangedash 2195}
-      \range{pages}{15}
-      \verb{doi}
-      \verb 10.1093/mnras/stx2106
-      \endverb
-      \verb{eprint}
-      \verb 1708.04050
-      \endverb
-      \keyw{Line: profiles,binaries: close,stars: winds,outflows,stars: individual: Cyg X-3,stars: Wolf-Rayet,infrared: stars,Astrophysics - High Energy Astrophysical Phenomena,Astrophysics - Solar and Stellar Astrophysics}
     \endentry
     \entry{mapelli2020_compactness}{article}{}
       \name{author}{8}{}{%
