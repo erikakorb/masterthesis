@@ -13,13 +13,13 @@ G4pi2 = float(G/(4*np.pi*np.pi))  # G/4*pi^2
 c= float(3e8)  #m/s
 
 hour = 60*60
-day = 60*60*24      # seconds
+day = hour*24      # seconds
 Myr = day * 365 * 1e6  #seconds
 
 # data
-M1 = 7.5 * Msun
-M2 = 3 * Msun
-P = 4.5 * day * 365  # period
+M1 = 8 * Msun
+M2 = 10. * Msun
+P = 4.8 * hour  # period 
 
 
 
@@ -31,6 +31,13 @@ print("a = ", a/Rsun, " Rsun")
 print("a = ", a/AU, " AU")
 print("1 AU = ", AU/Rsun, " Rsun")
 
+
+
+# Roche lobe
+q = M1/M2
+RL1 = a* (0.49 * q**(2./3.))/(0.6 * q**(2./3.) + np.log10(1 + q**(1./3.)))
+
+print('Roche lobe = ', RL1/Rsun, ' Rsun')
 
 
 

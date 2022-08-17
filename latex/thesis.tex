@@ -81,6 +81,8 @@
 \newcommand{\rl}{\ensuremath{R_\textup{L}}}
 \newcommand{\rlone}{\ensuremath{R_\textup{L,1}}}
 \newcommand{\rltwo}{\ensuremath{R_\textup{L,2}}}
+\newcommand{\mwr}{\ensuremath{M_\textup{WR}}}
+\newcommand{\mbh}{\ensuremath{M_\textup{BH}}}
 
 \newcommand{\micmap}[1]{\textcolor{red}{MM:\bf#1}}
 \newcommand{\erika}[1]{\textcolor{green}{\bf#1}}
@@ -622,9 +624,9 @@ The helium, nitrogen, carbon and oxygen detected in the photosphere were produce
 	\centering
 		\begin{tabular}{lll}
 			\toprule
-			WR type & Typical atoms & Wavelength $\lambda$ of the strongest lines \\
+			WR type & Elements & Wavelength $\lambda$ of the strongest lines \\
 			\midrule
-			\multirow{2}{*}{WN}  & He I-II  & 1640 \AA , 4686 \AA, 5412 \AA, 1.012 $\mu\rm m$~[He II] \\
+			\multirow{2}{*}{WN}  & He I-II  & 2.058 $\mu\rm m$~[He I]; 1640 \AA , 4686 \AA, 5412 \AA, 1.012 $\mu\rm m$, 2.189 $\mu\rm m$~[He II]  \\
 			& N III-V & \\ 
 			\hline
 			\multirow{2}{*}{WC}  & C III-IV  & 4650 \AA, 5696 \AA ~[C III]; 1550 \AA,  5548-51 \AA, 5801-12 \AA, 2.08 $\mu\rm m$~[C IV] \\
@@ -634,7 +636,7 @@ The helium, nitrogen, carbon and oxygen detected in the photosphere were produce
 			& O V-VI & 3811-34 \AA~[O VI]\\
 			\bottomrule 	
 		\end{tabular}
-		\captionof{table}{Main UV, optical and near-IR emission lines used for the spectral classification of Wolf-Rayet stars \cite{WR_signature}.} \label{tab:WRclassification}
+		\captionof{table}{Main UV, optical and near-IR emission lines used for the spectral classification of Wolf-Rayet stars \cite{WR_signature, CygX-3_Koljonen2017}} \label{tab:WRclassification}
 \end{figure}
 
 
@@ -661,7 +663,7 @@ The left-hand panel of Fig.\ \ref{fig:MLandwinds} shows the quadratic dependence
 		\centering
 		\includegraphics[width=\textwidth]{./images/stellarwinds.pdf}	
 	\end{minipage}
-	\caption{\emph{Left:} Mass-luminosity relations for chemically-homogeneous massive stars with fixed hydrogen abundance $X_H$. The black crosses indicate the computed stellar models, the dashed red lines the fits for hydrogen-core burning stars with different $X_H$, the solid red line indicates pure-Helium stars ($X_H = 0$) burning helium in their cores \cite{Grafener2011_M-L_WR}. \emph{Right:} Mass loss rates dependent only on the metallicity as in Vink et al.\ 2001 \cite{Vink2001} (red solid lines) or also on the Eddington factor as in Gr{\"a}fener \& Hamann \cite{G&H_WRmassloss} (blue solid lines). The simplified model of Vink et al.\ 2001 strongly underestimates the mass lost by low-metallicity stars close to the Eddington limit $\Gamma_e \sim 1$. The red dashed line indicates a model not considered in this thesis \cite{G&H_WRmassloss}.}\label{fig:MLandwinds}
+	\caption{\emph{Left:} Mass-luminosity relations for chemically-homogeneous massive stars with fixed hydrogen abundance $X_H$. The black crosses indicate the computed stellar models, the dashed red lines the fits for hydrogen-core burning stars with different $X_H$, the solid red line indicates pure-Helium stars ($X_H = 0$) burning helium in their cores \cite{Grafener2011_M-L_WR}. \emph{Right:} Mass loss rates dependent only on the metallicity as in Vink et al.\ 2001 \cite{Vink2001} (red solid lines) or also on the Eddington factor as in Gr{\"a}fener \& Hamann 2008 \cite{G&H_WRmassloss} (blue solid lines). The simplified model of Vink et al.\ 2001 strongly underestimates the mass lost by low-metallicity stars close to the Eddington limit $\Gamma_e \sim 1$. The red dashed line indicates a model not considered in this thesis \cite{G&H_WRmassloss}.}\label{fig:MLandwinds}
 \end{figure}
 
 \subsection{Stellar winds of the massive stars}\label{subsec:stellarwinds}
@@ -1017,14 +1019,22 @@ Even though the $\alpha \lambda$ formalism is easy-to-implement and widely adopt
 
 \section{Observed candidates of Wolf-Rayet -- black hole systems}\label{sec:WRBHobserved}
 
-Up-to-date only seven systems are Wolf-Rayet -- black hole (hereafter, WR--BH) candidates: their main properties are listed in Tab.\ \ref{tab:observations} \cite{observations}. As explained in Sec.\ \ref{subsec:Xraymeasure} and Sec.\ \ref{subsec:massWR}, X-ray light curves and UV/optical/near-IR spectra are the main tools used to characterize stellar and binary properties. While they provide precise estimates of the orbital period, the masses are often so poorly constrained that it is not possible to determine whether some compact objects are neutron stars or black holes, although further X-ray observations suggest a mild preference for the black hole nature of Cyg X-3 and IC10 X-1 \cite{CygX-3_Koljonen2017,ICX10X-1_Laycock2015_revisited}. 
-
-If spectroscopic observations ensured the Wolf-Rayet nature of the companion in Cyg X-3, IC10 X-1, NGC300 X-1 and M101 ULX-1 (see respectively \cite{CygX-3_WRnature1996}, \cite{IC10X-1_Clark2004_WRmass}, \cite{NGC300X-1_Carpano2007a}, \cite{M101ULX-1_Liu2013}), the WR--BH classification of CXOU J123030.3+413853, CXOU J004732.0-251722.1 and CG X-1 (see respectively \cite{NGC4490cand_Esposito2013c}, \cite{ NGC253cand_Maccarone2014}, \cite{observations})is more uncertain and based only X-ray measurements, since spectral observations were not available. In particular, authors in the referenced papers interpret the slow rises and fast decays of the X-ray light curve with regions of stronger and lighter interaction between the ionized matter of the Wolf-Rayet winds and the X-radiation, in analogy with the light curve modulations of Cyg X-3, that is known to host a WR and a compact object \cite{Hertz1978_Xlightcurves, CygX-3_WRnature1996, CygX-3_Zd2010_wind}. Moreover, the uncertain candidates are hosted in starburst galaxies, further supporting the possibility of being at least High-Mass X-ray binaries. \\
-
-Discutere dei venti e del ritardo di fase in laycock 2015 e binder 2021
+\subsection{Overview of WR--BH properties and fates}
+Only seven systems are candidated as Wolf-Rayet -- black hole binaries (hereafter, WR--BH): their main parameters and uncertainties are listed in Tab.\ \ref{tab:observations} \cite{observations}. General properties of WR--BH systems are presented in this section while in the next ones I will discuss the characterization of each system.
 
 
-DISTANZA DELLA TABELLA PRESA SEMPRE DA \cite{observationsZSFR_Mapelli2010a} per le host galaxies mentre per Cyg X-3 ho usato quella della reference sotto
+\paragraph{Masses and periods} As explained in Sec.\ \ref{subsec:Xraymeasure} and Sec.\ \ref{subsec:massWR}, X-ray light curves and UV, optical, near-IR spectra are the main tools used to characterize stellar and binary properties. While they provide precise estimates of the orbital period, the masses are often so poorly constrained that it is not possible to determine whether some compact objects are neutron stars or black holes, although further X-ray observations suggest a mild preference for a black hole in Cyg X-3 and IC10 X-1. 
+
+Spectroscopic observations ensured the Wolf-Rayet nature of the companion in Cyg X-3, IC10 X-1, NGC300 X-1 and M101 ULX-1. In contrast, CXOU J123030.3+413853, CXOU J004732.0-251722.1 and CG X-1 are more uncertain as WR--BH binaries and their classification is based only X-ray measurements, since spectral observations were not available.  Moreover, the uncertain candidates are hosted in starburst galaxies, further supporting the possibility of being at least High-Mass X-ray binaries (see Sec.\ \ref{subsec:cygx3observations}, \ref{subsec:IC10X1_revisedmasses}, \ref{subsec:uncertainWRcandidates} for a detailed discussion on the single system properties).
+
+
+\paragraph{Fates} Even though the masses estimates are quite uncertain, all the Wolf-Rayets are massive enough to collapse into a black hole: the WR--BH systems are likely progenitors of binary black holes (see Sec.\ \ref{subsec:stellarevo}). Using the formula derived in 1964 by Peters \cite{Peters1964}, it is possible to obtain an order-of-magnitude estimate for the time needed to merge via GW emission $t_\textup{GW}$:
+
+\begin{equation}\label{eq:tgw}
+t_\textup{GW} = \frac{5}{256} \frac{c^5 a^4 (1-e^2)^{7/2}}{G^3 M_1 M_2 (M_1 + M_2)}
+\end{equation}
+
+where $G$ is the gravitational constant, $c$ is the speed of light and $a$ is the semi-major axis. For simplicity, it is reasonable to assume that the orbital period of the binary black hole will be similar to the one observed in the WR--BH configuration (simulated systems discussed in Sec.\ \ref{sec:results} show that the WR--BH period is indeed little affected by the supernova kick and remains almost identical when a binary black hole forms). Following \cite{observations}, the reference compact object binary is assumed to have circular orbit (eccentricity $e=0$), secondary BH of $M_{2,\rm BH} \sim 10~\msun$ produced by the WR and primary BH of $M_{1,\rm BH} \sim 10~\msun$. Such masses are probably smaller than the real ones but allow to obtain an upper boundary for $t_\textup{GW}$. Under these assumptions, WR--BH systems need to have a period $P \lesssim 10~$ days ($a \lesssim 20~\rsun$) in order to merge within a Hubble time. By comparing this value with the ones reported in the Table \ref{tab:observations}, all binary systems formed with characteristics similar to the observed WR-BH candidates could produce a merging binary black hole observable today, with the exception of systems like M101 ULX X-1 that are too wide to merge within a Hubble time.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1034,10 +1044,10 @@ DISTANZA DELLA TABELLA PRESA SEMPRE DA \cite{observationsZSFR_Mapelli2010a} per 
 	\begin{threeparttable}
 		\begin{tabular}{llcccccc}
 			\toprule
-			\multirow{2}{*}{Host galaxy} & \multirow{2}{*}{Name} & BH mass & WR mass & Period & $t_\textup{GW}$  &  Z & Distance \\
+			\multirow{2}{*}{Host galaxy} & \multirow{2}{*}{Name} & $M_{\rm BH}$ & $M_{\rm WR}$ & $P$ & $t_\textup{GW}$  &  Z & $d$ \\
 			& & [$\msun$] & [$\msun$] & [hours] & [Gyr] & [$\zsun$] & [Mpc]\\
 			\midrule
-			Milky Way & Cyg X-3 & 3 & 7 &4.8 & 0.017 & 0.31 & 0.0074 \\
+			Milky Way & Cyg X-3 & 3 & 7 &4.8 & 0.017 & 0.92 & 0.00741 \\
 			IC 10 & IC10 X-1 & 23-33\tnote{a} & 35\tnote{b} & 34.9\tnote{a} & 3.5  & 0.22 & 0.70\\
 			NGC 300 & NGC300 X-1 & 13-21\tnote{d} & 26\tnote{c} & 32.8\tnote{d} & 2.9  & 0.19 & 2.02\\
 			NGC 253 & CXOU J004732.0-251722.1 & - & - & 14.5 & 0.33  & 0.24 & 3.0 \\
@@ -1053,11 +1063,144 @@ DISTANZA DELLA TABELLA PRESA SEMPRE DA \cite{observationsZSFR_Mapelli2010a} per 
 			\item[d]\cite{NGC300X-1_Binder2021_BHpreciso}
 		\end{tablenotes}
 		\centering
-		\captionof{table}{Properties of the seven WR-BH candidates. The table is inspired by \cite{observations}. $t_\textup{GW}$ is an order-of-magnitude estimate calculated assuming $M_{1,\rm BH} = M_{2,\rm BH} = 10~\msun$, given the uncertainties in the mass determination discussed in Section . The other parameters are extracted from the above referenced papers and from \cite{M101ULX-1_Liu2013} (M101 ULX-1), \cite{Cyg-X3_Zd2013} (Cyg X-3), \cite{NGC4490cand_Esposito2013c} (CXOU J123030.3+413853), \cite{NGC253cand_Maccarone2014} (CXOU J004732.0-251722.1), \cite{observations} (CG-X1), \cite{observationsZSFR_Mapelli2010a} (Z).} \label{tab:observations}
+		\captionof{table}{Properties of the seven WR-BH candidates. Table inspired by \cite{observations}. Masses and periods are extracted from papers referenced with the superscripts. $t_\textup{GW}$ is an order-of-magnitude estimate for the time to merge via gravitational-wave emission and is calculated with Eq.\ \ref{eq:tgw} assuming the same observed period and $M_{1,\rm BH} = M_{2,\rm BH} = 10~\msun$, given the uncertainties in the mass determination discussed in Sec.\ \ref{sec:WRBHobserved}. Distances and metallicities refer to the host galaxies as in \cite{observationsZSFR_Mapelli2010a} for all binaries except for Cyg X-3: its distance is taken from \cite{CygX-3_McCollough2016_Observation} and is used to infer the local metallicity from the Milky Way metallicity gradient \cite{MetallicityGradientMW2018Gaia}, as explained in Sec.\ \ref{subsec:cygx3observations}.} \label{tab:observations}
 	\end{threeparttable}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+\subsection{Cyg X-3}\label{subsec:cygx3observations}
+%Review of Koljonen+2017 and discussion on why values of Zdiarski+2013 are not reliable and we don't use them. Also describe it is in the MW and how we determined its metallicity and distance.
+
+Cyg X-3 is the only known WR--BH candidate in the Milky Way: being at almost solar metallicity, it will become a case-study binary in this thesis work and its possible evolutionary pathways will be discussed in Sec.\ \ref{sec:results}. Hereafter I will present the key observations that characterized Cyg X-3, underlying the ones that will be used as fiducial model in this thesis.
+
+
+
+%\paragraph{Observations and identifications}
+%Cyg X-3 lies in the galactic plane therefore no optical/UV counterpart has been detected yet due to interstellar absorption (\cite{CygX-3_Koljonen2017}). Thus we know that the companion is a WR only by observing its IR spectrum. Using IR and X-ray emission lines, the companion is a low-mass BH or a NS.
+
+\paragraph{Distance}
+X-ray and sub-millimetric observations revealed that Cyg X-3 has a nearby Bok globule located 15.6" away from the binary, as shown in the left-hand panel of Fig.\ \ref{fig:CygX3}. This Cyg X-3 ``little friend '', as it is sometimes called, is a cloud of gas and dust of $\sim 2-24~\msun$ with $\sim 0.2$ pc diameter and is associated with a star-forming region. Observations of the 1.3 mm CO line revealed a velocity shift of $\SI{-47.5}{km/s}$. Since the cloud belongs to the Galactic plane, it is reasonable to assume that the Doppler shift is dominated by the rotational velocity. However, the Bok globule is close to the Perseus arm and there have been evidences of anomalous motion of objects in that region. Thus, in 2016 McCollough et al.\ \cite{CygX-3_McCollough2016_Observation} used a Bayesian tool that could account for errors in the estimated kinematic distances, finding that the Bok globule has 62 \% of probability of being at $d_{\rm Bok} = 6.08 \pm 0.64$ kpc and 38 \% probability of being at $d_{\rm Bok} = 7.85 \pm 0.6$ kpc.
+
+X-ray light curves of this Bok globule exhibit the same period modulation of Cyg X-3 but are shifted in phase by $\Delta \phi = 0.56$, suggesting that X-ray photons emitted by the binary are scattered by the dust cloud towards the observer. The small angular separation between the Bok globule and Cyg X-3 coupled with the observed time delays allow to use geometrical arguments to determine the distance of Cyg X-3. Using the previously determined relative distance of the Bok globule of $d_{\rm Bok} = 6.08 \pm 0.64~ (7.85 \pm 0.6)$ kpc , McCollough et al.\ found that Cyg X-3 is distant $0.82 \pm 0.09~ (0.77 \pm 0.07)$ kpc from the Bok globule and $d_{\rm Cyg~X-3} = 7.41 \pm 1.13~ (10.16 \pm 1.21)$ kpc from the observer. The first estimate relies on the most probable value for the Bok globule's distance, therefore can be used as reference value for the Cyg X-3 distance
+
+\begin{equation}\label{eq:distanceCygX3}
+    \boxed{d_{\rm Cyg~X-3} = 7.41 \pm 1.13 ~\rm kpc}
+\end{equation}
+
+
+
+Assuming that the supernova explosion forming the compact object of Cyg X-3 occurred $\sim 1-5$ Myrs ago (average lifetime of a Wolf-Rayet, see Sec.\ \ref{subsec:stellarevo}) and that Cyg X-3 originally formed in that Bok globule, the relative distance of $\sim 1$ kpc suggests a natal kick of 190-980 km/s. Both distances and natal kick estimates are consistent with independent calculations in the literature, although the work of McCollough et al.\ provides the most precise distance determination.
+
+\paragraph{Metallicity}
+In 2018 Lemasle et al.\ \cite{MetallicityGradientMW2018Gaia} used distances and metallicities of twenty-five Cepheids from the Gaia Data Release 2 to estimate the Milky-Way metallicity gradient, finding the relation
+
+\begin{equation}\label{eq:MWmetallicitygradient}
+    [\rm Fe/H]=-0.0447~d_{\rm Gal} + 0.3522
+\end{equation}
+
+where $d_{\rm Gal}$ is the Galactocentric distance expressed in kpc units.
+
+Assuming, as Lemasle et al.\ \cite{MetallicityGradientMW2018Gaia}, that the Sun has a Galactocentric distance of $d_{\rm \odot,Gal} = 7.94$ kpc and recalling, as McCollough et al.\ \cite{CygX-3_McCollough2016_Observation}, that Cyg X-3 lies on the Galactic plane ($l=79.84^\circ, b=+0.70^\circ$) with relative distance to the Sun of $d_{\rm Cyg~X-3} = 7.41 \pm 1.13$ kpc, I used trigonometric relations to infer the Galactocentric distance of Cyg X-3 as $d_{\rm Cyg~X-3, Gal} = 9.85$ kpc. At this distance, the metallicity of the Milky-Way estimated through the gradient of Eq.\ \ref{eq:MWmetallicitygradient} as [Fe/H] = -0.088. 
+
+Assuming that the metallicity distribution of the Sun is universal \cite{metallicityFeHconversion}, the [Fe/H] metallicity of any star can be converted into metal mass fraction $Z$ with the relation 
+
+\begin{equation}
+    [\rm Fe/H]_* = \log(Z/X)_* - \log(Z/X)_\odot
+\end{equation}
+
+
+where $X$ is the hydrogen mass fraction. For a star at the Galactocentric distance of Cyg X-3, the metal content is thus
+
+\begin{equation}\label{eq:CygX3metallicity}
+    \boxed{Z_{\rm Cyg~X-3} = 0.916~\zsun}
+\end{equation}
+
+This metallicity is the one reported in Tab. \ref{tab:observations} for Cyg X-3 and is clearly very similar to the solar one, given that both the Sun and Cyg X-3 have almost the same Galactocentric distance. In particular, assuming standard solar metallicity of $\zsun =0.02$ implies $Z_{\rm Cyg~X-3} = 0.018$ while using 2011 updated determinations from Caffau et al.\ \cite{caffau2011solarmetallicity} $\zsun=0.015$ indicate $Z_{\rm Cyg~X-3}=0.014$.
+
+
+\paragraph{Period} Cyg X-3 light curves and spectra exhibit a strong modulation of 4.8 hours ($\sim 4^{\rm h} 48^{\rm m}$). In particular, in 2002 Singh et al.\ \cite{CygX-3_Singh2002} obtained very accurate values for period $P$ and period derivative $\dot{P}$ from parabolic fits to X-ray light curves
+
+\begin{equation}\label{eq:periodCygX3}
+    \boxed{P_{\rm Cyg~X-3} = 4^{\rm h} 47^{\rm m} 32.735^{\rm s}~\pm~0^{\rm h} 0^{\rm m} 0.008^{\rm s}}
+\end{equation}
+
+\begin{equation}\label{eq:pdotCygX3}
+    \boxed{\dot{P}/P_{\rm Cyg~X-3} = (1.05 \pm 0.04) \times 10^{-6}~\yr^{-1}}
+\end{equation}
+
+As pointed out by Zdziarski et al. in 2013 \cite{Cyg-X3_Zd2013}, the period of Cyg X-3 is unusually short for an High-Mass X-ray binary and suggests a past spiral-in episode, likely due to a common envelope (see Sec.\ \ref{subsec:Commonenvelope}). This interpretation is supported also by the results of this thesis, as discussed in Sec.\ \ref{sec:results}.
+
+\paragraph{Masses} So far only IR spectra are available for Cyg X-3: since the binary lies on the Galactic plane, strong interstellar absorption prevented the observation of optical an UV counterparts \cite{CygX-3_Koljonen2017}. The spectra revealed the presence of strong He I and He II lines, classifying the Wolf-Rayet as a WNL sub-type (see Tab.\ \ref{tab:WRclassification}).\\
+
+As explained in Sec.\ \ref{subsec:Xraymeasure} and Sec.\ \ref{subsec:massWR}, it is possible to use a mass-luminosity relation to determine the mass of a Wolf-Rayet and then couple this information with period and maximum amplitude of the radial velocity curve to obtain the dynamical mass of the companion compact object. In 2013, Zdiarski et al.\ \cite{Cyg-X3_Zd2013} used IR spectra extracted in 1999 by Hanson et al.\ \cite{CygX-3_Hanson2000wrongspectrum} and mass-luminosity relations for WN stars calibrated in 2000 by Nugis \& Lamers \cite{Nugis2000_WRwinds} to estimate a Wolf-Rayet mass of $\mwr = 10.3_{-2.8}^{+3.9}~\msun$ and a compact object mass of $M_C = 2.4_{-1.1}^{+2.1}$. However, in 2017 Koljonen \& Maccarone \cite{CygX-3_Koljonen2017} pointed out that the spectra of Hanson et al.\ \cite{CygX-3_Hanson2000wrongspectrum} were taken in an outburst state, where the variability of 2.058 $\mu m$ He I absorption line (used to extract the radial velocity curve) was not tracing the orbital motion of the Wolf-Rayet but, instead, reflected the ionization structure of the wind. Similar misinterpretations occurred also for NGC 300 X-1 and IC 10 X-1 and caused a revision of their masses, as explained in more detail in the next section (Sec.\ \ref{subsec:IC10X1_revisedmasses}). \\
+
+In 2017, Koljonen \& Maccarone \ \cite{CygX-3_Koljonen2017} extracted new IR spectra of Cyg X-3 and re-estimated its compact object mass. Assuming a distance of $d_{\rm Cyg~X-3} = 7.41 \pm 1.13~ (10.16 \pm 1.21)$ kpc from McCollough et al.\ \cite{CygX-3_McCollough2016_Observation}, they estimated the absolute K-band magnitude to be $M_K = -4.2 \pm 0.4~(-4.9 \pm 0.3)$ mag and used the \texttt{PoWR} non-LTE atmosphere models for WN stars \cite{WRnonLTEatmospheresPoWR_Todt2015} to derive a corresponding luminosity of $L_{WR} = 5.32 \pm 0.16~(5.59 \pm 0.12)~\lsun$. In 2011, Gr{\"a}fener et al.\ \cite{Grafener2011_M-L_WR} extracted the mass-luminosity relations for non-homogeneous core-He burning stars showed in the left-hand panel of Fig.\ \ref{fig:MLandwinds} from stellar models also based on \texttt{PoWR}. Thus, Koljonen \& Maccarone self-consistently used the Gr{\"a}fener et al.\  mass-luminosity relations and determined the Wolf-Rayet masses to be $\mwr = 8-10~(11-14)~\msun$. The corresponding mass losses of $\mdot = (0.4-1.3) \times 10^{-5}~((0.6-2.0)\times 10^{-5})~\msun~\yr^{-1}$ are extracted from the \texttt{PoWR} models and are then corrected for wind clumping. Overall, the Wolf-Rayet mass is consistent with the one found in 2013 by Zdiarski et al.\ \cite{Cyg-X3_Zd2013} and, accounting for the possible errors in the distance estimates of McCollough et al.\ \cite{CygX-3_McCollough2016_Observation}, can be conservatively assumed to be
+
+\begin{equation}\label{eq:MWRCygxX-3}
+    \boxed{M_{\rm WR,~Cyg~X-3} = 8-14~\msun}
+\end{equation}
+
+As previously pointed out and further discussed in the next section, the strong helium lines in the IR spectrum are not reliable tracers of the orbital motion but rather reflect variability in the Wolf-Rayet winds. Therefore Koljonen \& Maccarone adopted a different strategy to determine the mass of the Cyg X-3 compact object. They assumed that all the isotropic wind flowing past the accretion radius of the compact object $r_{\rm acc}$ is accreted
+
+\begin{equation}\label{eq:massaccretedBHCygX3}
+    \mdot_{\rm acc} \approx \frac{\pi r_{\rm acc}^2}{4 \pi a^2} ~ \mdot
+\end{equation}
+
+where the semi-major axis $a$ is determined from Kepler's third law and the accretion radius $r_{\rm acc}$ is a function of the relative wind velocity at the location of the compact object $v_{\rm rel}$
+
+\begin{equation}
+    a = \sqrt[3]{\frac{P^2 G (\mwr + M_C)}{4 \pi}} \qquad \qquad r_{\rm acc} \sim \frac{2 G M_C}{v_{\rm rel}^2} 
+\end{equation}
+
+Back-substituting $a$ and $r_{\rm acc}$ into Eq.\ \ref{eq:massaccretedBHCygX3} results in
+
+\begin{equation}\label{eq:massaccreted2}
+    \mdot_{\rm acc} \approx 0.0176 \times \left( \frac{1000~\rm km/s}{v_{\rm rel}} \right)^4 \left( \frac{4.8~\text{hrs}}{P} \right)^{4/3} \frac{M_C^2}{(\mwr + M_C)^{2/3}}   ~ \mdot
+\end{equation}
+
+Assuming that only the wind confined within the orbit falls to the compact object $r_{\rm acc} < a$ implies, according to Eq.\ \ref{eq:massaccretedBHCygX3}, that only <1/4 of all the mass lost by the Wolf-Rayet $\mdot$ is accreted. A similar and reasonable assumption, coupled with the well-know period of $P=4.8$ hrs \cite{CygX-3_Singh2002} and the previously estimated Wolf-Rayet mass loss rates of $\mdot = (0.4-2.0)\times 10^{-5}~\msun~\yr^{-1}$ \cite{CygX-3_Koljonen2017} reduce Eq.\ \ref{eq:massaccreted2} into a simple relation between the two masses and the relative wind velocity $v_{\rm rel}$, showed in the right-hand panel of Fig.\ \ref{fig:CygX3}. 
+
+$v_{\rm rel}$ is determined by the wind terminal velocity $v_{\inf}$ and orbital velocity $v_{\rm  orb}$ through $v_{\rm rel}^2 = v_{\inf}^2 + v_{\rm orb}^2$. \texttt{PoWR} atmosphere models predict a terminal wind velocity of $v_{\inf} \approx 700-800$ km/s. In contrast, the orbital velocity is less precise $v_{\rm orb} \approx 300-750$ km/s due to the large uncertainty in the orbital inclination $i \approx 30^{\circ}-70^{\circ}$. Overall, the wind relative velocity at the compact object location is not higher than $v_{\rm rel} \lesssim 750-1000$ km/s, implying a compact object with mass $M_C \lesssim 5-10~\msun$ (see the right-hand panel of Fig.\ \ref{fig:CygX3}). 
+
+\paragraph{Black hole or neutron star?}
+The maximum allowed mass for a neutron star lies is $M_{\rm NS,max}\sim 2.5-3~\msun$, according to theoretical studies on the equation of state and on observations of double neutron stars and pulsars \cite{NSreview}. Therefore, in principle, the compact object in Cyg X-3 could be either a black hole or a neutron star. However, in 2013 Zdiarski et al.\ \cite{Cyg-X3_Zd2013} pointed out that the X-ray and radio spectra in the hard and soft state of Cyg X-3 resembled the ones of X-ray binaries that are known to contain a black hole. Even though they found a dynamical mass range in between a neutron star and a black hole $M_C = 2.4_{-1.1}^{+2.1}$ (adopting the unreliable He I absorption lines, though), they argued that the aformentioned circumstantial evidences were sufficient to support the black hole nature of the compact object. 
+
+Further evidence for the black hole hypothesis comes from the 2022 study of Antokhin et al.\ \cite{CygX-3_Antokhin2022}. They obtained a more precise estimate of the inclination $i = 29.5^{\circ} \pm 1.2^{\circ}$ that further supports the $M_C \lesssim 10~\msun$ upper limit. Moreover, assuming a smooth Wolf-Rayet wind, they propose a compact object mass of $M_C \approx 7.2~\msun $ even they though recognize that, due to the many uncertainties in the wind modelling, the neutron star hypothesis cannot be completely ruled out.
+
+In this thesis, I will follow the black hole hypothesis and, since \texttt{SEVN} sets the maximum neutron star mass to be  $M_{\rm NS,max} = 3~\msun$ \cite{spera2019_mergingBBH}, the mass of the compact object in Cyg X-3 will be hereafter considered to lie in the range
+
+\begin{equation}\label{eq:MBHCygX3}
+    \boxed{M_{\rm BH,~Cyg~X-3} = 3-10~\msun}
+\end{equation}
+
+\paragraph{Wind-fed system} Given the well-known period of $P=4.8$ hours and considering a Wolf-Rayet of $\mwr = 8-14~\msun$ with a black hole companion of $\mbh = 3-10~\msun$, the total mass of Cyg X-3 is $M_{\rm tot} = 11 - 24~\msun$ and, according to Kepler's third law, results in a semi-major axis of $a \sim 3-4~\rsun$. From Eq.\ \ref{eq:rocheloberadius}, the Roche Lobe radius would be of $\sim 2-2.5~\rsun$, small enough to be exceeded by the Wolf-Rayet radius (Wolf-Rayet stars typical have Sun-like radii). However, Koljonen \& Maccarone \cite{CygX-3_Koljonen2017} recalled that population-synthesis results obtained in 2005 by Lommen et al.\ \cite{CygX-3_Lommen2005_Ppdot} indicated that systems like Cyg X-3 have a negligible probability to be observed in the Roche lobe overflow configuration and, even if the system would have an active RLO, it would last $\ll 100~$ yrs. Therefore, Cyg X-3 is reasonably considered a wind-fed system, a configuration that will be consistent also with the results of this thesis, presented in Sec.\ \ref{sec:results}. 
+
+
+
+\begin{figure}
+	\begin{minipage}{.49\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{./images/CygX3littlefriend.png}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{.49\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{./images/CygX3massBH}	
+	\end{minipage}
+	\caption{\emph{Left:} Gray-scaled X-ray image of Cyg X-3 and its ``little friend''. The PSF of Cyg X-3, centered at $(\alpha \approx 26^{\rm h}, \delta \approx 30^{\circ})$, was subtracted. Sub-millimetric contours of the CO line at $-47.5$ km/s are overlaid, in green if positive and magenta if negative. The Bok globule is identified by the denser green contours superimposed to the bright X-ray blob on the left of Cyg X-3 \cite{CygX-3_McCollough2016_Observation}. \emph{Right:} Possible compact object masses $M_C$ as a function of Wolf-Rayet masses $\mwr$ with descreasing values of relative wind velocities at the location of the compact object $v_{\rm rel}$. The most probable values of $\mwr = 8-14~\msun$ and $v_{\rm rel} \lesssim 750-1000$ km/s favour a compact object with mass $M_C \lesssim 5-10~\msun$, most likely a black hole \cite{CygX-3_Koljonen2017}.}\label{fig:CygX3}
+\end{figure}
+
+
+\subsection{IC10 X-1, NGC300 X-1, M101 ULX-1}\label{subsec:IC10X1_revisedmasses}
+
+
+\paragraph{Dynamical mass revisions}
+Discutere dei venti e del ritardo di fase in laycock 2015 e binder 2021
+
 
 
 \begin{figure}[h]
@@ -1072,8 +1215,16 @@ DISTANZA DELLA TABELLA PRESA SEMPRE DA \cite{observationsZSFR_Mapelli2010a} per 
 	\end{minipage}
 	\caption{yjdtymx,y}\label{fig:WRBHwind}
 \end{figure}
-
 ADD UPDATED MEASURES FOR IC 10 X-1 AND CHECK THE OTHERS
+
+
+\subsection{CXOU J123030.3+413853, CXOU J004732.0-251722.1, CG X-1}\label{subsec:uncertainWRcandidates}
+
+In particular, the WR--BH classification is based interpreting the slow rises and fast decays of the X-ray light curve with regions of stronger and lighter interaction between the ionized matter of the Wolf-Rayet winds and the X-radiation, in analogy with the light curve modulations of Cyg X-3, that is known to host a WR and a compact object.
+
+
+
+
 
 % hereafter the text from Computation astrophysics
 
@@ -1084,63 +1235,11 @@ The uncertainty in the compact object of Cyg X-3 lies in its physical interpreta
 
 
 
-Even though the masses and the nature of the compact objects are quite uncertain, we can still compute an order-of-magnitude estimate for the time needed for the resulting compact object binary to merge via GW emission $t_\textup{GW}$ using the \cite{Peters1964} formula:
-
-\begin{flalign}\label{eqn:tgw}
-t_\textup{GW} = \frac{5}{256} \frac{c^5 a^4 (1-e^2)^{7/2}}{G^3 M_1 M_2 (M_1 + M_2)} &&
-\end{flalign}
-where $G$ is the gravitational constant, $c$ is the speed of light and $a$ is the semi-major axis. Similarly to what \cite{observations} propose, we assume: a circular orbit (eccentricity $e=0$), a secondary BH of $M_{2,\rm BH} \sim 10~\msun$ produced by the WR and also a primary BH of $M_{1,\rm BH} \sim 10~\msun$. Such masses are probably smaller than the real ones but it allows us to obtain an upper boundary for $t_\textup{GW}$. With these assumptions we find that a binary needs to have a period $P \lesssim 10~$ days ($a \lesssim 20~\rsun$) in order to merge within a Hubble time. By comparing this value with the ones reported in the Table \ref{tab:observations}, we conclude that binary systems that formed with characteristics similar to the WR-BH candidates could produce a GW-BBHs observable today (except systems like M101 ULX X-1, too wide to merge within a Hubble time).
 
 
 
 
 
-\section{Cyg X-3}
-Review of Koljonen+2017 and discussion on why values of Zdiarski+2013 are not reliable and we don't use them. Also describe it is in the MW and how we determined its metallicity and distance.
-\subsection{Properties}
-
-\subsubsection{Observations and identifications}
-Cyg X-3 lies in the galactic plane therefore no optical/UV counterpart has been detected yet due to interstellar absorption (\cite{CygX-3_Koljonen2017}). Thus we know that the companion is a WR only by observing its IR spectrum. Using IR and X-ray emission lines, the companion is a low-mass BH or a NS.
-
-\subsubsection{DIstance and metallicity}
-\textbf{McCollough2016} on the galactic plane ($l=79.84^\circ, b=+0.70^\circ$). Distance 7.4 $\pm$ 1.1 kpc or, but less, probable, 10.2 $\pm$ 1.2 kpc. Distance estimated by looking at the "little friend" of Cyg X-3 i.e. a nearby Bok globule that was observed in X-ray by Chandra and then followed up with Submillimetric observations. This Bok globule is a 2-24 \msun gas+dust cloud confined in a 0.2 pc that scatters towards us the X-ray radiation produced in the nearby X-ray binary. Assuming that the velocity shift of the CO line is due only to the galactic rotation, the authors could use a tool for modeling the motion on the galactic disk and reconstructed a distance of 7.4 or 10.2 kpc (two values because of possible errors in the tool evaluation but the first is more probable).\\
-
-We expect that Cyg X-3 was born in the star-forming region associated to the Bok globule and then the SN kick that formed the BH expelled the system from the Bok globule. Given that the binary is $\sim 1$ kpc away from the Bok globule and the lifetime of the WR, therefore the time elapsed from the SN, is $\sim 1-5 \times 10^6$ years, the authors estimate a SN kick of $\sim 190-980$ km/s, in agreement with some upper and lower independent constraints.\\
-
-To model its metallicity we use the metallicty gradient of the MW that was obtained by \textbf{Lemasle2018} using Gaia data of metallicity and distance of 25 Cepheids. They found \[[Fe/H]=-0.0447*d_{\rm Galacto}(kpc) + 0.3522\]. By tringulation, the galactocentric distance of Cyg X-3 is $d_{\rm Galacto} = 9.85$ kpc ($l=79.84^\circ$, heliocentric distance = 7.94 kpc from Lemasle 2018 and relative distance of Cyg X-3 = 7.4 kpc from the measurements on the BOk globule carried out by McCollough 2016). We therefore obtain \[[Fe/H] = -0.088095\] and, assuming that the metallicity distribution of the Sun is universal, we can convert such value to the metal mass fraction using \[[Fe/H] = log(Z/X)_* - log(Z/X)_\odot\] i.e. we obtain \[Z_* = 0.91567 \zsun\]. If we assume \zsun=0.02 we get $Z_*=0.0183$ but if we assume \zsun=0.01524 we get $Z_*=0.01395$.
-
-\subsection{Period}
-\subsubsection{Singh 2002} 4.8 hours. We take a larger range i.e. 4.5 - 5.1 hours, that combined with the possible mass ranges for WR and BH results in a semimajor of $a \sim 3-4 $ Rsun
-
-
-\subsection{Mass ranges}
-\subsubsection{Koljonen \& Maccarone 2017} I used WR = 8 - 14 \msun, BH = 3. - 10 \msun \\
-
-They derived: ?? \\
-
-Model: X-ray emission from compact object ionizes the stellar wind of the WR and causes the emission lines visible in the NIR (1-2.4 $\mu$m). They use a non-LTE model for the atmosphere of the WR to reproduce the continuum + emission lines in the NIR. \\
-
-Semimajor axis according to my model: Minimum possible a=3.052 Rsun with P=4.5 hours and Mtot = 8+3=11 \msun .  Maximum possible a=4.303 Rsun with P=5.1 hours and Mtot = 14+10=24 \msun 
-
-
-\subsubsection{Zdziarski 2013} \cite{Cyg-X3_Zd2013} I used WR = 7.5 - 14.2 \msun, BH = 3 - 4.5 \msun \\
-
-THey derived:WR = 7.5 - 14.2 \msun, Compact object = 1.3 - 4.5 \msun and then Belczynski 2012 assumed as MminBH = 2 \msun\\
-\\
-
-\subsubsection{Procedure}
-Vogliono risolvere un sistema a due variabili \mdot e MWR dove le due equazioni sono eq. 3 e eq 6 nel paper, che, combinate con altri dati osservativi e combinazioni, diventano le equazioni 7 e 8.
-
-La prima descrive il rallentamento della binaria a causa del momento angolare trasportato via dal vento che lascia il sistema. Tale equazione lega Mdot, MWR+MCO, Pdot/P e di essa conosciamo $Pdot/P = 1.03+- 0.02 x 10^{-6} ~ \rm yr^{-1}$ da Kitamoto (comunicazione privata) e possiamo legare MCO alla massa della WR attraverso il mass ratio della binaria q che altro non è che il rapporto tra i due picchi delle due curve di rotazione
-
-\[q = Mcompact/MWR = KWR / Kcompact \sim 0.23\] 
-
-Problema: Ko17 evidenziano che Zd13 hanno usato i dati di Hanson2000 che aveva usato come tracciante per il moto orbitale la linea di assorbimento HeI 2p-2s e che purtroppo è molto probabile che questa linea NON sia un tracciante per il moto orbitale bensì per il campo di velocità del vento della WR. Inoltre, lo spettro usato era stato preso nel 1999 durante un outburst, quando era presente anche una doppia linea di emissione He I 2p-2s a compilcare il tutto. 
-
-
-
-
-Semimajor axis according to my model: Minimum possible a=3.005 Rsun with P=4.5 hours and Mtot = 7.5+3=10.5 \msun .  Maximum possible a=3.96 Rsun with P=5.1 hours and Mtot = 14.2+4.5=18.7 \msun 
 
 
 \chapter{Models and simulations with SEVN2}
