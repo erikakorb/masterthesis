@@ -64,36 +64,38 @@
 \contentsline {section}{\numberline {2.3}Observed candidates of Wolf-Rayet -- black hole systems}{32}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Overview of WR--BH properties and fates}{32}{subsection.2.3.1}%
 \contentsline {paragraph}{Masses and periods}{32}{section*.60}%
-\contentsline {paragraph}{Fates}{32}{section*.61}%
-\contentsline {subsection}{\numberline {2.3.2}Cyg X-3}{32}{subsection.2.3.2}%
-\contentsline {paragraph}{Distance}{32}{section*.64}%
+\contentsline {paragraph}{Fates}{32}{section*.63}%
+\contentsline {subsection}{\numberline {2.3.2}Cyg X-3}{33}{subsection.2.3.2}%
+\contentsline {paragraph}{Distance}{33}{section*.64}%
 \contentsline {paragraph}{Metallicity}{33}{section*.65}%
 \contentsline {paragraph}{Period}{34}{section*.66}%
 \contentsline {paragraph}{Masses}{34}{section*.67}%
-\contentsline {paragraph}{Black hole or neutron star?}{35}{section*.68}%
-\contentsline {paragraph}{Wind-fed system}{35}{section*.69}%
-\contentsline {subsection}{\numberline {2.3.3}IC10 X-1, NGC300 X-1, M101 ULX-1}{35}{subsection.2.3.3}%
-\contentsline {paragraph}{Dynamical mass revisions}{35}{section*.71}%
-\contentsline {subsection}{\numberline {2.3.4}CXOU J123030.3+413853, CXOU J004732.0-251722.1, CG X-1}{36}{subsection.2.3.4}%
-\contentsline {chapter}{\numberline {3}Models and simulations with SEVN2}{39}{chapter.3}%
-\contentsline {section}{\numberline {3.1}The SEVN2 population-synthesis code}{39}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Mass transfer}{39}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}CCSN}{39}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}Initial conditions for simulations}{39}{section.3.2}%
-\contentsline {chapter}{\numberline {4}Results}{41}{chapter.4}%
-\contentsline {section}{\numberline {4.1}> 90 \% GW-BBH undergo WR-BH configuration}{41}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Fiducial model}{41}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Role of metallicity}{41}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Role of the kicks}{41}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Role of CCSN model}{41}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Probing the parameter space}{41}{section.4.6}%
-\contentsline {section}{\numberline {4.7}Compare with Belczynski+2013}{42}{section.4.7}%
-\contentsline {chapter}{\numberline {5}Conclusion}{43}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Annotazioni/Bozza}{45}{chapter.6}%
-\contentsline {subsection}{\numberline {6.0.1}Parameter space to explore}{45}{subsection.6.0.1}%
-\contentsline {subsection}{\numberline {6.0.2}Compare with Belczynski}{45}{subsection.6.0.2}%
-\contentsline {subsection}{\numberline {6.0.3}Notes on how SEVN works/how to interpret things/where to focus}{46}{subsection.6.0.3}%
-\contentsline {section}{\numberline {6.1}Compactness model implemented in SEVN}{47}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Pipeline}{48}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Results Cyg X-3}{48}{section.6.3}%
-\contentsline {chapter}{Bibliography}{49}{chapter*.73}%
+\contentsline {paragraph}{Black hole or neutron star?}{35}{section*.69}%
+\contentsline {paragraph}{A wind-fed system}{36}{section*.70}%
+\contentsline {subsection}{\numberline {2.3.3}IC10 X-1, NGC300 X-1 and M101 ULX-1}{36}{subsection.2.3.3}%
+\contentsline {paragraph}{IC10 X-1}{36}{section*.71}%
+\contentsline {paragraph}{NGC 300 X-1}{37}{section*.73}%
+\contentsline {paragraph}{M101 ULX-1}{38}{section*.74}%
+\contentsline {subsection}{\numberline {2.3.4}CXOU J123030.3+413853, CXOU J004732.0-251722.1 and CG X-1}{38}{subsection.2.3.4}%
+\contentsline {chapter}{\numberline {3}Models and simulations with SEVN2}{41}{chapter.3}%
+\contentsline {section}{\numberline {3.1}The SEVN2 population-synthesis code}{41}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Mass transfer}{41}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}CCSN}{41}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Initial conditions for simulations}{41}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Results}{43}{chapter.4}%
+\contentsline {section}{\numberline {4.1}> 90 \% GW-BBH undergo WR-BH configuration}{43}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Fiducial model}{43}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Role of metallicity}{43}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Role of the kicks}{43}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Role of CCSN model}{43}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Probing the parameter space}{43}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Compare with Belczynski+2013}{44}{section.4.7}%
+\contentsline {chapter}{\numberline {5}Conclusion}{45}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Annotazioni/Bozza}{47}{chapter.6}%
+\contentsline {subsection}{\numberline {6.0.1}Parameter space to explore}{47}{subsection.6.0.1}%
+\contentsline {subsection}{\numberline {6.0.2}Compare with Belczynski}{47}{subsection.6.0.2}%
+\contentsline {subsection}{\numberline {6.0.3}Notes on how SEVN works/how to interpret things/where to focus}{48}{subsection.6.0.3}%
+\contentsline {section}{\numberline {6.1}Compactness model implemented in SEVN}{49}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Pipeline}{50}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Results Cyg X-3}{50}{section.6.3}%
+\contentsline {chapter}{Bibliography}{51}{chapter*.75}%

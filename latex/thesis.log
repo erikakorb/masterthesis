@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.2.10)  17 AUG 2022 22:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.2.10)  18 AUG 2022 22:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1510,124 +1510,137 @@ Package pdftex.def Info: ./images/MESAvspopsynth.png  used on input line 1003.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [31 <./images/MESAvspopsynth.png (PNG copy)>]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[32] [33]
-Underfull \hbox (badness 10000) in paragraph at lines 1137--1138
+ [31 <./images/MESAvspopsynth.png (PNG copy)>] [32] [33]
+Underfull \hbox (badness 10000) in paragraph at lines 1123--1124
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1139--1140
+Underfull \hbox (badness 10000) in paragraph at lines 1125--1126
 
  []
 
 [34]
-<./images/CygX3littlefriend.png, id=1275, 583.42969pt x 526.96875pt>
+<./images/CygX3littlefriend.png, id=1282, 583.42969pt x 526.96875pt>
 File: ./images/CygX3littlefriend.png Graphic file (type png)
 <use ./images/CygX3littlefriend.png>
-Package pdftex.def Info: ./images/CygX3littlefriend.png  used on input line 118
-7.
+Package pdftex.def Info: ./images/CygX3littlefriend.png  used on input line 115
+9.
 (pdftex.def)             Requested size: 214.70682pt x 193.93007pt.
-<./images/CygX3massBH.png, id=1276, 560.8453pt x 555.57562pt>
+<./images/CygX3massBH.png, id=1283, 560.8453pt x 555.57562pt>
 File: ./images/CygX3massBH.png Graphic file (type png)
 <use ./images/CygX3massBH.png>
-Package pdftex.def Info: ./images/CygX3massBH.png  used on input line 1192.
+Package pdftex.def Info: ./images/CygX3massBH.png  used on input line 1164.
 (pdftex.def)             Requested size: 214.70682pt x 212.68924pt.
-<./images/WRwindIC10X-1.png, id=1281, 650.43pt x 685.05937pt>
+ [35 <./images/CygX3littlefriend.png (PNG copy)> <./images/CygX3massBH.png (PNG
+ copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 1189--1190
+
+ []
+
+[36]
+<./images/WRwindIC10X-1.png, id=1324, 650.43pt x 685.05937pt>
 File: ./images/WRwindIC10X-1.png Graphic file (type png)
 <use ./images/WRwindIC10X-1.png>
-Package pdftex.def Info: ./images/WRwindIC10X-1.png  used on input line 1209.
+Package pdftex.def Info: ./images/WRwindIC10X-1.png  used on input line 1198.
 (pdftex.def)             Requested size: 170.88692pt x 179.98235pt.
-<./images/WRwindNGC300.png, id=1282, 730.98094pt x 535.2497pt>
+<./images/WRwindNGC300.png, id=1325, 730.98094pt x 535.2497pt>
 File: ./images/WRwindNGC300.png Graphic file (type png)
 <use ./images/WRwindNGC300.png>
-Package pdftex.def Info: ./images/WRwindNGC300.png  used on input line 1214.
+Package pdftex.def Info: ./images/WRwindNGC300.png  used on input line 1203.
 (pdftex.def)             Requested size: 262.90604pt x 192.51006pt.
 
+Underfull \hbox (badness 10000) in paragraph at lines 1209--1210
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+ []
 
-[35] [36 <./images/CygX3littlefriend.png (PNG copy)> <./images/CygX3massBH.png 
-(PNG copy)>] [37 <./images/WRwindIC10X-1.png (PNG copy)> <./images/WRwindNGC300
-.png (PNG copy)>] [38
+
+Underfull \hbox (badness 10000) in paragraph at lines 1211--1213
+
+ []
+
+[37 <./images/WRwindIC10X-1.png (PNG copy)> <./images/WRwindNGC300.png (PNG cop
+y)>]
+Underfull \hbox (badness 10000) in paragraph at lines 1220--1221
+
+ []
+
+[38] [39] [40
 
 ]
 Chapter 3.
-[39] [40
+[41] [42
 
 ]
 Chapter 4.
-[41] [42]
+[43] [44]
 Chapter 5.
-[43
+[45
 
-] [44
+] [46
 
 ]
 Chapter 6.
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 1319.
+(hyperref)                than one, level fixed on input line 1327.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1341--1342
-
- []
-
-[45] [46]
-Underfull \hbox (badness 10000) in paragraph at lines 1379--1380
+Underfull \hbox (badness 10000) in paragraph at lines 1349--1350
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 1389--1390
+[47] [48]
+Underfull \hbox (badness 10000) in paragraph at lines 1387--1388
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1417--1418
+Underfull \hbox (badness 10000) in paragraph at lines 1397--1398
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1419--1420
+Underfull \hbox (badness 10000) in paragraph at lines 1425--1426
 
  []
 
-[47] [48] [49
 
-] [50]
-Overfull \hbox (30.96431pt too wide) in paragraph at lines 1446--1446
+Underfull \hbox (badness 10000) in paragraph at lines 1427--1428
+
+ []
+
+[49] [50] [51
+
+] [52]
+Overfull \hbox (30.96431pt too wide) in paragraph at lines 1454--1454
 \T1/cmr/m/n/10 tion of merg-ing bi-nary black holes?^^Q In: \T1/cmr/m/it/10 arX
 iv e-prints\T1/cmr/m/n/10 , arXiv:2207.14290 (July 2022), arXiv:2207.14290. 
  []
 
-[51] [52]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1447.
- [53]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1447.
+[53] [54]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1455.
+ [55]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1455.
  (./thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1447.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1447.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1455.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1455.
 
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: D6A6DEED0F12A55B0AB1C8B24D580CD5;3795.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1447.
+(rerunfilecheck)             Checksum: D823A423649C442DA56F9D44A6A3D917;3801.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1455.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 22372 strings out of 483099
- 414923 string characters out of 5964234
- 1082775 words of memory out of 5000000
- 36662 multiletter control sequences out of 15000+600000
+ 22386 strings out of 483099
+ 415506 string characters out of 5964234
+ 1084006 words of memory out of 5000000
+ 36669 multiletter control sequences out of 15000+600000
  563732 words of font info for 104 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 41i,15n,65p,1964b,2917s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,15n,62p,1964b,2917s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/share/texmf
 /fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmbsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1
@@ -1666,10 +1679,10 @@ m-super/sfrm0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb
 onts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm
 -super/sftt0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb>
 
-Output written on thesis.pdf (59 pages, 5622774 bytes).
+Output written on thesis.pdf (61 pages, 5639097 bytes).
 PDF statistics:
- 1641 PDF objects out of 1728 (max. 8388607)
- 1405 compressed objects within 15 object streams
- 329 named destinations out of 1000 (max. 500000)
+ 1693 PDF objects out of 1728 (max. 8388607)
+ 1450 compressed objects within 15 object streams
+ 336 named destinations out of 1000 (max. 500000)
  631 words of extra memory for PDF output out of 10000 (max. 10000000)
 
