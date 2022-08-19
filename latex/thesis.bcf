@@ -2417,8 +2417,22 @@
     <bcf:citekey order="226">observations</bcf:citekey>
     <bcf:citekey order="227">observationsZSFR_Mapelli2010a</bcf:citekey>
     <bcf:citekey order="228">observations</bcf:citekey>
-    <bcf:citekey order="229">mapelli2020_compactness</bcf:citekey>
-    <bcf:citekey order="230">COcollapse</bcf:citekey>
+    <bcf:citekey order="229">spera2019_mergingBBH</bcf:citekey>
+    <bcf:citekey order="230">MESA2015BinaryMT</bcf:citekey>
+    <bcf:citekey order="231">spera2019_mergingBBH</bcf:citekey>
+    <bcf:citekey order="232">giacobbomapelli2018_mobse_fryer</bcf:citekey>
+    <bcf:citekey order="233">Belczynski2010_WRwindsSTARTRACK</bcf:citekey>
+    <bcf:citekey order="234">breivik2020cosmicpopsynth</bcf:citekey>
+    <bcf:citekey order="235">Pols1998evotracks</bcf:citekey>
+    <bcf:citekey order="236">MIST_Choi2016</bcf:citekey>
+    <bcf:citekey order="237">parsec2015_chen</bcf:citekey>
+    <bcf:citekey order="238">parsec2015_chen</bcf:citekey>
+    <bcf:citekey order="239">spera2019_mergingBBH</bcf:citekey>
+    <bcf:citekey order="240">Hurley2002</bcf:citekey>
+    <bcf:citekey order="241">spera2019_mergingBBH</bcf:citekey>
+    <bcf:citekey order="242">Pols1998evotracks</bcf:citekey>
+    <bcf:citekey order="243">mapelli2020_compactness</bcf:citekey>
+    <bcf:citekey order="244">COcollapse</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

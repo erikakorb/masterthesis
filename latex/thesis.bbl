@@ -4517,6 +4517,185 @@
       \endverb
       \keyw{accretion,accretion disks,black hole physics,stars: individual: IC 10 X–1,X-rays: binaries,Astrophysics - High Energy Astrophysical Phenomena}
     \endentry
+    \entry{Belczynski2010_WRwindsSTARTRACK}{article}{}
+      \name{author}{7}{}{%
+        {{hash=fe3b551cb2575d8029ef0c21c7fff4c6}{%
+           family={{Belczynski}},
+           familyi={B\bibinitperiod},
+           given={Krzysztof},
+           giveni={K\bibinitperiod}}}%
+        {{hash=8969c62fe91b50e53da538a5884bd63d}{%
+           family={{Bulik}},
+           familyi={B\bibinitperiod},
+           given={Tomasz},
+           giveni={T\bibinitperiod}}}%
+        {{hash=112a9db56e0dc7e559965f63204dad8d}{%
+           family={{Fryer}},
+           familyi={F\bibinitperiod},
+           given={Chris\bibnamedelima L.},
+           giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=bb868d4f6b8e97fc85ce3cca72022845}{%
+           family={{Ruiter}},
+           familyi={R\bibinitperiod},
+           given={Ashley},
+           giveni={A\bibinitperiod}}}%
+        {{hash=d0927cc13e46b685f5938090d5c4b540}{%
+           family={{Valsecchi}},
+           familyi={V\bibinitperiod},
+           given={Francesca},
+           giveni={F\bibinitperiod}}}%
+        {{hash=bbeaac6c4df3ba1e36a94c609d84ecd3}{%
+           family={{Vink}},
+           familyi={V\bibinitperiod},
+           given={Jorick\bibnamedelima S.},
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=b16f581c045266a61c9402cc7bbf1e11}{%
+           family={{Hurley}},
+           familyi={H\bibinitperiod},
+           given={Jarrod\bibnamedelima R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{d9b1dc62795eb921f1dd40d5d83b7f6c}
+      \strng{fullhash}{579366ac7dfcbb8adb9f8bf4338c117b}
+      \strng{bibnamehash}{d9b1dc62795eb921f1dd40d5d83b7f6c}
+      \strng{authorbibnamehash}{d9b1dc62795eb921f1dd40d5d83b7f6c}
+      \strng{authornamehash}{d9b1dc62795eb921f1dd40d5d83b7f6c}
+      \strng{authorfullhash}{579366ac7dfcbb8adb9f8bf4338c117b}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{astro-ph.SR}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{\apj}
+      \field{month}{5}
+      \field{number}{2}
+      \field{title}{{On the Maximum Mass of Stellar Black Holes}}
+      \field{volume}{714}
+      \field{year}{2010}
+      \field{pages}{1217\bibrangedash 1226}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1088/0004-637X/714/2/1217
+      \endverb
+      \verb{eprint}
+      \verb 0904.2784
+      \endverb
+      \keyw{binaries: close,black hole physics,gravitational waves,stars: evolution,stars: neutron,Astrophysics - Solar and Stellar Astrophysics,Astrophysics - High Energy Astrophysical Phenomena}
+    \endentry
+    \entry{Pols1998evotracks}{article}{}
+      \name{author}{5}{}{%
+        {{hash=e16d0b1ec2d5745eba8aa644264a755b}{%
+           family={{Pols}},
+           familyi={P\bibinitperiod},
+           given={Onno\bibnamedelima R.},
+           giveni={O\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=9b0b4b36d9fb1a46ff951296777dc06f}{%
+           family={{Schr{ö}der}},
+           familyi={S\bibinitperiod},
+           given={Klaus-Peter},
+           giveni={K\bibinithyphendelim P\bibinitperiod}}}%
+        {{hash=b16f581c045266a61c9402cc7bbf1e11}{%
+           family={{Hurley}},
+           familyi={H\bibinitperiod},
+           given={Jarrod\bibnamedelima R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=437df807788f2a2d28d42aa60aec62e1}{%
+           family={{Tout}},
+           familyi={T\bibinitperiod},
+           given={Christopher\bibnamedelima A.},
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=94576d33c6fe29d2cff1445f5b552a34}{%
+           family={{Eggleton}},
+           familyi={E\bibinitperiod},
+           given={Peter\bibnamedelima P.},
+           giveni={P\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{e3c5c1bb451e4746033f5c81877fde15}
+      \strng{fullhash}{361944272f740a5ce0db2ba28a7a1cf3}
+      \strng{bibnamehash}{e3c5c1bb451e4746033f5c81877fde15}
+      \strng{authorbibnamehash}{e3c5c1bb451e4746033f5c81877fde15}
+      \strng{authornamehash}{e3c5c1bb451e4746033f5c81877fde15}
+      \strng{authorfullhash}{361944272f740a5ce0db2ba28a7a1cf3}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{\mnras}
+      \field{month}{8}
+      \field{number}{2}
+      \field{title}{{Stellar evolution models for Z = 0.0001 to 0.03}}
+      \field{volume}{298}
+      \field{year}{1998}
+      \field{pages}{525\bibrangedash 536}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1046/j.1365-8711.1998.01658.x
+      \endverb
+      \keyw{CONVECTION,STARS: EVOLUTION,HERTZSPRUNG-RUSSELL (HR) DIAGRAM,STARS: POPULATION II,OPEN CLUSTERS AND ASSOCIATIONS: GENERAL,GALAXIES: STELLAR CONTENT}
+    \endentry
+    \entry{MIST_Choi2016}{article}{}
+      \name{author}{6}{}{%
+        {{hash=cb33c5cdbce954335e097b2f7a4306bd}{%
+           family={{Choi}},
+           familyi={C\bibinitperiod},
+           given={Jieun},
+           giveni={J\bibinitperiod}}}%
+        {{hash=1a563b326a8b3b972e20f09d241df683}{%
+           family={{Dotter}},
+           familyi={D\bibinitperiod},
+           given={Aaron},
+           giveni={A\bibinitperiod}}}%
+        {{hash=faf864974eb463953af6bf764204af95}{%
+           family={{Conroy}},
+           familyi={C\bibinitperiod},
+           given={Charlie},
+           giveni={C\bibinitperiod}}}%
+        {{hash=e161edae0e2ea5398cf97d2aa7542bf5}{%
+           family={{Cantiello}},
+           familyi={C\bibinitperiod},
+           given={Matteo},
+           giveni={M\bibinitperiod}}}%
+        {{hash=63d2331a40390f51f087d6fc175b818f}{%
+           family={{Paxton}},
+           familyi={P\bibinitperiod},
+           given={Bill},
+           giveni={B\bibinitperiod}}}%
+        {{hash=a20e8a65b5f1576714b6581b480608e0}{%
+           family={{Johnson}},
+           familyi={J\bibinitperiod},
+           given={Benjamin\bibnamedelima D.},
+           giveni={B\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{20521b3695ec5e4e7b4ab1d46f46eec8}
+      \strng{fullhash}{9d62f296012055c30fceb02f63225de6}
+      \strng{bibnamehash}{20521b3695ec5e4e7b4ab1d46f46eec8}
+      \strng{authorbibnamehash}{20521b3695ec5e4e7b4ab1d46f46eec8}
+      \strng{authornamehash}{20521b3695ec5e4e7b4ab1d46f46eec8}
+      \strng{authorfullhash}{9d62f296012055c30fceb02f63225de6}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{102}
+      \field{eprintclass}{astro-ph.SR}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{\apj}
+      \field{month}{6}
+      \field{number}{2}
+      \field{title}{{Mesa Isochrones and Stellar Tracks (MIST). I. Solar-scaled Models}}
+      \field{volume}{823}
+      \field{year}{2016}
+      \field{pages}{102}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3847/0004-637X/823/2/102
+      \endverb
+      \verb{eprint}
+      \verb 1604.08592
+      \endverb
+      \keyw{stars: evolution,stars: general,stars: interiors,Astrophysics - Solar and Stellar Astrophysics}
+    \endentry
     \entry{mapelli2020_compactness}{article}{}
       \name{author}{8}{}{%
         {{hash=a63bd1a4a95ee5ac182d54e3e4833309}{%
