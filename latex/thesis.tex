@@ -47,6 +47,7 @@
 \newcommand{\aaps}{Astronomy and Astrophysics, Supplement}
 \newcommand{\apj}{Astrophysical Journal}
 \newcommand{\apjl}{Astrophysical Journal, Letters}
+\newcommand{\apjs}{Astrophysical Journal, Supplement}
 \newcommand{\araa}{Annual Review of Astronomy and Astrophysics}
 \newcommand{\baas}{Bulletin of the AAS}
 \newcommand{\bain}{Bulletin Astronomical Institute of the Netherlands}
@@ -955,7 +956,7 @@ Unfortunately, recent studies pointed out that there is not an unique correlatio
 
 
 \subsection{Common envelope}\label{subsec:Commonenvelope}
-\paragraph{A key-process in binary evolution} Stars that enter an unstable RLO (see Sec.\ \ref{subsec:Rochelobeoverflow}), collide\footnote{Collision occur for two stars larger than the orbital separation at periastron $R_1 + R_2 > (1-e)~a$.} or are part of a contact binary\footnote{Contact binaries form when both stars overfill their Roche lobes $R_1 \geq \rlone$ and $R_2 \geq \rltwo$.} share a part or all of their envelopes (if present), thus, orbit in a medium denser than the interstellar one. Binaries evolving in similar \emph{common envelope} (CE) configurations lose orbital angular momentum and energy because of friction with the surrounding gas: the orbit shrinks while the gas heats up and eventually disperses.  Depending on the initial orbital energy, envelope potential energy and efficiency in the energy and angular momentum transfer, binaries can either spiral-in and merge or be able to eject the common envelope: in the latter case, only the nuclei survive and the orbit tightens.
+\paragraph{A key-process in binary evolution} Stars that enter an unstable RLO (see Sec.\ \ref{subsec:Rochelobeoverflow}), collide\footnote{Collision occur for two stars larger than the orbital separation at periastron $R_1 + R_2 > (1-e)~a$.} or are part of a contact binary\footnote{Contact binaries form when both stars overfill their Roche lobes $R_1 \geq \rlone$ and $R_2 \geq \rltwo$.} will likely share a part or all of their envelopes (if present), thus, orbit in a medium denser than the interstellar one. Binaries evolving in similar \emph{common envelope} (CE) configurations lose orbital angular momentum and energy because of friction with the surrounding gas: the orbit shrinks while the gas heats up and eventually disperses.  Depending on the initial orbital energy, envelope potential energy and efficiency in the energy and angular momentum transfer, binaries can either spiral-in and merge or be able to eject the common envelope: in the latter case, only the nuclei survive and the orbit tightens.
 
 Common envelope processes shrink efficiently the orbits and are determinant to form tight compact object binaries that can merge via emission of gravitational waves within a Hubble time \cite{spera2019_mergingBBH}. However, only systems with the right combination of stellar and orbital properties can survive to common envelopes events. For instance, the orbit must be wide enough not to merge too rapidly and both stars should have a well-developed core: the latter condition prevents the core mass to be transferred into the common envelope and allows the star to survive as a self-gravitating object. A summary of the main formation channels and outcomes of the CE evolution is shown in Fig.\ \ref{fig:ce_mapelli}.
 
@@ -966,7 +967,7 @@ It is important to point out that evolution through a CE phase efficiently remov
 	\centering
 	\def\svgwidth{0.9\textwidth}
 	\import{./images/}{ce_schema.pdf_tex} 
-	\caption{Possible initial and final common envelope configurations. The two stars are represented with cores (blue for the primary, black for the secondary) and envelopes (orange) but it could also be that one of the two star has not yet developed a core (e.\ g.\ a Main Sequence star), is already envelope-stripped (e.\ g.\ a Wolf-Rayet star) or is a compact object (e.\ g.\ a black hole). A binary may enter a CE after an unstable RLO, a collision or after being a contact binary. The H-rich envelope of one or both stars are shared and if at least one of the stars is missing a core, the two are merged. In contrast, the two nuclei (or a nucleus/Wolf-Rayet and a compact object) could survive the spiral-in if the initial orbit is wide enough to eject the envelope, heating the gas through friction. The scheme is inspired by figure no. 7 of Mapelli, 2019 \cite{mapelli} and based on the mass transfer implementation in \texttt{SEVN}, described in Sec.\ \ref{subsec:masstransferSEVN}.}\label{fig:ce_mapelli}
+	\caption{Possible initial and final common envelope configurations. The two stars are represented with cores (blue for the primary, black for the secondary) and envelopes (orange) but it could also be that one of the two star has not yet developed a core (e.\ g.\ a Main Sequence star), is already envelope-stripped (e.\ g.\ a Wolf-Rayet star) or is a compact object (e.\ g.\ a black hole). A binary may enter a CE after an unstable RLO, a collision or after being a contact binary. The H-rich envelope of one or both stars are shared and if at least one of the stars is missing a core, the two are merged. In contrast, the two nuclei (or a nucleus/Wolf-Rayet and a compact object) could survive the spiral-in if the initial orbit is wide enough to eject the envelope, heating the gas through friction. The scheme is inspired by figure no. 7 of Mapelli, 2019 \cite{mapelli} and implements the standard cases for common envelope evolution. The \texttt{SEVN} version adopted in this thesis, however, avoids the creation of over-contact binaries in order to reproduce the observed neutron stars merger rates (see Sec.\ \ref{subsec:masstransferSEVN} and Iorio et al.\ in preparation).}\label{fig:ce_mapelli}
 \end{figure}
 
 
@@ -1253,28 +1254,28 @@ The period of the X-ray light curves it is assumed to be the orbital period as i
 \chapter{Models and simulations with SEVN}% pluto controllare la sezione
 
 \section{SEVN: a population-synthesis code}\label{sec:SEVN}
-\subsection{Code properties}
+\subsection{Code properties}\label{subsec:SEVNproperties}
 \paragraph{The code} \texttt{SEVN} (acronym for \emph{Stellar EVolution for N-body simulations}) is a population-synthesis code written in \texttt{C++} able to calculate the evolution of a large number of single stars or binary systems in a short amount of time ($\sim 10^{6}$ binary systems are evolved in $\sim 12$ hours)\cite{spera2019_mergingBBH}. Like other population-synthesis codes available in the literature, \texttt{SEVN} can be used to simulate a population of stellar objects and understand their properties.
 
-\paragraph{A fast tool for simulations} Properly evolving two stars in a binary system is computationally expensive because would require to solve on-the-fly the system of differential equations determining the stellar structure. Similar calculations can be carried out by the \texttt{MESA} stellar evolution code but allow to simulate only $\lesssim 5$ systems per day \cite{MESA2015BinaryMT}. In contrast, population-synthesis codes evolve the stars by means of pre-computed fitting formulas or evolutionary tables. This approach, coupled with analytic and semi-analytic prescriptions for binary evolution, allows to speed up the calculations, even if at the expense of the physical accuracy. The possibility to rapidly simulate a large number of systems is crucial to study the LVC binary black hole demography: up to $\lesssim 0.01$ \% of a statistically motivated initial binary population merges via gravitational wave emission within a Hubble time \cite{spera2019_mergingBBH}.
+\paragraph{A fast tool for simulations} Properly evolving two stars in a binary system is computationally expensive because would require to solve on-the-fly the system of differential equations determining the stellar structure. Similar calculations can be carried out by the \texttt{MESA} stellar evolution code but allow to simulate only $\lesssim 5$ systems per day \cite{MESA2015BinaryMT}. In contrast, population-synthesis codes evolve the stars by means of pre-computed fitting formulas or evolutionary tables. This approach, coupled with analytic and semi-analytic prescriptions for binary evolution and with an adaptive time-step scheme, allows to speed up the calculations, even if at the expense of the physical accuracy. The possibility to rapidly simulate a large number of systems is crucial to study the LVC binary black hole demography: only $\lesssim 0.01$ \% of a statistically motivated initial binary population merges via gravitational wave emission within a Hubble time \cite{spera2019_mergingBBH}.
 
 \paragraph{Stellar evolution with interpolation tables} Many population-synthesis codes, including \texttt{SEVN}, implement binary evolution prescriptions from \texttt{BSE} with opportune updates, as described in Sec.\ \ref{subsec:masstransferSEVN}. Moreover, codes like \texttt{MOBSE} \cite{giacobbomapelli2018_mobse_fryer}, \texttt{STARTRACK} \cite{Belczynski2010_WRwindsSTARTRACK} and \texttt{COSMIC} \cite{breivik2020cosmicpopsynth} implement also stellar evolution through updates to \texttt{BSE} fitting formulas. However, these formulas are based on 1998 stellar evolution tracks computed by Pols et al.\ \cite{Pols1998evotracks} and lack a proper evolution of massive stars, not yet well-developed at the time. In addition to this, similar population-synthesis codes are difficult to keep consistent with the most-updated stellar evolution indications because every change would require to re-calculate, re-fit, re-calibrate and re-implement the fitting formulas. In contrast, \texttt{SEVN} does not use fitting formulas but evolves the stars interpolating a set of pre-computed evolutionary tracks: this approach makes \texttt{SEVN} more flexible and easier to update with the latest stellar evolution results.
 
-\paragraph{Adaptive time-step} The code implements an adaptive time-step scheme to account for different timescales in the different evolutionary stages. By doing this, \texttt{SEVN} can use few interpolating time-steps in the longer and more stable evolutionary phases, like the start of the core-H burning, and spend the computational time on a more detailed evolution, for instance, in the latest evolutionary stages or in proximity of a binary interaction.
+\paragraph{The \texttt{PARSEC} tables} Currently, \texttt{SEVN} implements evolutionary tables calculated with \texttt{MESA} (also known as \texttt{MIST} isochrones \cite{MIST_Choi2016}) and with \texttt{PARSEC} \cite{parsec2015_chen} stellar evolution codes. The default tables and the ones used in this thesis are the \texttt{PARSEC} ones, calibrated for the massive stars and calculated with a grid of models spanning $2.2~\msun \leq \mzams \leq 350~\msun$ and $0.0001 \leq \zzams \leq 0.04$. These were the tracks used to generate the Hertzsprung-Russel diagrams in Fig.\ \ref{fig:HRdiagrams}. They implement the stellar winds prescriptions for massive stars described in Sec.\ \ref{subsec:stellarwinds} \cite{parsec2015_chen}. 
+
+\paragraph{Interpolation method} As explained in Sec.\ \ref{subsec:stellarevo}, stellar properties are determined mainly by mass and metallicity. A star with initial ($\mzams,\zzams$) is reasonably assumed to maintain the same metallicity but to change its mass as it evolves. Thus, it is possible to represent different stellar tracks in a three-dimensional space ($M,Z,t$) like the one depicted in Fig.\ \ref{fig:SEVNinterpolation}: at each time $t$, a point in the ($M,Z$) plane represents a star with a one-to-one association with its other properties (luminosity, effective temperature, etc.).
+
+\texttt{PARSEC} tracks are not calculated for every possible combination of stellar parameters but only for representative ones, providing a reference grid in the ($M,Z$) plane for each evolutionary stage. If, as it often happens, \texttt{SEVN} needs to evolve a star with intermediate properties with respect to the provided tracks, the code will interpolate the star by means of weighted average of the closest four tracks in the ($M,Z$) plane. For instance, to evolve a $\mzams = 33~\msun$ star at $\zzams=0.015$ metallicity, not directly generated by \texttt{PARSEC}, \texttt{SEVN} will interpolate its initial properties from the closest available \texttt{PARSEC} tracks: $\mzams = 32~\msun$ and $\mzams = 34~\msun$ at $\zzams = 0.014$ and $\zzams = 0.017$.
+
 
 \begin{figure}
 	\centering
 	\def\svgwidth{0.5\textwidth}
 	\import{./images/}{interpolation.pdf_tex} 
-	\caption{Schematic representation of star interpolation carried out by \texttt{SEVN}. Original four evolutionary tracks obtained from a stellar evolution code, like \texttt{PARSEC} or \texttt{MESA}, are represented by the four coloured circles. For didactic purposes, stars on the top (cyan and black circles) are assumed to be more massive and to lose mass more rapidly than stars on the bottom (blue and pink circles), with the more metallic one (black circle) losing even more mass. \texttt{SEVN} interpolates a star with desired initial masses and metallicity ($M(t_1),Z(t_1)$) falling within the depicted region by weighting the properties of the four closest tracks, as explained in Sec.\ \ref{subsec:interpolationSEVN}. The weighted interpolation is repeated at each evolutionary time-step $t_i$. I created the scheme following the description provided in Iorio et al.\ in preparation.}\label{fig:SEVNinterpolation}
+	\caption{Schematic representation of star interpolation carried out by \texttt{SEVN}. Original four evolutionary tracks obtained from a stellar evolution code, like \texttt{PARSEC} or \texttt{MESA}, are represented by the four coloured circles. For didactic purposes, stars on the top (cyan and black circles) are assumed to be more massive and to lose mass more rapidly than stars on the bottom (blue and pink circles), with the more metallic one (black circle) losing even more mass. \texttt{SEVN} interpolates a star with desired initial masses and metallicity ($M(t_1),Z(t_1)$) falling within the depicted region by weighting the properties of the four closest tracks, as explained in Sec.\ \ref{subsec:SEVNproperties}. The weighted interpolation is repeated at each evolutionary time-step $t_i$. I created the scheme following the description provided in Iorio et al.\ in preparation.}\label{fig:SEVNinterpolation}
 \end{figure}
 
-\subsection{Table interpolation}\label{subsec:interpolationSEVN}
-\paragraph{The \texttt{PARSEC} tables} Currently, \texttt{SEVN} implements evolutionary tables calculated with \texttt{MESA} (also known as \texttt{MIST} isochrones \cite{MIST_Choi2016}) and with \texttt{PARSEC} \cite{parsec2015_chen} stellar evolution codes. The default tables and the ones used in this thesis are the \texttt{PARSEC} ones that were calibrated for the massive stars and calculated with a grid of models spanning $2.2~\msun \leq \mzams \leq 350~\msun$ and $0.0001 \leq \zzams \leq 0.04$. These were the tracks used to generate the Hertzsprung-Russel diagrams in Fig.\ \ref{fig:HRdiagrams}. They implement the stellar winds prescriptions for massive stars described in Sec.\ \ref{subsec:stellarwinds} \cite{parsec2015_chen}. 
 
-\paragraph{Interpolation method} As explained in Sec.\ \ref{subsec:stellarevo}, stellar properties are determined mainly by mass and metallicity. A star with initial ($\mzams,\zzams$) is reasonably assumed to maintain the same metallicity but change its mass as it evolves. Thus, it is possible to represent different stellar tracks in a three-dimensional space ($M,Z,t$) like the one depicted in Fig.\ \ref{fig:SEVNinterpolation}: at each time $t$, a point in the ($M,Z$) plane represents a star with a one-to-one association with its other properties (luminosity, effective temperature, etc.).
-
-\texttt{PARSEC} tracks are not calculated for every possible combination of stellar parameters but only for representative ones, providing a reference grid in the ($M,Z$) plane for each evolutionary stage. If, as it often happens, \texttt{SEVN} needs to evolve a star with intermediate properties with respect to the provided tracks, the code will interpolate the star by means of weighted average of the closest four tracks in the ($M,Z$) plane. For instance, to evolve a $\mzams = 33~\msun$ star at $\zzams=0.015$ metallicity, not directly generated by \texttt{PARSEC}, \texttt{SEVN} will interpolate its initial properties from the closest available \texttt{PARSEC} tracks: $\mzams = 32~\msun$ and $\mzams = 34~\msun$ at $\zzams = 0.014$ and $\zzams = 0.017$.
 
 
 
@@ -1284,22 +1285,14 @@ The period of the X-ray light curves it is assumed to be the orbital period as i
 
 \paragraph{\texttt{BSE} phases} \texttt{SEVN} implements many classifications to account for the stellar properties, burning stages and binary processes, as explained in more detail in Iorio et al.\ in preparation. I will here discuss only the classification presented in 2002 by Hurley et.\ al \cite{Hurley2002} for the \texttt{BSE} code since it is the one adopted for the binary processes, that \texttt{SEVN} implemented with small changes from \texttt{BSE} itself (see next section Sec.\ \ref{subsec:masstransferSEVN}). 
 
-I will limit the discussion to the phases reported in Tab.\ \ref{tab:phasesqcritSEVN}, that are the only phases regarding evolution and mass transfer of the massive stars considered in this thesis (for instance, I will neglect White-Dwarfs). Moreover, \texttt{BSE} phases 6 and 9 reported in the previous version of \texttt{SEVN} \cite{spera2019_mergingBBH} are re-absorbed in, respectively, phases 5 and 8 in the updated version of \texttt{SEVN} that I used in this thesis and that is discussed in Iorio et al.\ in preparation.\\ % controllare che la 9 sia effettivamente assente visto che in Iorio et al non compare nella tabella 1 ma nella tabella A1 in appendice con i qcrit sì... Ricordo che Giuliano a voce mi aveva detto che le fasi 6 e 9 erano solo "scatole vuote mai riempite" ma sarebbe utile controllare % pluto
+I will limit the discussion to the phases reported in Tab.\ \ref{tab:phasesqcritSEVN}, that are the only phases regarding evolution and mass transfer of the massive stars considered in this thesis (for instance, I will neglect White-Dwarfs). Moreover, \texttt{BSE} phases 6 and 9 reported in the previous version of \texttt{SEVN} \cite{spera2019_mergingBBH} are re-absorbed in, respectively, phases 5 and 8 in the updated version of \texttt{SEVN} that I used in this thesis and that is discussed in Iorio et al.\ in preparation.\\ % controllare che la 9 sia effettivamente assente visto che in Iorio et al non compare nella tabella 1 ma nella tabella A1 in appendice con i qcrit sì... Ricordo che Giuliano a voce mi aveva detto che le fasi 6 e 9 erano solo "scatole vuote mai riempite" ma sarebbe opportuno controllare % pluto
 
 Stars are classified as Main Sequence (\texttt{BSE} phase = 1) only if their initial mass is $\mzams \geq 0.7~\msun$, sufficient to ignite central H burning. During the following H-shell burning phase, the hydrogen envelope expands and eventually becomes fully convective (see Sec.\ \ref{subsec:stellarevo} for more details). Considering the mass fraction of the convective over the total envelope mass $f_{\rm conv}= M_{\rm conv}/M_{\rm env}$, the \texttt{BSE} classification distinguishes Hertzsprung-Gap stars ($f_{\rm conv} < 0.33$, \texttt{BSE} phase = 2) from First Giant Branch stars ($f_{\rm conv} \geq 0.33$, \texttt{BSE} phase = 3).  Once He-burning starts, the convective envelope fraction further discriminates between stars burning He in their cores ($f_{\rm conv} < 0.33$, \texttt{BSE} phase = 4) or in their shells ($f_{\rm conv} \geq 0.33$, \texttt{BSE} phase = 5).
 
-It is worth noting that the \texttt{BSE} classification is based on the 1998 stellar evolution tracks by Pols et al.\ \cite{Pols1998evotracks}, where the difference between the two classes was more evident than in the massive stars considered here. For instance, in the HR diagrams shown in Fig.\ \ref{fig:HRdiagrams}, the start of the H-shell burning phase is in reality depicted with \texttt{BSE} phase = 3, since the marker was almost coincident with the, not shown, marker for \texttt{BSE} phase = 2: the evolution is so fast that the envelope becomes rapidly convective. \\
+It is worth noting that the \texttt{BSE} classification is based on the 1998 stellar evolution tracks of Pols et al.\ \cite{Pols1998evotracks}, where the difference between the two classes was more evident than in the massive stars considered here. For instance, in the HR diagrams shown in Fig.\ \ref{fig:HRdiagrams}, the start of the H-shell burning phase is in reality depicted with \texttt{BSE} phase = 3, since the marker was almost coincident with the, not shown, marker for \texttt{BSE} phase = 2: the evolution is so fast that the envelope becomes rapidly convective. \\
 
 Once a star ignites central helium, \texttt{SEVN} checks whether the helium mass fraction is larger than 97.9 \% of the total mass of the star: if that is the case, the star is considered as a Wolf-Rayet. As already explained in Sec.\ \ref{subsec:stellarevo}, \texttt{SEVN} evolves Wolf-Rayet stars with pure-He stars, interpolating them from a dedicated set of tables. Pure-He stars, similarly to ``normal'' H-rich stars, evolve through an equivalent Main Sequence and Hertzsprung-Gap phase characterized by helium burning in the core and in the shell, respectively. A pure helium star at the beginning of its main sequence is obtained artificially removing the hydrogen envelope to a ``normal'' star in the moment it starts the core-He burning. The resulting \emph{pure-He ZAMS} star is then evolved with standard stellar evolution prescriptions and provides one of the interpolating tracks in the pure-He tables.
 
-
-
-\subsection{Mass transfer}\label{subsec:masstransferSEVN}
-%details of mass transfer, explain assumption on the pessimistic case
-
-\begin{equation}\label{eq:qch}
-   q_\mathrm{crit} = 0.362 + \frac{1}{3\left(1-\frac{M_\mathrm{He,d}}{M_\mathrm{d}}\right)}.
-\end{equation}
 
 
 \begin{table}
@@ -1310,37 +1303,189 @@ Once a star ignites central helium, \texttt{SEVN} checks whether the helium mass
         \midrule
         Main Sequence           & H-core    &  H   & $\mzams \geq 0.7~\msun$          &  1  & 3.0        \\
         Hertzsprung-Gap         & H-shell   &  He  & $f_{\rm conv} < 0.33$       &  2  & 4.0        \\
-        First Giant Branch      & H-shell   &  He  & $f_{\rm conv} \geq 0.33$    &  3  & Equation \ref{eq:qchw} \\
+        First Giant Branch      & H-shell   &  He  & $f_{\rm conv} \geq 0.33$    &  3  & Equation \ref{eq:qcritgiants} \\
         Core He burning         & He-core   &  He  & $f_{\rm conv} < 0.33$       &  4  & 3.0 \\ 
-        Asymptotic Giant Branch & He-shell  &  CO  & $f_{\rm conv} \geq 0.33$    &  5  & Equation \ref{eq:qchw} \\
+        Asymptotic Giant Branch & He-shell  &  CO  & $f_{\rm conv} \geq 0.33$    &  5  & Equation \ref{eq:qcritgiants} \\
         \hline
         Wolf-Rayet              & He-core   &  He  & $M_{\rm He} \geq 0.979~M$  &  7  & 3.0 \\ 
         Wolf-Rayet              & He-shell  &  CO  & $M_{\rm He} \geq 0.979~M$  &  8  & 0.784 \\ 
         \bottomrule
         \end{tabular}
-    \caption{Critical mass ratios  as a function of the donor phase for different options.
-    The phases of the DONORS are: 0, low mass (fully convective) Main Sequence (see Table); 1, Main Sequence; 2, Hertzsprung Gap; 3-5-6, Giants stars (Giant Branch, Asymptotic Giant Branch); 4, Core Helium Burning; 7, Wolf-Rayet (pureHe); 8-9, evolved Wolf-Rayet; , White Dwarfs. See Tablefor the relation between  phases. The word stable indicates that the mass transfer is always stable. The values in parentheses for the option  indicates the $q_\mathrm{c}$ when the accretor is a compact remnant (WD, NS, BH). The additional  available option .}\label{tab:phasesqcritSEVN}
+    \caption{Stellar evolution phases with their equivalent nuclear burning and \texttt{SEVN} macro-phase $p$ used for interpolation (Sec.\ \ref{subsec:SEVNproperties}). Stars are also classified with their equivalent \texttt{BSE} phase \cite{Hurley2002}, imposing a condition on the minimum mass required to burn hydrogen in the core $\mzams \geq 0.7~\msun$, on the fraction of convective envelope with respect to the total envelope mass $f_{\rm conv}= M_{\rm conv}/M_{\rm env}$ or on the total helium mass fraction $M_{\rm He}/M$. For each \texttt{BSE} phase of the donor star, \texttt{SEVN} associates a critical donor-to-accretor mass ratio $q_{\rm crit}$ that, if overcome, triggers a Roche lobe overflow unstable on the dynamical timescale.}\label{tab:phasesqcritSEVN}
 \end{table}
+
+
+
+\subsection{Mass transfer}\label{subsec:masstransferSEVN}
+\paragraph{RLO stability criterion} As anticipated in Sec.\ \ref{subsec:Rochelobeoverflow}, Roche lobe overflow stability depends on the donor-to-accretor mass ratio $q=M_{\rm d}/M_{\rm a}$ and helium core prominence in the donor star $M_{\rm He,d}/M_{\rm d}$. Following \texttt{BSE} prescriptions suggested by Hurley et al.\ in 2002 \cite{Hurley2002}, \texttt{SEVN} triggers a Roche lobe overflow unstable on the dynamical timescale whenever the binary mass ratio is larger than a critical value $q_{\rm crit}$, function of the core mass ratio
+
+\begin{equation}
+    q \geq q_{\rm crit}(M_{\rm He,d}/M_{\rm d})
+\end{equation}
+
+The adopted $q_{\rm crit}$ values, reported in Tab.\ \ref{tab:phasesqcritSEVN}, were calculated with fits to stellar models produced in 1998 by Pols et al.\ \cite{Pols1998evotracks}, except for models on the Giant Branch (\texttt{BSE} phase = 3) and Asymptotic Giant Branch (\texttt{BSE} phase = 5), whose $q_{\rm crit}$ 
+
+\begin{equation}\label{eq:qcritgiants}
+   q_\mathrm{crit} = 0.362 + \frac{1}{3\left(1-\frac{M_\mathrm{He,d}}{M_\mathrm{d}}\right)}.
+\end{equation}
+
+are calibrated on the 1987 models of condensed politropes of Hjellming \& Webbink \cite{hjellmingwebbink1987_coreRLOF} already discussed in Sec.\ \ref{subsec:Rochelobeoverflow}
+
+
+\paragraph{Stable RLO} If $q < q_{\rm crit}$, \texttt{SEVN} triggers a Roche lobe overflow that is stable on the dynamical timescale. Since the donor star retains only the mass within its Roche lobe radius $R_{\rm L,d}$, stellar winds and tides in this phase are calculated adopting $R_{\rm L,d}$ as an equivalent stellar radius. The real donor stellar radius $R_{\rm d}$ is, instead, only used to calculate the mass loss rate with an updated version of 2002 prescriptions of Hurley et al.\ \cite{Hurley2002}
+
+\begin{equation}\label{eq:masslossrateRLSEVN}
+\mdot_{\rm d, nuc} = F(M_\mathrm{d}) \left( \ln \frac{R_\mathrm{d}}{R_\mathrm{L,d}} \right)^3~\msun~\yr^{-1} 
+\end{equation}
+
+
+where the normalization factor $F(M_\mathrm{d})$ for the massive donors considered in this thesis is calibrated to allow stable mass-transfer (see Iorio et al.\ in preparation) and is given by
+
+\begin{equation*}
+F(M_\mathrm{d}) =  3 \times 10^{-6} \left( \min \left\{ M_\mathrm{d}, 5.0 \right\} \right)^2 \times
+\begin{cases}
+\max \left\{ \frac{M_\mathrm{d, env}}{M_\mathrm{d}} ,0.01 \right\} & \texttt{BSE} ~\text{phase = 2} \\
+1 & \text{others}
+\end{cases}
+\end{equation*}
+
+Eq.\ \ref{eq:masslossrateRLSEVN} indicates mass loss rates for Roche lobe overflows stable on the nuclear timescale. However, as already discussed in Sec.\ \ref{subsec:Rochelobeoverflow}, stars losing their external envelopes may exit their thermal equilibrium, undergoing a RLO stable on the dynamical timescale but unstable on the thermal one. If this is the case, the mass loss rate expected by Eq.\ \ref{eq:masslossrateRLSEVN} cannot exceed the order-of-magnitude mass loss rate caused by the star instability
+
+\begin{equation}
+    \mdot_{\rm d, nuc} \leq \mdot_{\rm d, max}
+\end{equation}
+
+Depending on the stellar type, the maximum mass-loss rate is estimated with a dynamical or thermal timescale following 2002 Hurley et al.\ \cite{Hurley2002} prescriptions. In particular, giant stars with a core-envelope separation will be thermal-limited while Main Sequence stars and Wolf-Rayets that did not yet developed a CO core will be dynamical-limited
+
+\begin{equation}
+    \mdot_{\rm d, max} = 
+    \begin{cases}
+        \mdot_{\rm d, KH} = \frac{M_{\rm d}}{\tau_{\rm d, KH}}   & \qquad \texttt{BSE} ~\text{phase = 2,3,4,5,8} \\
+        \mdot_{\rm d, dyn} = \frac{M_{\rm d}}{\tau_{\rm d, dyn}} & \qquad \texttt{BSE}~\text{phase = 1,7}
+    \end{cases}
+\end{equation}
+
+The respective timescales are calculated as function of the donor envelope mass $M_{\rm env}$ and total mass $M$, radius $R$ and luminosity $L$
+
+\begin{equation}
+    \tau_{\rm KH} = 10^7 ~\frac{M M_{\rm env}}{RL}~\yr \qquad \qquad \tau_{\rm dyn} = 5.05 \times 10^{-5}~ \sqrt{\frac{R^3}{M}}~\yr
+\end{equation}
+
+Once the donor mass loss rate is established $\mdot_{\rm d}$, the mass accreted by the companion $\mdot_{\rm a}$ is calculated as a fixed fraction $f_{\rm MT}$ of it
+
+\begin{equation}\label{eq:accretionrateSEVN}
+    \mdot_{\rm d} = f_{\rm MT} \mdot_{\rm a} \qquad \qquad f_{\rm MT} \in [0,1]
+\end{equation}
+
+The fiducial accreted fraction is $f_{\rm MT} = 0.5$ and is the value adopted in this thesis. The accretion rate calculated with Eq.\ \ref{eq:accretionrateSEVN} is limited by the Eddington one for accreting compact objects, like neutron stars and black holes\footnote{Eddington limited accretion is imposed also for compact objects that are member of a wind-fed system, where accretion is calculated with Eq.\ \ref{eq:windfedaccretion}.}. Moreover, \texttt{SEVN} does not accrete mass onto Wolf-Rayet stars because their winds are assumed to be so strong to rapidly remove any additional layer deposited on their surfaces (see Iorio et al.\ in preparation).
+
+
+
+
+\paragraph{Common envelope} Usually binaries enter a common envelope evolution if there is an over-contact binary, a collision at periastron or the donor undergoes an unstable Roche lobe overflow (see Sec.\ \ref{subsec:Commonenvelope}). However, unlike the previous version of \texttt{SEVN} \cite{spera2019_mergingBBH} and many \texttt{BSE}-derived codes, the \texttt{SEVN} version adopted in this thesis does not form over-contact binaries with both stars filling their Roche lobe simultaneously because, as explained in the previous paragraph, the RLO routine considers the Roche lobe radius as an equivalent stellar radius. A similar assumption is necessary to explain the neutron stars merger rates: without it, too many systems would enter a common envelope evolution and merge (see Iorio et al.\ in preparation). Apart from this, \texttt{SEVN} routines for common envelope use the standard assumptions and adopt the $\alpha \lambda$ formalism of Webbink et al.\ \cite{Webbink1984_CE}. \\
+
+Following \texttt{BSE} \cite{Hurley2002}, \texttt{SEVN} merges donor stars that enter a dynamical unstable Roche lobe overflow without a well-defined core-envelope separation: it is the case of Main Sequence stars and Wolf-Rayets that did not yet developed a CO core (\texttt{BSE} phase = 1,7). In contrast, donors with a core (\texttt{BSE} phase = 3,4,5,8) enter the routine for the common envelope evolution: with the right orbital separation the stars could survive in a tighter orbit (see Sec.\ \ref{subsec:Commonenvelope}). %controllare tutto questo paragrafo, specie quali WR entrano in CE e quali fondono! %pluto
+
+Stars in the Hertzsprung-Gap phase (\texttt{BSE} phase = 2) are developing a He core but it is not yet clear if it would be stripped or not in a common envelope phase. Therefore, \texttt{SEVN} implements two possible scenarios: an \emph{optimistic} one where the Hertzsprung-Gap star could enter and survive the common envelope and a \emph{pessimistic} one where the star directly merges. \\
+
+When a merger occurs, either because both stars still overfill their Roche lobe in the final configuration or because the donor star lacked a well-developed core, the resulting star has final core given by the sum of the two original cores $M_{\rm core,merger} = M_{\rm core, d} + M_{\rm core, a}$. Moreover, since the system was not able to eject the common envelope, \texttt{SEVN} assumes that all the mass is retained, thus the merger product has final mass given by the sum of the original masses $M_{\rm merger} = M_{\rm d} + M_{\rm a}$.
+
 
 
 
 
 \subsection{Core-collapse supernovae}\label{subsec:SNmodels}
-%explain the three CCSN models (use histograms)\\
-%PLOT: histogram with compact remnants with different SN models\\
+\texttt{SEVN} carries on stellar evolution only up to the end of the CO burning, using the CO core mass to calculate the fate and mass of the compact object produced after a core-collapse supernova (CCSN). Therefore, the end of the CO phase will be hereafter denoted improperly as \emph{pre-SN} phase. Among the CCSN models implemented in \texttt{SEVN}, I will here discuss the three adopted in this thesis, indicated as \emph{rapid}, \emph{delayed} and \emph{compact}.
+
+\paragraph{Rapid and delayed} \emph{Rapid} and \emph{delayed} models are based on calculations carried out in 2012 by Fryer et al.\ \cite{Fryer2012}. They used pre-computed fitting formulas to estimate the final CO and FeNi core of pre-SN stars and computed the corresponding compact object masses with the \texttt{STARTRACK} \cite{Belczynski2010_WRwindsSTARTRACK} population-synthesis code, adopting two explosion models. Recalling that in CCSNe the external layers collapse to the proto-compact object, bounce back and then expand again in a neutrino-driven explosion, Fryer et al.\ distinguished between \emph{rapid} and \emph{delayed} explosions for shocks revived, respectively, before and after $\sim 250$ milliseconds from the collapse. 
+
+
+As shown in the left-hand panels of Fig.\ \ref{fig:remnants}, the more delayed is the explosion and the more difficult is to eject the collapsing mass, favouring the formation of heavier compact objects. The aformentioned figures also highlight a fragmented remnant mass behaviour as a function of the ZAMS mass, especially for the \emph{rapid} model: for instance, stars with $\mzams \sim 23-25~\msun$ form compact objects $\gtrsim 10~\msun$ heavier than stars with similar initial masses ($\mzams \sim 20~\msun$ or $\mzams \sim 26~\msun$). Abrupt jumps in the remnant masses reflect their strong sensitivity on the CO core mass. In fact, the baryonic remnant masses $M_{\rm baryo}=M_{\rm proto} + M_{\rm fb} $ are calculated as the sum of the proto-compact object mass $M_{\rm proto}$ and the fallback mass $M_{\rm fb}$, both dependent on the CO mass but through different combinations (see Fryer et al.\ 2012 \cite{Fryer2012} for the set of equations). The complicated dependence on the CO core mass is removed for $M_{\rm CO} \geq 11~\msun$, where Fryer et al.\ assume that all the mass falls back, causing the baryonic remnant mass to be simply the pre-SN mass $M_{\rm baryo} = M_{\rm pre-SN}$. As shown in the right-hand panel of Fig.\ \ref{fig:masslostWR}, at solar metallicity only stars with $\mzams \gtrsim 40~\msun$, have $M_{\rm CO} \gtrsim 11~\msun$: stars with lower initial masses have a limited CO growth because of the strong stellar winds (see Sec.\ \ref{subsec:stellarevo} for more details).
+
+Eventually, Fryer et al.\ \cite{Fryer2012} estimate that neutrino losses carry away an energy equivalent to 1/10 of the baryonic mass, leaving a gravitational mass of $M_{\rm rem} = 0.9~M_{\rm baryo}$. Overall, the methodology to calculate the remnant mass according to the \emph{rapid} and \emph{delayed} model can be schematized as
+
+\begin{equation}\label{eq:fryermass}
+    M_{\rm rem} = 0.9~M_{\rm baryo} \qquad \qquad M_{\rm baryo} = 
+    \begin{cases}
+    M_{\rm pre-SN} & M_{\rm CO} \geq 11~\msun \\
+    M_{\rm proto}(M_{\rm CO}) + M_{\rm fb}(M_{\rm CO}) & M_{\rm CO} < 11~\msun 
+    \end{cases}
+\end{equation}
+
+
+\begin{figure}[t!]
+	\begin{minipage}{.60\textwidth}
+		\centering
+		\includegraphics[width=1.05\textwidth]{./images/remnants_Z02.jpg}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{.39\textwidth}
+		\centering
+		\includegraphics[width=1.05\textwidth]{./images/hist_Z02.pdf}	
+	\end{minipage}
+	\vfill
+	\begin{minipage}{.60\textwidth}
+		\centering
+		\includegraphics[width=1.05\textwidth]{./images/remnants_Z015.jpg}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{.40\textwidth}
+		\centering
+		\includegraphics[width=1.05\textwidth]{./images/hist_Z015.pdf}	
+	\end{minipage}
+	\caption{Compact object masses for \emph{rapid} (red), \emph{delayed} (black) and \emph{compact} (blue) CCSN models implemented in \texttt{SEVN} for the two solar metallicities adopted in this thesis: $Z=0.02$ (\emph{top}) and $Z=0.0015$ (\emph{bottom}). \emph{Left:} Gray thick line shows the pre-SN mass as a function of the initial progenitor mass $\mzams$. \emph{Compact} model produces heavier remnants and black holes even from the lighter progenitors, without the abrupt jumps exhibited by the \emph{rapid} one and the strong sensibility on the CO mass also shown by the \emph{delayed} model. \emph{Right:} Normalized counts of the compact object masses obtained simulating with \texttt{SEVN} 10~000 stars extracted from a Kroupa initial mass function (see Sec.\ \ref{sec:initialconditionsSEVN}). The limited sample caused the non-physical gaps at $M_{\rm rem} \sim 11~\msun$ for $Z=0.02$ and the less dense points in the left-hand panel towards higher masses. In contrast, the \emph{rapid} model reproduces the putative low-mass gap $M_{\rm rem} \sim 2-5~\msun$ \cite{massgapreal_ozel2010}. Black dashed line at $3~\msun$ discriminates between neutron stars and black holes \cite{NSreview}. }\label{fig:remnants}
+\end{figure}
+
+
+\paragraph{Compact} The \emph{compact} model is based on the compactness parameter $\xi_\mathrm{2.5}$ introduced in 2011 by O'Connor \& Ott \cite{Oconnor2011_compactness} to describe the ratio between a reference mass ($2.5~\msun$ usually) and the radius that encloses such mass at the onset of the core-collapse
+
+\begin{equation}\label{eq:compactness}
+\xi_\mathrm{2.5}= \frac{2.5}{R(2.5 ~\msun)}
+\end{equation}
+
+In 2018, Limongi \& Chieffi \cite{Limongi2018_rotatingCOcompactness} used their \texttt{FRANEC} stellar evolution code to probe the strong correlation between the compactness parameter and the CO mass at the onset of the core-collapse, finding that it was not significantly affected by stellar rotation. In 2020, Mapelli et al.\ \cite{mapelli2020_compactness} interpolated the same \texttt{FRANEC} models to extract a fitting formula implementable in population-synthesis codes like \texttt{SEVN}
+
+\begin{equation}\label{eq:compactnessCOinSEVN}
+	\xi_{2.5} = 0.55 -1.1 \left(\frac{1 \msun}{m_{\rm CO}}\right)
+\end{equation}
+
+Indeed, at the end of the CO burning, \texttt{SEVN} uses this formula to extract the compactness parameter of the star $\xi_*$. However, studies like the one carried out in 2016 by Ertl et al.\ \cite{Ertl2016}, showed that there is not a one-to-one correlation between a given compactness value and the possibility that the star successfully explodes as a CCSN or fails at the upper layers directly fall back to the proto-compact object. In particular, 2020 Patton \& Sukhbold \cite{COcollapse} used hydrodynamics calculations and extracted the probability distribution shown in Fig.\ \ref{fig:compactness} to determine the explodability of a star given its compactness. Therefore, in the \emph{compact} CCSN model, \texttt{SEVN} randomly draws a compactness value from the explodability distribution of Patton \& Sukhbold (the white filled one in Fig.\ \ref{fig:compactness}) and uses it as a threshold $\xi_c$: if the star is more compact it implodes forming a black hole ($\xi_* > \xi_c$) otherwise it explodes and produces a neutron star.
+
+While the neutron star mass is is randomly assigned according to the observed distribution of neutrons stars in binary systems \cite{mapelli2020_compactness}, the baryonic black hole mass is derived similarly to Fryer et al.\ \cite{Fryer2012} but substituting the role of the CO core with the He core
+
+\begin{equation}\label{eq:massBHcompactness}
+    M_{\rm BH, baryo} = M_{\rm He} + f_{\rm H} (M_{\rm pre-SN}-M_{\rm He})
+\end{equation}
+
+$f_H \in [0,1]$ is the fallback parameter and accounts for the hydrogen mass retained in the compact object. Even though the fiducial \texttt{SEVN} model (and the one adopted in this thesis) adopts $f_{\rm H} = 0.9$, Eq.\ \ref{eq:massBHcompactness} underlines that for a collapsing Wolf-Rayet $M_{\rm pre-SN}=M_{\rm He}$ the baryonic black hole mass is precisely the pre-SN mass. Similarly to Eq.\ \ref{eq:fryermass}, the baryonic mass is then reduced by 10 \% to account for neutrino losses. However, regardless of the explosion/implosion mechanism, \texttt{SEVN} will always eventually classify a compact object as a black hole (neutrons star) if its mass is higher (lower) than he maximum mass allowed for a neutron star $M_{\rm NS,max} = 3\msun$ \cite{NSreview,spera2019_mergingBBH}, indicated with a black dashed line in the panels of Fig.\ \ref{fig:compactness}. \\
+
+\paragraph{Model comparison} Fig.\ \ref{eq:compactness} highlights the main differences in the CCSN models: even though the figures are built for the solar metallicities adopted in this thesis, the features are characteristic of the models.  \\
+
+Looking at the left-hand panels, the \emph{compact} model not only produces more massive compact objects but allows their formation from progenitors down to $\mzams \sim 13~\msun$, whereas the \emph{delayed} stopped at $\mzams \sim 20~\msun$ and the \emph{rapid} at $\mzams \sim 25~\msun$. If Fryer et al.\ \cite{Fryer2012} models produce a discontinuous distribution in the remnant masses due to the complicate dependence on the CO mass, the randomness introduced in the \emph{compact} model allows stars with $\mzams \sim 13-20~\msun$ to produce a black hole or a neutron star. However, since the explodability distribution of Fig.\ \ref{fig:compactness} is shifted towards lighter masses, the \emph{compact} model favours the production of black holes for progenitors in this intermediate region. 
+
+Discrepancies between the three models vanish for $\mzams \gtrsim 40~\msun$, i.\ e.\ for exploding Wolf-Rayets of $\gtrsim 10-15~\msun$ (see also the right-hand panel of Fig.\ \ref{fig:masslostWR}). Stars so massive always implode and have CO core masses $M_{\rm CO} \gtrsim 11~\msun$, thus the only mass lost in the CCSN is the 10 \% of the pre-SN mass carried away by neutrinos: in this mass range all three models form a black hole with $M_{\rm BH} = 0.9~M_{\rm pre-SN}$.\\
+
+The right-hand panels highlight over-densities and gaps in the remnant distributions. The \emph{rapid} model does not produce compact objects with $M_{\rm rem} \sim 2-5~\msun$, in agreement with the putative low-mass gap suggested by observations carried out in the Galaxy \cite{massgapreal_ozel2010}. In contrast, the \emph{delayed} model shows a continuous distribution of compact objects. Finally, \emph{compact} CCSNe produce an even larger low-mass gap between $\mzams \sim 3-8(10)~\msun $ for stars with metallicity $Z=0.015~(0.02)$. This gap is produced by stars with $\mzams \lesssim 13~\msun$ that are too light to implode, therefore they explode and form a neutron star.
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width=.9\textwidth]{./images/compactness.png}	
+	\caption{Explodability (white) and implodability (blue) probability distribution functions for the compactness parameter $\xi_{2.5}$ extracted by Patton \& Sukhbold \cite{COcollapse}. \texttt{SEVN} randomly draws a threshold compactness $\xi_C$ from the explodability distribution \cite{mapelli2020_compactness}.}\label{fig:compactness}
+\end{figure}
 
 
 
 \subsection{Supernova kicks}\label{subsec:kicksSEVN}
 
 
-\section{Initial conditions for simulations}
+\section{Initial conditions for simulations}\label{sec:initialconditionsSEVN}
 %Describe the distributions of masses, periods, eccentricities from which I derived the 1 million simulations. Scheme with the parameter space explored
 
 
+In this thesis I adopted the fiducial parameters that better reproduce the merger rates observed by the LIGO-Virgo Collaboration: $\alpha=5$ and $\lambda$ from 2014 fits of Claeys et al.\ \cite{Clayes2014_lambdaCE}. Even though Claeys et al.\ report different $\lambda$ values for different evolutionary stages, they do not provide a fit for pure-He stars: for them, \texttt{SEVN} adopts $\lambda_{\rm WR} = 0.5$  (see Iorio et al.\ in preparation for more details).\\
 
-
-
+In this thesis I adopted the pessimistic case.\\
 
 
 
@@ -1349,39 +1494,14 @@ Once a star ignites central helium, \texttt{SEVN} checks whether the helium mass
 \begin{itemize}
 	\item Kick = Unified + sigma = 70 km/s non ha senso perché unified è stato calibrato per riprodurre le osservazioni a partire dalla maxwelliana di hobbs. Pertanto è stato pensato per estrarre il kick da una maxwelliana di 265 km/s e poi diminuirne la magnitudine in base a ejecta e massa del remnant. Se parto già con una sigma di 70 sto già estraendo dei kick bassi, non posso diminuirli ancora di più...
 	\item Il fatto che con hobbs puro io abbia un sacco di merging BBH ad alti semiassi posso provare a spiegarlo guardando all'eccentricità delle binarie, magari c'entra quanto vicine al periastro passano oppure no
-	\item Overcontact binaries da testare perché passano quasi tutte per di là.Inoltre Giuliano spiega: questione overcontact binary: conosco bene questi casi e sono proprio alla base dell’ultima “importante” modifica di SEVN. 
-	Precedentemente questi casi andavano tutti a finire in merger o CE, ma ci siamo resi conto che in BSE/MOBSE questo check è disabilitato mentre c’è un RLO. Ora è cosi anche in SEVN. 
-	Ho già controllato che questi casi soprattutto durante un HG sono presenti anche in BSE/MOBSE. 
-	
-	Quindi in sostanza ogni volta che il Raggio>RL e quindi c’è un RLO consideriamo per la stella  un raggio effettivo pari a quello del RL per tutti i vari processi (venti,tides) mentre il Raggio della stella è usato 
-	solo per stimare il rate di mass transfer usando l’equazione 58 in Hurley02.
-	
-	Se questo sia il modo migliore per gestire il mass transfer non saprei, probabilmente no, ma si inserisce nel discorso piu ampio di andare oltre le prescriptions di Hurley. 
-	Abbiamo gia visto che lasciare che questi oggetti mergono in realtà è un assunzione che non funziona soprattuto considerando i merge rate delle neutron stars. 
-	
-	Per fare un discorso pratico e concreto quello che ottieni in SEVN è consistente con Hurley e BSE/MOBSE ed è solo una conseguenza del modello di RLO adottato. 
-	Alla fine non ha nemmeno troppo senso avere plot in cui mostri il raggio durante il RLO perché per SEVN in questi casi il raggio effettivo della stella è pari a RL. 
 	\item la SN compact è descritta come nel paper della mapelli https://arxiv.org/pdf/2005.03055.pdf dove il grafico in basso è stato fittato con due distribuzioni. Se nel file .sh il parametro -1 è settato, allora la treshold zeta2.5 non è 0.3 come nel paper della mapelli ma viene estrapolata randomicamente da quelle distribuzioni (o una roba del genere). La SN= compactness è MOLTO biasata nel creare BH invece che NS
 	\item per la SSE delle pure He posso confrontare la stessa stella se tipo mi faccio printare anche la colonna "zams" che mi dice qual è la traccia che sta usando per l'interpolazione (a seconda della tabella usata)
 	\item Capire nel dettaglio le differenze tra Z=0.02 e Z=0.015
 	\item Focus sul final fate dopo la WR-BH per un confronto con Belczynski
-	\item controllare le incertezze sulle masse di KO17!!! Specialmente la metallicità usata per la M WR dalla relazione M-L
-	\item Pessimistic/optimistic case riguarda la possibilità che una stella in HG possa entrare ed eventualmente sopravvivere ad un CE (optimistic) oppure si fonda direttamente con la compagna nell'ipotesi di assenza di un core ben definito (pessimistic)
 \end{itemize}
 
 
 
-
-\section{Compactness model implemented in SEVN}
-As explained in Mapelli+2020 \cite{mapelli2020_compactness}, the compactness model in SEVN uses the final CO mass to interpolate the compatness parameter
-
-\begin{equation}
-	\xi_{2.5} = 0.55 -1.1 \left(\frac{1 \msun}{m_{\rm CO}}\right)
-\end{equation}
-
-where the above formula is derived with fits to FRANEC data.\\
-
-Patton and Sukhbold 2020 \cite{COcollapse}, in the bottom figure of Fig. 3, provide the probability that a star with a given compactness parameter undergoes an explosion or implosion. We fitted to that data a probability distribution and use it to randomly decide whether out star with that compactness will explode, forming a NS, or will implode, forming a BH.\\
 
 
 
@@ -1518,9 +1638,6 @@ They predict:\\
 
 
 
-
-
-
 \section{Results Cyg X-3}
 Present results with different parameters (SN model and metallicity) and show how they impact on the evolution in general. Underline the main evolutionary paths (RLO/CE) and progenitors and remnant properties (like the computational exam)
 
@@ -1532,5 +1649,3 @@ Then show detailed evolution for Cyg X-3 only, showing differences with Belczyns
 
 \printbibliography[heading=bibintoc]
 \end{document}
-
-

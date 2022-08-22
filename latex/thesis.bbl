@@ -2404,6 +2404,7 @@
       \strng{authorbibnamehash}{979f7c07f310c8af2f5feea69dd0f45b}
       \strng{authornamehash}{979f7c07f310c8af2f5feea69dd0f45b}
       \strng{authorfullhash}{2ec6fea93093321cb1f62237e0938778}
+      \field{extraname}{1}
       \field{sortinit}{8}
       \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
       \field{labelnamesource}{author}
@@ -4696,6 +4697,153 @@
       \endverb
       \keyw{stars: evolution,stars: general,stars: interiors,Astrophysics - Solar and Stellar Astrophysics}
     \endentry
+    \entry{Fryer2012}{article}{}
+      \name{author}{6}{}{%
+        {{hash=112a9db56e0dc7e559965f63204dad8d}{%
+           family={{Fryer}},
+           familyi={F\bibinitperiod},
+           given={Chris\bibnamedelima L.},
+           giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=fe3b551cb2575d8029ef0c21c7fff4c6}{%
+           family={{Belczynski}},
+           familyi={B\bibinitperiod},
+           given={Krzysztof},
+           giveni={K\bibinitperiod}}}%
+        {{hash=a625b9ffd51c5acfc7504c6483f16ed5}{%
+           family={{Wiktorowicz}},
+           familyi={W\bibinitperiod},
+           given={Grzegorz},
+           giveni={G\bibinitperiod}}}%
+        {{hash=12cf7b2d1c4b6a2c96e9f083b740dec6}{%
+           family={{Dominik}},
+           familyi={D\bibinitperiod},
+           given={Michal},
+           giveni={M\bibinitperiod}}}%
+        {{hash=60f2706bc72ced3eaac8bf5eef91c543}{%
+           family={{Kalogera}},
+           familyi={K\bibinitperiod},
+           given={Vicky},
+           giveni={V\bibinitperiod}}}%
+        {{hash=00b3dea7d632917486b21a711857c297}{%
+           family={{Holz}},
+           familyi={H\bibinitperiod},
+           given={Daniel\bibnamedelima E.},
+           giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{749d9dff7d9e7a574a18788a6e140312}
+      \strng{fullhash}{6e2c71fd2740784d27894cda55ffeafb}
+      \strng{bibnamehash}{749d9dff7d9e7a574a18788a6e140312}
+      \strng{authorbibnamehash}{749d9dff7d9e7a574a18788a6e140312}
+      \strng{authornamehash}{749d9dff7d9e7a574a18788a6e140312}
+      \strng{authorfullhash}{6e2c71fd2740784d27894cda55ffeafb}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{91}
+      \field{eprintclass}{astro-ph.SR}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{\apj}
+      \field{month}{4}
+      \field{number}{1}
+      \field{title}{{Compact Remnant Mass Function: Dependence on the Explosion Mechanism and Metallicity}}
+      \field{volume}{749}
+      \field{year}{2012}
+      \field{pages}{91}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/0004-637X/749/1/91
+      \endverb
+      \verb{eprint}
+      \verb 1110.1726
+      \endverb
+      \keyw{black hole physics,stars: neutron,supernovae: general,Astrophysics - Solar and Stellar Astrophysics,Astrophysics - High Energy Astrophysical Phenomena}
+    \endentry
+    \entry{Oconnor2011_compactness}{article}{}
+      \name{author}{2}{}{%
+        {{hash=706feb361154773f273f13eb66b35156}{%
+           family={{O'Connor}},
+           familyi={O\bibinitperiod},
+           given={Evan},
+           giveni={E\bibinitperiod}}}%
+        {{hash=72bf87fe04b6d4011db7459c9a3fd27a}{%
+           family={{Ott}},
+           familyi={O\bibinitperiod},
+           given={Christian\bibnamedelima D.},
+           giveni={C\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{22da77c4e621867d4c39c48bd96b6c4d}
+      \strng{fullhash}{f40edc83682bdba0010d8e1ce1f6efa1}
+      \strng{bibnamehash}{22da77c4e621867d4c39c48bd96b6c4d}
+      \strng{authorbibnamehash}{22da77c4e621867d4c39c48bd96b6c4d}
+      \strng{authornamehash}{22da77c4e621867d4c39c48bd96b6c4d}
+      \strng{authorfullhash}{f40edc83682bdba0010d8e1ce1f6efa1}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{70}
+      \field{eprintclass}{astro-ph.HE}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{\apj}
+      \field{month}{4}
+      \field{number}{2}
+      \field{title}{{Black Hole Formation in Failing Core-Collapse Supernovae}}
+      \field{volume}{730}
+      \field{year}{2011}
+      \field{pages}{70}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/0004-637X/730/2/70
+      \endverb
+      \verb{eprint}
+      \verb 1010.5550
+      \endverb
+      \keyw{black hole physics,equation of state,hydrodynamics,neutrinos,stars: evolution,stars: mass-loss,stars: neutron,supernovae: general,Astrophysics - High Energy Astrophysical Phenomena,Astrophysics - Solar and Stellar Astrophysics,General Relativity and Quantum Cosmology}
+    \endentry
+    \entry{Limongi2018_rotatingCOcompactness}{article}{}
+      \name{author}{2}{}{%
+        {{hash=6d4cc313616e56b066badd15ae01bcc0}{%
+           family={{Limongi}},
+           familyi={L\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod}}}%
+        {{hash=60a37ab304de015e2071a53c89a9d77d}{%
+           family={{Chieffi}},
+           familyi={C\bibinitperiod},
+           given={Alessandro},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{979f7c07f310c8af2f5feea69dd0f45b}
+      \strng{fullhash}{2ec6fea93093321cb1f62237e0938778}
+      \strng{bibnamehash}{979f7c07f310c8af2f5feea69dd0f45b}
+      \strng{authorbibnamehash}{979f7c07f310c8af2f5feea69dd0f45b}
+      \strng{authornamehash}{979f7c07f310c8af2f5feea69dd0f45b}
+      \strng{authorfullhash}{2ec6fea93093321cb1f62237e0938778}
+      \field{extraname}{2}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{13}
+      \field{eprintclass}{astro-ph.SR}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{\apjs}
+      \field{month}{7}
+      \field{number}{1}
+      \field{title}{Presupernova Evolution and Explosive Nucleosynthesis of Rotating Massive Stars in the Metallicity Range -3 {\ensuremath{\leq}} [Fe/H] {\ensuremath{\leq}} 0}
+      \field{volume}{237}
+      \field{year}{2018}
+      \field{pages}{13}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3847/1538-4365/aacb24
+      \endverb
+      \verb{eprint}
+      \verb 1805.09640
+      \endverb
+      \keyw{stars: evolution,stars: interiors,stars: massive,stars: rotation,supernovae: general,Astrophysics - Solar and Stellar Astrophysics,Astrophysics - High Energy Astrophysical Phenomena}
+    \endentry
     \entry{mapelli2020_compactness}{article}{}
       \name{author}{8}{}{%
         {{hash=a63bd1a4a95ee5ac182d54e3e4833309}{%
@@ -4768,6 +4916,60 @@
       \verb 1909.01371
       \endverb
       \keyw{Astrophysical black holes,Stellar mass black holes,Stellar mass loss,Computational methods,Gravitational wave astronomy,Massive stars,98,1611,1613,1965,675,732,Astrophysics - High Energy Astrophysical Phenomena,Astrophysics - Solar and Stellar Astrophysics}
+    \endentry
+    \entry{Ertl2016}{article}{}
+      \name{author}{5}{}{%
+        {{hash=2553c16820c947df0ec43b418af891a1}{%
+           family={Ertl},
+           familyi={E\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=d02d30821646df27727635db0e7d1c2a}{%
+           family={Janka},
+           familyi={J\bibinitperiod},
+           given={H.\bibnamedelimi -Th.},
+           giveni={H\bibinitperiod\bibinitdelim \bibinithyphendelim T\bibinitperiod}}}%
+        {{hash=982f56012081b715bf2adefebba74e95}{%
+           family={Woosley},
+           familyi={W\bibinitperiod},
+           given={S.\bibnamedelimi E.},
+           giveni={S\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=4772ca91fb27fea529d32bfe42756abd}{%
+           family={Sukhbold},
+           familyi={S\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=1f84a7431771f44cba97e31382c77a18}{%
+           family={Ugliano},
+           familyi={U\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{22d97461d11ed0579c09efc087cce267}
+      \strng{fullhash}{dd392fe19ab70cd2d9aae2f5681d856b}
+      \strng{bibnamehash}{22d97461d11ed0579c09efc087cce267}
+      \strng{authorbibnamehash}{22d97461d11ed0579c09efc087cce267}
+      \strng{authornamehash}{22d97461d11ed0579c09efc087cce267}
+      \strng{authorfullhash}{dd392fe19ab70cd2d9aae2f5681d856b}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{astro-ph.SR}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Astrophys. J.}
+      \field{number}{2}
+      \field{title}{{A two-parameter criterion for classifying the explodability of massive stars by the neutrino-driven mechanism}}
+      \field{volume}{818}
+      \field{year}{2016}
+      \field{pages}{124}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3847/0004-637X/818/2/124
+      \endverb
+      \verb{eprint}
+      \verb 1503.07522
+      \endverb
     \endentry
     \entry{COcollapse}{article}{}
       \name{author}{2}{}{%

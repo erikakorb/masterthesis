@@ -476,8 +476,8 @@
 \newlabel{eq:EorbCEalpha}{{2.23}{29}{$\boldsymbol {\alpha \lambda }$ formalism}{equation.2.2.23}{}}
 \newlabel{eq:EenvCElambda}{{2.24}{29}{$\boldsymbol {\alpha \lambda }$ formalism}{equation.2.2.24}{}}
 \newlabel{eqn:a_ce}{{2.25}{29}{$\boldsymbol {\alpha \lambda }$ formalism}{equation.2.2.25}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.7}{\ignorespaces Possible initial and final common envelope configurations. The two stars are represented with cores (blue for the primary, black for the secondary) and envelopes (orange) but it could also be that one of the two star has not yet developed a core (e.\ g.\ a Main Sequence star), is already envelope-stripped (e.\ g.\ a Wolf-Rayet star) or is a compact object (e.\ g.\ a black hole). A binary may enter a CE after an unstable RLO, a collision or after being a contact binary. The H-rich envelope of one or both stars are shared and if at least one of the stars is missing a core, the two are merged. In contrast, the two nuclei (or a nucleus/Wolf-Rayet and a compact object) could survive the spiral-in if the initial orbit is wide enough to eject the envelope, heating the gas through friction. The scheme is inspired by figure no. 7 of Mapelli, 2019 \cite {mapelli} and based on the mass transfer implementation in \texttt  {SEVN}, described in Sec.\ \ref  {subsec:masstransferSEVN}.\relax }}{30}{figure.caption.57}\protected@file@percent }
-\newlabel{fig:ce_mapelli}{{2.7}{30}{Possible initial and final common envelope configurations. The two stars are represented with cores (blue for the primary, black for the secondary) and envelopes (orange) but it could also be that one of the two star has not yet developed a core (e.\ g.\ a Main Sequence star), is already envelope-stripped (e.\ g.\ a Wolf-Rayet star) or is a compact object (e.\ g.\ a black hole). A binary may enter a CE after an unstable RLO, a collision or after being a contact binary. The H-rich envelope of one or both stars are shared and if at least one of the stars is missing a core, the two are merged. In contrast, the two nuclei (or a nucleus/Wolf-Rayet and a compact object) could survive the spiral-in if the initial orbit is wide enough to eject the envelope, heating the gas through friction. The scheme is inspired by figure no. 7 of Mapelli, 2019 \cite {mapelli} and based on the mass transfer implementation in \texttt {SEVN}, described in Sec.\ \ref {subsec:masstransferSEVN}.\relax }{figure.caption.57}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.7}{\ignorespaces Possible initial and final common envelope configurations. The two stars are represented with cores (blue for the primary, black for the secondary) and envelopes (orange) but it could also be that one of the two star has not yet developed a core (e.\ g.\ a Main Sequence star), is already envelope-stripped (e.\ g.\ a Wolf-Rayet star) or is a compact object (e.\ g.\ a black hole). A binary may enter a CE after an unstable RLO, a collision or after being a contact binary. The H-rich envelope of one or both stars are shared and if at least one of the stars is missing a core, the two are merged. In contrast, the two nuclei (or a nucleus/Wolf-Rayet and a compact object) could survive the spiral-in if the initial orbit is wide enough to eject the envelope, heating the gas through friction. The scheme is inspired by figure no. 7 of Mapelli, 2019 \cite {mapelli} and implements the standard cases for common envelope evolution. The \texttt  {SEVN} version adopted in this thesis, however, avoids the creation of over-contact binaries in order to reproduce the observed neutron stars merger rates (see Sec.\ \ref  {subsec:masstransferSEVN} and Iorio et al.\ in preparation).\relax }}{30}{figure.caption.57}\protected@file@percent }
+\newlabel{fig:ce_mapelli}{{2.7}{30}{Possible initial and final common envelope configurations. The two stars are represented with cores (blue for the primary, black for the secondary) and envelopes (orange) but it could also be that one of the two star has not yet developed a core (e.\ g.\ a Main Sequence star), is already envelope-stripped (e.\ g.\ a Wolf-Rayet star) or is a compact object (e.\ g.\ a black hole). A binary may enter a CE after an unstable RLO, a collision or after being a contact binary. The H-rich envelope of one or both stars are shared and if at least one of the stars is missing a core, the two are merged. In contrast, the two nuclei (or a nucleus/Wolf-Rayet and a compact object) could survive the spiral-in if the initial orbit is wide enough to eject the envelope, heating the gas through friction. The scheme is inspired by figure no. 7 of Mapelli, 2019 \cite {mapelli} and implements the standard cases for common envelope evolution. The \texttt {SEVN} version adopted in this thesis, however, avoids the creation of over-contact binaries in order to reproduce the observed neutron stars merger rates (see Sec.\ \ref {subsec:masstransferSEVN} and Iorio et al.\ in preparation).\relax }{figure.caption.57}{}}
 \abx@aux@cite{breivik2020cosmicpopsynth}
 \abx@aux@segm{0}{0}{breivik2020cosmicpopsynth}
 \abx@aux@cite{MESA2015BinaryMT}
@@ -712,65 +712,143 @@
 \@writefile{toc}{\contentsline {section}{\numberline {3.1}SEVN: a population-synthesis code}{41}{section.3.1}\protected@file@percent }
 \newlabel{sec:SEVN}{{3.1}{41}{SEVN: a population-synthesis code}{section.3.1}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}Code properties}{41}{subsection.3.1.1}\protected@file@percent }
+\newlabel{subsec:SEVNproperties}{{3.1.1}{41}{Code properties}{subsection.3.1.1}{}}
 \@writefile{toc}{\contentsline {paragraph}{The code}{41}{section*.77}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{A fast tool for simulations}{41}{section*.78}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{Stellar evolution with interpolation tables}{41}{section*.79}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Adaptive time-step}{41}{section*.80}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}Table interpolation}{41}{subsection.3.1.2}\protected@file@percent }
-\newlabel{subsec:interpolationSEVN}{{3.1.2}{41}{Table interpolation}{subsection.3.1.2}{}}
-\@writefile{toc}{\contentsline {paragraph}{The \texttt  {PARSEC} tables}{41}{section*.82}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{The \texttt  {PARSEC} tables}{41}{section*.80}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Interpolation method}{41}{section*.81}\protected@file@percent }
 \abx@aux@cite{spera2019_mergingBBH}
 \abx@aux@segm{0}{0}{spera2019_mergingBBH}
 \abx@aux@cite{Hurley2002}
 \abx@aux@segm{0}{0}{Hurley2002}
 \abx@aux@cite{spera2019_mergingBBH}
 \abx@aux@segm{0}{0}{spera2019_mergingBBH}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Schematic representation of star interpolation carried out by \texttt  {SEVN}. Original four evolutionary tracks obtained from a stellar evolution code, like \texttt  {PARSEC} or \texttt  {MESA}, are represented by the four coloured circles. For didactic purposes, stars on the top (cyan and black circles) are assumed to be more massive and to lose mass more rapidly than stars on the bottom (blue and pink circles), with the more metallic one (black circle) losing even more mass. \texttt  {SEVN} interpolates a star with desired initial masses and metallicity ($M(t_1),Z(t_1)$) falling within the depicted region by weighting the properties of the four closest tracks, as explained in Sec.\ \ref  {subsec:interpolationSEVN}. The weighted interpolation is repeated at each evolutionary time-step $t_i$. I created the scheme following the description provided in Iorio et al.\ in preparation.\relax }}{42}{figure.caption.81}\protected@file@percent }
-\newlabel{fig:SEVNinterpolation}{{3.1}{42}{Schematic representation of star interpolation carried out by \texttt {SEVN}. Original four evolutionary tracks obtained from a stellar evolution code, like \texttt {PARSEC} or \texttt {MESA}, are represented by the four coloured circles. For didactic purposes, stars on the top (cyan and black circles) are assumed to be more massive and to lose mass more rapidly than stars on the bottom (blue and pink circles), with the more metallic one (black circle) losing even more mass. \texttt {SEVN} interpolates a star with desired initial masses and metallicity ($M(t_1),Z(t_1)$) falling within the depicted region by weighting the properties of the four closest tracks, as explained in Sec.\ \ref {subsec:interpolationSEVN}. The weighted interpolation is repeated at each evolutionary time-step $t_i$. I created the scheme following the description provided in Iorio et al.\ in preparation.\relax }{figure.caption.81}{}}
-\@writefile{toc}{\contentsline {paragraph}{Interpolation method}{42}{section*.83}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.3}Stellar phases}{42}{subsection.3.1.3}\protected@file@percent }
-\newlabel{subsec:stellarphasesSEVN}{{3.1.3}{42}{Stellar phases}{subsection.3.1.3}{}}
-\@writefile{toc}{\contentsline {paragraph}{Macro phase $\bm  {p}$}{42}{section*.84}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{\texttt  {BSE} phases}{42}{section*.85}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Schematic representation of star interpolation carried out by \texttt  {SEVN}. Original four evolutionary tracks obtained from a stellar evolution code, like \texttt  {PARSEC} or \texttt  {MESA}, are represented by the four coloured circles. For didactic purposes, stars on the top (cyan and black circles) are assumed to be more massive and to lose mass more rapidly than stars on the bottom (blue and pink circles), with the more metallic one (black circle) losing even more mass. \texttt  {SEVN} interpolates a star with desired initial masses and metallicity ($M(t_1),Z(t_1)$) falling within the depicted region by weighting the properties of the four closest tracks, as explained in Sec.\ \ref  {subsec:SEVNproperties}. The weighted interpolation is repeated at each evolutionary time-step $t_i$. I created the scheme following the description provided in Iorio et al.\ in preparation.\relax }}{42}{figure.caption.82}\protected@file@percent }
+\newlabel{fig:SEVNinterpolation}{{3.1}{42}{Schematic representation of star interpolation carried out by \texttt {SEVN}. Original four evolutionary tracks obtained from a stellar evolution code, like \texttt {PARSEC} or \texttt {MESA}, are represented by the four coloured circles. For didactic purposes, stars on the top (cyan and black circles) are assumed to be more massive and to lose mass more rapidly than stars on the bottom (blue and pink circles), with the more metallic one (black circle) losing even more mass. \texttt {SEVN} interpolates a star with desired initial masses and metallicity ($M(t_1),Z(t_1)$) falling within the depicted region by weighting the properties of the four closest tracks, as explained in Sec.\ \ref {subsec:SEVNproperties}. The weighted interpolation is repeated at each evolutionary time-step $t_i$. I created the scheme following the description provided in Iorio et al.\ in preparation.\relax }{figure.caption.82}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}Stellar phases}{42}{subsection.3.1.2}\protected@file@percent }
+\newlabel{subsec:stellarphasesSEVN}{{3.1.2}{42}{Stellar phases}{subsection.3.1.2}{}}
+\@writefile{toc}{\contentsline {paragraph}{Macro phase $\bm  {p}$}{42}{section*.83}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{\texttt  {BSE} phases}{42}{section*.84}\protected@file@percent }
 \abx@aux@cite{Pols1998evotracks}
 \abx@aux@segm{0}{0}{Pols1998evotracks}
-\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces Critical mass ratios as a function of the donor phase for different options. The phases of the DONORS are: 0, low mass (fully convective) Main Sequence (see Table); 1, Main Sequence; 2, Hertzsprung Gap; 3-5-6, Giants stars (Giant Branch, Asymptotic Giant Branch); 4, Core Helium Burning; 7, Wolf-Rayet (pureHe); 8-9, evolved Wolf-Rayet; , White Dwarfs. See Tablefor the relation between phases. The word stable indicates that the mass transfer is always stable. The values in parentheses for the option indicates the $q_\mathrm  {c}$ when the accretor is a compact remnant (WD, NS, BH). The additional available option .\relax }}{43}{table.caption.86}\protected@file@percent }
-\newlabel{tab:phasesqcritSEVN}{{3.1}{43}{Critical mass ratios as a function of the donor phase for different options. The phases of the DONORS are: 0, low mass (fully convective) Main Sequence (see Table); 1, Main Sequence; 2, Hertzsprung Gap; 3-5-6, Giants stars (Giant Branch, Asymptotic Giant Branch); 4, Core Helium Burning; 7, Wolf-Rayet (pureHe); 8-9, evolved Wolf-Rayet; , White Dwarfs. See Tablefor the relation between phases. The word stable indicates that the mass transfer is always stable. The values in parentheses for the option indicates the $q_\mathrm {c}$ when the accretor is a compact remnant (WD, NS, BH). The additional available option .\relax }{table.caption.86}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.4}Mass transfer}{43}{subsection.3.1.4}\protected@file@percent }
-\newlabel{subsec:masstransferSEVN}{{3.1.4}{43}{Mass transfer}{subsection.3.1.4}{}}
-\newlabel{eq:qch}{{3.1}{43}{Mass transfer}{equation.3.1.1}{}}
+\abx@aux@cite{Hurley2002}
+\abx@aux@segm{0}{0}{Hurley2002}
+\abx@aux@cite{Hurley2002}
+\abx@aux@segm{0}{0}{Hurley2002}
+\abx@aux@cite{Hurley2002}
+\abx@aux@segm{0}{0}{Hurley2002}
+\abx@aux@cite{Pols1998evotracks}
+\abx@aux@segm{0}{0}{Pols1998evotracks}
+\abx@aux@cite{hjellmingwebbink1987_coreRLOF}
+\abx@aux@segm{0}{0}{hjellmingwebbink1987_coreRLOF}
+\abx@aux@cite{Hurley2002}
+\abx@aux@segm{0}{0}{Hurley2002}
+\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces Stellar evolution phases with their equivalent nuclear burning and \texttt  {SEVN} macro-phase $p$ used for interpolation (Sec.\ \ref  {subsec:SEVNproperties}). Stars are also classified with their equivalent \texttt  {BSE} phase \cite {Hurley2002}, imposing a condition on the minimum mass required to burn hydrogen in the core $M_\textup  {ZAMS}\geq 0.7~\ensuremath  {M\ensuremath  {_\odot }}$, on the fraction of convective envelope with respect to the total envelope mass $f_{\rm  conv}= M_{\rm  conv}/M_{\rm  env}$ or on the total helium mass fraction $M_{\rm  He}/M$. For each \texttt  {BSE} phase of the donor star, \texttt  {SEVN} associates a critical donor-to-accretor mass ratio $q_{\rm  crit}$ that, if overcome, triggers a Roche lobe overflow unstable on the dynamical timescale.\relax }}{43}{table.caption.85}\protected@file@percent }
+\newlabel{tab:phasesqcritSEVN}{{3.1}{43}{Stellar evolution phases with their equivalent nuclear burning and \texttt {SEVN} macro-phase $p$ used for interpolation (Sec.\ \ref {subsec:SEVNproperties}). Stars are also classified with their equivalent \texttt {BSE} phase \cite {Hurley2002}, imposing a condition on the minimum mass required to burn hydrogen in the core $\mzams \geq 0.7~\msun $, on the fraction of convective envelope with respect to the total envelope mass $f_{\rm conv}= M_{\rm conv}/M_{\rm env}$ or on the total helium mass fraction $M_{\rm He}/M$. For each \texttt {BSE} phase of the donor star, \texttt {SEVN} associates a critical donor-to-accretor mass ratio $q_{\rm crit}$ that, if overcome, triggers a Roche lobe overflow unstable on the dynamical timescale.\relax }{table.caption.85}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.3}Mass transfer}{43}{subsection.3.1.3}\protected@file@percent }
+\newlabel{subsec:masstransferSEVN}{{3.1.3}{43}{Mass transfer}{subsection.3.1.3}{}}
+\@writefile{toc}{\contentsline {paragraph}{RLO stability criterion}{43}{section*.86}\protected@file@percent }
+\newlabel{eq:qcritgiants}{{3.2}{43}{RLO stability criterion}{equation.3.1.2}{}}
+\abx@aux@cite{Hurley2002}
+\abx@aux@segm{0}{0}{Hurley2002}
+\abx@aux@cite{spera2019_mergingBBH}
+\abx@aux@segm{0}{0}{spera2019_mergingBBH}
+\abx@aux@cite{Webbink1984_CE}
+\abx@aux@segm{0}{0}{Webbink1984_CE}
+\abx@aux@cite{Hurley2002}
+\abx@aux@segm{0}{0}{Hurley2002}
+\@writefile{toc}{\contentsline {paragraph}{Stable RLO}{44}{section*.87}\protected@file@percent }
+\newlabel{eq:masslossrateRLSEVN}{{3.3}{44}{Stable RLO}{equation.3.1.3}{}}
+\newlabel{eq:accretionrateSEVN}{{3.7}{44}{Stable RLO}{equation.3.1.7}{}}
+\@writefile{toc}{\contentsline {paragraph}{Common envelope}{44}{section*.88}\protected@file@percent }
+\abx@aux@cite{Fryer2012}
+\abx@aux@segm{0}{0}{Fryer2012}
+\abx@aux@cite{Belczynski2010_WRwindsSTARTRACK}
+\abx@aux@segm{0}{0}{Belczynski2010_WRwindsSTARTRACK}
+\abx@aux@cite{Fryer2012}
+\abx@aux@segm{0}{0}{Fryer2012}
+\abx@aux@cite{Fryer2012}
+\abx@aux@segm{0}{0}{Fryer2012}
+\abx@aux@cite{massgapreal_ozel2010}
+\abx@aux@segm{0}{0}{massgapreal_ozel2010}
+\abx@aux@cite{NSreview}
+\abx@aux@segm{0}{0}{NSreview}
+\abx@aux@cite{massgapreal_ozel2010}
+\abx@aux@segm{0}{0}{massgapreal_ozel2010}
+\abx@aux@cite{NSreview}
+\abx@aux@segm{0}{0}{NSreview}
+\abx@aux@cite{Oconnor2011_compactness}
+\abx@aux@segm{0}{0}{Oconnor2011_compactness}
+\abx@aux@cite{Limongi2018_rotatingCOcompactness}
+\abx@aux@segm{0}{0}{Limongi2018_rotatingCOcompactness}
 \abx@aux@cite{mapelli2020_compactness}
 \abx@aux@segm{0}{0}{mapelli2020_compactness}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.5}Core-collapse supernovae}{44}{subsection.3.1.5}\protected@file@percent }
-\newlabel{subsec:SNmodels}{{3.1.5}{44}{Core-collapse supernovae}{subsection.3.1.5}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.6}Supernova kicks}{44}{subsection.3.1.6}\protected@file@percent }
-\newlabel{subsec:kicksSEVN}{{3.1.6}{44}{Supernova kicks}{subsection.3.1.6}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}Initial conditions for simulations}{44}{section.3.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}Compactness model implemented in SEVN}{44}{section.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.4}Core-collapse supernovae}{45}{subsection.3.1.4}\protected@file@percent }
+\newlabel{subsec:SNmodels}{{3.1.4}{45}{Core-collapse supernovae}{subsection.3.1.4}{}}
+\@writefile{toc}{\contentsline {paragraph}{Rapid and delayed}{45}{section*.89}\protected@file@percent }
+\newlabel{eq:fryermass}{{3.8}{45}{Rapid and delayed}{equation.3.1.8}{}}
+\@writefile{toc}{\contentsline {paragraph}{Compact}{45}{section*.91}\protected@file@percent }
+\newlabel{eq:compactness}{{3.9}{45}{Compact}{equation.3.1.9}{}}
+\abx@aux@cite{Ertl2016}
+\abx@aux@segm{0}{0}{Ertl2016}
 \abx@aux@cite{COcollapse}
 \abx@aux@segm{0}{0}{COcollapse}
-\@writefile{toc}{\contentsline {chapter}{\numberline {4}Results}{47}{chapter.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Compact object masses for \emph  {rapid} (red), \emph  {delayed} (black) and \emph  {compact} (blue) CCSN models implemented in \texttt  {SEVN} for the two solar metallicities adopted in this thesis: $Z=0.02$ (\emph  {top}) and $Z=0.0015$ (\emph  {bottom}). \emph  {Left:} Gray thick line shows the pre-SN mass as a function of the initial progenitor mass $M_\textup  {ZAMS}$. \emph  {Compact} model produces heavier remnants and black holes even from the lighter progenitors, without the abrupt jumps exhibited by the \emph  {rapid} one and the strong sensibility on the CO mass also shown by the \emph  {delayed} model. \emph  {Right:} Normalized counts of the compact object masses obtained simulating with \texttt  {SEVN} 10~000 stars extracted from a Kroupa initial mass function (see Sec.\ \ref  {sec:initialconditionsSEVN}). The limited sample caused the non-physical gaps at $M_{\rm  rem} \sim 11~\ensuremath  {M\ensuremath  {_\odot }}$ for $Z=0.02$ and the less dense points in the left-hand panel towards higher masses. In contrast, the \emph  {rapid} model reproduces the putative low-mass gap $M_{\rm  rem} \sim 2-5~\ensuremath  {M\ensuremath  {_\odot }}$ \cite {massgapreal_ozel2010}. Black dashed line at $3~\ensuremath  {M\ensuremath  {_\odot }}$ discriminates between neutron stars and black holes \cite {NSreview}. \relax }}{46}{figure.caption.90}\protected@file@percent }
+\newlabel{fig:remnants}{{3.2}{46}{Compact object masses for \emph {rapid} (red), \emph {delayed} (black) and \emph {compact} (blue) CCSN models implemented in \texttt {SEVN} for the two solar metallicities adopted in this thesis: $Z=0.02$ (\emph {top}) and $Z=0.0015$ (\emph {bottom}). \emph {Left:} Gray thick line shows the pre-SN mass as a function of the initial progenitor mass $\mzams $. \emph {Compact} model produces heavier remnants and black holes even from the lighter progenitors, without the abrupt jumps exhibited by the \emph {rapid} one and the strong sensibility on the CO mass also shown by the \emph {delayed} model. \emph {Right:} Normalized counts of the compact object masses obtained simulating with \texttt {SEVN} 10~000 stars extracted from a Kroupa initial mass function (see Sec.\ \ref {sec:initialconditionsSEVN}). The limited sample caused the non-physical gaps at $M_{\rm rem} \sim 11~\msun $ for $Z=0.02$ and the less dense points in the left-hand panel towards higher masses. In contrast, the \emph {rapid} model reproduces the putative low-mass gap $M_{\rm rem} \sim 2-5~\msun $ \cite {massgapreal_ozel2010}. Black dashed line at $3~\msun $ discriminates between neutron stars and black holes \cite {NSreview}. \relax }{figure.caption.90}{}}
+\newlabel{eq:compactnessCOinSEVN}{{3.10}{46}{Compact}{equation.3.1.10}{}}
+\abx@aux@cite{mapelli2020_compactness}
+\abx@aux@segm{0}{0}{mapelli2020_compactness}
+\abx@aux@cite{Fryer2012}
+\abx@aux@segm{0}{0}{Fryer2012}
+\abx@aux@cite{NSreview}
+\abx@aux@segm{0}{0}{NSreview}
+\abx@aux@cite{spera2019_mergingBBH}
+\abx@aux@segm{0}{0}{spera2019_mergingBBH}
+\abx@aux@cite{Fryer2012}
+\abx@aux@segm{0}{0}{Fryer2012}
+\abx@aux@cite{massgapreal_ozel2010}
+\abx@aux@segm{0}{0}{massgapreal_ozel2010}
+\abx@aux@cite{COcollapse}
+\abx@aux@segm{0}{0}{COcollapse}
+\abx@aux@cite{mapelli2020_compactness}
+\abx@aux@segm{0}{0}{mapelli2020_compactness}
+\abx@aux@cite{COcollapse}
+\abx@aux@segm{0}{0}{COcollapse}
+\abx@aux@cite{mapelli2020_compactness}
+\abx@aux@segm{0}{0}{mapelli2020_compactness}
+\abx@aux@cite{Clayes2014_lambdaCE}
+\abx@aux@segm{0}{0}{Clayes2014_lambdaCE}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Explodability (white) and implodability (blue) probability distribution functions for the compactness parameter $\xi _{2.5}$ extracted by Patton \& Sukhbold \cite {COcollapse}. \texttt  {SEVN} randomly draws a threshold compactness $\xi _C$ from the explodability distribution \cite {mapelli2020_compactness}.\relax }}{47}{figure.caption.93}\protected@file@percent }
+\newlabel{fig:compactness}{{3.3}{47}{Explodability (white) and implodability (blue) probability distribution functions for the compactness parameter $\xi _{2.5}$ extracted by Patton \& Sukhbold \cite {COcollapse}. \texttt {SEVN} randomly draws a threshold compactness $\xi _C$ from the explodability distribution \cite {mapelli2020_compactness}.\relax }{figure.caption.93}{}}
+\newlabel{eq:massBHcompactness}{{3.11}{47}{Compact}{equation.3.1.11}{}}
+\@writefile{toc}{\contentsline {paragraph}{Model comparison}{47}{section*.92}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.5}Supernova kicks}{48}{subsection.3.1.5}\protected@file@percent }
+\newlabel{subsec:kicksSEVN}{{3.1.5}{48}{Supernova kicks}{subsection.3.1.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Initial conditions for simulations}{48}{section.3.2}\protected@file@percent }
+\newlabel{sec:initialconditionsSEVN}{{3.2}{48}{Initial conditions for simulations}{section.3.2}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Results}{49}{chapter.4}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{sec:results}{{4}{47}{Results}{chapter.4}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.1}> 90 \% GW-BBH undergo WR-BH configuration}{47}{section.4.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {4.2}Fiducial model}{47}{section.4.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {4.3}Role of metallicity}{47}{section.4.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {4.4}Role of the kicks}{47}{section.4.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {4.5}Role of CCSN model}{47}{section.4.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {4.6}Probing the parameter space}{47}{section.4.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {4.7}Compare with Belczynski+2013}{48}{section.4.7}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}Conclusion}{49}{chapter.5}\protected@file@percent }
+\newlabel{sec:results}{{4}{49}{Results}{chapter.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}> 90 \% GW-BBH undergo WR-BH configuration}{49}{section.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Fiducial model}{49}{section.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}Role of metallicity}{49}{section.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4.4}Role of the kicks}{49}{section.4.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4.5}Role of CCSN model}{49}{section.4.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4.6}Probing the parameter space}{49}{section.4.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4.7}Compare with Belczynski+2013}{50}{section.4.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Conclusion}{51}{chapter.5}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {chapter}{\numberline {6}Annotazioni/Bozza}{51}{chapter.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}Annotazioni/Bozza}{53}{chapter.6}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.0.1}Parameter space to explore}{51}{subsection.6.0.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.0.2}Compare with Belczynski}{51}{subsection.6.0.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.0.3}Notes on how SEVN works/how to interpret things/where to focus}{52}{subsection.6.0.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {6.1}Results Cyg X-3}{53}{section.6.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{Bibliography}{55}{chapter*.87}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.0.1}Parameter space to explore}{53}{subsection.6.0.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.0.2}Compare with Belczynski}{53}{subsection.6.0.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.0.3}Notes on how SEVN works/how to interpret things/where to focus}{54}{subsection.6.0.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6.1}Results Cyg X-3}{55}{section.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{Bibliography}{57}{chapter*.94}\protected@file@percent }
 \abx@aux@refcontextdefaultsdone
 \abx@aux@defaultrefcontext{0}{Abbott2016firstGW}{none/global//global/global}
 \abx@aux@defaultrefcontext{0}{GWTC-3}{none/global//global/global}
@@ -865,5 +943,9 @@
 \abx@aux@defaultrefcontext{0}{Belczynski2010_WRwindsSTARTRACK}{none/global//global/global}
 \abx@aux@defaultrefcontext{0}{Pols1998evotracks}{none/global//global/global}
 \abx@aux@defaultrefcontext{0}{MIST_Choi2016}{none/global//global/global}
+\abx@aux@defaultrefcontext{0}{Fryer2012}{none/global//global/global}
+\abx@aux@defaultrefcontext{0}{Oconnor2011_compactness}{none/global//global/global}
+\abx@aux@defaultrefcontext{0}{Limongi2018_rotatingCOcompactness}{none/global//global/global}
 \abx@aux@defaultrefcontext{0}{mapelli2020_compactness}{none/global//global/global}
+\abx@aux@defaultrefcontext{0}{Ertl2016}{none/global//global/global}
 \abx@aux@defaultrefcontext{0}{COcollapse}{none/global//global/global}
