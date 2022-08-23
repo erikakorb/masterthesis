@@ -121,6 +121,7 @@
       \strng{authorbibnamehash}{ba1e52fd63a0dacf5cc6b2919fd646c6}
       \strng{authornamehash}{ba1e52fd63a0dacf5cc6b2919fd646c6}
       \strng{authorfullhash}{009e050f0549ebe66452633fb58c47ce}
+      \field{extraname}{1}
       \field{sortinit}{3}
       \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
       \field{labelnamesource}{author}
@@ -4759,6 +4760,50 @@
       \endverb
       \keyw{black hole physics,stars: neutron,supernovae: general,Astrophysics - Solar and Stellar Astrophysics,Astrophysics - High Energy Astrophysical Phenomena}
     \endentry
+    \entry{Zevin2020_neutrinolosses}{article}{}
+      \name{author}{4}{}{%
+        {{hash=b0c9d52075121c69bb9ad53d53371baf}{%
+           family={Zevin},
+           familyi={Z\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=4a2658eece869e63c003859b79de5377}{%
+           family={Spera},
+           familyi={S\bibinitperiod},
+           given={Mario},
+           giveni={M\bibinitperiod}}}%
+        {{hash=5dec59b7b97112fc30252e759dd21dee}{%
+           family={Berry},
+           familyi={B\bibinitperiod},
+           given={Christopher\bibnamedelima PL},
+           giveni={C\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=60f2706bc72ced3eaac8bf5eef91c543}{%
+           family={Kalogera},
+           familyi={K\bibinitperiod},
+           given={Vicky},
+           giveni={V\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{babfa8776db49eddc42cdf55d69a10a4}
+      \strng{fullhash}{6eeec7d82508d5e01e48365b1471d8ef}
+      \strng{bibnamehash}{babfa8776db49eddc42cdf55d69a10a4}
+      \strng{authorbibnamehash}{babfa8776db49eddc42cdf55d69a10a4}
+      \strng{authornamehash}{babfa8776db49eddc42cdf55d69a10a4}
+      \strng{authorfullhash}{6eeec7d82508d5e01e48365b1471d8ef}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Astrophysical Journal Letters}
+      \field{number}{1}
+      \field{title}{Exploring the lower mass gap and unequal mass regime in compact binary evolution}
+      \field{volume}{899}
+      \field{year}{2020}
+      \field{pages}{L1}
+      \range{pages}{1}
+    \endentry
     \entry{Oconnor2011_compactness}{article}{}
       \name{author}{2}{}{%
         {{hash=706feb361154773f273f13eb66b35156}{%
@@ -5011,6 +5056,341 @@
       \verb 2005.03055
       \endverb
       \keyw{stars: evolution,stars: massive,supernovae: general,Astrophysics - Solar and Stellar Astrophysics,Astrophysics - High Energy Astrophysical Phenomena}
+    \endentry
+    \entry{Blaauw1961}{article}{}
+      \name{author}{1}{}{%
+        {{hash=463fe4822e64410e1e274d699c1cfdef}{%
+           family={{Blaauw}},
+           familyi={B\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{463fe4822e64410e1e274d699c1cfdef}
+      \strng{fullhash}{463fe4822e64410e1e274d699c1cfdef}
+      \strng{bibnamehash}{463fe4822e64410e1e274d699c1cfdef}
+      \strng{authorbibnamehash}{463fe4822e64410e1e274d699c1cfdef}
+      \strng{authornamehash}{463fe4822e64410e1e274d699c1cfdef}
+      \strng{authorfullhash}{463fe4822e64410e1e274d699c1cfdef}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{\bain}
+      \field{month}{5}
+      \field{title}{{On the origin of the O- and B-type stars with high velocities (the ``run-away'' stars), and some related problems}}
+      \field{volume}{15}
+      \field{year}{1961}
+      \field{pages}{265}
+      \range{pages}{1}
+    \endentry
+    \entry{Mandel2016_kicks}{article}{}
+      \name{author}{1}{}{%
+        {{hash=805cd5d20d9322527c7f76b0cbf51952}{%
+           family={Mandel},
+           familyi={M\bibinitperiod},
+           given={Ilya},
+           giveni={I\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{805cd5d20d9322527c7f76b0cbf51952}
+      \strng{fullhash}{805cd5d20d9322527c7f76b0cbf51952}
+      \strng{bibnamehash}{805cd5d20d9322527c7f76b0cbf51952}
+      \strng{authorbibnamehash}{805cd5d20d9322527c7f76b0cbf51952}
+      \strng{authornamehash}{805cd5d20d9322527c7f76b0cbf51952}
+      \strng{authorfullhash}{805cd5d20d9322527c7f76b0cbf51952}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Monthly Notices of The Royal Astronomical Society}
+      \field{number}{1}
+      \field{title}{Estimates of black hole natal kick velocities from observations of low-mass X-ray binaries}
+      \field{volume}{456}
+      \field{year}{2016}
+      \field{pages}{578\bibrangedash 581}
+      \range{pages}{4}
+    \endentry
+    \entry{Hobbs2005}{article}{}
+      \name{author}{4}{}{%
+        {{hash=b669c071ca016244e210d1b7adfb1ab2}{%
+           family={{Hobbs}},
+           familyi={H\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=859a8fc5c728f68c05d89179c322831a}{%
+           family={{Lorimer}},
+           familyi={L\bibinitperiod},
+           given={D.\bibnamedelimi R.},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=ecc78817e59521488a85f05546958625}{%
+           family={{Lyne}},
+           familyi={L\bibinitperiod},
+           given={A.\bibnamedelimi G.},
+           giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=d60583cde39d3554f09f99a0ea1b35fb}{%
+           family={{Kramer}},
+           familyi={K\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{61fba6b9111c8568371281317d577dcf}
+      \strng{fullhash}{fcf79b5afabe7a054191910aace624f4}
+      \strng{bibnamehash}{61fba6b9111c8568371281317d577dcf}
+      \strng{authorbibnamehash}{61fba6b9111c8568371281317d577dcf}
+      \strng{authornamehash}{61fba6b9111c8568371281317d577dcf}
+      \strng{authorfullhash}{fcf79b5afabe7a054191910aace624f4}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{astro-ph}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{\mnras}
+      \field{month}{7}
+      \field{number}{3}
+      \field{title}{{A statistical study of 233 pulsar proper motions}}
+      \field{volume}{360}
+      \field{year}{2005}
+      \field{pages}{974\bibrangedash 992}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1111/j.1365-2966.2005.09087.x
+      \endverb
+      \verb{eprint}
+      \verb astro-ph/0504584
+      \endverb
+      \keyw{stars: kinematics,pulsars: general,Astrophysics}
+    \endentry
+    \entry{Verbunt2017_bimodalkicks}{article}{}
+      \name{author}{3}{}{%
+        {{hash=9d8498158d9dee16e4d339303ec3ebca}{%
+           family={{Verbunt}},
+           familyi={V\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+        {{hash=5847ccb2d8db68b6f08a27472eda4144}{%
+           family={{Igoshev}},
+           familyi={I\bibinitperiod},
+           given={Andrei},
+           giveni={A\bibinitperiod}}}%
+        {{hash=cb28afe41b6cb4b8b5149715a26d1b0a}{%
+           family={{Cator}},
+           familyi={C\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{3bf6372ebc89a87b0b8fe14c78bbaf5f}
+      \strng{fullhash}{2dd9f1e40bc027df69d08a03f77d05f9}
+      \strng{bibnamehash}{3bf6372ebc89a87b0b8fe14c78bbaf5f}
+      \strng{authorbibnamehash}{3bf6372ebc89a87b0b8fe14c78bbaf5f}
+      \strng{authornamehash}{3bf6372ebc89a87b0b8fe14c78bbaf5f}
+      \strng{authorfullhash}{2dd9f1e40bc027df69d08a03f77d05f9}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{A57}
+      \field{journaltitle}{\aap}
+      \field{month}{12}
+      \field{title}{{The observed velocity distribution of young pulsars}}
+      \field{volume}{608}
+      \field{year}{2017}
+      \keyw{stars: neutron,pulsars: general,methods: statistical,Astrophysics - High Energy Astrophysical Phenomena,Astrophysics - Solar and Stellar Astrophysics}
+    \endentry
+    \entry{Atri2019_kicks}{article}{}
+      \name{author}{17}{}{%
+        {{hash=a9726263a976816ece87ea1a52a0dad1}{%
+           family={{Atri}},
+           familyi={A\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=f0d08ae06012d444f571ba3e43610e64}{%
+           family={{Miller-Jones}},
+           familyi={M\bibinitperiod},
+           given={J.\bibnamedelimi C.\bibnamedelimi A.},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=142409534e1858edc9ae88689aae0c0e}{%
+           family={{Bahramian}},
+           familyi={B\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=057eeed21483b2b0f746ce4f4bb5a2ce}{%
+           family={{Plotkin}},
+           familyi={P\bibinitperiod},
+           given={R.\bibnamedelimi M.},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=63ef1ed431d892b176b55bdb0716c473}{%
+           family={{Jonker}},
+           familyi={J\bibinitperiod},
+           given={P.\bibnamedelimi G.},
+           giveni={P\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=645a4e195dc7bb5ecb2055755d4dc32a}{%
+           family={{Nelemans}},
+           familyi={N\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=4add971460bbcce9e8c020192b03e779}{%
+           family={{Maccarone}},
+           familyi={M\bibinitperiod},
+           given={T.\bibnamedelimi J.},
+           giveni={T\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=9cc242d87f5d44426b01b012e0ca4c5a}{%
+           family={{Sivakoff}},
+           familyi={S\bibinitperiod},
+           given={G.\bibnamedelimi R.},
+           giveni={G\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=a1c4d3d04320ecd25e2fefb2f014f14c}{%
+           family={{Deller}},
+           familyi={D\bibinitperiod},
+           given={A.\bibnamedelimi T.},
+           giveni={A\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=3b76ddeb85bd4e76e25659bc78cd0aa8}{%
+           family={{Chaty}},
+           familyi={C\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=f3773fcf962848752c8001d740085760}{%
+           family={{Torres}},
+           familyi={T\bibinitperiod},
+           given={M.\bibnamedelimi A.\bibnamedelimi P.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=ed76920469634daf8a0646d3fe55c9c2}{%
+           family={{Horiuchi}},
+           familyi={H\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=2d3699b15192a12eea34d90b3da8af4b}{%
+           family={{McCallum}},
+           familyi={M\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=17962ad2f155bc89a88e81d5b6b6def3}{%
+           family={{Natusch}},
+           familyi={N\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=7bc86f8c819a77b3c569e3ac69762b91}{%
+           family={{Phillips}},
+           familyi={P\bibinitperiod},
+           given={C.\bibnamedelimi J.},
+           giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=8c76ba30f2e0eecbb86c32902a9f3ac6}{%
+           family={{Stevens}},
+           familyi={S\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=e234a8e64a07ee11392ea0d8e5e231e1}{%
+           family={{Weston}},
+           familyi={W\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{e3d0ee5e7819d1ce58d5544f9a6a9f1a}
+      \strng{fullhash}{229730502e33cb142ed75bc00ce3cccd}
+      \strng{bibnamehash}{e3d0ee5e7819d1ce58d5544f9a6a9f1a}
+      \strng{authorbibnamehash}{e3d0ee5e7819d1ce58d5544f9a6a9f1a}
+      \strng{authornamehash}{e3d0ee5e7819d1ce58d5544f9a6a9f1a}
+      \strng{authorfullhash}{229730502e33cb142ed75bc00ce3cccd}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{astro-ph.HE}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{\mnras}
+      \field{month}{11}
+      \field{number}{3}
+      \field{title}{{Potential kick velocity distribution of black hole X-ray binaries and implications for natal kicks}}
+      \field{volume}{489}
+      \field{year}{2019}
+      \field{pages}{3116\bibrangedash 3134}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1093/mnras/stz2335
+      \endverb
+      \verb{eprint}
+      \verb 1908.07199
+      \endverb
+      \keyw{astrometry,parallaxes,proper motions,stars: kinematics and dynamics,X-rays: binaries,Astrophysics - High Energy Astrophysical Phenomena}
+    \endentry
+    \entry{SNkicksUnified_Giacobbo2020}{article}{}
+      \name{author}{2}{}{%
+        {{hash=414d16414d3d21680b178e1d53ff1330}{%
+           family={{Giacobbo}},
+           familyi={G\bibinitperiod},
+           given={Nicola},
+           giveni={N\bibinitperiod}}}%
+        {{hash=a63bd1a4a95ee5ac182d54e3e4833309}{%
+           family={{Mapelli}},
+           familyi={M\bibinitperiod},
+           given={Michela},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{ba1e52fd63a0dacf5cc6b2919fd646c6}
+      \strng{fullhash}{009e050f0549ebe66452633fb58c47ce}
+      \strng{bibnamehash}{ba1e52fd63a0dacf5cc6b2919fd646c6}
+      \strng{authorbibnamehash}{ba1e52fd63a0dacf5cc6b2919fd646c6}
+      \strng{authornamehash}{ba1e52fd63a0dacf5cc6b2919fd646c6}
+      \strng{authorfullhash}{009e050f0549ebe66452633fb58c47ce}
+      \field{extraname}{2}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{141}
+      \field{eprintclass}{astro-ph.HE}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{\apj}
+      \field{month}{3}
+      \field{number}{2}
+      \field{title}{{Revising Natal Kick Prescriptions in Population Synthesis Simulations}}
+      \field{volume}{891}
+      \field{year}{2020}
+      \field{pages}{141}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3847/1538-4357/ab7335
+      \endverb
+      \verb{eprint}
+      \verb 1909.06385
+      \endverb
+      \keyw{154,1668,162,678,Astrophysics - High Energy Astrophysical Phenomena}
+    \endentry
+    \entry{MoeDiStefano2017}{article}{}
+      \name{author}{2}{}{%
+        {{hash=b245c5d4d65fb9f5547cb75c3ee341c7}{%
+           family={Moe},
+           familyi={M\bibinitperiod},
+           given={Maxwell},
+           giveni={M\bibinitperiod}}}%
+        {{hash=f366a3ea8371fb4ab7511f42585471b4}{%
+           family={Di\bibnamedelima Stefano},
+           familyi={D\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Rosanne},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{0cd7ce58f65ca67c75e38c70066248af}
+      \strng{fullhash}{14a85b571e05eb314462198ef27352bf}
+      \strng{bibnamehash}{0cd7ce58f65ca67c75e38c70066248af}
+      \strng{authorbibnamehash}{0cd7ce58f65ca67c75e38c70066248af}
+      \strng{authornamehash}{0cd7ce58f65ca67c75e38c70066248af}
+      \strng{authorfullhash}{14a85b571e05eb314462198ef27352bf}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Astrophysical Journal Supplement Series}
+      \field{number}{2}
+      \field{title}{Mind your Ps and Qs: the interrelation between period (P) and mass-ratio (Q) distributions of binary stars}
+      \field{volume}{230}
+      \field{year}{2017}
+      \field{pages}{15}
+      \range{pages}{1}
     \endentry
   \enddatalist
 \endrefsection

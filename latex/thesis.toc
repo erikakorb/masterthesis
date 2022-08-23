@@ -96,22 +96,31 @@
 \contentsline {paragraph}{Common envelope}{44}{section*.88}%
 \contentsline {subsection}{\numberline {3.1.4}Core-collapse supernovae}{45}{subsection.3.1.4}%
 \contentsline {paragraph}{Rapid and delayed}{45}{section*.89}%
-\contentsline {paragraph}{Compact}{45}{section*.91}%
-\contentsline {paragraph}{Model comparison}{47}{section*.92}%
+\contentsline {paragraph}{Compact}{46}{section*.91}%
+\contentsline {paragraph}{Model comparison}{47}{section*.93}%
 \contentsline {subsection}{\numberline {3.1.5}Supernova kicks}{48}{subsection.3.1.5}%
-\contentsline {section}{\numberline {3.2}Initial conditions for simulations}{48}{section.3.2}%
-\contentsline {chapter}{\numberline {4}Results}{49}{chapter.4}%
-\contentsline {section}{\numberline {4.1}> 90 \% GW-BBH undergo WR-BH configuration}{49}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Fiducial model}{49}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Role of metallicity}{49}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Role of the kicks}{49}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Role of CCSN model}{49}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Probing the parameter space}{49}{section.4.6}%
-\contentsline {section}{\numberline {4.7}Compare with Belczynski+2013}{50}{section.4.7}%
-\contentsline {chapter}{\numberline {5}Conclusion}{51}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Annotazioni/Bozza}{53}{chapter.6}%
-\contentsline {subsection}{\numberline {6.0.1}Parameter space to explore}{53}{subsection.6.0.1}%
-\contentsline {subsection}{\numberline {6.0.2}Compare with Belczynski}{53}{subsection.6.0.2}%
-\contentsline {subsection}{\numberline {6.0.3}Notes on how SEVN works/how to interpret things/where to focus}{54}{subsection.6.0.3}%
-\contentsline {section}{\numberline {6.1}Results Cyg X-3}{55}{section.6.1}%
-\contentsline {chapter}{Bibliography}{57}{chapter*.94}%
+\contentsline {paragraph}{Uncertainties in natal kicks observations}{48}{section*.94}%
+\contentsline {paragraph}{\texttt {SEVN} assumptions}{48}{section*.95}%
+\contentsline {paragraph}{Hobbs pure }{48}{section*.96}%
+\contentsline {paragraph}{Hobbs}{48}{section*.97}%
+\contentsline {paragraph}{Unified}{48}{section*.98}%
+\contentsline {section}{\numberline {3.2}Initial conditions for simulations}{49}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Parameter space}{49}{subsection.3.2.1}%
+\contentsline {paragraph}{Explored}{49}{section*.99}%
+\contentsline {paragraph}{Fixed}{49}{section*.100}%
+\contentsline {subsection}{\numberline {3.2.2}Generating binary sets}{49}{subsection.3.2.2}%
+\contentsline {chapter}{\numberline {4}Results}{51}{chapter.4}%
+\contentsline {section}{\numberline {4.1}> 90 \% GW-BBH undergo WR-BH configuration}{51}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Fiducial model}{51}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Role of metallicity}{51}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Role of the kicks}{51}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Role of CCSN model}{51}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Probing the parameter space}{51}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Compare with Belczynski+2013}{52}{section.4.7}%
+\contentsline {chapter}{\numberline {5}Conclusion}{53}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Annotazioni/Bozza}{55}{chapter.6}%
+\contentsline {subsection}{\numberline {6.0.1}Parameter space to explore}{55}{subsection.6.0.1}%
+\contentsline {subsection}{\numberline {6.0.2}Compare with Belczynski}{55}{subsection.6.0.2}%
+\contentsline {subsection}{\numberline {6.0.3}Notes on how SEVN works/how to interpret things/where to focus}{56}{subsection.6.0.3}%
+\contentsline {section}{\numberline {6.1}Results Cyg X-3}{57}{section.6.1}%
+\contentsline {chapter}{Bibliography}{59}{chapter*.102}%

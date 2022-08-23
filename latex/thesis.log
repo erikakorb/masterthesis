@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.2.10)  22 AUG 2022 21:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.2.10)  23 AUG 2022 20:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -960,7 +960,7 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 106
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<thesis-frn.pdf, id=209, 597.50829pt x 845.0471pt>
+<thesis-frn.pdf, id=217, 597.50829pt x 845.0471pt>
 File: thesis-frn.pdf Graphic file (type pdf)
 <use thesis-frn.pdf>
 Package pdftex.def Info: thesis-frn.pdf  used on input line 109.
@@ -992,7 +992,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 226--227
 
  []
 
-<./images/GW150914.png, id=388, 839.38594pt x 678.28406pt>
+<./images/GW150914.png, id=398, 839.38594pt x 678.28406pt>
 File: ./images/GW150914.png Graphic file (type png)
 <use ./images/GW150914.png>
 Package pdftex.def Info: ./images/GW150914.png  used on input line 257.
@@ -1001,12 +1001,12 @@ Package pdftex.def Info: ./images/GW150914.png  used on input line 257.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [3]
-<./images/sensitivity.png, id=409, 795.72281pt x 701.62125pt>
+<./images/sensitivity.png, id=419, 795.72281pt x 701.62125pt>
 File: ./images/sensitivity.png Graphic file (type png)
 <use ./images/sensitivity.png>
 Package pdftex.def Info: ./images/sensitivity.png  used on input line 267.
 (pdftex.def)             Requested size: 205.9415pt x 181.58215pt.
-<./images/O3BNSrange.png, id=410, 773.89125pt x 565.36218pt>
+<./images/O3BNSrange.png, id=420, 773.89125pt x 565.36218pt>
 File: ./images/O3BNSrange.png Graphic file (type png)
 <use ./images/O3BNSrange.png>
 Package pdftex.def Info: ./images/O3BNSrange.png  used on input line 272.
@@ -1024,12 +1024,12 @@ Overfull \hbox (2.22166pt too wide) in paragraph at lines 265--274
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./images/ETsensitivity.png, id=413, 609.02531pt x 456.20438pt>
+<./images/ETsensitivity.png, id=423, 609.02531pt x 456.20438pt>
 File: ./images/ETsensitivity.png Graphic file (type png)
 <use ./images/ETsensitivity.png>
 Package pdftex.def Info: ./images/ETsensitivity.png  used on input line 282.
 (pdftex.def)             Requested size: 214.70682pt x 160.82945pt.
-<./images/EThorizon.png, id=414, 609.02531pt x 456.20438pt>
+<./images/EThorizon.png, id=424, 609.02531pt x 456.20438pt>
 File: ./images/EThorizon.png Graphic file (type png)
 <use ./images/EThorizon.png>
 Package pdftex.def Info: ./images/EThorizon.png  used on input line 288.
@@ -1053,23 +1053,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 323--324
 
  []
 
-<./images/MassMergerRate.png, id=451, 748.29562pt x 411.03563pt>
+<./images/MassMergerRate.png, id=461, 748.29562pt x 411.03563pt>
 File: ./images/MassMergerRate.png Graphic file (type png)
 <use ./images/MassMergerRate.png>
 Package pdftex.def Info: ./images/MassMergerRate.png  used on input line 350.
 (pdftex.def)             Requested size: 262.90604pt x 144.41028pt.
-<./images/MassCumulative.png, id=452, 594.72188pt x 470.50781pt>
+<./images/MassCumulative.png, id=462, 594.72188pt x 470.50781pt>
 File: ./images/MassCumulative.png Graphic file (type png)
 <use ./images/MassCumulative.png>
 Package pdftex.def Info: ./images/MassCumulative.png  used on input line 356.
 (pdftex.def)             Requested size: 170.88692pt x 135.19455pt.
 [6]
-<./images/spinmagnitude.png, id=475, 466.74374pt x 339.51843pt>
+<./images/spinmagnitude.png, id=485, 466.74374pt x 339.51843pt>
 File: ./images/spinmagnitude.png Graphic file (type png)
 <use ./images/spinmagnitude.png>
 Package pdftex.def Info: ./images/spinmagnitude.png  used on input line 381.
 (pdftex.def)             Requested size: 214.70682pt x 156.18036pt.
-<./images/spinmagnitudehighlow.png, id=476, 665.48625pt x 493.845pt>
+<./images/spinmagnitudehighlow.png, id=486, 665.48625pt x 493.845pt>
 File: ./images/spinmagnitudehighlow.png Graphic file (type png)
 <use ./images/spinmagnitudehighlow.png>
 Package pdftex.def Info: ./images/spinmagnitudehighlow.png  used on input line 
@@ -1079,12 +1079,12 @@ Package pdftex.def Info: ./images/spinmagnitudehighlow.png  used on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./images/spineff.png, id=479, 670.00313pt x 490.08093pt>
+<./images/spineff.png, id=489, 670.00313pt x 490.08093pt>
 File: ./images/spineff.png Graphic file (type png)
 <use ./images/spineff.png>
 Package pdftex.def Info: ./images/spineff.png  used on input line 396.
 (pdftex.def)             Requested size: 214.70682pt x 157.04596pt.
-<./images/spinorientation.png, id=480, 463.7325pt x 331.2375pt>
+<./images/spinorientation.png, id=490, 463.7325pt x 331.2375pt>
 File: ./images/spinorientation.png Graphic file (type png)
 <use ./images/spinorientation.png>
 Package pdftex.def Info: ./images/spinorientation.png  used on input line 402.
@@ -1092,12 +1092,12 @@ Package pdftex.def Info: ./images/spinorientation.png  used on input line 402.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./images/spinmassratio.png, id=483, 706.13812pt x 532.99126pt>
+<./images/spinmassratio.png, id=493, 706.13812pt x 532.99126pt>
 File: ./images/spinmassratio.png Graphic file (type png)
 <use ./images/spinmassratio.png>
 Package pdftex.def Info: ./images/spinmassratio.png  used on input line 410.
 (pdftex.def)             Requested size: 214.70682pt x 162.06192pt.
-<./images/spinchirpmass.png, id=484, 560.0925pt x 432.11438pt>
+<./images/spinchirpmass.png, id=494, 560.0925pt x 432.11438pt>
 File: ./images/spinchirpmass.png Graphic file (type png)
 <use ./images/spinchirpmass.png>
 Package pdftex.def Info: ./images/spinchirpmass.png  used on input line 416.
@@ -1124,13 +1124,13 @@ Overfull \vbox (0.72755pt too high) has occurred while \output is active []
 PNG copy)> <./images/spineff.png (PNG copy)> <./images/spinorientation.png (PNG
  copy)> <./images/spinmassratio.png (PNG copy)> <./images/spinchirpmass.png (PN
 G copy)>] [9]
-<./images/accretiondiskSED.png, id=529, 421.575pt x 306.39468pt>
+<./images/accretiondiskSED.png, id=539, 421.575pt x 306.39468pt>
 File: ./images/accretiondiskSED.png Graphic file (type png)
 <use ./images/accretiondiskSED.png>
 Package pdftex.def Info: ./images/accretiondiskSED.png  used on input line 459.
 
 (pdftex.def)             Requested size: 254.14072pt x 184.70781pt.
-<./images/accretiondiskFeKalphaline.png, id=530, 475.7775pt x 478.78876pt>
+<./images/accretiondiskFeKalphaline.png, id=540, 475.7775pt x 478.78876pt>
 File: ./images/accretiondiskFeKalphaline.png Graphic file (type png)
 <use ./images/accretiondiskFeKalphaline.png>
 Package pdftex.def Info: ./images/accretiondiskFeKalphaline.png  used on input 
@@ -1167,12 +1167,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 509--510
 
  []
 
-<./images/spinreflection.png, id=570, 615.80063pt x 472.01344pt>
+<./images/spinreflection.png, id=580, 615.80063pt x 472.01344pt>
 File: ./images/spinreflection.png Graphic file (type png)
 <use ./images/spinreflection.png>
 Package pdftex.def Info: ./images/spinreflection.png  used on input line 519.
 (pdftex.def)             Requested size: 210.32082pt x 161.20987pt.
-<./images/spincontinuum.png, id=571, 614.295pt x 459.21562pt>
+<./images/spincontinuum.png, id=581, 614.295pt x 459.21562pt>
 File: ./images/spincontinuum.png Graphic file (type png)
 <use ./images/spincontinuum.png>
 Package pdftex.def Info: ./images/spincontinuum.png  used on input line 525.
@@ -1182,13 +1182,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [12 <./images/spinreflection.png (PNG copy)> <./images/spincontinuum.png (PNG 
 copy)>]
-<./images/tensionHMXBHmass.png, id=588, 917.67844pt x 597.73312pt>
+<./images/tensionHMXBHmass.png, id=598, 917.67844pt x 597.73312pt>
 File: ./images/tensionHMXBHmass.png Graphic file (type png)
 <use ./images/tensionHMXBHmass.png>
 Package pdftex.def Info: ./images/tensionHMXBHmass.png  used on input line 538.
 
 (pdftex.def)             Requested size: 214.70682pt x 139.84709pt.
-<./images/tensionLMXBHmass.png, id=589, 925.20656pt x 602.25pt>
+<./images/tensionLMXBHmass.png, id=599, 925.20656pt x 602.25pt>
 File: ./images/tensionLMXBHmass.png Graphic file (type png)
 <use ./images/tensionLMXBHmass.png>
 Package pdftex.def Info: ./images/tensionLMXBHmass.png  used on input line 544.
@@ -1206,12 +1206,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 554--555
 
 [13 <./images/tensionHMXBHmass.png (PNG copy)> <./images/tensionLMXBHmass.png (
 PNG copy)>]
-<./images/tensionspin.png, id=609, 926.71219pt x 591.71063pt>
+<./images/tensionspin.png, id=619, 926.71219pt x 591.71063pt>
 File: ./images/tensionspin.png Graphic file (type png)
 <use ./images/tensionspin.png>
 Package pdftex.def Info: ./images/tensionspin.png  used on input line 563.
 (pdftex.def)             Requested size: 214.70682pt x 137.08374pt.
-<./images/tensionspinHMXBHlike.png, id=610, 935.74594pt x 607.51968pt>
+<./images/tensionspinHMXBHlike.png, id=620, 935.74594pt x 607.51968pt>
 File: ./images/tensionspinHMXBHlike.png Graphic file (type png)
 <use ./images/tensionspinHMXBHlike.png>
 Package pdftex.def Info: ./images/tensionspinHMXBHlike.png  used on input line 
@@ -1232,18 +1232,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 582--583
 
 ]
 Chapter 2.
-<./images/Sana2012MTfate.png, id=644, 710.655pt x 563.10374pt>
+<./images/Sana2012MTfate.png, id=654, 710.655pt x 563.10374pt>
 File: ./images/Sana2012MTfate.png Graphic file (type png)
 <use ./images/Sana2012MTfate.png>
 Package pdftex.def Info: ./images/Sana2012MTfate.png  used on input line 602.
 (pdftex.def)             Requested size: 284.80931pt x 225.6757pt.
 [17 <./images/Sana2012MTfate.png (PNG copy)>] [18]
-<./images/MLrelation.png, id=680, 597.73312pt x 436.63126pt>
+<./images/MLrelation.png, id=690, 597.73312pt x 436.63126pt>
 File: ./images/MLrelation.png Graphic file (type png)
 <use ./images/MLrelation.png>
 Package pdftex.def Info: ./images/MLrelation.png  used on input line 660.
 (pdftex.def)             Requested size: 201.82492pt x 147.42664pt.
-<./images/stellarwinds.pdf, id=681, 248.03064pt x 166.94371pt>
+<./images/stellarwinds.pdf, id=691, 248.03064pt x 166.94371pt>
 File: ./images/stellarwinds.pdf Graphic file (type pdf)
 <use ./images/stellarwinds.pdf>
 Package pdftex.def Info: ./images/stellarwinds.pdf  used on input line 665.
@@ -1288,7 +1288,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 740--741
 
  []
 
-<./images/HR_02.pdf, id=745, 867.24pt x 867.24pt>
+<./images/HR_02.pdf, id=755, 867.24pt x 867.24pt>
 File: ./images/HR_02.pdf Graphic file (type pdf)
 <use ./images/HR_02.pdf>
 Package pdftex.def Info: ./images/HR_02.pdf  used on input line 750.
@@ -1298,7 +1298,7 @@ Overfull \hbox (10.736pt too wide) in paragraph at lines 750--751
  [][] 
  []
 
-<./images/HR_002.pdf, id=746, 867.24pt x 867.24pt>
+<./images/HR_002.pdf, id=756, 867.24pt x 867.24pt>
 File: ./images/HR_002.pdf Graphic file (type pdf)
 <use ./images/HR_002.pdf>
 Package pdftex.def Info: ./images/HR_002.pdf  used on input line 755.
@@ -1311,7 +1311,7 @@ Overfull \hbox (10.736pt too wide) in paragraph at lines 755--756
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./images/mass_Z02.pdf, id=753, 867.24pt x 867.24pt>
+<./images/mass_Z02.pdf, id=763, 867.24pt x 867.24pt>
 File: ./images/mass_Z02.pdf Graphic file (type pdf)
 <use ./images/mass_Z02.pdf>
 Package pdftex.def Info: ./images/mass_Z02.pdf  used on input line 764.
@@ -1321,7 +1321,7 @@ Overfull \hbox (10.736pt too wide) in paragraph at lines 764--765
  [][] 
  []
 
-<./images/preSN.pdf, id=754, 867.24pt x 867.24pt>
+<./images/preSN.pdf, id=764, 867.24pt x 867.24pt>
 File: ./images/preSN.pdf Graphic file (type pdf)
 <use ./images/preSN.pdf>
 Package pdftex.def Info: ./images/preSN.pdf  used on input line 770.
@@ -1371,12 +1371,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 810--811
  []
 
 [24]
-<./images/masstransfer.pdf, id=882, 867.24pt x 867.24pt>
+<./images/masstransfer.pdf, id=892, 867.24pt x 867.24pt>
 File: ./images/masstransfer.pdf Graphic file (type pdf)
 <use ./images/masstransfer.pdf>
 Package pdftex.def Info: ./images/masstransfer.pdf  used on input line 861.
 (pdftex.def)             Requested size: 240.9961pt x 240.98616pt.
-<./images/Rochepotential.pdf, id=883, 193.68361pt x 200.83833pt>
+<./images/Rochepotential.pdf, id=893, 193.68361pt x 200.83833pt>
 File: ./images/Rochepotential.pdf Graphic file (type pdf)
 <use ./images/Rochepotential.pdf>
 Package pdftex.def Info: ./images/Rochepotential.pdf  used on input line 866.
@@ -1410,12 +1410,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 931--932
  []
 
 [27]
-<./images/stp_roche.pdf, id=967, 221.14621pt x 221.14621pt>
+<./images/stp_roche.pdf, id=977, 221.14621pt x 221.14621pt>
 File: ./images/stp_roche.pdf Graphic file (type pdf)
 <use ./images/stp_roche.pdf>
 Package pdftex.def Info: ./images/stp_roche.pdf  used on input line 936.
 (pdftex.def)             Requested size: 214.70682pt x 214.71065pt.
-<./images/core_he_rlof.pdf, id=968, 706.64pt x 677.53125pt>
+<./images/core_he_rlof.pdf, id=978, 706.64pt x 677.53125pt>
 File: ./images/core_he_rlof.pdf Graphic file (type pdf)
 <use ./images/core_he_rlof.pdf>
 Package pdftex.def Info: ./images/core_he_rlof.pdf  used on input line 942.
@@ -1428,42 +1428,42 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 pdfTeX warning: /usr/bin/pdflatex (file ./images/core_he_rlof.pdf): PDF inclusi
 on: multiple pdfs with page group included in a single page
 >] (./images/ce_schema.pdf_tex
-<./images/ce_schema.pdf, id=1004, page=1, 572.70647pt x 664.34103pt>
+<./images/ce_schema.pdf, id=1014, page=1, 572.70647pt x 664.34103pt>
 File: ./images/ce_schema.pdf Graphic file (type pdf)
 <use ./images/ce_schema.pdf, page 1>
 Package pdftex.def Info: ./images/ce_schema.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 394.35237pt x 457.46321pt.
-<./images/ce_schema.pdf, id=1005, page=2, 572.70647pt x 664.34103pt>
+<./images/ce_schema.pdf, id=1015, page=2, 572.70647pt x 664.34103pt>
 File: ./images/ce_schema.pdf Graphic file (type pdf)
 <use ./images/ce_schema.pdf, page 2>
 Package pdftex.def Info: ./images/ce_schema.pdf , page2 used on input line 60.
 (pdftex.def)             Requested size: 394.35237pt x 457.46321pt.
-<./images/ce_schema.pdf, id=1006, page=3, 572.70647pt x 664.34103pt>
+<./images/ce_schema.pdf, id=1016, page=3, 572.70647pt x 664.34103pt>
 File: ./images/ce_schema.pdf Graphic file (type pdf)
 <use ./images/ce_schema.pdf, page 3>
 Package pdftex.def Info: ./images/ce_schema.pdf , page3 used on input line 62.
 (pdftex.def)             Requested size: 394.35237pt x 457.46321pt.
-<./images/ce_schema.pdf, id=1007, page=4, 572.70647pt x 664.34103pt>
+<./images/ce_schema.pdf, id=1017, page=4, 572.70647pt x 664.34103pt>
 File: ./images/ce_schema.pdf Graphic file (type pdf)
 <use ./images/ce_schema.pdf, page 4>
 Package pdftex.def Info: ./images/ce_schema.pdf , page4 used on input line 64.
 (pdftex.def)             Requested size: 394.35237pt x 457.46321pt.
-<./images/ce_schema.pdf, id=1008, page=5, 572.70647pt x 664.34103pt>
+<./images/ce_schema.pdf, id=1018, page=5, 572.70647pt x 664.34103pt>
 File: ./images/ce_schema.pdf Graphic file (type pdf)
 <use ./images/ce_schema.pdf, page 5>
 Package pdftex.def Info: ./images/ce_schema.pdf , page5 used on input line 67.
 (pdftex.def)             Requested size: 394.35237pt x 457.46321pt.
-<./images/ce_schema.pdf, id=1009, page=6, 572.70647pt x 664.34103pt>
+<./images/ce_schema.pdf, id=1019, page=6, 572.70647pt x 664.34103pt>
 File: ./images/ce_schema.pdf Graphic file (type pdf)
 <use ./images/ce_schema.pdf, page 6>
 Package pdftex.def Info: ./images/ce_schema.pdf , page6 used on input line 70.
 (pdftex.def)             Requested size: 394.35237pt x 457.46321pt.
-<./images/ce_schema.pdf, id=1010, page=7, 572.70647pt x 664.34103pt>
+<./images/ce_schema.pdf, id=1020, page=7, 572.70647pt x 664.34103pt>
 File: ./images/ce_schema.pdf Graphic file (type pdf)
 <use ./images/ce_schema.pdf, page 7>
 Package pdftex.def Info: ./images/ce_schema.pdf , page7 used on input line 72.
 (pdftex.def)             Requested size: 394.35237pt x 457.46321pt.
-<./images/ce_schema.pdf, id=1011, page=8, 572.70647pt x 664.34103pt>
+<./images/ce_schema.pdf, id=1021, page=8, 572.70647pt x 664.34103pt>
 File: ./images/ce_schema.pdf Graphic file (type pdf)
 <use ./images/ce_schema.pdf, page 8>
 Package pdftex.def Info: ./images/ce_schema.pdf , page8 used on input line 75.
@@ -1502,7 +1502,7 @@ pdfTeX warning: /usr/bin/pdflatex (file ./images/ce_schema.pdf): PDF inclusion:
 pdfTeX warning: /usr/bin/pdflatex (file ./images/ce_schema.pdf): PDF inclusion:
  multiple pdfs with page group included in a single page
 >]
-<./images/MESAvspopsynth.png, id=1140, 558.58687pt x 623.32875pt>
+<./images/MESAvspopsynth.png, id=1150, 558.58687pt x 623.32875pt>
 File: ./images/MESAvspopsynth.png Graphic file (type png)
 <use ./images/MESAvspopsynth.png>
 Package pdftex.def Info: ./images/MESAvspopsynth.png  used on input line 1004.
@@ -1521,13 +1521,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 1126--1127
  []
 
 [34]
-<./images/CygX3littlefriend.png, id=1287, 583.42969pt x 526.96875pt>
+<./images/CygX3littlefriend.png, id=1298, 583.42969pt x 526.96875pt>
 File: ./images/CygX3littlefriend.png Graphic file (type png)
 <use ./images/CygX3littlefriend.png>
 Package pdftex.def Info: ./images/CygX3littlefriend.png  used on input line 116
 0.
 (pdftex.def)             Requested size: 214.70682pt x 193.93007pt.
-<./images/CygX3massBH.png, id=1288, 560.8453pt x 555.57562pt>
+<./images/CygX3massBH.png, id=1299, 560.8453pt x 555.57562pt>
 File: ./images/CygX3massBH.png Graphic file (type png)
 <use ./images/CygX3massBH.png>
 Package pdftex.def Info: ./images/CygX3massBH.png  used on input line 1165.
@@ -1539,12 +1539,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 1190--1191
  []
 
 [36]
-<./images/WRwindIC10X-1.png, id=1329, 650.43pt x 685.05937pt>
+<./images/WRwindIC10X-1.png, id=1339, 650.43pt x 685.05937pt>
 File: ./images/WRwindIC10X-1.png Graphic file (type png)
 <use ./images/WRwindIC10X-1.png>
 Package pdftex.def Info: ./images/WRwindIC10X-1.png  used on input line 1199.
 (pdftex.def)             Requested size: 170.88692pt x 179.98235pt.
-<./images/WRwindNGC300.png, id=1330, 730.98094pt x 535.2497pt>
+<./images/WRwindNGC300.png, id=1340, 730.98094pt x 535.2497pt>
 File: ./images/WRwindNGC300.png Graphic file (type png)
 <use ./images/WRwindNGC300.png>
 Package pdftex.def Info: ./images/WRwindNGC300.png  used on input line 1204.
@@ -1570,13 +1570,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 1221--1222
 ]
 Chapter 3.
 [41] (./images/interpolation.pdf_tex
-<./images/interpolation.pdf, id=1407, page=1, 349.0302pt x 240.63527pt>
+<./images/interpolation.pdf, id=1417, page=1, 349.0302pt x 240.63527pt>
 File: ./images/interpolation.pdf Graphic file (type pdf)
 <use ./images/interpolation.pdf, page 1>
 Package pdftex.def Info: ./images/interpolation.pdf , page1 used on input line 
 56.
 (pdftex.def)             Requested size: 219.08614pt x 151.05025pt.
-<./images/interpolation.pdf, id=1408, page=2, 349.0302pt x 240.63527pt>
+<./images/interpolation.pdf, id=1418, page=2, 349.0302pt x 240.63527pt>
 File: ./images/interpolation.pdf Graphic file (type pdf)
 <use ./images/interpolation.pdf, page 2>
 Package pdftex.def Info: ./images/interpolation.pdf , page2 used on input line 
@@ -1606,48 +1606,48 @@ Underfull \hbox (badness 10000) in paragraph at lines 1389--1390
 
  []
 
-<./images/remnants_Z02.jpg, id=1491, 1084.05pt x 722.7pt>
+<./images/remnants_Z02.jpg, id=1503, 1084.05pt x 722.7pt>
 File: ./images/remnants_Z02.jpg Graphic file (type jpg)
 <use ./images/remnants_Z02.jpg>
-Package pdftex.def Info: ./images/remnants_Z02.jpg  used on input line 1419.
+Package pdftex.def Info: ./images/remnants_Z02.jpg  used on input line 1425.
 (pdftex.def)             Requested size: 276.05214pt x 184.02692pt.
 
-Overfull \hbox (13.1461pt too wide) in paragraph at lines 1419--1420
+Overfull \hbox (13.1461pt too wide) in paragraph at lines 1425--1426
  [][] 
  []
 
-<./images/hist_Z02.pdf, id=1492, 722.7pt x 722.7pt>
+<./images/hist_Z02.pdf, id=1504, 722.7pt x 722.7pt>
 File: ./images/hist_Z02.pdf Graphic file (type pdf)
 <use ./images/hist_Z02.pdf>
-Package pdftex.def Info: ./images/hist_Z02.pdf  used on input line 1424.
+Package pdftex.def Info: ./images/hist_Z02.pdf  used on input line 1430.
 (pdftex.def)             Requested size: 179.43178pt x 179.42844pt.
 
-Overfull \hbox (8.54486pt too wide) in paragraph at lines 1424--1425
+Overfull \hbox (8.54486pt too wide) in paragraph at lines 1430--1431
  [][] 
  []
 
-<./images/remnants_Z015.jpg, id=1493, 1084.05pt x 722.7pt>
+<./images/remnants_Z015.jpg, id=1505, 1084.05pt x 722.7pt>
 File: ./images/remnants_Z015.jpg Graphic file (type jpg)
 <use ./images/remnants_Z015.jpg>
-Package pdftex.def Info: ./images/remnants_Z015.jpg  used on input line 1429.
+Package pdftex.def Info: ./images/remnants_Z015.jpg  used on input line 1435.
 (pdftex.def)             Requested size: 276.05214pt x 184.02692pt.
 
-Overfull \hbox (13.1461pt too wide) in paragraph at lines 1429--1430
+Overfull \hbox (13.1461pt too wide) in paragraph at lines 1435--1436
  [][] 
  []
 
-<./images/hist_Z015.pdf, id=1494, 722.7pt x 722.7pt>
+<./images/hist_Z015.pdf, id=1506, 722.7pt x 722.7pt>
 File: ./images/hist_Z015.pdf Graphic file (type pdf)
 <use ./images/hist_Z015.pdf>
-Package pdftex.def Info: ./images/hist_Z015.pdf  used on input line 1434.
+Package pdftex.def Info: ./images/hist_Z015.pdf  used on input line 1440.
 (pdftex.def)             Requested size: 184.03008pt x 184.02692pt.
 
-Overfull \hbox (8.76384pt too wide) in paragraph at lines 1434--1435
+Overfull \hbox (8.76384pt too wide) in paragraph at lines 1440--1441
  [][] 
  []
 
 
-Overfull \hbox (2.22166pt too wide) in paragraph at lines 1427--1436
+Overfull \hbox (2.22166pt too wide) in paragraph at lines 1433--1442
 []$[]$  $[]$ 
  []
 
@@ -1657,95 +1657,87 @@ _Z015.jpg> <./images/hist_Z015.pdf
 pdfTeX warning: /usr/bin/pdflatex (file ./images/hist_Z015.pdf): PDF inclusion:
  multiple pdfs with page group included in a single page
 >]
-Underfull \hbox (badness 10000) in paragraph at lines 1460--1461
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1462--1463
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1466--1467
-
- []
-
-<./images/compactness.png, id=1563, 225.4824pt x 56.1297pt>
+<./images/compactness.png, id=1570, 225.4824pt x 56.1297pt>
 File: ./images/compactness.png Graphic file (type png)
 <use ./images/compactness.png>
-Package pdftex.def Info: ./images/compactness.png  used on input line 1473.
+Package pdftex.def Info: ./images/compactness.png  used on input line 1472.
 (pdftex.def)             Requested size: 394.35237pt x 98.17189pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 1486--1487
-
- []
-
-[47 <./images/compactness.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1488--1489
+ [47 <./images/compactness.png>] [48]
+Underfull \hbox (badness 10000) in paragraph at lines 1529--1530
 
  []
 
-[48]
+<./images/parameterspace.png, id=1626, 311.56172pt x 110.86874pt>
+File: ./images/parameterspace.png Graphic file (type png)
+<use ./images/parameterspace.png>
+Package pdftex.def Info: ./images/parameterspace.png  used on input line 1537.
+(pdftex.def)             Requested size: 416.26233pt x 148.13872pt.
+[49 <./images/parameterspace.png>] [50]
 Chapter 4.
-[49
-
-] [50]
-Chapter 5.
 [51
 
-] [52
+] [52]
+Chapter 5.
+[53
+
+] [54
 
 ]
 Chapter 6.
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 1570.
+(hyperref)                than one, level fixed on input line 1660.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1592--1593
-
- []
-
-[53]
-Underfull \hbox (badness 10000) in paragraph at lines 1608--1609
+Underfull \hbox (badness 10000) in paragraph at lines 1682--1683
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 1618--1619
+[55]
+Underfull \hbox (badness 10000) in paragraph at lines 1698--1699
 
  []
 
-[54] [55] [56
 
-] [57] [58]
-Overfull \hbox (30.96431pt too wide) in paragraph at lines 1650--1650
-\T1/cmr/m/n/10 tion of merg-ing bi-nary black holes?^^Q In: \T1/cmr/m/it/10 arX
-iv e-prints\T1/cmr/m/n/10 , arXiv:2207.14290 (July 2022), arXiv:2207.14290. 
+Underfull \hbox (badness 10000) in paragraph at lines 1708--1709
+
  []
 
-[59] [60]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1651.
- [61]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1651.
+[56] [57] [58
+
+] [59]
+Overfull \hbox (1.95154pt too wide) in paragraph at lines 1740--1740
+[]\T1/cmr/m/n/10 Juri Pouta-nen et al. ^^P  Black hole spin^^Uorbit mis-align-m
+ent in the x-ray bi-nary MAXI J1820+070^^Q.
+ []
+
+[60] [61]
+Overfull \hbox (2.66193pt too wide) in paragraph at lines 1740--1740
+[]\T1/cmr/m/n/10 B. Lemasle et al. ^^P  Milky Way metal-lic-ity gra-di-ent from
+ Gaia DR2 F/1O double-mode Cepheids^^Q.
+ []
+
+[62] [63]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1741.
+ [64]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1741.
  (./thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1651.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1651.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1741.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1741.
 
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: DCCF0869F6C591B919B113633A08D3A5;3885.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1651.
+(rerunfilecheck)             Checksum: 49FB9E818A73FD1810AF740B23348061;4031.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1741.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 22516 strings out of 483099
- 418723 string characters out of 5964234
- 1089279 words of memory out of 5000000
- 36745 multiletter control sequences out of 15000+600000
- 564358 words of font info for 106 fonts, out of 8000000 for 9000
+ 22586 strings out of 483099
+ 420520 string characters out of 5964234
+ 1090924 words of memory out of 5000000
+ 36783 multiletter control sequences out of 15000+600000
+ 564671 words of font info for 107 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  41i,15n,62p,1964b,2917s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/share/texmf
@@ -1785,11 +1777,12 @@ ype1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super
 /sfrm0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/
 share/texmf/fonts/type1/public/cm-super/sfti0900.pfb></usr/share/texmf/fonts/ty
 pe1/public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/
-sftt0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on thesis.pdf (67 pages, 5994836 bytes).
+sftt0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt0900.pfb></usr/s
+hare/texmf/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on thesis.pdf (70 pages, 6168316 bytes).
 PDF statistics:
- 1912 PDF objects out of 2073 (max. 8388607)
- 1641 compressed objects within 17 object streams
- 380 named destinations out of 1000 (max. 500000)
- 674 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2013 PDF objects out of 2073 (max. 8388607)
+ 1731 compressed objects within 18 object streams
+ 411 named destinations out of 1000 (max. 500000)
+ 695 words of extra memory for PDF output out of 10000 (max. 10000000)
 

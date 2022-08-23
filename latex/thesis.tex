@@ -1299,7 +1299,7 @@ Once a star ignites central helium, \texttt{SEVN} checks whether the helium mass
     \centering
     \begin{tabular}{llllcc}
         \toprule
-        Stellar phase & Burning & $p$ & Condition & \texttt{BSE} phase &  $q_{\rm qcrit}$ \\ 
+        Stellar phase & Burning & $p$ & Condition & \texttt{BSE} phase &  $q_{\rm crit}$ \\ 
         \midrule
         Main Sequence           & H-core    &  H   & $\mzams \geq 0.7~\msun$          &  1  & 3.0        \\
         Hertzsprung-Gap         & H-shell   &  He  & $f_{\rm conv} < 0.33$       &  2  & 4.0        \\
@@ -1374,7 +1374,7 @@ The respective timescales are calculated as function of the donor envelope mass 
 Once the donor mass loss rate is established $\mdot_{\rm d}$, the mass accreted by the companion $\mdot_{\rm a}$ is calculated as a fixed fraction $f_{\rm MT}$ of it
 
 \begin{equation}\label{eq:accretionrateSEVN}
-    \mdot_{\rm d} = f_{\rm MT} \mdot_{\rm a} \qquad \qquad f_{\rm MT} \in [0,1]
+    \mdot_{\rm a} = f_{\rm MT} \mdot_{\rm d} \qquad \qquad f_{\rm MT} \in [0,1]
 \end{equation}
 
 The fiducial accreted fraction is $f_{\rm MT} = 0.5$ and is the value adopted in this thesis. The accretion rate calculated with Eq.\ \ref{eq:accretionrateSEVN} is limited by the Eddington one for accreting compact objects, like neutron stars and black holes\footnote{Eddington limited accretion is imposed also for compact objects that are member of a wind-fed system, where accretion is calculated with Eq.\ \ref{eq:windfedaccretion}.}. Moreover, \texttt{SEVN} does not accrete mass onto Wolf-Rayet stars because their winds are assumed to be so strong to rapidly remove any additional layer deposited on their surfaces (see Iorio et al.\ in preparation).
@@ -1382,7 +1382,7 @@ The fiducial accreted fraction is $f_{\rm MT} = 0.5$ and is the value adopted in
 
 
 
-\paragraph{Common envelope} Usually binaries enter a common envelope evolution if there is an over-contact binary, a collision at periastron or the donor undergoes an unstable Roche lobe overflow (see Sec.\ \ref{subsec:Commonenvelope}). However, unlike the previous version of \texttt{SEVN} \cite{spera2019_mergingBBH} and many \texttt{BSE}-derived codes, the \texttt{SEVN} version adopted in this thesis does not form over-contact binaries with both stars filling their Roche lobe simultaneously because, as explained in the previous paragraph, the RLO routine considers the Roche lobe radius as an equivalent stellar radius. A similar assumption is necessary to explain the neutron stars merger rates: without it, too many systems would enter a common envelope evolution and merge (see Iorio et al.\ in preparation). Apart from this, \texttt{SEVN} routines for common envelope use the standard assumptions and adopt the $\alpha \lambda$ formalism of Webbink et al.\ \cite{Webbink1984_CE}. \\
+\paragraph{Common envelope} Usually binaries enter a common envelope evolution if there is an over-contact binary, a collision at periastron or the donor undergoes an unstable Roche lobe overflow (see Sec.\ \ref{subsec:Commonenvelope}). However, unlike the previous version of \texttt{SEVN} \cite{spera2019_mergingBBH} and many \texttt{BSE}-derived codes, the \texttt{SEVN} version adopted in this thesis does not form over-contact binaries with both stars filling their Roche lobe simultaneously because, as explained in the previous paragraph, the RLO routine considers the Roche lobe radius as an equivalent stellar radius. A similar assumption is necessary to explain the neutron stars merger rates: without it, too many systems would enter a common envelope evolution and merge (see Iorio et al.\ in preparation). For the same reason, in this thesis I allowed for collisions only outside the RLO. Apart from this, \texttt{SEVN} routines for common envelope used the standard assumptions and adopt the $\alpha \lambda$ formalism of Webbink et al.\ \cite{Webbink1984_CE}. \\
 
 Following \texttt{BSE} \cite{Hurley2002}, \texttt{SEVN} merges donor stars that enter a dynamical unstable Roche lobe overflow without a well-defined core-envelope separation: it is the case of Main Sequence stars and Wolf-Rayets that did not yet developed a CO core (\texttt{BSE} phase = 1,7). In contrast, donors with a core (\texttt{BSE} phase = 3,4,5,8) enter the routine for the common envelope evolution: with the right orbital separation the stars could survive in a tighter orbit (see Sec.\ \ref{subsec:Commonenvelope}). %controllare tutto questo paragrafo, specie quali WR entrano in CE e quali fondono! %pluto
 
@@ -1395,22 +1395,28 @@ When a merger occurs, either because both stars still overfill their Roche lobe 
 
 
 \subsection{Core-collapse supernovae}\label{subsec:SNmodels}
-\texttt{SEVN} carries on stellar evolution only up to the end of the CO burning, using the CO core mass to calculate the fate and mass of the compact object produced after a core-collapse supernova (CCSN). Therefore, the end of the CO phase will be hereafter denoted improperly as \emph{pre-SN} phase. Among the CCSN models implemented in \texttt{SEVN}, I will here discuss the three adopted in this thesis, indicated as \emph{rapid}, \emph{delayed} and \emph{compact}.
+\texttt{SEVN} carries on stellar evolution only up to the end of the CO burning, using the CO core mass to calculate the fate and mass of the compact object produced after a core-collapse supernova (CCSN). Therefore, the end of the CO phase will be hereafter denoted improperly as \emph{pre-SN} phase and will be used to calculate values that should be calculated at the onset of the collapse, like the compactness in Eq.\ \ref{eq:compactness}. Among the CCSN models implemented in \texttt{SEVN}, I will here discuss the three adopted in this thesis, indicated as \emph{rapid}, \emph{delayed} and \emph{compact}.
 
 \paragraph{Rapid and delayed} \emph{Rapid} and \emph{delayed} models are based on calculations carried out in 2012 by Fryer et al.\ \cite{Fryer2012}. They used pre-computed fitting formulas to estimate the final CO and FeNi core of pre-SN stars and computed the corresponding compact object masses with the \texttt{STARTRACK} \cite{Belczynski2010_WRwindsSTARTRACK} population-synthesis code, adopting two explosion models. Recalling that in CCSNe the external layers collapse to the proto-compact object, bounce back and then expand again in a neutrino-driven explosion, Fryer et al.\ distinguished between \emph{rapid} and \emph{delayed} explosions for shocks revived, respectively, before and after $\sim 250$ milliseconds from the collapse. 
 
 
-As shown in the left-hand panels of Fig.\ \ref{fig:remnants}, the more delayed is the explosion and the more difficult is to eject the collapsing mass, favouring the formation of heavier compact objects. The aformentioned figures also highlight a fragmented remnant mass behaviour as a function of the ZAMS mass, especially for the \emph{rapid} model: for instance, stars with $\mzams \sim 23-25~\msun$ form compact objects $\gtrsim 10~\msun$ heavier than stars with similar initial masses ($\mzams \sim 20~\msun$ or $\mzams \sim 26~\msun$). Abrupt jumps in the remnant masses reflect their strong sensitivity on the CO core mass. In fact, the baryonic remnant masses $M_{\rm baryo}=M_{\rm proto} + M_{\rm fb} $ are calculated as the sum of the proto-compact object mass $M_{\rm proto}$ and the fallback mass $M_{\rm fb}$, both dependent on the CO mass but through different combinations (see Fryer et al.\ 2012 \cite{Fryer2012} for the set of equations). The complicated dependence on the CO core mass is removed for $M_{\rm CO} \geq 11~\msun$, where Fryer et al.\ assume that all the mass falls back, causing the baryonic remnant mass to be simply the pre-SN mass $M_{\rm baryo} = M_{\rm pre-SN}$. As shown in the right-hand panel of Fig.\ \ref{fig:masslostWR}, at solar metallicity only stars with $\mzams \gtrsim 40~\msun$, have $M_{\rm CO} \gtrsim 11~\msun$: stars with lower initial masses have a limited CO growth because of the strong stellar winds (see Sec.\ \ref{subsec:stellarevo} for more details).
-
-Eventually, Fryer et al.\ \cite{Fryer2012} estimate that neutrino losses carry away an energy equivalent to 1/10 of the baryonic mass, leaving a gravitational mass of $M_{\rm rem} = 0.9~M_{\rm baryo}$. Overall, the methodology to calculate the remnant mass according to the \emph{rapid} and \emph{delayed} model can be schematized as
+As shown in the left-hand panels of Fig.\ \ref{fig:remnants}, the more delayed is the explosion and the more difficult is to eject the collapsing mass, favouring the formation of heavier compact objects. The aformentioned figures also highlight a fragmented remnant mass behaviour as a function of the ZAMS mass, especially for the \emph{rapid} model: for instance, stars with $\mzams \sim 23-25~\msun$ form compact objects $\gtrsim 10~\msun$ heavier than stars with similar initial masses ($\mzams \sim 20~\msun$ or $\mzams \sim 26~\msun$). Abrupt jumps in the remnant masses reflect their strong sensitivity on the CO core mass. In fact, the baryonic remnant masses $M_{\rm rem, bar}=M_{\rm proto} + M_{\rm fb} $ are calculated as the sum of the proto-compact object mass $M_{\rm proto}$ and the fallback mass $M_{\rm fb}$, both dependent on the CO mass but through different combinations (see Fryer et al.\ 2012 \cite{Fryer2012} for the set of equations). The complicated dependence on the CO core mass is removed for $M_{\rm CO} \geq 11~\msun$, where Fryer et al.\ assume that all the mass falls back, causing the baryonic remnant mass to be simply the pre-SN mass $M_{\rm rem, bar} = M_{\rm pre-SN}$. As shown in the right-hand panel of Fig.\ \ref{fig:masslostWR}, at solar metallicity only stars with $\mzams \gtrsim 40~\msun$, have $M_{\rm CO} \gtrsim 11~\msun$: stars with lower initial masses have a limited CO growth because of the strong stellar winds (see Sec.\ \ref{subsec:stellarevo} for more details). So far, the methodology to calculate the baryonic remnant mass according to the \emph{rapid} and \emph{delayed} model can be schematized as 
 
 \begin{equation}\label{eq:fryermass}
-    M_{\rm rem} = 0.9~M_{\rm baryo} \qquad \qquad M_{\rm baryo} = 
+    M_{\rm rem, bar} = 
     \begin{cases}
     M_{\rm pre-SN} & M_{\rm CO} \geq 11~\msun \\
     M_{\rm proto}(M_{\rm CO}) + M_{\rm fb}(M_{\rm CO}) & M_{\rm CO} < 11~\msun 
     \end{cases}
 \end{equation}
+
+In 2020 Zevin et al.\ \cite{Zevin2020_neutrinolosses} corrected a typo in the prescriptions adopted by Fryer et al.\ \cite{Fryer2012} to account for neutrino losses, finding that they carry away 10 \% of the iron core mass (not 10 \% of the total baryonic mass, as was incorrectly reported by Fryer et al.\ ). Thus, accounting also for the baryonic-to-gravitational mass conversion, \texttt{SEVN} calculates the final gravitational remnant mass $M_{\rm rem}$ as in Iorio et al.\ in preparation
+
+\begin{equation}\label{eq:neutrinolosses}
+    M_\mathrm{rem} = \max \left\{ \frac{\sqrt{1 + 0.3\,~M_\mathrm{rem, bar}} -1 }{0.15}, M_\mathrm{rem,bar}-0.5~\msun\right\}
+\end{equation}
+
+
 
 
 \begin{figure}[t!]
@@ -1433,40 +1439,33 @@ Eventually, Fryer et al.\ \cite{Fryer2012} estimate that neutrino losses carry a
 		\centering
 		\includegraphics[width=1.05\textwidth]{./images/hist_Z015.pdf}	
 	\end{minipage}
-	\caption{Compact object masses for \emph{rapid} (red), \emph{delayed} (black) and \emph{compact} (blue) CCSN models implemented in \texttt{SEVN} for the two solar metallicities adopted in this thesis: $Z=0.02$ (\emph{top}) and $Z=0.0015$ (\emph{bottom}). \emph{Left:} Gray thick line shows the pre-SN mass as a function of the initial progenitor mass $\mzams$. \emph{Compact} model produces heavier remnants and black holes even from the lighter progenitors, without the abrupt jumps exhibited by the \emph{rapid} one and the strong sensibility on the CO mass also shown by the \emph{delayed} model. \emph{Right:} Normalized counts of the compact object masses obtained simulating with \texttt{SEVN} 10~000 stars extracted from a Kroupa initial mass function (see Sec.\ \ref{sec:initialconditionsSEVN}). The limited sample caused the non-physical gaps at $M_{\rm rem} \sim 11~\msun$ for $Z=0.02$ and the less dense points in the left-hand panel towards higher masses. In contrast, the \emph{rapid} model reproduces the putative low-mass gap $M_{\rm rem} \sim 2-5~\msun$ \cite{massgapreal_ozel2010}. Black dashed line at $3~\msun$ discriminates between neutron stars and black holes \cite{NSreview}. }\label{fig:remnants}
+	\caption{Compact object masses for \emph{rapid} (red), \emph{delayed} (black) and \emph{compact} (blue) CCSN models implemented in \texttt{SEVN} for the two solar metallicities adopted in this thesis: $Z=0.02$ (\emph{top}) and $Z=0.015$ (\emph{bottom}). \emph{Left:} Gray thick line shows the pre-SN mass as a function of the initial progenitor mass $\mzams$. \emph{Compact} model produces heavier remnants and black holes even from the lighter progenitors, without the abrupt jumps exhibited by the \emph{rapid} one and the strong sensibility on the CO mass also shown by the \emph{delayed} model. \emph{Right:} Normalized counts of the compact object masses obtained simulating with \texttt{SEVN} 10~000 stars extracted from a Kroupa initial mass function (see Sec.\ \ref{sec:initialconditionsSEVN}). The limited sample caused the non-physical gaps at $M_{\rm rem} \sim 11~\msun$ for $Z=0.02$ and the less dense points in the left-hand panel towards higher masses. In contrast, the \emph{rapid} model reproduces the putative low-mass gap $M_{\rm rem} \sim 2-5~\msun$ \cite{massgapreal_ozel2010}. Black dashed line at $3~\msun$ discriminates between neutron stars and black holes \cite{NSreview}. }\label{fig:remnants}
 \end{figure}
 
 
-\paragraph{Compact} The \emph{compact} model is based on the compactness parameter $\xi_\mathrm{2.5}$ introduced in 2011 by O'Connor \& Ott \cite{Oconnor2011_compactness} to describe the ratio between a reference mass ($2.5~\msun$ usually) and the radius that encloses such mass at the onset of the core-collapse
+\paragraph{Compact} The \emph{compact} model is based on the compactness parameter $\xi_\mathrm{2.5}$ introduced in 2011 by O'Connor \& Ott \cite{Oconnor2011_compactness} to describe the ratio between a reference mass ($2.5~\msun$ here) and the radius that encloses such mass at the onset of the core-collapse
 
 \begin{equation}\label{eq:compactness}
 \xi_\mathrm{2.5}= \frac{2.5}{R(2.5 ~\msun)}
 \end{equation}
 
-In 2018, Limongi \& Chieffi \cite{Limongi2018_rotatingCOcompactness} used their \texttt{FRANEC} stellar evolution code to probe the strong correlation between the compactness parameter and the CO mass at the onset of the core-collapse, finding that it was not significantly affected by stellar rotation. In 2020, Mapelli et al.\ \cite{mapelli2020_compactness} interpolated the same \texttt{FRANEC} models to extract a fitting formula implementable in population-synthesis codes like \texttt{SEVN}
+In 2018, Limongi \& Chieffi \cite{Limongi2018_rotatingCOcompactness} used their \texttt{FRANEC} stellar evolution code to probe the strong correlation between the compactness parameter and the CO mass at the onset of the core-collapse, finding that it was not significantly affected by stellar rotation. In 2020, Mapelli et al.\ \cite{mapelli2020_compactness} interpolated the same \texttt{FRANEC} models to extract a fitting formula implementable in population-synthesis codes
 
 \begin{equation}\label{eq:compactnessCOinSEVN}
-	\xi_{2.5} = 0.55 -1.1 \left(\frac{1 \msun}{m_{\rm CO}}\right)
+	\xi_{2.5} = 0.55 -1.1 \left(\frac{1 \msun}{M_{\rm CO}}\right)
 \end{equation}
 
-Indeed, at the end of the CO burning, \texttt{SEVN} uses this formula to extract the compactness parameter of the star $\xi_*$. However, studies like the one carried out in 2016 by Ertl et al.\ \cite{Ertl2016}, showed that there is not a one-to-one correlation between a given compactness value and the possibility that the star successfully explodes as a CCSN or fails at the upper layers directly fall back to the proto-compact object. In particular, 2020 Patton \& Sukhbold \cite{COcollapse} used hydrodynamics calculations and extracted the probability distribution shown in Fig.\ \ref{fig:compactness} to determine the explodability of a star given its compactness. Therefore, in the \emph{compact} CCSN model, \texttt{SEVN} randomly draws a compactness value from the explodability distribution of Patton \& Sukhbold (the white filled one in Fig.\ \ref{fig:compactness}) and uses it as a threshold $\xi_c$: if the star is more compact it implodes forming a black hole ($\xi_* > \xi_c$) otherwise it explodes and produces a neutron star.
+Indeed, at the end of the CO burning, \texttt{SEVN} uses this formula to extract the compactness parameter of the star $\xi_*$. However, studies like the one carried out in 2016 by Ertl et al.\ \cite{Ertl2016}, showed that there is not a one-to-one correlation between a given compactness value and the possibility that the star successfully explodes as a CCSN or fails and the upper layers directly fall back to the proto-compact object. In particular, 2020 Patton \& Sukhbold \cite{COcollapse} used hydrodynamics calculations and extracted the probability distribution shown in Fig.\ \ref{fig:compactness} to determine the explodability of a star given its compactness. Therefore, in the \emph{compact} CCSN model, \texttt{SEVN} randomly draws a compactness value from the explodability distribution of Patton \& Sukhbold (the white filled one in Fig.\ \ref{fig:compactness}) and uses it as a threshold $\xi_c$: if the star is more compact it collapses forming a black hole ($\xi_* > \xi_c$) otherwise it explodes and produces a neutron star.
 
 While the neutron star mass is is randomly assigned according to the observed distribution of neutrons stars in binary systems \cite{mapelli2020_compactness}, the baryonic black hole mass is derived similarly to Fryer et al.\ \cite{Fryer2012} but substituting the role of the CO core with the He core
 
 \begin{equation}\label{eq:massBHcompactness}
-    M_{\rm BH, baryo} = M_{\rm He} + f_{\rm H} (M_{\rm pre-SN}-M_{\rm He})
+    M_{\rm BH, bar} = M_{\rm He} + f_{\rm H} (M_{\rm pre-SN}-M_{\rm He})
 \end{equation}
 
-$f_H \in [0,1]$ is the fallback parameter and accounts for the hydrogen mass retained in the compact object. Even though the fiducial \texttt{SEVN} model (and the one adopted in this thesis) adopts $f_{\rm H} = 0.9$, Eq.\ \ref{eq:massBHcompactness} underlines that for a collapsing Wolf-Rayet $M_{\rm pre-SN}=M_{\rm He}$ the baryonic black hole mass is precisely the pre-SN mass. Similarly to Eq.\ \ref{eq:fryermass}, the baryonic mass is then reduced by 10 \% to account for neutrino losses. However, regardless of the explosion/implosion mechanism, \texttt{SEVN} will always eventually classify a compact object as a black hole (neutrons star) if its mass is higher (lower) than he maximum mass allowed for a neutron star $M_{\rm NS,max} = 3\msun$ \cite{NSreview,spera2019_mergingBBH}, indicated with a black dashed line in the panels of Fig.\ \ref{fig:compactness}. \\
+$f_H \in [0,1]$ is the fallback parameter and accounts for the hydrogen mass retained in the compact object. Even though the fiducial \texttt{SEVN} model (and the one adopted in this thesis) adopts $f_{\rm H} = 0.9$, Eq.\ \ref{eq:massBHcompactness} underlines that for a collapsing Wolf-Rayet the baryonic black hole mass is precisely the pre-SN mass $M_{\rm pre-SN}=M_{\rm He}$. Finally, \texttt{SEVN} uses Eq.\ \ref{eq:neutrinolosses} to account for neutrino losses and to convert the baryonic remnant mass into the gravitational one. 
 
-\paragraph{Model comparison} Fig.\ \ref{eq:compactness} highlights the main differences in the CCSN models: even though the figures are built for the solar metallicities adopted in this thesis, the features are characteristic of the models.  \\
-
-Looking at the left-hand panels, the \emph{compact} model not only produces more massive compact objects but allows their formation from progenitors down to $\mzams \sim 13~\msun$, whereas the \emph{delayed} stopped at $\mzams \sim 20~\msun$ and the \emph{rapid} at $\mzams \sim 25~\msun$. If Fryer et al.\ \cite{Fryer2012} models produce a discontinuous distribution in the remnant masses due to the complicate dependence on the CO mass, the randomness introduced in the \emph{compact} model allows stars with $\mzams \sim 13-20~\msun$ to produce a black hole or a neutron star. However, since the explodability distribution of Fig.\ \ref{fig:compactness} is shifted towards lighter masses, the \emph{compact} model favours the production of black holes for progenitors in this intermediate region. 
-
-Discrepancies between the three models vanish for $\mzams \gtrsim 40~\msun$, i.\ e.\ for exploding Wolf-Rayets of $\gtrsim 10-15~\msun$ (see also the right-hand panel of Fig.\ \ref{fig:masslostWR}). Stars so massive always implode and have CO core masses $M_{\rm CO} \gtrsim 11~\msun$, thus the only mass lost in the CCSN is the 10 \% of the pre-SN mass carried away by neutrinos: in this mass range all three models form a black hole with $M_{\rm BH} = 0.9~M_{\rm pre-SN}$.\\
-
-The right-hand panels highlight over-densities and gaps in the remnant distributions. The \emph{rapid} model does not produce compact objects with $M_{\rm rem} \sim 2-5~\msun$, in agreement with the putative low-mass gap suggested by observations carried out in the Galaxy \cite{massgapreal_ozel2010}. In contrast, the \emph{delayed} model shows a continuous distribution of compact objects. Finally, \emph{compact} CCSNe produce an even larger low-mass gap between $\mzams \sim 3-8(10)~\msun $ for stars with metallicity $Z=0.015~(0.02)$. This gap is produced by stars with $\mzams \lesssim 13~\msun$ that are too light to implode, therefore they explode and form a neutron star.
-
+Regardless of the explosion/implosion mechanism, \texttt{SEVN} will always eventually classify a compact object as a black hole (neutron star) if its mass is higher (lower) than the maximum mass allowed for a neutron star $M_{\rm NS,max} = 3\msun$ \cite{NSreview,spera2019_mergingBBH}, indicated with a black dashed line in the panels of Fig.\ \ref{fig:compactness}.
 
 \begin{figure}
 	\centering
@@ -1475,30 +1474,113 @@ The right-hand panels highlight over-densities and gaps in the remnant distribut
 \end{figure}
 
 
+\paragraph{Model comparison} Fig.\ \ref{eq:compactness} highlights the main differences in the CCSN models: even though the figures are built for the solar metallicities adopted in this thesis, the features and trends are characteristic of the models. I obtained the panels simulating with \texttt{SEVN} 10 000 stars up to $\mzams = 100~\msun$, thus forming black holes only up to $\sim 21~(26)~\msun$ (the higher the metallicity, the more efficient the stellar winds and the lighter the remnants).
+
+Looking at the left-hand panels, the \emph{compact} model not only produces more massive compact objects but allows their formation from progenitors down to $\mzams \sim 13~\msun$, whereas the \emph{delayed} stopped at $\mzams \sim 20~\msun$ and the \emph{rapid} at $\mzams \sim 25~\msun$. If Fryer et al.\ \cite{Fryer2012} models produce a discontinuous distribution in the remnant masses due to the complicate dependence on the CO mass, the randomness introduced in the \emph{compact} model allows stars with $\mzams \sim 13-20~\msun$ to produce a black hole or a neutron star. However, since the explodability distribution of Fig.\ \ref{fig:compactness} is shifted towards lighter masses, the \emph{compact} model favours the production of black holes for progenitors in this intermediate region. Discrepancies between the three models vanish for $\mzams \gtrsim 40~\msun$, i.\ e.\ for exploding Wolf-Rayets of $\gtrsim 10-15~\msun$ (see also the right-hand panel of Fig.\ \ref{fig:masslostWR}). Stars so massive always implode and have CO core masses $M_{\rm CO} \gtrsim 11~\msun$, thus the only mass lost in the CCSN is the one carried away by neutrinos according to Eq.\ \ref{eq:neutrinolosses}. 
+
+The right-hand panels highlight over-densities and gaps in the remnant distributions. The \emph{rapid} model does not produce compact objects with $M_{\rm rem} \sim 2-5~\msun$, in agreement with the putative low-mass gap suggested by observations carried out in the Galaxy \cite{massgapreal_ozel2010}. In contrast, the \emph{delayed} model shows a continuous distribution of compact objects. Finally, \emph{compact} CCSNe produce an even larger low-mass gap between $\mzams \sim 3-8(10)~\msun $ for stars with metallicity $Z=0.015~(0.02)$. This gap is produced by stars with $\mzams \lesssim 13~\msun$ that are too light to collapse, therefore they explode and form a neutron star.
+
+
+
+
 
 \subsection{Supernova kicks}\label{subsec:kicksSEVN}
+\paragraph{Uncertainties in natal kicks observations} After a supernova event, the resulting compact object receives a natal kick formed by the combination of a Blaauw kick and a supernova kick. The first one, proposed by Blaauw in 1961 \cite{Blaauw1961}, is a $\lesssim 50$ km/s kick acting on the binary center of mass and is caused by asymmetries in the mass lost by the system as a whole \cite{Mandel2016_kicks}. Instead, the supernova kick is the one received directly by compact objects formed after successful supernova explosions and, similarly, is caused asymmetries in the mass ejection. 
+
+Many efforts have been put in extracting from the observations a representative distribution of compact objects natal kicks, but still none of the proposed ones seems to offer a complete picture. In 2005 Hobbs et al.\ \cite{Hobbs2005} measured the proper motions of 233 Galactic pulsars, finding that their velocity distribution can be modelled with a one-dimensional Maxwellian with root-mean-square of $\sigma = 265$ km/s. In contrast, in 2017 Verbunt et al.\ \cite{Verbunt2017_bimodalkicks} adopted updated measurements and Bayesian analysis to argue that pulsar velocities follow a bimodal Maxwellian with peaks at 120 and 540 km/s. More recently, in 2019 Atri et al.\ \cite{Atri2019_kicks} studied proper motions of 16 black holes in X-ray binaries, finding that their velocity distribution is described with a Gaussian with mean at 107 km/s: a PDF very similar to the low-velocity peak indicated by Verbunt et al.\ \cite{Verbunt2017_bimodalkicks}.
+
+
+\paragraph{\texttt{SEVN} assumptions} \texttt{SEVN} includes both Blaauw and supernova kicks into its natal kick calculation. In particular, the code assigns a supernova kick only to compact objects that undergo a successful CCSN. Black holes formed by direct collapse in the \emph{compact} model (see Eq.\ \ref{eq:massBHcompactness}) or with all the mass falling back in the \emph{rapid} and \emph{delayed} models (as in the first line of Eq.\ \ref{eq:fryermass}) do not properly explode and form massive remnants: their supernova kick is negligible and, therefore, is set to zero (for more details see Iorio et al.\ in preparation). % controllare che i kick non siano attivati effettivamente SOLO per i BH del compact e per i BH con fb=1 di Fryer % pluto
+
+In the next paragraphs I will discuss the supernova kick models that I adopted in this thesis and that are derived from the \emph{hobbs pure}, \emph{hobbs} and \emph{unified} options available in \texttt{SEVN}.
+
+\paragraph{Hobbs pure } Following the 2005 observations of Hobbs et al.\ \cite{Hobbs2005}, the \emph{hobbs pure} option draws a random supernova kick $v_{\rm kick, hp} = f_{\sigma}$ from a one-dimensional Maxwellian with root-mean-square $\sigma$ as free parameter. The default value $\sigma = 265$ km/s reproduces the observed pulsar velocity distribution. In this thesis, also $\sigma = 70$ km/s will be considered for this option, since it is the root-mean-square correspondent to a Maxwellian with median in 107 km/s that can reproduce the distribution of black hole supernova kicks found in 2019 by Atri et al.\ \cite{Atri2019_kicks}.
+
+\paragraph{Hobbs} The \emph{hobbs} option draws a random kick $f_{\sigma}$ from a one-dimensional Maxwellian as in the \emph{hobbs pure} option, but scales it accounting for the fraction $f_{\rm fb}=M_{\rm fb}/(M_{\rm rem} - M_{\rm proto})$ of matter falling back to the proto-compact object 
+
+\begin{equation}\label{eq:kickhobbs}
+    v_{\rm kick, h} = f_\sigma (1-f_{\rm fb}) 
+\end{equation}
+
+The default version, and the one adopted in this thesis, draws kicks from the Hobbs et al.\ observed pulsar distribution $\sigma = 265$ km/s \cite{Hobbs2005}: the fallback scaling reduces the kick magnitude for the heavier compact objects.
+
+\paragraph{Unified} In 2020 Giacobbo \& Mapelli \cite{SNkicksUnified_Giacobbo2020} introduced the \emph{unified} model to describe supernova kicks through linear momentum conservation. Similarly to the \emph{hobbs} option, the kick is drawn from a Maxwellian distribution representing pulsar kicks and then is scaled to account for the object mass. Unlike \emph{hobbs}, here the scaling is bi-parametric because it accounts both for objects heavier than the average neutron star mass $\langle M_{\rm NS}\rangle $ and for objects that, undergoing a binary evolution, have lighter external layers and eject\footnote{The ejected mass is calculated as the difference between remnant and pre-SN mass $M_{\rm ej} = M_{\rm pre-SN} - M_{\rm rem}$.} less mass with respect to the average forming neutron star $\langle M_{\rm ej}\rangle$
+
+\begin{equation}\label{eq:kickunified}
+    v_{\rm kick, un} = f_{\sigma} \frac{M_{\rm ej}}{\langle M_{\rm ej}\rangle} \frac{\langle M_{\rm NS}\rangle}{M_{\rm NS}}
+\end{equation}
+
+The \emph{unified} model is intended to extract random kicks from the Galactic pulsar observed distribution of Hobbs et al.\ $\sigma = 265$ km/s \cite{Hobbs2005}, thus it is calibrated at $Z=0.02$ with $\langle M_{\rm NS}\rangle = 1.2~\msun$ and $\langle M_{\rm ej}\rangle = 9~\msun$ (see Iorio et al.\ in preparation). Adopting a lower initial kick distribution, as the one of Atri et al.\ \cite{Atri2019_kicks}, and then re-scaling it with the \emph{unified} model would generate kicks too low, likely not representative. % controllare che i valori medi di NS ed ejecta siano quelli davvero usati qui! %pluto
+
+
+
+
 
 
 \section{Initial conditions for simulations}\label{sec:initialconditionsSEVN}
-%Describe the distributions of masses, periods, eccentricities from which I derived the 1 million simulations. Scheme with the parameter space explored
+In this thesis I explored the role of Wolf-Rayet -- black hole binaries as progenitors of LVC binary black holes at solar metallicity. In order to obtain results that could be almost model-independent, I generated 24 sets of $10^6$ representative binary populations to explore some of the most relevant parameters: metallicity, core-collapse supernova and kick models. 
 
+\subsection{Parameter space}\label{subsec:parameterspace}
+\paragraph{Explored} The parameters of the simulated sets are reported in Fig.\ \ref{fig:parameterspace}. 
+
+\paragraph{Fixed}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 In this thesis I adopted the fiducial parameters that better reproduce the merger rates observed by the LIGO-Virgo Collaboration: $\alpha=5$ and $\lambda$ from 2014 fits of Claeys et al.\ \cite{Clayes2014_lambdaCE}. Even though Claeys et al.\ report different $\lambda$ values for different evolutionary stages, they do not provide a fit for pure-He stars: for them, \texttt{SEVN} adopts $\lambda_{\rm WR} = 0.5$  (see Iorio et al.\ in preparation for more details).\\
 
-In this thesis I adopted the pessimistic case.\\
+In this thesis I adopted the pessimistic case.
 
 
 
-%%%%%%%% appunti
+\begin{figure}
+	\centering
+	\includegraphics[width=.95\textwidth]{./images/parameterspace.png}	
+	\caption{Schematic representation of the 24 combinations of the parameter space explored in this thesis. Each set explores binary black hole formation assuming a solar metallicity value ($Z=0.02$ or $Z=0.015$), core-collapse model for the supernova explosion (\emph{rapid}, \emph{delayed} or \emph{compact}, see Sec.\ \ref{subsec:SNmodels}) and supernova kick prescription (\emph{Hobbs pure}, \emph{Hobbs} or \emph{Unified}, see Sec.\ \ref{subsec:kicksSEVN}). Kick velocities are generally drawn from a Maxwellian with root-mean-square $\sigma = 265$ km/s following the pulsar proper motions observed by Hobbs et al.\ 2005 \cite{Hobbs2005}. For comparison and only for kicks drawn by a pure Maxwellian (\emph{Hobbs pure}), I also tested the option with lower kick values extracted from a Maxwellian with $\sigma = 70$ km/s,  representative of the black hole proper motions observed by Atri et al.\ \cite{Atri2019_kicks}.}\label{fig:parameterspace}
+\end{figure}
 
-\begin{itemize}
-	\item Kick = Unified + sigma = 70 km/s non ha senso perché unified è stato calibrato per riprodurre le osservazioni a partire dalla maxwelliana di hobbs. Pertanto è stato pensato per estrarre il kick da una maxwelliana di 265 km/s e poi diminuirne la magnitudine in base a ejecta e massa del remnant. Se parto già con una sigma di 70 sto già estraendo dei kick bassi, non posso diminuirli ancora di più...
-	\item Il fatto che con hobbs puro io abbia un sacco di merging BBH ad alti semiassi posso provare a spiegarlo guardando all'eccentricità delle binarie, magari c'entra quanto vicine al periastro passano oppure no
-	\item la SN compact è descritta come nel paper della mapelli https://arxiv.org/pdf/2005.03055.pdf dove il grafico in basso è stato fittato con due distribuzioni. Se nel file .sh il parametro -1 è settato, allora la treshold zeta2.5 non è 0.3 come nel paper della mapelli ma viene estrapolata randomicamente da quelle distribuzioni (o una roba del genere). La SN= compactness è MOLTO biasata nel creare BH invece che NS
-	\item per la SSE delle pure He posso confrontare la stessa stella se tipo mi faccio printare anche la colonna "zams" che mi dice qual è la traccia che sta usando per l'interpolazione (a seconda della tabella usata)
-	\item Capire nel dettaglio le differenze tra Z=0.02 e Z=0.015
-	\item Focus sul final fate dopo la WR-BH per un confronto con Belczynski
-\end{itemize}
+
+\subsection{Generating binary sets}\label{subsec:setgeneration}
+
+%%%%%%%% here below is the text from Computational astrophysics
+We used the \texttt{IC4popsyn} package developed by Nicola Giacobbo\footnote{\url{https://github.com/GiacobboNicola/IC4popsyn}} to generate the initial set of binaries adopting the formalism required by the SEVN2 input.
+
+First we generated the masses of the primary stars $M_1$ following the \cite{Kroupa2001} Initial Mass Function (IMF): 
+
+\begin{equation}
+	\xi(M_1) \propto M_1^{-2.3} \qquad M_1 \in [10,150]~\msun 
+\end{equation}
+
+We chose the lower boundary of $M_\textup{1,min} = 10~\msun$ as a compromise between the need to simulate stars with $\mzams \lesssim 25~\msun$, able to accrete mass from the companion and form a BH, and the need to obtain secondaries with values included in the \texttt{PARSEC} tables, i.e. $M_2 > 2.2~\msun$. %Giuliano Iorio
+
+In fact, the distribution of the masses of the secondaries $\xi(M_2)$ is obtained from the primary distribution $\xi(M_1)$ and the mass ratio distribution $\xi(q)$, with $q=M_2/M_1$. We adopted the \cite{Sana2012} distribution, derived from binaries containing O-type stars sampled in six Galactic open clusters, so we obtained:
+
+\begin{equation}
+\xi(q) \propto q^{0.1} \qquad q \in [0.1,1] 
+\end{equation}
+
+\begin{equation}
+\xi(M_2) = \xi(M_1) \cdot \xi(q)  \qquad  M_2 \in [1 ~\msun , M_1]
+\end{equation}
+
+Similarly to before, the minimum value $q_\textup{min}=0.1$ was a calibrated compromise that allows to explore all the reasonable mass combinations without producing too many secondaries below the \texttt{PARSEC} tables threshold of $M_2 > 2.2~\msun$. In this case, the $M_\textup{1,min} = 10~\msun$ results in a $M_\textup{2,min} = 1 < 2.2~\msun $ therefore we had to generate $1.15 \cdot 10^6$ binaries in order to simulate $\sim 1.09 \cdot 10^6$ systems. Nevertheless, the $\sim 6 \cdot 10^4$ systems not simulated won't affect our conclusions, since masses so low wouldn't have produced a BH and wouldn't have resulted in a BBH under any circumstance.
+
+
+We also generated the orbital periods $P$ adopting the \cite{Sana2012} distribution for the logarithimc orbital periods $\mathcal{P} = \log(P/\text{days})$:
+
+\begin{equation}
+	\xi(\mathcal{P}) \propto \mathcal{P}^{-0.55} \qquad \mathcal{P} \in [0.30,5.5]
+\end{equation}
+
+% boundaries in terms of usual period P in days correspond to Pmix = 1.41 days and Pmax = 316 227 days = 866 yrs
+
+We followed the \cite{MoeDiStefano2017} prescriptions and set $P=2~$days ($\mathcal{P}=\log(P=2)=0.3$) as the lower limit for the period distribution, assuming that binaries with shorter period already circularized. In fact, \cite{MoeDiStefano2017} showed that there is a complex correlation between the mass ratio $q$, period $P$ and eccentricity $e$ of early-type binaries containing O-type and B-type main sequence stars. Even though we assumed that $q$ and $P$ distributions are independent for simplicity, we try to account for it correlating $P$ and $e$ following their suggested prescription:
+
+\begin{equation}
+	\xi (e (P)) \propto 1-(P/\text{days})^{-2/3} \qquad P \geq 2~\text{days}
+\end{equation}
+
+As previously mentioned, we will adopt both the delayed and compact model for CCSNe. For the binary evolution we choose $\alpha=5$ and $\lambda$ according to \cite{Clayes2014_lambdaCE}.
+
 
 
 
@@ -1536,6 +1618,14 @@ Mostrare a vs m1+m2 remnant e m1vsm2 Cyg X-3 a set di 3 CCSN variando i tre kick
 
 \section{Compare with Belczynski+2013}
 ??? Ha senso??
+
+%%% appunti
+\begin{itemize}
+	\item Il fatto che con hobbs puro io abbia un sacco di merging BBH ad alti semiassi posso provare a spiegarlo guardando all'eccentricità delle binarie, magari c'entra quanto vicine al periastro passano oppure no
+	\item per la SSE delle pure He posso confrontare la stessa stella se tipo mi faccio printare anche la colonna "zams" che mi dice qual è la traccia che sta usando per l'interpolazione (a seconda della tabella usata)
+	\item Capire nel dettaglio le differenze tra Z=0.02 e Z=0.015
+	\item Focus sul final fate dopo la WR-BH per un confronto con Belczynski
+\end{itemize}
 
 
 
