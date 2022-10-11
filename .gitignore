@@ -1,0 +1,12 @@
+# Ignore folders with simulated data
+/script/v_3.0.0-Spindevel_RLO/
+/script/zzz_OLD/
+/script/parsectracks/
+/script/singlestar/
+/script/singlestarHE/
+
+# ignore other folders
+/script/stampa/
+/stampa/
+/meeting/
+/latex/daleggere/
