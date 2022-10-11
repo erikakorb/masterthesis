@@ -1,0 +1,10 @@
+#ID        name                 Mass               Z                  spin               SN                 Tstart             Tend               Dtout              Seed             
+0          136247031884160      20                 0.02               0.0                compact            zams               end                all            299081411940199  
+1          395814383259248      25                 0.02               0.0                compact            zams               end                all            233057368611924  
+2          988550911996883      30                 0.02               0.0                compact            zams               end                all            571849864210972  
+3          836122384223926      35                 0.02               0.0                compact            zams               end                all            391609311588556  
+4          188712675155237      40                 0.02               0.0                compact            zams               end                all            172862510530905  
+5          162829762990264      50                 0.02               0.0                compact            zams               end                all            654494368545893  
+6          246702035346992      60                 0.02               0.0                compact            zams               end                all            377048300736610  
+7          491865785238629      80                 0.02               0.0                compact            zams               end                all            726743929823355  
+8          773436749948673      100                0.02               0.0                compact            zams               end                all            464634119917329  

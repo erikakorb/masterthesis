@@ -74,13 +74,13 @@ def ExtractIC(path):
 ####################################################################
 # MANUALLY MODIFY AN INPUT BINARY FILE ####
 ####################################################
-path_listBin = 'listStar.dat'
-df = pd.read_csv(path_listBin, sep='\s+', header=None)
-df[1] = '0.002'
+#path_listBin = 'listStar.dat'
+#df = pd.read_csv(path_listBin, sep='\s+', header=None)
+#df[1] = '0.002'
 #df[6] = '0.002'
-df[3] = 'compact'
+#df[3] = 'compact'
 #df[8] = 'compact'
-df.to_csv('listBin2.dat',sep='\t',index=False,header=False)
+#df.to_csv('listBin2.dat',sep='\t',index=False,header=False)
 
 
 
