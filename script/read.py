@@ -153,7 +153,7 @@ def Read(version,Nsim,Z,SN,kick,Hsup,n):
 
     ### read evolved file and add period column with pandas ###
     evolved = pd.read_csv(path_evolved, sep='\s+').rename(columns = {'#ID':'ID'})
-    evolved['Period'] = np.sqrt(evolved['a']**3 / (G4pi2*(evolved['Mass_0']+evolved['Mass_1']))) # Kepler 3rd law
+    evolved['Period'] = np.sqrt(evolved['a']**3 / (G4pi2*(evolved['Mass_0']+evolved['Mass_1']))) # Kepler 3rd law to convert period into yrs
 
     ### add CE info on dataframes of interest ###
     evolved = pd.merge(evolved,CE, on='ID',how='left')

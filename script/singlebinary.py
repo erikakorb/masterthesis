@@ -63,83 +63,80 @@ names = out.name.drop_duplicates().values
 # names = out.name.drop_duplicates().values
 
 
-# In[5]:
+for name in names:
 
-name = 786044292469286
-#for name in names:
-binary = out[out.name == name] # select single binary
+    binary = out[out.name == name] # select single binary
 
-### plot ###
-fig, axs = plt.subplots(nrows = 2, ncols = 2, sharex=True,figsize = (17,12))
-#fig.suptitle(f'Evolution of binary name = {name} (set old: Z{Zold}, {SNold}, {kickold} with new Z{Z}, {SN}, {kick})')
-fig.suptitle(f'Evolution of binary name = {name}')
+    ### plot ###
+    fig, axs = plt.subplots(nrows = 2, ncols = 2, sharex=True,figsize = (17,12))
+    #fig.suptitle(f'Evolution of binary name = {name} (set old: Z{Zold}, {SNold}, {kickold} with new Z{Z}, {SN}, {kick})')
+    fig.suptitle(f'Evolution of binary name = {name}')
 
-axs[0][0].set_yticks(np.arange(-2,17+1,1))
-binary.plot(x='BWorldtime',y='BEvent', ax=axs[0][0], color='lime').set(xlabel=r'Time [Myr]',ylabel=r'BEvent')
+    axs[0][0].set_yticks(np.arange(-2,17+1,1))
+    binary.plot(x='BWorldtime',y='BEvent', ax=axs[0][0], color='lime').set(xlabel=r'Time [Myr]',ylabel=r'BEvent')
 
-binary.plot(x='BWorldtime',y='PhaseBSE_0', ax=axs[0][0], color='k', linestyle='dotted',label='BSE0')
-binary.plot(x='BWorldtime',y='PhaseBSE_1', ax=axs[0][0], color='r', linestyle='dashed',label='BSE1').set(xlabel=r'Time [Myr]',ylabel=r'PhaseBSE')
-secaxy=axs[0][0].secondary_yaxis('right',functions=(lambda x: x, lambda x: x))
-secaxy.set_ylabel(r'PhaseBSE')
-axs[0][0].grid(ls=':')
+    binary.plot(x='BWorldtime',y='PhaseBSE_0', ax=axs[0][0], color='k', linestyle='dotted',label='BSE0')
+    binary.plot(x='BWorldtime',y='PhaseBSE_1', ax=axs[0][0], color='r', linestyle='dashed',label='BSE1').set(xlabel=r'Time [Myr]',ylabel=r'PhaseBSE')
+    secaxy=axs[0][0].secondary_yaxis('right',functions=(lambda x: x, lambda x: x))
+    secaxy.set_ylabel(r'PhaseBSE')
+    axs[0][0].grid(ls=':')
 
 
 
-# axs[1][0].plot(binary['BWorldtime'],binary['Period']*24*365,  linestyle='dashdot',color='lime',label='P')
+    # axs[1][0].plot(binary['BWorldtime'],binary['Period']*24*365,  linestyle='dashdot',color='lime',label='P')
 #     binary.plot(x='BWorldtime',y='Period', ax=axs[1][0], linestyle='dashdot',color='lime')
 #     secaxy=axs[1][0].secondary_yaxis('right',functions=(lambda x: x, lambda x: x))
 #     secaxy.set_ylabel(r'$\log P$ [yrs]')
 #     secaxy.set_yscale('log')
 
-binary.plot(x='BWorldtime',y='RHE_0', ax=axs[1][0], color='k', linestyle='dotted', label='RHE0')
-binary.plot(x='BWorldtime',y='RHE_1', ax=axs[1][0], color='r', linestyle='dotted',label='RHE1')
-binary.plot(x='BWorldtime',y='Radius_0', ax=axs[1][0], color='k', label='R0')
-binary.plot(x='BWorldtime',y='Radius_1', ax=axs[1][0], color='r', label='R1')
-binary.plot(x='BWorldtime',y='RL0', ax=axs[1][0], linestyle='dashed', color='grey', label='RL0')
-binary.plot(x='BWorldtime',y='RL1', ax=axs[1][0], linestyle='dashed', color='orange', label='RL1')
-binary.plot(x='BWorldtime',y='Semimajor', ax=axs[1][0], color='blue', label='a').set(xlabel=r'Time [Myr]',ylabel=r'$R_\odot$')
-axs[1][0].set_yscale('log')
-axs[1][0].grid(ls=':')
+    binary.plot(x='BWorldtime',y='RHE_0', ax=axs[1][0], color='k', linestyle='dotted', label='RHE0')
+    binary.plot(x='BWorldtime',y='RHE_1', ax=axs[1][0], color='r', linestyle='dotted',label='RHE1')
+    binary.plot(x='BWorldtime',y='Radius_0', ax=axs[1][0], color='k', label='R0')
+    binary.plot(x='BWorldtime',y='Radius_1', ax=axs[1][0], color='r', label='R1')
+    binary.plot(x='BWorldtime',y='RL0', ax=axs[1][0], linestyle='dashed', color='grey', label='RL0')
+    binary.plot(x='BWorldtime',y='RL1', ax=axs[1][0], linestyle='dashed', color='orange', label='RL1')
+    binary.plot(x='BWorldtime',y='Semimajor', ax=axs[1][0], color='blue', label='a').set(xlabel=r'Time [Myr]',ylabel=r'$R_\odot$')
+    axs[1][0].set_yscale('log')
+    axs[1][0].grid(ls=':')
 
 
-binary.plot(x='BWorldtime',y='MHE_0', ax=axs[0][1], color='k', linestyle='dotted', label='MHE0')
-binary.plot(x='BWorldtime',y='MHE_1', ax=axs[0][1], color='r', linestyle='dotted',label='MHE1')
-binary.plot(x='BWorldtime',y='Mass_0', ax=axs[0][1], color='k', label='M0')
-binary.plot(x='BWorldtime',y='Mass_1', ax=axs[0][1], color='r', label='M1').set(xlabel=r'Time [Myr]',ylabel=r'Mass $M_\odot$')
-axs[0][1].yaxis.set_major_locator(ticker.MultipleLocator(2))
-axs[0][1].grid(ls=':')
-
-
-
-axs[1][1].plot(binary.BWorldtime.values,binary.Period.values*365.*24., color='g')
-axs[1][1].axhline(4.5, color='k')
-axs[1][1].axhline(5.1, color='k')
-#axs[1][1].plot(binary.BWorldtime.values,binary.Radius_0.values/binary.RL0.values, color='k', label='RL0 fill')
-axs[1][1].yaxis.set_major_locator(ticker.MultipleLocator(.5))
-#axs[1][1].legend(loc='upper left')
-axs[1][1].set_xlabel('BWorldtime [Myr]')
-axs[1][1].set_ylabel('Period [hours]')
-axs[1][1].grid(ls=':')
+    binary.plot(x='BWorldtime',y='MHE_0', ax=axs[0][1], color='k', linestyle='dotted', label='MHE0')
+    binary.plot(x='BWorldtime',y='MHE_1', ax=axs[0][1], color='r', linestyle='dotted',label='MHE1')
+    binary.plot(x='BWorldtime',y='Mass_0', ax=axs[0][1], color='k', label='M0')
+    binary.plot(x='BWorldtime',y='Mass_1', ax=axs[0][1], color='r', label='M1').set(xlabel=r'Time [Myr]',ylabel=r'Mass $M_\odot$')
+    axs[0][1].yaxis.set_major_locator(ticker.MultipleLocator(2))
+    axs[0][1].grid(ls=':')
 
 
 
-# set limits
-#     xmin, xmax = 3.5,7.5
-#     axs[0][0].set_xlim(xmin, xmax)
-#     axs[0][1].set_xlim(xmin, xmax)
-#     axs[1][0].set_xlim(xmin, xmax)
-#     axs[1][1].set_xlim(xmin, xmax)
-
-axs[0][0].set_ylim(-1.5, 14.5)
-axs[0][1].set_ylim(-1, 45)
-axs[1][0].set_ylim(1e-4, 5e3)
-axs[1][1].set_ylim(1,10)
+    axs[1][1].plot(binary.BWorldtime.values,binary.Period.values*365.*24., color='g')
+    axs[1][1].axhline(4.5, color='k')
+    axs[1][1].axhline(5.1, color='k')
+    #axs[1][1].plot(binary.BWorldtime.values,binary.Radius_0.values/binary.RL0.values, color='k', label='RL0 fill')
+    axs[1][1].yaxis.set_major_locator(ticker.MultipleLocator(.5))
+    #axs[1][1].legend(loc='upper left')
+    axs[1][1].set_xlabel('BWorldtime [Myr]')
+    axs[1][1].set_ylabel('Period [hours]')
+    axs[1][1].grid(ls=':')
 
 
 
-##########################################################
-fig.subplots_adjust(wspace = 0.3 )
-plt.tight_layout()
-plt.show()
-fig.savefig(f'{path_result}/{dfname}/name{name}_Z{Z}_{SN}_{kick}.jpg')
+    #set limits
+    xmin, xmax = 4.4,5.6
+    axs[0][0].set_xlim(xmin, xmax)
+    axs[0][1].set_xlim(xmin, xmax)
+    axs[1][0].set_xlim(xmin, xmax)
+    axs[1][1].set_xlim(xmin, xmax)
 
+    axs[0][0].set_ylim(-1.5, 14.5)
+    axs[0][1].set_ylim(-1, 40)
+    axs[1][0].set_ylim(1e-4, 5e3)
+    axs[1][1].set_ylim(1,10)
+
+
+
+    ##########################################################
+    fig.subplots_adjust(wspace = 0.3 )
+    plt.tight_layout()
+    plt.show()
+    fig.savefig(f'{path_result}/{dfname}/singlebinaries/name{name}_Z{Z}_{SN}_{kick}.jpg')

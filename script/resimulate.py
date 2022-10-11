@@ -11,7 +11,7 @@ import seed_select   # from seed_select.py in same folder
 ####################################
 
 # parameters to identify simulation
-Nsim, Z, SN, kick = '1mln','015','rap', 'hobbs265'
+Nsim, Z, SN, kick = '1mln','02','del', 'unified265'
 ppisn = 'without'
 version = '3.0.0-Spindevel_RLO'
 

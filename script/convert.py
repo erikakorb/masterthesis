@@ -94,3 +94,21 @@ nugw = 300 # Hz
 
 r = (4/h) * (G *mchirp/(c*c))**(5/3) *  (np.pi * nugw/c)**(2/3)
 print('r ',r/Mpc, ' Mpc')
+
+
+
+
+
+
+# time to GW merge (Peters 1964)
+const = (5.*(c**5))/(256.*(G**3))   # mks
+ecc = 0    # eccentricity
+a = 20 * Rsun    # converted into m
+M1 = 10 * Msun    # converted into kg
+M2 = 10 * Msun    # converted into kg
+
+tgw = const * (a**4 * (1-ecc**2)**3.5)/(M1*M2*(M1+M2))
+print('Time to GW merge: ', tgw/Myr, ' Myr ' )
+
+
+
